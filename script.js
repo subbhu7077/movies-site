@@ -69,6 +69,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Movies Database
 const movies = [
+{
+    "id": 1790169864435,
+    "name": "Special Upload (Filemoon)",
+    "category": "action",
+    "quality": "1080p",
+    "rating": "9.0",
+    "size": "1.5 GB",
+    "year": "2025",
+    "audio": "Hindi Dubbed",
+    "story": "Direct high-speed stream and download uploaded via Filemoon unlimited cloud storage.",
+    "poster": "https://picsum.photos/300/400?random=20",
+    "trailerUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "streamUrl": "https://filemoon.org/e/l76mZJaomanY",
+    "subtitleUrl": "https://subscene.best/sub.srt",
+    "servers": [
+        {
+            "name": "⚡ Filemoon Ultra Stream Server",
+            "tag": "Instant",
+            "url": "https://filemoon.org/en/l76mZJaomanY/file"
+        }
+    ]
+},
     {
         id: 1,
         name: "Cyberpunk 2099",
