@@ -28,14 +28,14 @@
         </div>
         <p class="subtitle">ULTRA FAST SERVERS • DIRECT 4K DOWNLOAD • INSTANT STREAM</p>
 
-        <!-- Quick Action Bar: Watchlist + DIRECT ADMIN BUTTON -->
+        <!-- Quick Action Bar: Watchlist + DIRECT ADMIN BUTTON WITH POPUP -->
         <div class="header-tools">
             <button class="fav-tool-btn" onclick="toggleFavoritesView()">
                 ❤️ SAVED WATCHLIST (<span id="favCount">0</span>)
             </button>
-            <a href="admin.html" class="admin-shortcut-btn">
+            <button class="admin-shortcut-btn" onclick="openAdminPanel()">
                 ⚙️ ADMIN PANEL
-            </a>
+            </button>
         </div>
     </header>
 
@@ -100,12 +100,12 @@
     <footer>
         <div class="footer-brand">CINE<span>HUB</span> PRO</div>
         <p>Streaming & High-Speed Media Showcase Engine</p>
-        <p><a href="admin.html" style="color: #00e5ff; text-decoration: none; font-weight: bold;">🔐 Open Admin Panel</a></p>
+        <p><button onclick="openAdminPanel()" style="background:none; border:none; color: #00e5ff; font-weight: bold; cursor:pointer; font-size: 0.85rem;">🔐 Open Admin Panel</button></p>
         <p class="disclaimer">Disclaimer: CINEHUB does not store any files on its web server. All videos and files are hosted on non-affiliated 3rd party cloud providers.</p>
         <p class="copyright">© 2026 CINEHUB. Engineered with Glowing Neon UI.</p>
     </footer>
 
-    <!-- Details Modal -->
+    <!-- Movie Details Modal -->
     <div id="movieModal" class="modal-overlay" onclick="handleBackdropClick(event)">
         <div class="modal-box">
             <button class="modal-close" onclick="closeModal()">&times;</button>

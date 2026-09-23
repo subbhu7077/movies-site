@@ -21,8 +21,18 @@ function trackEvent(type, id = null) {
     localStorage.setItem('cinehub_analytics', JSON.stringify(stats));
 }
 
-// Log initial visit
 trackEvent('view');
+
+// MASTER PIN AUTHENTICATION POPUP
+function openAdminPanel() {
+    const pin = prompt("🔐 Enter CINEHUB Master PIN:");
+    if (pin === "7077") {
+        sessionStorage.setItem('cinehub_admin_auth', 'true');
+        window.location.href = "admin.html";
+    } else if (pin !== null && pin !== "") {
+        alert("❌ Galat PIN! Access Denied.");
+    }
+}
 
 // Movies Catalog
 const movies = [
@@ -324,7 +334,7 @@ function openModal(movieId) {
     if (!movie) return;
 
     currentModalMovieId = movieId;
-    trackEvent('modal', movieId); // Analytics Track
+    trackEvent('modal', movieId);
 
     const shareBtn = document.getElementById('modalShareBtn');
     if (shareBtn) {
@@ -409,7 +419,7 @@ document.addEventListener('keydown', (e) => {
 
 function startDownloadWithAd(button, targetAction, waitingText = "CONNECTING", movieId = null) {
     window.open(ADSTERRA_DIRECT_LINK, '_blank');
-    if (movieId) trackEvent('download', movieId); // Analytics Track
+    if (movieId) trackEvent('download', movieId);
 
     const originalHTML = button.innerHTML;
     let timeLeft = 5;

@@ -5,10 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CINEHUB - Admin & Analytics Dashboard</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Chart.js CDN for Neon Graphs -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- STRICT PROMPT AUTHENTICATION GUARD -->
+    <script>
+        const MASTER_PIN = "7077";
+        if (sessionStorage.getItem('cinehub_admin_auth') !== 'true') {
+            const entered = prompt("🔒 CINEHUB ADMIN ACCESS\nEnter 4-digit Master Security PIN:");
+            if (entered === MASTER_PIN) {
+                sessionStorage.setItem('cinehub_admin_auth', 'true');
+            } else {
+                alert("❌ Wrong PIN! Access Denied.");
+                window.location.href = "index.html";
+            }
+        }
+    </script>
+
     <style>
-        /* Admin Specific Styling */
         body {
             background-color: #05070c;
             color: #e6f1ff;
@@ -73,7 +86,6 @@
             box-shadow: 0 0 15px #ff0055;
         }
 
-        /* Stat KPI Cards Grid */
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -87,7 +99,6 @@
             border-radius: 12px;
             padding: 20px;
             border: 1px solid;
-            position: relative;
             box-shadow: 0 8px 20px rgba(0,0,0,0.5);
             transition: transform 0.2s;
         }
@@ -119,7 +130,6 @@
             color: #00ff66;
         }
 
-        /* Chart Section Layout */
         .charts-row {
             display: grid;
             grid-template-columns: 2fr 1fr;
@@ -146,7 +156,6 @@
             color: #00e5ff;
         }
 
-        /* Analytics Data Table */
         .table-section {
             max-width: 1200px;
             margin: 0 auto 40px auto;
@@ -201,102 +210,19 @@
             font-size: 0.7rem;
             font-weight: 700;
         }
-
-        /* PIN Protection Gate Modal */
-        #authGate {
-            position: fixed;
-            inset: 0;
-            background: #05070c;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 999999;
-            padding: 15px;
-        }
-
-        .auth-card {
-            background: #0c111a;
-            border: 2px solid #00e5ff;
-            border-radius: 14px;
-            padding: 30px;
-            text-align: center;
-            max-width: 360px;
-            width: 100%;
-            box-shadow: 0 0 35px rgba(0, 229, 255, 0.4);
-        }
-
-        .auth-card h2 {
-            font-size: 1.4rem;
-            margin-bottom: 6px;
-            color: #fff;
-        }
-
-        .auth-card p {
-            color: #8892b0;
-            font-size: 0.8rem;
-            margin-bottom: 20px;
-        }
-
-        .auth-card input {
-            width: 100%;
-            padding: 12px;
-            text-align: center;
-            letter-spacing: 4px;
-            font-size: 1.2rem;
-            font-weight: 800;
-            background: #05070c;
-            border: 1.5px solid #ff0055;
-            color: #00e5ff;
-            border-radius: 8px;
-            outline: none;
-            margin-bottom: 15px;
-            box-shadow: 0 0 10px rgba(255, 0, 85, 0.3);
-        }
-
-        .auth-card button {
-            width: 100%;
-            padding: 12px;
-            background: #00e5ff;
-            color: #05070c;
-            font-weight: 800;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            box-shadow: 0 0 15px #00e5ff;
-            transition: 0.2s;
-        }
-
-        .auth-card button:hover {
-            background: #ff0055;
-            color: #fff;
-            box-shadow: 0 0 20px #ff0055;
-        }
     </style>
 </head>
 <body>
 
-    <!-- PIN Code Gate -->
-    <div id="authGate">
-        <div class="auth-card">
-            <h2>🔒 ADMIN ACCESS</h2>
-            <p>Enter Master Security PIN to view CINEHUB analytics:</p>
-            <input type="password" id="pinInput" placeholder="••••" maxlength="6">
-            <button onclick="verifyPin()">UNLOCK DASHBOARD</button>
-            <p id="pinError" style="color: #ff0055; margin-top: 10px; font-size: 0.75rem; display: none;">Invalid PIN! Try again.</p>
-        </div>
-    </div>
-
-    <!-- Admin Panel Interface -->
     <div class="admin-nav">
         <div class="admin-title">CINE<span>HUB</span> ANALYTICS</div>
         <div class="nav-actions">
             <a href="index.html" class="action-btn">🌐 VIEW SITE</a>
-            <button class="action-btn" onclick="exportData()">📥 EXPORT DATA</button>
-            <button class="action-btn btn-danger" onclick="resetAnalytics()">🔄 RESET STATS</button>
+            <button class="action-btn" onclick="exportData()">📥 EXPORT</button>
+            <button class="action-btn btn-danger" onclick="logoutAdmin()">🔒 LOGOUT</button>
         </div>
     </div>
 
-    <!-- KPI Metric Cards -->
     <div class="stats-grid">
         <div class="kpi-card kpi-cyan">
             <h4>Total Page Views</h4>
@@ -320,7 +246,6 @@
         </div>
     </div>
 
-    <!-- Interactive Charts Section -->
     <div class="charts-row">
         <div class="chart-card">
             <h3>📈 7-Day Visitor & Download Trend</h3>
@@ -332,7 +257,6 @@
         </div>
     </div>
 
-    <!-- Top Movies Analytics Table -->
     <div class="table-section">
         <h3>
             <span>🔥 Most Popular Content (Click Tracking)</span>
@@ -350,39 +274,17 @@
                     <th>Conversion Rate</th>
                 </tr>
             </thead>
-            <tbody id="movieTableBody">
-                <!-- Dynamically populated -->
-            </tbody>
+            <tbody id="movieTableBody"></tbody>
         </table>
     </div>
 
     <script>
-        // MASTER PIN SETUP (Default: 7077)
-        const MASTER_PIN = "7077";
-
-        function verifyPin() {
-            const input = document.getElementById('pinInput').value;
-            const err = document.getElementById('pinError');
-            if (input === MASTER_PIN) {
-                document.getElementById('authGate').style.display = 'none';
-                sessionStorage.setItem('cinehub_admin_auth', 'true');
-                loadDashboardData();
-            } else {
-                err.style.display = 'block';
-            }
+        function logoutAdmin() {
+            sessionStorage.removeItem('cinehub_admin_auth');
+            alert("🔒 Logged out successfully!");
+            window.location.href = "index.html";
         }
 
-        // Enter key press in PIN input
-        document.getElementById('pinInput').addEventListener('keydown', (e) => {
-            if (e.key === 'Enter') verifyPin();
-        });
-
-        // Check if already authenticated this session
-        if (sessionStorage.getItem('cinehub_admin_auth') === 'true') {
-            document.getElementById('authGate').style.display = 'none';
-        }
-
-        // Load & Compute Analytics
         function loadDashboardData() {
             let stats = JSON.parse(localStorage.getItem('cinehub_analytics')) || {
                 pageViews: 142,
@@ -391,15 +293,12 @@
                 movieViews: { 1: 52, 2: 45, 3: 31, 4: 76, 5: 94, 6: 49, 7: 62, 8: 24 }
             };
 
-            // Update KPI numbers
             document.getElementById('totalViews').innerText = stats.pageViews.toLocaleString();
             document.getElementById('totalDownloads').innerText = stats.downloadClicks.toLocaleString();
             
-            // Estimated Revenue = (Download Clicks / 1000) * 2.80 (Average CPM)
             const estEarn = ((stats.downloadClicks / 1000) * 2.80).toFixed(2);
             document.getElementById('estRevenue').innerText = `$${estEarn}`;
 
-            // Populate Table
             const movieMeta = [
                 { id: 5, name: "Avengers: Secret Wars", cat: "Hollywood", qual: "4K" },
                 { id: 4, name: "KGF: Chapter 3", cat: "South Dubbed", qual: "4K" },
@@ -430,7 +329,6 @@
                 `;
             }).join('');
 
-            // Render Chart.js
             renderTrafficChart(stats);
             renderCategoryChart();
         }
@@ -500,17 +398,8 @@
             a.click();
         }
 
-        function resetAnalytics() {
-            if (confirm("Are you sure you want to reset all analytics data?")) {
-                localStorage.removeItem('cinehub_analytics');
-                location.reload();
-            }
-        }
-
-        // Initialize if already logged in
-        if (sessionStorage.getItem('cinehub_admin_auth') === 'true') {
-            loadDashboardData();
-        }
+        // Boot data
+        loadDashboardData();
     </script>
 </body>
 </html>
