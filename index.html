@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CINEHUB - Ultra HD Movies, Series & Anime Portal</title>
-    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
 
@@ -30,7 +30,7 @@
         </div>
         <p class="subtitle">ULTRA FAST SERVERS • DIRECT 4K DOWNLOAD • INSTANT STREAM</p>
 
-        <!-- Quick Actions: Watchlist + WORKING ADMIN BUTTON -->
+        <!-- Quick Actions: Watchlist + ADMIN BUTTON -->
         <div class="header-tools">
             <button class="fav-tool-btn" onclick="toggleFavoritesView()">
                 ❤️ SAVED WATCHLIST (<span id="favCount">0</span>)
@@ -41,10 +41,12 @@
         </div>
     </header>
 
-    <!-- Ad Slot -->
-    <div class="ad-box">
+    <!-- Top High-CPM Ad Slot -->
+    <div class="ad-box" onclick="triggerAd('top_banner')">
         <span class="ad-tag">SPONSORED AD</span>
-        <p>[ Top Responsive Banner Slot (728x90) ]</p>
+        <div class="ad-inner-content">
+            <p>⚡ <strong>Download 4K Movies at 100MB/s!</strong> Click here to unlock Ultra VPN speed.</p>
+        </div>
     </div>
 
     <!-- Search & Sort Bar -->
@@ -100,9 +102,11 @@
     <main class="grid-container" id="movieList"></main>
 
     <!-- Bottom Ad Slot -->
-    <div class="ad-box">
+    <div class="ad-box" onclick="triggerAd('bottom_banner')">
         <span class="ad-tag">SPONSORED AD</span>
-        <p>[ Bottom High CPM Banner Slot ]</p>
+        <div class="ad-inner-content">
+            <p>🚀 <strong>Watch Web Series in HD 1080p Free!</strong> Tap to start high-speed streaming.</p>
+        </div>
     </div>
 
     <!-- Footer -->
@@ -114,7 +118,27 @@
         <p class="copyright">© 2026 CINEHUB. Engineered with Glowing Neon UI.</p>
     </footer>
 
-    <!-- IN-APP NEON ADMIN PIN MODAL (100% Working on Mobile) -->
+    <!-- 💰 FLOATING STICKY BOTTOM MOBILE AD BANNER (Highest Earning) -->
+    <div class="sticky-bottom-ad" id="stickyAd">
+        <button class="close-sticky-ad" onclick="closeStickyAd(event)">✕</button>
+        <div class="sticky-ad-content" onclick="triggerAd('sticky_banner')">
+            <span class="ad-badge">AD</span>
+            <span>🔥 <strong>Play Movies in 4K HDR:</strong> Instant direct server link ready!</span>
+            <button class="sticky-cta-btn">GET LINK</button>
+        </div>
+    </div>
+
+    <!-- 🔔 FLOATING SOCIAL BAR PROMPT (High Click Rate) -->
+    <div class="social-bar-prompt" id="socialPrompt" onclick="triggerAd('social_bar')">
+        <span class="pulse-icon">🎁</span>
+        <div class="social-text">
+            <strong>VIP 4K Cloud Pass</strong>
+            <p>Direct Google Drive & Mega Fast Downloads</p>
+        </div>
+        <span class="social-arrow">➔</span>
+    </div>
+
+    <!-- IN-APP NEON ADMIN PIN MODAL -->
     <div id="pinModal" class="modal-overlay" onclick="closePinModalOnBackdrop(event)">
         <div class="modal-box pin-modal-box">
             <button class="modal-close" onclick="closePinModal()">&times;</button>
@@ -195,6 +219,6 @@
 
     <div id="neonToast" class="neon-toast"></div>
 
-    <script src="script.js?v=3"></script>
+    <script src="script.js?v=5"></script>
 </body>
 </html>

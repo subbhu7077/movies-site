@@ -1,4 +1,16 @@
-const ADSTERRA_DIRECT_LINK = "https://your-adsterra-direct-link-here.com";
+// =========================================================================
+// 💰 MASTER MONETIZATION CONFIGURATION (Paste your Adsterra / Monetag Links)
+// =========================================================================
+const ADS_CONFIG = {
+    // 1. Direct Link for Download Servers & Stream (High Converting)
+    DOWNLOAD_DIRECT_LINK: "https://your-adsterra-direct-link-here.com",
+
+    // 2. Popunder Direct Link on Card Click (Opens ad on movie click)
+    POPUNDER_DIRECT_LINK: "https://your-adsterra-direct-link-here.com",
+
+    // 3. Banner & Social Bar Click Link
+    PROMO_DIRECT_LINK: "https://your-adsterra-direct-link-here.com"
+};
 
 // Analytics Tracker
 function trackEvent(type, id = null) {
@@ -15,12 +27,34 @@ function trackEvent(type, id = null) {
         stats.movieViews[id] = (stats.movieViews[id] || 0) + 1;
     } else if (type === 'download' && id) {
         stats.downloadClicks += 1;
-        stats.movieClicks[id] = (stats.movieClicks[id] || 0) + 1;
+        if (id) stats.movieClicks[id] = (stats.movieClicks[id] || 0) + 1;
     }
 
     localStorage.setItem('cinehub_analytics', JSON.stringify(stats));
 }
 trackEvent('view');
+
+// Smart Popunder on Card Click (Triggers ad, then opens modal)
+function handleCardClick(movieId) {
+    // Trigger Popunder Ad in new tab
+    window.open(ADS_CONFIG.POPUNDER_DIRECT_LINK, '_blank');
+    trackEvent('download', movieId);
+
+    // Open Movie Modal on current screen
+    openModal(movieId);
+}
+
+// Banner / Promo Ad Trigger
+function triggerAd(adType) {
+    window.open(ADS_CONFIG.PROMO_DIRECT_LINK, '_blank');
+    trackEvent('download');
+    showToast("Opening sponsored download channel... 🚀");
+}
+
+function closeStickyAd(e) {
+    e.stopPropagation();
+    document.getElementById('stickyAd').style.display = 'none';
+}
 
 // PIN Modal Functions
 function showPinModal() {
@@ -55,9 +89,7 @@ function verifyAdminPin() {
     }
 }
 
-// ==========================================
-// MOVIES CATALOG (AAPKI FILEMOON MOVIE TOP PAR HAI)
-// ==========================================
+// Movies Database
 const movies = [
     {
         id: 100,
@@ -71,11 +103,9 @@ const movies = [
         story: "High speed direct stream and cloud download hosted via Filemoon cloud storage servers.",
         poster: "https://picsum.photos/300/400?random=25",
         trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        // 🔥 AAPKA FILEMOON STREAM LINK:
         streamUrl: "https://filemoon.org/e/l76mZJaomanY",
         subtitleUrl: "https://subscene.best/sub.srt",
         servers: [
-            // 🔥 AAPKA FILEMOON DOWNLOAD LINK:
             { name: "⚡ Filemoon Cloud Direct Server", tag: "Ultra Speed", url: "https://filemoon.org/en/l76mZJaomanY/file" },
             { name: "🚀 High Speed Mirror Link", tag: "Instant", url: "https://filemoon.org/en/l76mZJaomanY/file" }
         ]
@@ -204,6 +234,7 @@ function toggleFavoritesView() {
     applyAllFilters();
 }
 
+// Render Movies + Insert Native Ads into Grid
 function renderMovies(list) {
     const container = document.getElementById('movieList');
     const counter = document.getElementById('movieCounter');
@@ -216,12 +247,13 @@ function renderMovies(list) {
         return;
     }
 
-    container.innerHTML = list.map(item => {
+    let html = '';
+    list.forEach((item, index) => {
         const badgeClass = `badge-${item.quality.toLowerCase()}`;
         const isFav = favs.includes(item.id);
 
-        return `
-            <div class="card" onclick="openModal(${item.id})">
+        html += `
+            <div class="card" onclick="handleCardClick(${item.id})">
                 <span class="rating-badge">⭐ ${item.rating}</span>
                 <span class="quality-badge ${badgeClass}">${item.quality}</span>
                 <img src="${item.poster}" alt="${item.name}" loading="lazy">
@@ -242,7 +274,28 @@ function renderMovies(list) {
                 </div>
             </div>
         `;
-    }).join('');
+
+        // 💰 Native Sponsored Ad Card inserted after Card #2
+        if (index === 1) {
+            html += `
+                <div class="card native-ad-card" onclick="triggerAd('native_grid')">
+                    <span class="ad-badge-top">SPONSORED</span>
+                    <img src="https://picsum.photos/300/400?random=88" alt="Ad">
+                    <div class="card-body">
+                        <div class="card-title-row">
+                            <h3 style="color:#ff0055;">🔥 VIP Movie Pass (Ad)</h3>
+                        </div>
+                        <p style="font-size:0.75rem; color:#8892b0; margin-bottom:10px;">Unlock Direct Mega & Google Drive Unlimited Speeds.</p>
+                        <button class="neon-download-btn" style="border-color:#ff0055; color:#ff0055;">
+                            DOWNLOAD NOW
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+    });
+
+    container.innerHTML = html;
 }
 
 function applyAllFilters() {
@@ -321,7 +374,7 @@ function openModal(movieId) {
     updateModalHeart(movieId);
     document.getElementById('modalFavBtn').onclick = (e) => toggleFavorite(e, movieId);
 
-    // Watch Online Stream (Filemoon Video)
+    // Watch Online Stream Button
     const streamBtn = document.getElementById('modalStreamBtn');
     streamBtn.className = 'stream-btn';
     streamBtn.innerText = '▶ WATCH ONLINE (STREAM)';
@@ -339,7 +392,7 @@ function openModal(movieId) {
         window.open(movie.subtitleUrl, '_blank');
     };
 
-    // Download Servers
+    // Download Servers with 5s Timer + Direct Link Earning
     const serverList = document.getElementById('modalServerList');
     serverList.innerHTML = movie.servers.map(srv => `
         <button class="server-btn" onclick="startDownloadWithAd(this, '${srv.url}', 'CONNECTING SERVER', ${movie.id})">
@@ -383,8 +436,10 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
+// Earning Action Trigger with 5-Second Timer
 function startDownloadWithAd(button, targetAction, waitingText = "CONNECTING", movieId = null) {
-    window.open(ADSTERRA_DIRECT_LINK, '_blank');
+    // 1. Open Monetization Direct Link in new tab
+    window.open(ADS_CONFIG.DOWNLOAD_DIRECT_LINK, '_blank');
     if (movieId) trackEvent('download', movieId);
 
     const originalHTML = button.innerHTML;
