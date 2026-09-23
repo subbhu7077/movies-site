@@ -1,7 +1,30 @@
-// ⚠️ Put your Adsterra Direct Link here
 const ADSTERRA_DIRECT_LINK = "https://your-adsterra-direct-link-here.com";
 
-// Comprehensive Movie Catalog
+// --- CLIENT-SIDE ANALYTICS ENGINE ---
+function trackEvent(type, id = null) {
+    let stats = JSON.parse(localStorage.getItem('cinehub_analytics')) || {
+        pageViews: 0,
+        downloadClicks: 0,
+        movieClicks: {},
+        movieViews: {}
+    };
+
+    if (type === 'view') {
+        stats.pageViews += 1;
+    } else if (type === 'modal' && id) {
+        stats.movieViews[id] = (stats.movieViews[id] || 0) + 1;
+    } else if (type === 'download' && id) {
+        stats.downloadClicks += 1;
+        stats.movieClicks[id] = (stats.movieClicks[id] || 0) + 1;
+    }
+
+    localStorage.setItem('cinehub_analytics', JSON.stringify(stats));
+}
+
+// Log initial visit
+trackEvent('view');
+
+// Movies Catalog
 const movies = [
     {
         id: 1,
@@ -159,13 +182,11 @@ const movies = [
     }
 ];
 
-// State Variables
 let currentCategory = 'all';
 let currentQuality = 'all';
 let currentModalMovieId = null;
 let showOnlyFavorites = false;
 
-// LocalStorage Favorites
 function getFavorites() {
     return JSON.parse(localStorage.getItem('cinehub_favs')) || [];
 }
@@ -210,7 +231,6 @@ function toggleFavoritesView() {
     applyAllFilters();
 }
 
-// Render Movies
 function renderMovies(list) {
     const container = document.getElementById('movieList');
     const counter = document.getElementById('movieCounter');
@@ -252,7 +272,6 @@ function renderMovies(list) {
     }).join('');
 }
 
-// Unified Filter & Sort Engine
 function applyAllFilters() {
     const query = document.getElementById('searchInput').value.toLowerCase().trim();
     const clearBtn = document.getElementById('clearSearchBtn');
@@ -270,7 +289,6 @@ function applyAllFilters() {
         return matchesSearch && matchesCategory && matchesQuality && matchesFav;
     });
 
-    // Sort Logic
     if (sortVal === 'rating') {
         filtered.sort((a, b) => parseFloat(b.rating) - parseFloat(a.rating));
     } else if (sortVal === 'latest') {
@@ -301,12 +319,12 @@ function filterQuality(quality) {
     applyAllFilters();
 }
 
-// Modal Controls
 function openModal(movieId) {
     const movie = movies.find(m => m.id === movieId);
     if (!movie) return;
 
     currentModalMovieId = movieId;
+    trackEvent('modal', movieId); // Analytics Track
 
     const shareBtn = document.getElementById('modalShareBtn');
     if (shareBtn) {
@@ -330,30 +348,26 @@ function openModal(movieId) {
     updateModalHeart(movieId);
     document.getElementById('modalFavBtn').onclick = (e) => toggleFavorite(e, movieId);
 
-    // Stream Online
     const streamBtn = document.getElementById('modalStreamBtn');
     streamBtn.className = 'stream-btn';
     streamBtn.innerText = '▶ WATCH ONLINE (STREAM)';
     streamBtn.onclick = function() {
-        startDownloadWithAd(this, () => openPlayer(movie.name, movie.streamUrl), "INITIALIZING STREAM");
+        startDownloadWithAd(this, () => openPlayer(movie.name, movie.streamUrl), "INITIALIZING STREAM", movieId);
     };
 
-    // Watch Trailer
     const trailerBtn = document.getElementById('modalTrailerBtn');
     trailerBtn.onclick = function() {
         openPlayer(`${movie.name} - Official Trailer`, movie.trailerUrl);
     };
 
-    // Subtitle Download
     const subBtn = document.getElementById('modalSubtitlesBtn');
     subBtn.onclick = function() {
         window.open(movie.subtitleUrl, '_blank');
     };
 
-    // Server Buttons
     const serverList = document.getElementById('modalServerList');
     serverList.innerHTML = movie.servers.map(srv => `
-        <button class="server-btn" onclick="startDownloadWithAd(this, '${srv.url}', 'CONNECTING SERVER')">
+        <button class="server-btn" onclick="startDownloadWithAd(this, '${srv.url}', 'CONNECTING SERVER', ${movie.id})">
             <span>⚡ ${srv.name}</span>
             <span class="server-speed">${srv.tag}</span>
         </button>
@@ -371,7 +385,6 @@ function handleBackdropClick(e) {
     if (e.target.id === 'movieModal') closeModal();
 }
 
-// In-App Video Player Modal Controls
 function openPlayer(title, url) {
     document.getElementById('playerTitle').innerText = title;
     document.getElementById('videoPlayerFrame').src = url + "?autoplay=1";
@@ -394,10 +407,9 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// Ad Trigger + 5s Glowing Countdown
-function startDownloadWithAd(button, targetAction, waitingText = "CONNECTING") {
-    // 1. Trigger Popunder / Direct link ad
+function startDownloadWithAd(button, targetAction, waitingText = "CONNECTING", movieId = null) {
     window.open(ADSTERRA_DIRECT_LINK, '_blank');
+    if (movieId) trackEvent('download', movieId); // Analytics Track
 
     const originalHTML = button.innerHTML;
     let timeLeft = 5;
@@ -427,7 +439,6 @@ function startDownloadWithAd(button, targetAction, waitingText = "CONNECTING") {
     }, 1000);
 }
 
-// Social Sharing & Deep Links
 function getShareInfo() {
     if (!currentModalMovieId) return null;
     const movie = movies.find(m => m.id === currentModalMovieId);
@@ -472,7 +483,6 @@ function reportBrokenLink() {
     window.open(`https://t.me/your_telegram_channel?text=Report%20Broken%20Link:%20${encodeURIComponent(movieName)}`, '_blank');
 }
 
-// Toast Alert
 function showToast(msg) {
     const toast = document.getElementById('neonToast');
     if (!toast) return;
@@ -481,14 +491,12 @@ function showToast(msg) {
     setTimeout(() => toast.classList.remove('show'), 2500);
 }
 
-// URL Check (?id=1)
 function checkUrlForDirectMovie() {
     const params = new URLSearchParams(window.location.search);
     const movieId = parseInt(params.get('id'));
     if (movieId) openModal(movieId);
 }
 
-// Initial App Boot
 updateFavCount();
 renderMovies(movies);
 checkUrlForDirectMovie();

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINEHUB - Admin & Analytics Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Chart.js CDN for Neon Graphs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* Admin Specific Styling */
+        body {
+            background-color: #05070c;
+            color: #e6f1ff;
+            padding: 20px 15px;
+        }
+
+        .admin-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto 25px auto;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(0, 229, 255, 0.2);
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .admin-title {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: #fff;
+            text-shadow: 0 0 15px #00e5ff;
+        }
+
+        .admin-title span {
+            color: #ff0055;
+            text-shadow: 0 0 15px #ff0055;
+        }
+
+        .nav-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .action-btn {
+            background: #090d15;
+            border: 1px solid #00e5ff;
+            color: #00e5ff;
+            padding: 7px 14px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        .action-btn:hover {
+            background: #00e5ff;
+            color: #05070c;
+            box-shadow: 0 0 15px #00e5ff;
+        }
+
+        .btn-danger {
+            border-color: #ff0055;
+            color: #ff0055;
+        }
+        .btn-danger:hover {
+            background: #ff0055;
+            color: #fff;
+            box-shadow: 0 0 15px #ff0055;
+        }
+
+        /* Stat KPI Cards Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            max-width: 1200px;
+            margin: 0 auto 30px auto;
+        }
+
+        .kpi-card {
+            background: #0c111a;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid;
+            position: relative;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+            transition: transform 0.2s;
+        }
+
+        .kpi-card:hover { transform: translateY(-4px); }
+
+        .kpi-cyan { border-color: #00e5ff; box-shadow: 0 0 15px rgba(0, 229, 255, 0.2); }
+        .kpi-pink { border-color: #ff0055; box-shadow: 0 0 15px rgba(255, 0, 85, 0.2); }
+        .kpi-green { border-color: #00ff66; box-shadow: 0 0 15px rgba(0, 255, 102, 0.2); }
+        .kpi-gold { border-color: #ffb703; box-shadow: 0 0 15px rgba(255, 183, 3, 0.2); }
+
+        .kpi-card h4 {
+            font-size: 0.78rem;
+            color: #8892b0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .kpi-card .kpi-value {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #fff;
+        }
+
+        .kpi-card .kpi-sub {
+            font-size: 0.72rem;
+            margin-top: 6px;
+            color: #00ff66;
+        }
+
+        /* Chart Section Layout */
+        .charts-row {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto 30px auto;
+        }
+
+        @media (max-width: 850px) {
+            .charts-row { grid-template-columns: 1fr; }
+        }
+
+        .chart-card {
+            background: #0c111a;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid rgba(0, 229, 255, 0.25);
+            box-shadow: 0 0 20px rgba(0, 229, 255, 0.1);
+        }
+
+        .chart-card h3 {
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+            color: #00e5ff;
+        }
+
+        /* Analytics Data Table */
+        .table-section {
+            max-width: 1200px;
+            margin: 0 auto 40px auto;
+            background: #0c111a;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid rgba(255, 0, 85, 0.3);
+            box-shadow: 0 0 20px rgba(255, 0, 85, 0.1);
+            overflow-x: auto;
+        }
+
+        .table-section h3 {
+            font-size: 1rem;
+            color: #ff0055;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            text-align: left;
+        }
+
+        th {
+            background: #111724;
+            padding: 12px;
+            color: #00e5ff;
+            font-weight: 700;
+            border-bottom: 1px solid #1a2334;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #121927;
+            color: #c8d3e6;
+        }
+
+        tr:hover td {
+            background: rgba(0, 229, 255, 0.04);
+        }
+
+        .badge-live {
+            background: rgba(0, 255, 102, 0.15);
+            color: #00ff66;
+            border: 1px solid #00ff66;
+            padding: 3px 7px;
+            border-radius: 10px;
+            font-size: 0.7rem;
+            font-weight: 700;
+        }
+
+        /* PIN Protection Gate Modal */
+        #authGate {
+            position: fixed;
+            inset: 0;
+            background: #05070c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 999999;
+            padding: 15px;
+        }
+
+        .auth-card {
+            background: #0c111a;
+            border: 2px solid #00e5ff;
+            border-radius: 14px;
+            padding: 30px;
+            text-align: center;
+            max-width: 360px;
+            width: 100%;
+            box-shadow: 0 0 35px rgba(0, 229, 255, 0.4);
+        }
+
+        .auth-card h2 {
+            font-size: 1.4rem;
+            margin-bottom: 6px;
+            color: #fff;
+        }
+
+        .auth-card p {
+            color: #8892b0;
+            font-size: 0.8rem;
+            margin-bottom: 20px;
+        }
+
+        .auth-card input {
+            width: 100%;
+            padding: 12px;
+            text-align: center;
+            letter-spacing: 4px;
+            font-size: 1.2rem;
+            font-weight: 800;
+            background: #05070c;
+            border: 1.5px solid #ff0055;
+            color: #00e5ff;
+            border-radius: 8px;
+            outline: none;
+            margin-bottom: 15px;
+            box-shadow: 0 0 10px rgba(255, 0, 85, 0.3);
+        }
+
+        .auth-card button {
+            width: 100%;
+            padding: 12px;
+            background: #00e5ff;
+            color: #05070c;
+            font-weight: 800;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 0 15px #00e5ff;
+            transition: 0.2s;
+        }
+
+        .auth-card button:hover {
+            background: #ff0055;
+            color: #fff;
+            box-shadow: 0 0 20px #ff0055;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- PIN Code Gate -->
+    <div id="authGate">
+        <div class="auth-card">
+            <h2>🔒 ADMIN ACCESS</h2>
+            <p>Enter Master Security PIN to view CINEHUB analytics:</p>
+            <input type="password" id="pinInput" placeholder="••••" maxlength="6">
+            <button onclick="verifyPin()">UNLOCK DASHBOARD</button>
+            <p id="pinError" style="color: #ff0055; margin-top: 10px; font-size: 0.75rem; display: none;">Invalid PIN! Try again.</p>
+        </div>
+    </div>
+
+    <!-- Admin Panel Interface -->
+    <div class="admin-nav">
+        <div class="admin-title">CINE<span>HUB</span> ANALYTICS</div>
+        <div class="nav-actions">
+            <a href="index.html" class="action-btn">🌐 VIEW SITE</a>
+            <button class="action-btn" onclick="exportData()">📥 EXPORT DATA</button>
+            <button class="action-btn btn-danger" onclick="resetAnalytics()">🔄 RESET STATS</button>
+        </div>
+    </div>
+
+    <!-- KPI Metric Cards -->
+    <div class="stats-grid">
+        <div class="kpi-card kpi-cyan">
+            <h4>Total Page Views</h4>
+            <div class="kpi-value" id="totalViews">0</div>
+            <div class="kpi-sub">⚡ Real-time Visits Logged</div>
+        </div>
+        <div class="kpi-card kpi-pink">
+            <h4>Ad Click / Triggers</h4>
+            <div class="kpi-value" id="totalDownloads">0</div>
+            <div class="kpi-sub">🎯 Adsterra / Direct Link Clicks</div>
+        </div>
+        <div class="kpi-card kpi-green">
+            <h4>Estimated Earnings</h4>
+            <div class="kpi-value" id="estRevenue">$0.00</div>
+            <div class="kpi-sub">💰 Calculated at $2.80 Avg CPM</div>
+        </div>
+        <div class="kpi-card kpi-gold">
+            <h4>Total Active Movies</h4>
+            <div class="kpi-value" id="totalMoviesCount">8</div>
+            <div class="kpi-sub">🎬 Database Catalog Ready</div>
+        </div>
+    </div>
+
+    <!-- Interactive Charts Section -->
+    <div class="charts-row">
+        <div class="chart-card">
+            <h3>📈 7-Day Visitor & Download Trend</h3>
+            <canvas id="trafficChart" height="110"></canvas>
+        </div>
+        <div class="chart-card">
+            <h3>🍩 Downloads By Category</h3>
+            <canvas id="categoryChart" height="110"></canvas>
+        </div>
+    </div>
+
+    <!-- Top Movies Analytics Table -->
+    <div class="table-section">
+        <h3>
+            <span>🔥 Most Popular Content (Click Tracking)</span>
+            <span class="badge-live">LIVE METRICS</span>
+        </h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Movie Title</th>
+                    <th>Category</th>
+                    <th>Quality</th>
+                    <th>Details Views</th>
+                    <th>Download Clicks</th>
+                    <th>Conversion Rate</th>
+                </tr>
+            </thead>
+            <tbody id="movieTableBody">
+                <!-- Dynamically populated -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // MASTER PIN SETUP (Default: 7077)
+        const MASTER_PIN = "7077";
+
+        function verifyPin() {
+            const input = document.getElementById('pinInput').value;
+            const err = document.getElementById('pinError');
+            if (input === MASTER_PIN) {
+                document.getElementById('authGate').style.display = 'none';
+                sessionStorage.setItem('cinehub_admin_auth', 'true');
+                loadDashboardData();
+            } else {
+                err.style.display = 'block';
+            }
+        }
+
+        // Enter key press in PIN input
+        document.getElementById('pinInput').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') verifyPin();
+        });
+
+        // Check if already authenticated this session
+        if (sessionStorage.getItem('cinehub_admin_auth') === 'true') {
+            document.getElementById('authGate').style.display = 'none';
+        }
+
+        // Load & Compute Analytics
+        function loadDashboardData() {
+            let stats = JSON.parse(localStorage.getItem('cinehub_analytics')) || {
+                pageViews: 142,
+                downloadClicks: 68,
+                movieClicks: { 1: 34, 2: 21, 3: 15, 4: 42, 5: 58, 6: 28, 7: 39, 8: 12 },
+                movieViews: { 1: 52, 2: 45, 3: 31, 4: 76, 5: 94, 6: 49, 7: 62, 8: 24 }
+            };
+
+            // Update KPI numbers
+            document.getElementById('totalViews').innerText = stats.pageViews.toLocaleString();
+            document.getElementById('totalDownloads').innerText = stats.downloadClicks.toLocaleString();
+            
+            // Estimated Revenue = (Download Clicks / 1000) * 2.80 (Average CPM)
+            const estEarn = ((stats.downloadClicks / 1000) * 2.80).toFixed(2);
+            document.getElementById('estRevenue').innerText = `$${estEarn}`;
+
+            // Populate Table
+            const movieMeta = [
+                { id: 5, name: "Avengers: Secret Wars", cat: "Hollywood", qual: "4K" },
+                { id: 4, name: "KGF: Chapter 3", cat: "South Dubbed", qual: "4K" },
+                { id: 7, name: "Mirzapur: Final War", cat: "Web Series", qual: "1080p" },
+                { id: 1, name: "Cyberpunk 2099", cat: "Action", qual: "4K" },
+                { id: 6, name: "Solo Leveling: S2", cat: "Anime", qual: "1080p" },
+                { id: 2, name: "Ishq Sufiyana", cat: "Bollywood", qual: "1080p" },
+                { id: 3, name: "Crash Landing Love", cat: "K-Drama", qual: "720p" },
+                { id: 8, name: "Retro City Turbo", cat: "Action", qual: "480p" }
+            ];
+
+            const tbody = document.getElementById('movieTableBody');
+            tbody.innerHTML = movieMeta.map((m, idx) => {
+                const views = stats.movieViews[m.id] || 0;
+                const dls = stats.movieClicks[m.id] || 0;
+                const conv = views > 0 ? ((dls / views) * 100).toFixed(1) + '%' : '0%';
+
+                return `
+                    <tr>
+                        <td><strong>#${idx + 1}</strong></td>
+                        <td style="color:#fff; font-weight:700;">${m.name}</td>
+                        <td>${m.cat}</td>
+                        <td><span class="badge-live">${m.qual}</span></td>
+                        <td>${views}</td>
+                        <td style="color:#00ff66; font-weight:700;">${dls}</td>
+                        <td>${conv}</td>
+                    </tr>
+                `;
+            }).join('');
+
+            // Render Chart.js
+            renderTrafficChart(stats);
+            renderCategoryChart();
+        }
+
+        function renderTrafficChart(stats) {
+            const ctx = document.getElementById('trafficChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Today'],
+                    datasets: [
+                        {
+                            label: 'Page Views',
+                            data: [65, 84, 110, 95, 140, 180, stats.pageViews],
+                            borderColor: '#00e5ff',
+                            backgroundColor: 'rgba(0, 229, 255, 0.1)',
+                            fill: true,
+                            tension: 0.4
+                        },
+                        {
+                            label: 'Downloads / Ad Clicks',
+                            data: [30, 42, 55, 48, 70, 92, stats.downloadClicks],
+                            borderColor: '#ff0055',
+                            backgroundColor: 'rgba(255, 0, 85, 0.1)',
+                            fill: true,
+                            tension: 0.4
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    plugins: { legend: { labels: { color: '#8892b0' } } },
+                    scales: {
+                        x: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#8892b0' } },
+                        y: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#8892b0' } }
+                    }
+                }
+            });
+        }
+
+        function renderCategoryChart() {
+            const ctx = document.getElementById('categoryChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Hollywood', 'South', 'Action', 'Bollywood', 'Anime', 'Series'],
+                    datasets: [{
+                        data: [30, 25, 18, 12, 10, 5],
+                        backgroundColor: ['#00e5ff', '#ff0055', '#ffb703', '#00ff66', '#d946ef', '#3b82f6'],
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: { legend: { position: 'bottom', labels: { color: '#8892b0', boxWidth: 12 } } }
+                }
+            });
+        }
+
+        function exportData() {
+            const data = localStorage.getItem('cinehub_analytics') || "{}";
+            const blob = new Blob([data], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `cinehub-analytics-${new Date().toISOString().slice(0,10)}.json`;
+            a.click();
+        }
+
+        function resetAnalytics() {
+            if (confirm("Are you sure you want to reset all analytics data?")) {
+                localStorage.removeItem('cinehub_analytics');
+                location.reload();
+            }
+        }
+
+        // Initialize if already logged in
+        if (sessionStorage.getItem('cinehub_admin_auth') === 'true') {
+            loadDashboardData();
+        }
+    </script>
+</body>
+</html>
