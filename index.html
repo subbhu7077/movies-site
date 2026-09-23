@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CINEHUB - Ultra HD Movies, Series & Anime Portal</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 
     <div class="ambient-glow glow-cyan"></div>
     <div class="ambient-glow glow-pink"></div>
 
+    <!-- Top Announcement Bar -->
     <div class="top-notice">
         <div class="notice-text">
             <span class="live-dot"></span>
@@ -21,6 +22,7 @@
         </a>
     </div>
 
+    <!-- Header -->
     <header>
         <div class="logo-wrap">
             <h1 class="neon-title">CINE<span>HUB</span></h1>
@@ -28,22 +30,24 @@
         </div>
         <p class="subtitle">ULTRA FAST SERVERS • DIRECT 4K DOWNLOAD • INSTANT STREAM</p>
 
-        <!-- Quick Action Bar: Watchlist + DIRECT ADMIN BUTTON WITH POPUP -->
+        <!-- Quick Actions: Watchlist + WORKING ADMIN BUTTON -->
         <div class="header-tools">
             <button class="fav-tool-btn" onclick="toggleFavoritesView()">
                 ❤️ SAVED WATCHLIST (<span id="favCount">0</span>)
             </button>
-            <button class="admin-shortcut-btn" onclick="openAdminPanel()">
+            <button class="admin-shortcut-btn" onclick="showPinModal()">
                 ⚙️ ADMIN PANEL
             </button>
         </div>
     </header>
 
+    <!-- Ad Slot -->
     <div class="ad-box">
         <span class="ad-tag">SPONSORED AD</span>
         <p>[ Top Responsive Banner Slot (728x90) ]</p>
     </div>
 
+    <!-- Search & Sort Bar -->
     <div class="search-sort-container">
         <div class="search-wrap">
             <span class="search-icon">🔍</span>
@@ -67,6 +71,7 @@
         </div>
     </div>
 
+    <!-- Category Filters -->
     <div class="category-tabs">
         <button class="tab-btn active" onclick="filterCategory('all')">All Genres</button>
         <button class="tab-btn" onclick="filterCategory('action')">Action</button>
@@ -78,6 +83,7 @@
         <button class="tab-btn" onclick="filterCategory('anime')">Anime</button>
     </div>
 
+    <!-- Quality Filters -->
     <div class="quality-tabs">
         <button class="quality-btn active" onclick="filterQuality('all')">All Resolutions</button>
         <button class="quality-btn" onclick="filterQuality('4K')">4K UHD</button>
@@ -90,20 +96,38 @@
         <span>Showing <strong id="movieCounter" class="highlight-cyan">0</strong> Movies & Shows</span>
     </div>
 
+    <!-- Movies Grid -->
     <main class="grid-container" id="movieList"></main>
 
+    <!-- Bottom Ad Slot -->
     <div class="ad-box">
         <span class="ad-tag">SPONSORED AD</span>
         <p>[ Bottom High CPM Banner Slot ]</p>
     </div>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-brand">CINE<span>HUB</span> PRO</div>
         <p>Streaming & High-Speed Media Showcase Engine</p>
-        <p><button onclick="openAdminPanel()" style="background:none; border:none; color: #00e5ff; font-weight: bold; cursor:pointer; font-size: 0.85rem;">🔐 Open Admin Panel</button></p>
+        <p><button onclick="showPinModal()" style="background:none; border:none; color: #00e5ff; font-weight: bold; cursor:pointer; font-size: 0.85rem;">🔐 Open Admin Panel</button></p>
         <p class="disclaimer">Disclaimer: CINEHUB does not store any files on its web server. All videos and files are hosted on non-affiliated 3rd party cloud providers.</p>
         <p class="copyright">© 2026 CINEHUB. Engineered with Glowing Neon UI.</p>
     </footer>
+
+    <!-- IN-APP NEON ADMIN PIN MODAL (100% Working on Mobile) -->
+    <div id="pinModal" class="modal-overlay" onclick="closePinModalOnBackdrop(event)">
+        <div class="modal-box pin-modal-box">
+            <button class="modal-close" onclick="closePinModal()">&times;</button>
+            <div class="pin-card-inner">
+                <div class="pin-lock-icon">🔒</div>
+                <h3>ADMIN SECURITY</h3>
+                <p>Enter 4-digit PIN to access analytics dashboard:</p>
+                <input type="password" id="modalPinInput" placeholder="••••" maxlength="6" inputmode="numeric">
+                <button class="pin-submit-btn" onclick="verifyAdminPin()">UNLOCK DASHBOARD</button>
+                <div id="modalPinError" class="pin-error-text">❌ Invalid PIN! Try again.</div>
+            </div>
+        </div>
+    </div>
 
     <!-- Movie Details Modal -->
     <div id="movieModal" class="modal-overlay" onclick="handleBackdropClick(event)">
@@ -171,6 +195,6 @@
 
     <div id="neonToast" class="neon-toast"></div>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=2"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 const ADSTERRA_DIRECT_LINK = "https://your-adsterra-direct-link-here.com";
 
-// --- CLIENT-SIDE ANALYTICS ENGINE ---
+// Analytics Tracker
 function trackEvent(type, id = null) {
     let stats = JSON.parse(localStorage.getItem('cinehub_analytics')) || {
         pageViews: 0,
@@ -20,21 +20,54 @@ function trackEvent(type, id = null) {
 
     localStorage.setItem('cinehub_analytics', JSON.stringify(stats));
 }
-
 trackEvent('view');
 
-// MASTER PIN AUTHENTICATION POPUP
-function openAdminPanel() {
-    const pin = prompt("🔐 Enter CINEHUB Master PIN:");
-    if (pin === "7077") {
-        sessionStorage.setItem('cinehub_admin_auth', 'true');
-        window.location.href = "admin.html";
-    } else if (pin !== null && pin !== "") {
-        alert("❌ Galat PIN! Access Denied.");
+// IN-APP NEON PIN MODAL LOGIC (No Browser Popup)
+function showPinModal() {
+    const modal = document.getElementById('pinModal');
+    const input = document.getElementById('modalPinInput');
+    const err = document.getElementById('modalPinError');
+    if (modal) {
+        err.style.display = 'none';
+        input.value = '';
+        modal.style.display = 'flex';
+        input.focus();
     }
 }
 
-// Movies Catalog
+function closePinModal() {
+    const modal = document.getElementById('pinModal');
+    if (modal) modal.style.display = 'none';
+}
+
+function closePinModalOnBackdrop(e) {
+    if (e.target.id === 'pinModal') closePinModal();
+}
+
+function verifyAdminPin() {
+    const input = document.getElementById('modalPinInput').value.trim();
+    const err = document.getElementById('modalPinError');
+    
+    // Master Security PIN: 7077
+    if (input === "7077") {
+        sessionStorage.setItem('cinehub_admin_auth', 'true');
+        window.location.href = "admin.html";
+    } else {
+        err.style.display = 'block';
+    }
+}
+
+// Enter Key on PIN input triggers verification
+document.addEventListener('DOMContentLoaded', () => {
+    const pinInput = document.getElementById('modalPinInput');
+    if (pinInput) {
+        pinInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') verifyAdminPin();
+        });
+    }
+});
+
+// Movies Database
 const movies = [
     {
         id: 1,
@@ -414,6 +447,7 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
         closeModal();
         closePlayer();
+        closePinModal();
     }
 });
 
