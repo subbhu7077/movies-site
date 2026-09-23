@@ -904,3 +904,26 @@ footer {
     color: #3b465c;
     margin-top: 12px;
 }
+
+/* Admin Shortcut Button in Header */
+.admin-shortcut-btn {
+    background: #0d121c;
+    border: 1.5px solid #00e5ff;
+    color: #00e5ff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
+    transition: 0.3s;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.admin-shortcut-btn:hover {
+    background: #00e5ff;
+    color: #05070c;
+    box-shadow: 0 0 20px #00e5ff;
+}
