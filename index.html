@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CINEHUB - Ultra HD Movies, Series & Anime Portal</title>
-    <link rel="stylesheet" href="style.css?v=5">
+    <link rel="stylesheet" href="style.css?v=10">
 </head>
 <body>
 
@@ -30,7 +30,7 @@
         </div>
         <p class="subtitle">ULTRA FAST SERVERS • DIRECT 4K DOWNLOAD • INSTANT STREAM</p>
 
-        <!-- Quick Actions: Watchlist + ADMIN BUTTON -->
+        <!-- Quick Actions: Watchlist + Admin Button -->
         <div class="header-tools">
             <button class="fav-tool-btn" onclick="toggleFavoritesView()">
                 ❤️ SAVED WATCHLIST (<span id="favCount">0</span>)
@@ -45,7 +45,7 @@
     <div class="ad-box" onclick="triggerAd('top_banner')">
         <span class="ad-tag">SPONSORED AD</span>
         <div class="ad-inner-content">
-            <p>⚡ <strong>Download 4K Movies at 100MB/s!</strong> Click here to unlock Ultra VPN speed.</p>
+            <p>⚡ <strong>Download 4K Movies at 100MB/s!</strong> Click here to unlock Ultra High Speed Cloud Servers.</p>
         </div>
     </div>
 
@@ -73,7 +73,7 @@
         </div>
     </div>
 
-    <!-- Category Filters -->
+    <!-- Category Filter Tabs -->
     <div class="category-tabs">
         <button class="tab-btn active" onclick="filterCategory('all')">All Genres</button>
         <button class="tab-btn" onclick="filterCategory('action')">Action</button>
@@ -105,7 +105,7 @@
     <div class="ad-box" onclick="triggerAd('bottom_banner')">
         <span class="ad-tag">SPONSORED AD</span>
         <div class="ad-inner-content">
-            <p>🚀 <strong>Watch Web Series in HD 1080p Free!</strong> Tap to start high-speed streaming.</p>
+            <p>🚀 <strong>Watch Web Series in HD 1080p Free!</strong> Tap to start high-speed streaming without buffering.</p>
         </div>
     </div>
 
@@ -118,27 +118,27 @@
         <p class="copyright">© 2026 CINEHUB. Engineered with Glowing Neon UI.</p>
     </footer>
 
-    <!-- 💰 FLOATING STICKY BOTTOM MOBILE AD BANNER (Highest Earning) -->
+    <!-- STICKY BOTTOM MOBILE AD BANNER (Highest Earning) -->
     <div class="sticky-bottom-ad" id="stickyAd">
         <button class="close-sticky-ad" onclick="closeStickyAd(event)">✕</button>
         <div class="sticky-ad-content" onclick="triggerAd('sticky_banner')">
             <span class="ad-badge">AD</span>
-            <span>🔥 <strong>Play Movies in 4K HDR:</strong> Instant direct server link ready!</span>
+            <span>🔥 <strong>Play Movies in 4K HDR:</strong> Instant direct cloud stream link ready!</span>
             <button class="sticky-cta-btn">GET LINK</button>
         </div>
     </div>
 
-    <!-- 🔔 FLOATING SOCIAL BAR PROMPT (High Click Rate) -->
+    <!-- FLOATING SOCIAL BAR PROMPT -->
     <div class="social-bar-prompt" id="socialPrompt" onclick="triggerAd('social_bar')">
         <span class="pulse-icon">🎁</span>
         <div class="social-text">
             <strong>VIP 4K Cloud Pass</strong>
-            <p>Direct Google Drive & Mega Fast Downloads</p>
+            <p>Direct Mega & Google Drive Fast Downloads</p>
         </div>
         <span class="social-arrow">➔</span>
     </div>
 
-    <!-- IN-APP NEON ADMIN PIN MODAL -->
+    <!-- IN-APP NEON ADMIN PIN MODAL (PIN: 7077) -->
     <div id="pinModal" class="modal-overlay" onclick="closePinModalOnBackdrop(event)">
         <div class="modal-box pin-modal-box">
             <button class="modal-close" onclick="closePinModal()">&times;</button>
@@ -178,11 +178,13 @@
                         <span id="modalAudio" class="meta-tag audio-tag"></span>
                     </div>
 
+                    <!-- Watch Stream & Trailer Buttons -->
                     <div class="stream-trailer-bar">
                         <button id="modalStreamBtn" class="stream-btn">▶ WATCH ONLINE (STREAM)</button>
                         <button id="modalTrailerBtn" class="trailer-btn">🎬 TRAILER</button>
                     </div>
 
+                    <!-- Instant Share Bar -->
                     <div class="modal-share-bar">
                         <button id="modalShareBtn" class="neon-share-btn btn-copy" onclick="copyShareLink()">🔗 COPY</button>
                         <button class="neon-share-btn btn-whatsapp" onclick="shareOnWhatsApp()">💬 WHATSAPP</button>
@@ -192,6 +194,7 @@
                     <p class="storyline-heading">SYNOPSIS & STORYLINE</p>
                     <p id="modalStory" class="modal-story"></p>
 
+                    <!-- Multi-Server Download Section -->
                     <div class="modal-servers-section">
                         <p class="servers-heading">⚡ SELECT HIGH SPEED DOWNLOAD SERVER</p>
                         <div id="modalServerList" class="server-btn-grid"></div>
@@ -206,7 +209,7 @@
         </div>
     </div>
 
-    <!-- Video Modal -->
+    <!-- Video Streaming & Trailer Player Modal -->
     <div id="playerModal" class="modal-overlay" onclick="closePlayerOnBackdrop(event)">
         <div class="modal-box player-box">
             <button class="modal-close" onclick="closePlayer()">&times;</button>
@@ -219,6 +222,6 @@
 
     <div id="neonToast" class="neon-toast"></div>
 
-    <script src="script.js?v=5"></script>
+    <script src="script.js?v=10"></script>
 </body>
 </html>

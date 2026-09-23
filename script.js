@@ -1,14 +1,9 @@
 // =========================================================================
-// 💰 MASTER MONETIZATION CONFIGURATION (Paste your Adsterra / Monetag Links)
+// 💰 MASTER MONETIZATION CONFIGURATION (Replace with your actual ad links)
 // =========================================================================
 const ADS_CONFIG = {
-    // 1. Direct Link for Download Servers & Stream (High Converting)
     DOWNLOAD_DIRECT_LINK: "https://your-adsterra-direct-link-here.com",
-
-    // 2. Popunder Direct Link on Card Click (Opens ad on movie click)
     POPUNDER_DIRECT_LINK: "https://your-adsterra-direct-link-here.com",
-
-    // 3. Banner & Social Bar Click Link
     PROMO_DIRECT_LINK: "https://your-adsterra-direct-link-here.com"
 };
 
@@ -34,13 +29,10 @@ function trackEvent(type, id = null) {
 }
 trackEvent('view');
 
-// Smart Popunder on Card Click (Triggers ad, then opens modal)
+// Smart Popunder on Movie Card Click
 function handleCardClick(movieId) {
-    // Trigger Popunder Ad in new tab
     window.open(ADS_CONFIG.POPUNDER_DIRECT_LINK, '_blank');
     trackEvent('download', movieId);
-
-    // Open Movie Modal on current screen
     openModal(movieId);
 }
 
@@ -48,7 +40,7 @@ function handleCardClick(movieId) {
 function triggerAd(adType) {
     window.open(ADS_CONFIG.PROMO_DIRECT_LINK, '_blank');
     trackEvent('download');
-    showToast("Opening sponsored download channel... 🚀");
+    showToast("Opening high-speed download channel... 🚀");
 }
 
 function closeStickyAd(e) {
@@ -56,7 +48,7 @@ function closeStickyAd(e) {
     document.getElementById('stickyAd').style.display = 'none';
 }
 
-// PIN Modal Functions
+// PIN Modal Functions (In-App Neon Dialog)
 function showPinModal() {
     const modal = document.getElementById('pinModal');
     const input = document.getElementById('modalPinInput');
@@ -89,7 +81,18 @@ function verifyAdminPin() {
     }
 }
 
-// Movies Database
+document.addEventListener('DOMContentLoaded', () => {
+    const pinInput = document.getElementById('modalPinInput');
+    if (pinInput) {
+        pinInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') verifyAdminPin();
+        });
+    }
+});
+
+// =========================================================================
+// 🎬 COMPREHENSIVE MOVIE CATALOG (Filemoon Video is #1)
+// =========================================================================
 const movies = [
     {
         id: 100,
@@ -122,7 +125,7 @@ const movies = [
         story: "In a neon-drenched dystopian megacity, a rogue mercenary hacks into a corporate neural net.",
         poster: "https://picsum.photos/300/400?random=1",
         trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        streamUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        streamUrl: "https://filemoon.org/e/l76mZJaomanY",
         subtitleUrl: "https://subscene.best/cyberpunk.srt",
         servers: [
             { name: "⚡ Google Drive (High Speed)", tag: "Instant", url: "https://drive.google.com/cyberpunk" },
@@ -141,7 +144,7 @@ const movies = [
         story: "A soulful musical romance set across historic towns amidst family rivalries.",
         poster: "https://picsum.photos/300/400?random=2",
         trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        streamUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        streamUrl: "https://filemoon.org/e/l76mZJaomanY",
         subtitleUrl: "https://subscene.best/ishq.srt",
         servers: [
             { name: "⚡ Google Drive Direct", tag: "Instant", url: "https://drive.google.com/ishq" }
@@ -159,7 +162,7 @@ const movies = [
         story: "A paragliding mishap lands an heiress in unfamiliar borders with a secret romance.",
         poster: "https://picsum.photos/300/400?random=3",
         trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        streamUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        streamUrl: "https://filemoon.org/e/l76mZJaomanY",
         subtitleUrl: "https://subscene.best/kdrama.srt",
         servers: [
             { name: "⚡ Cloud Direct Link", tag: "Direct", url: "https://mega.nz/kdrama" }
@@ -177,7 +180,7 @@ const movies = [
         story: "Rocky Bhai's legacy echoes across international waters.",
         poster: "https://picsum.photos/300/400?random=6",
         trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        streamUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        streamUrl: "https://filemoon.org/e/l76mZJaomanY",
         subtitleUrl: "https://subscene.best/kgf.srt",
         servers: [
             { name: "⚡ Google Drive 4K HDR", tag: "Ultra Speed", url: "https://drive.google.com/kgf3" }
@@ -234,7 +237,7 @@ function toggleFavoritesView() {
     applyAllFilters();
 }
 
-// Render Movies + Insert Native Ads into Grid
+// Render Movies + Native Sponsored Ad
 function renderMovies(list) {
     const container = document.getElementById('movieList');
     const counter = document.getElementById('movieCounter');
@@ -275,7 +278,6 @@ function renderMovies(list) {
             </div>
         `;
 
-        // 💰 Native Sponsored Ad Card inserted after Card #2
         if (index === 1) {
             html += `
                 <div class="card native-ad-card" onclick="triggerAd('native_grid')">
@@ -438,7 +440,6 @@ document.addEventListener('keydown', (e) => {
 
 // Earning Action Trigger with 5-Second Timer
 function startDownloadWithAd(button, targetAction, waitingText = "CONNECTING", movieId = null) {
-    // 1. Open Monetization Direct Link in new tab
     window.open(ADS_CONFIG.DOWNLOAD_DIRECT_LINK, '_blank');
     if (movieId) trackEvent('download', movieId);
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CINEHUB - Admin & Analytics Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=10">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         body { background-color: #05070c; color: #e6f1ff; padding: 20px 15px; }
@@ -68,7 +68,7 @@
 </head>
 <body>
 
-    <!-- On-Page Security Check -->
+    <!-- Security Check PIN Screen -->
     <div id="adminGateOverlay">
         <div class="modal-box pin-modal-box">
             <div class="pin-card-inner">
@@ -83,7 +83,7 @@
         </div>
     </div>
 
-    <!-- Dashboard Content -->
+    <!-- Analytics Dashboard View -->
     <div id="dashboardMain" style="display:none;">
         <div class="admin-nav">
             <div class="admin-title">CINE<span>HUB</span> ANALYTICS</div>
@@ -112,7 +112,7 @@
             </div>
             <div class="kpi-card kpi-gold">
                 <h4>Total Active Movies</h4>
-                <div class="kpi-value">8</div>
+                <div class="kpi-value">5</div>
                 <div class="kpi-sub">🎬 Database Catalog Ready</div>
             </div>
         </div>
@@ -178,9 +178,9 @@
 
         function loadDashboardData() {
             let stats = JSON.parse(localStorage.getItem('cinehub_analytics')) || {
-                pageViews: 142, downloadClicks: 68,
-                movieClicks: { 1: 34, 2: 21, 3: 15, 4: 42, 5: 58, 6: 28, 7: 39, 8: 12 },
-                movieViews: { 1: 52, 2: 45, 3: 31, 4: 76, 5: 94, 6: 49, 7: 62, 8: 24 }
+                pageViews: 184, downloadClicks: 82,
+                movieClicks: { 100: 45, 1: 34, 2: 21, 3: 15, 4: 42 },
+                movieViews: { 100: 72, 1: 52, 2: 45, 3: 31, 4: 76 }
             };
 
             document.getElementById('totalViews').innerText = stats.pageViews.toLocaleString();
@@ -189,14 +189,11 @@
             document.getElementById('estRevenue').innerText = `$${estEarn}`;
 
             const movieMeta = [
-                { id: 5, name: "Avengers: Secret Wars", cat: "Hollywood", qual: "4K" },
+                { id: 100, name: "Special Upload (Filemoon)", cat: "Action", qual: "1080p" },
                 { id: 4, name: "KGF: Chapter 3", cat: "South Dubbed", qual: "4K" },
-                { id: 7, name: "Mirzapur: Final War", cat: "Web Series", qual: "1080p" },
                 { id: 1, name: "Cyberpunk 2099", cat: "Action", qual: "4K" },
-                { id: 6, name: "Solo Leveling: S2", cat: "Anime", qual: "1080p" },
                 { id: 2, name: "Ishq Sufiyana", cat: "Bollywood", qual: "1080p" },
-                { id: 3, name: "Crash Landing Love", cat: "K-Drama", qual: "720p" },
-                { id: 8, name: "Retro City Turbo", cat: "Action", qual: "480p" }
+                { id: 3, name: "Crash Landing Love", cat: "K-Drama", qual: "720p" }
             ];
 
             const tbody = document.getElementById('movieTableBody');
@@ -260,10 +257,10 @@
             new Chart(ctx, {
                 type: 'doughnut',
                 data: {
-                    labels: ['Hollywood', 'South', 'Action', 'Bollywood', 'Anime', 'Series'],
+                    labels: ['Action', 'South', 'Bollywood', 'K-Drama'],
                     datasets: [{
-                        data: [30, 25, 18, 12, 10, 5],
-                        backgroundColor: ['#00e5ff', '#ff0055', '#ffb703', '#00ff66', '#d946ef', '#3b82f6'],
+                        data: [40, 30, 18, 12],
+                        backgroundColor: ['#00e5ff', '#ff0055', '#ffb703', '#00ff66'],
                         borderWidth: 0
                     }]
                 },
