@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEONFLIX - Ultra HD Movies Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>NEON<span>FLIX</span></h1>
+        <p>Ultra Fast Links • Direct Download • No Waiting</p>
+    </header>
+
+    <div class="ad-box">
+        <p>[ Top Advertisement Banner Slot (728x90) ]</p>
+    </div>
+
+    <div class="search-container">
+        <input 
+            type="text" 
+            id="searchInput" 
+            placeholder="🔍 Search movies, series, K-Dramas..." 
+            oninput="applyAllFilters()"
+            autocomplete="off"
+        >
+    </div>
+
+    <div class="category-tabs">
+        <button class="tab-btn active" onclick="filterCategory('all')">All Genres</button>
+        <button class="tab-btn" onclick="filterCategory('action')">Action</button>
+        <button class="tab-btn" onclick="filterCategory('bollywood')">Bollywood</button>
+        <button class="tab-btn" onclick="filterCategory('kdrama')">K-Drama</button>
+    </div>
+
+    <div class="quality-tabs">
+        <button class="quality-btn active" onclick="filterQuality('all')">All Quality</button>
+        <button class="quality-btn" onclick="filterQuality('4K')">4K UHD</button>
+        <button class="quality-btn" onclick="filterQuality('1080p')">1080p FHD</button>
+        <button class="quality-btn" onclick="filterQuality('720p')">720p HD</button>
+        <button class="quality-btn" onclick="filterQuality('480p')">480p SD</button>
+    </div>
+
+    <main class="grid-container" id="movieList"></main>
+
+    <div class="ad-box">
+        <p>[ Bottom Advertisement Banner Slot ]</p>
+    </div>
+
+    <!-- Modal Popup -->
+    <div id="movieModal" class="modal-overlay" onclick="handleBackdropClick(event)">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            
+            <div class="modal-content">
+                <div class="modal-poster-wrap">
+                    <img id="modalPoster" src="" alt="Poster">
+                    <span id="modalQuality" class="quality-badge"></span>
+                </div>
+                
+                <div class="modal-details">
+                    <h2 id="modalTitle"></h2>
+                    
+                    <div class="modal-meta">
+                        <span id="modalCategory" class="meta-tag"></span>
+                        <span id="modalSize" class="meta-tag"></span>
+                        <span id="modalYear" class="meta-tag"></span>
+                    </div>
+
+                    <div class="modal-share-bar">
+                        <button id="modalShareBtn" class="neon-share-btn btn-copy" onclick="copyShareLink()">🔗 COPY</button>
+                        <button class="neon-share-btn btn-whatsapp" onclick="shareOnWhatsApp()">💬 WHATSAPP</button>
+                        <button class="neon-share-btn btn-telegram" onclick="shareOnTelegram()">✈ TELEGRAM</button>
+                    </div>
+
+                    <p class="storyline-heading">STORYLINE</p>
+                    <p id="modalStory" class="modal-story"></p>
+
+                    <div class="modal-servers-section">
+                        <p class="servers-heading">SELECT FAST SERVER TO DOWNLOAD</p>
+                        <div id="modalServerList" class="server-btn-grid"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
