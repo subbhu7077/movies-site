@@ -3,37 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEONFLIX - Ultra HD Movies Portal</title>
+    <title>NEONFLIX - Ultra HD Movies & Web Series Portal</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Top Announcement Bar -->
+    <div class="top-notice">
+        <span>⚡ Join our official Telegram channel for daily movie requests & direct links!</span>
+        <a href="https://t.me/your_telegram_channel" target="_blank" class="notice-btn">JOIN TELEGRAM</a>
+    </div>
+
+    <!-- Header -->
     <header>
         <h1>NEON<span>FLIX</span></h1>
-        <p>Ultra Fast Links • Direct Download • No Waiting</p>
+        <p>Ultra Fast Links • Direct Download • Online Streaming</p>
     </header>
 
+    <!-- Top Advertisement Banner Slot -->
     <div class="ad-box">
         <p>[ Top Advertisement Banner Slot (728x90) ]</p>
     </div>
 
+    <!-- Glowing Live Search Bar -->
     <div class="search-container">
         <input 
             type="text" 
             id="searchInput" 
-            placeholder="🔍 Search movies, series, K-Dramas..." 
+            placeholder="🔍 Search 10,000+ movies, web series, South dubbed..." 
             oninput="applyAllFilters()"
             autocomplete="off"
         >
     </div>
 
+    <!-- Category Filter Tabs -->
     <div class="category-tabs">
         <button class="tab-btn active" onclick="filterCategory('all')">All Genres</button>
         <button class="tab-btn" onclick="filterCategory('action')">Action</button>
         <button class="tab-btn" onclick="filterCategory('bollywood')">Bollywood</button>
+        <button class="tab-btn" onclick="filterCategory('hollywood')">Hollywood</button>
+        <button class="tab-btn" onclick="filterCategory('south')">South Dubbed</button>
         <button class="tab-btn" onclick="filterCategory('kdrama')">K-Drama</button>
+        <button class="tab-btn" onclick="filterCategory('series')">Web Series</button>
+        <button class="tab-btn" onclick="filterCategory('anime')">Anime</button>
     </div>
 
+    <!-- Resolution Filters -->
     <div class="quality-tabs">
         <button class="quality-btn active" onclick="filterQuality('all')">All Quality</button>
         <button class="quality-btn" onclick="filterQuality('4K')">4K UHD</button>
@@ -42,13 +57,21 @@
         <button class="quality-btn" onclick="filterQuality('480p')">480p SD</button>
     </div>
 
+    <!-- Movies Grid -->
     <main class="grid-container" id="movieList"></main>
 
+    <!-- Bottom Advertisement Banner Slot -->
     <div class="ad-box">
         <p>[ Bottom Advertisement Banner Slot ]</p>
     </div>
 
-    <!-- Modal Popup -->
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 NEONFLIX Portal. All Rights Reserved.</p>
+        <p>Disclaimer: This site does not store any files on its server. All contents are provided by non-affiliated third parties.</p>
+    </footer>
+
+    <!-- Master Movie Details Modal Popup -->
     <div id="movieModal" class="modal-overlay" onclick="handleBackdropClick(event)">
         <div class="modal-box">
             <button class="modal-close" onclick="closeModal()">&times;</button>
@@ -57,17 +80,31 @@
                 <div class="modal-poster-wrap">
                     <img id="modalPoster" src="" alt="Poster">
                     <span id="modalQuality" class="quality-badge"></span>
+                    <span id="modalRating" class="rating-badge"></span>
                 </div>
                 
                 <div class="modal-details">
                     <h2 id="modalTitle"></h2>
                     
+                    <!-- Metadata Tags -->
                     <div class="modal-meta">
                         <span id="modalCategory" class="meta-tag"></span>
                         <span id="modalSize" class="meta-tag"></span>
                         <span id="modalYear" class="meta-tag"></span>
+                        <span id="modalAudio" class="meta-tag audio-tag"></span>
                     </div>
 
+                    <!-- Watch Stream & Trailer Main Action Buttons -->
+                    <div class="stream-trailer-bar">
+                        <button id="modalStreamBtn" class="stream-btn">
+                            ▶ WATCH ONLINE (STREAM)
+                        </button>
+                        <button id="modalTrailerBtn" class="trailer-btn">
+                            🎬 TRAILER
+                        </button>
+                    </div>
+
+                    <!-- Instant Share Bar -->
                     <div class="modal-share-bar">
                         <button id="modalShareBtn" class="neon-share-btn btn-copy" onclick="copyShareLink()">🔗 COPY</button>
                         <button class="neon-share-btn btn-whatsapp" onclick="shareOnWhatsApp()">💬 WHATSAPP</button>
@@ -77,11 +114,33 @@
                     <p class="storyline-heading">STORYLINE</p>
                     <p id="modalStory" class="modal-story"></p>
 
+                    <!-- Multi-Server Download Section -->
                     <div class="modal-servers-section">
-                        <p class="servers-heading">SELECT FAST SERVER TO DOWNLOAD</p>
+                        <p class="servers-heading">⚡ SELECT HIGH SPEED DOWNLOAD SERVER</p>
                         <div id="modalServerList" class="server-btn-grid"></div>
                     </div>
+
+                    <!-- Utility Buttons: Subtitles & Report -->
+                    <div class="utility-btn-bar">
+                        <button id="modalSubtitlesBtn" class="utility-btn btn-sub">
+                            📥 Download Subtitles (.SRT)
+                        </button>
+                        <button class="utility-btn btn-report" onclick="reportBrokenLink()">
+                            ⚠️ Report Dead Link
+                        </button>
+                    </div>
+
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Trailer Player Modal -->
+    <div id="trailerModal" class="modal-overlay" onclick="closeTrailerOnBackdrop(event)">
+        <div class="modal-box trailer-box">
+            <button class="modal-close" onclick="closeTrailer()">&times;</button>
+            <div class="video-wrapper">
+                <iframe id="trailerFrame" src="" frameborder="0" allowfullscreen allow="autoplay"></iframe>
             </div>
         </div>
     </div>
