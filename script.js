@@ -1,11 +1,10 @@
-// =========================================================================
-// 💰 MASTER MONETIZATION CONFIGURATION (Replace with your actual ad links)
-// =========================================================================
 const ADS_CONFIG = {
     DOWNLOAD_DIRECT_LINK: "https://your-adsterra-direct-link-here.com",
     POPUNDER_DIRECT_LINK: "https://your-adsterra-direct-link-here.com",
     PROMO_DIRECT_LINK: "https://your-adsterra-direct-link-here.com"
 };
+
+const DEFAULT_PAGE_TITLE = "CINEHUB - Watch Online & Download Ultra HD 4K Movies & Web Series Free";
 
 // Analytics Tracker
 function trackEvent(type, id = null) {
@@ -29,14 +28,13 @@ function trackEvent(type, id = null) {
 }
 trackEvent('view');
 
-// Smart Popunder on Movie Card Click
+// Smart Popunder
 function handleCardClick(movieId) {
     window.open(ADS_CONFIG.POPUNDER_DIRECT_LINK, '_blank');
     trackEvent('download', movieId);
     openModal(movieId);
 }
 
-// Banner / Promo Ad Trigger
 function triggerAd(adType) {
     window.open(ADS_CONFIG.PROMO_DIRECT_LINK, '_blank');
     trackEvent('download');
@@ -48,7 +46,7 @@ function closeStickyAd(e) {
     document.getElementById('stickyAd').style.display = 'none';
 }
 
-// PIN Modal Functions (In-App Neon Dialog)
+// PIN Modal Functions
 function showPinModal() {
     const modal = document.getElementById('pinModal');
     const input = document.getElementById('modalPinInput');
@@ -90,9 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// =========================================================================
-// 🎬 COMPREHENSIVE MOVIE CATALOG (Filemoon Video is #1)
-// =========================================================================
+// Movie Database
 const movies = [
     {
         id: 100,
@@ -237,7 +233,7 @@ function toggleFavoritesView() {
     applyAllFilters();
 }
 
-// Render Movies + Native Sponsored Ad
+// Render Movies with Proper Semantic markup
 function renderMovies(list) {
     const container = document.getElementById('movieList');
     const counter = document.getElementById('movieCounter');
@@ -246,7 +242,7 @@ function renderMovies(list) {
     if (counter) counter.innerText = list.length;
 
     if (list.length === 0) {
-        container.innerHTML = `<div class="no-results">No movies found! 🎬</div>`;
+        container.innerHTML = `<div class="no-results">No movies found matching your selected filters! 🎬</div>`;
         return;
     }
 
@@ -256,10 +252,10 @@ function renderMovies(list) {
         const isFav = favs.includes(item.id);
 
         html += `
-            <div class="card" onclick="handleCardClick(${item.id})">
+            <article class="card" onclick="handleCardClick(${item.id})">
                 <span class="rating-badge">⭐ ${item.rating}</span>
                 <span class="quality-badge ${badgeClass}">${item.quality}</span>
-                <img src="${item.poster}" alt="${item.name}" loading="lazy">
+                <img src="${item.poster}" alt="Watch ${item.name} (${item.year}) Free HD" loading="lazy">
                 <div class="card-body">
                     <div class="card-title-row">
                         <h3>${item.name}</h3>
@@ -275,14 +271,14 @@ function renderMovies(list) {
                         VIEW DETAILS
                     </button>
                 </div>
-            </div>
+            </article>
         `;
 
         if (index === 1) {
             html += `
-                <div class="card native-ad-card" onclick="triggerAd('native_grid')">
+                <article class="card native-ad-card" onclick="triggerAd('native_grid')">
                     <span class="ad-badge-top">SPONSORED</span>
-                    <img src="https://picsum.photos/300/400?random=88" alt="Ad">
+                    <img src="https://picsum.photos/300/400?random=88" alt="Download Sponsored 4K Movies">
                     <div class="card-body">
                         <div class="card-title-row">
                             <h3 style="color:#ff0055;">🔥 VIP Movie Pass (Ad)</h3>
@@ -292,7 +288,7 @@ function renderMovies(list) {
                             DOWNLOAD NOW
                         </button>
                     </div>
-                </div>
+                </article>
             `;
         }
     });
@@ -347,12 +343,17 @@ function filterQuality(quality) {
     applyAllFilters();
 }
 
+// Open Modal with Dynamic SEO Title & URL State
 function openModal(movieId) {
     const movie = movies.find(m => m.id === movieId);
     if (!movie) return;
 
     currentModalMovieId = movieId;
     trackEvent('modal', movieId);
+
+    // 🚀 DYNAMIC SEO TITLE UPDATE (For Google Search & Social Bots)
+    document.title = `${movie.name} (${movie.year}) Full Movie Download & Watch Online 4K | CINEHUB`;
+    window.history.replaceState({ id: movieId }, document.title, `?id=${movieId}`);
 
     const shareBtn = document.getElementById('modalShareBtn');
     if (shareBtn) {
@@ -361,6 +362,7 @@ function openModal(movieId) {
     }
 
     document.getElementById('modalPoster').src = movie.poster;
+    document.getElementById('modalPoster').alt = `Download ${movie.name} (${movie.year}) Full Movie`;
     document.getElementById('modalTitle').innerText = movie.name;
     document.getElementById('modalRating').innerText = `⭐ ${movie.rating}`;
     document.getElementById('modalCategory').innerText = movie.category;
@@ -376,7 +378,6 @@ function openModal(movieId) {
     updateModalHeart(movieId);
     document.getElementById('modalFavBtn').onclick = (e) => toggleFavorite(e, movieId);
 
-    // Watch Online Stream Button
     const streamBtn = document.getElementById('modalStreamBtn');
     streamBtn.className = 'stream-btn';
     streamBtn.innerText = '▶ WATCH ONLINE (STREAM)';
@@ -394,7 +395,6 @@ function openModal(movieId) {
         window.open(movie.subtitleUrl, '_blank');
     };
 
-    // Download Servers with 5s Timer + Direct Link Earning
     const serverList = document.getElementById('modalServerList');
     serverList.innerHTML = movie.servers.map(srv => `
         <button class="server-btn" onclick="startDownloadWithAd(this, '${srv.url}', 'CONNECTING SERVER', ${movie.id})">
@@ -408,6 +408,7 @@ function openModal(movieId) {
 
 function closeModal() {
     document.getElementById('movieModal').style.display = 'none';
+    document.title = DEFAULT_PAGE_TITLE;
     window.history.replaceState({}, document.title, window.location.pathname);
 }
 
@@ -438,7 +439,6 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// Earning Action Trigger with 5-Second Timer
 function startDownloadWithAd(button, targetAction, waitingText = "CONNECTING", movieId = null) {
     window.open(ADS_CONFIG.DOWNLOAD_DIRECT_LINK, '_blank');
     if (movieId) trackEvent('download', movieId);

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin.html
+
+# Priority Sitemaps
+Sitemap: https://subbhu7077.github.io/movies-site/sitemap.xml
