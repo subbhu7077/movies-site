@@ -3,37 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CINEHUB - Ultra HD Movies & Web Series Portal</title>
+    <title>CINEHUB - Ultra HD Movies, Series & Anime Portal</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Cyberpunk Ambient Background Glows -->
+    <div class="ambient-glow glow-cyan"></div>
+    <div class="ambient-glow glow-pink"></div>
+
     <!-- Top Announcement Bar -->
     <div class="top-notice">
-        <span>⚡ Join our official Telegram channel for daily movie requests & direct links!</span>
-        <a href="https://t.me/your_telegram_channel" target="_blank" class="notice-btn">JOIN TELEGRAM</a>
+        <div class="notice-text">
+            <span class="live-dot"></span>
+            <span>Join our VIP Telegram channel for daily requested movies & direct cloud links!</span>
+        </div>
+        <a href="https://t.me/your_telegram_channel" target="_blank" class="notice-btn">
+            ✈ JOIN TELEGRAM
+        </a>
     </div>
 
-    <!-- Header with CINEHUB Brand -->
+    <!-- Header -->
     <header>
-        <h1>CINE<span>HUB</span></h1>
-        <p>Ultra Fast Links • Direct Download • Online Streaming</p>
+        <div class="logo-wrap">
+            <h1 class="neon-title">CINE<span>HUB</span></h1>
+            <div class="neon-glow-line"></div>
+        </div>
+        <p class="subtitle">ULTRA FAST SERVERS • DIRECT 4K DOWNLOAD • INSTANT STREAM</p>
+
+        <!-- Header Quick Action: Favorites Counter -->
+        <div class="header-tools">
+            <button class="fav-tool-btn" onclick="toggleFavoritesView()">
+                ❤️ SAVED WATCHLIST (<span id="favCount">0</span>)
+            </button>
+        </div>
     </header>
 
-    <!-- Top Advertisement Banner Slot -->
+    <!-- Top Advertisement Slot -->
     <div class="ad-box">
-        <p>[ Top Advertisement Banner Slot (728x90) ]</p>
+        <span class="ad-tag">SPONSORED AD</span>
+        <p>[ Top Responsive Banner Slot (728x90) ]</p>
     </div>
 
-    <!-- Glowing Live Search Bar -->
-    <div class="search-container">
-        <input 
-            type="text" 
-            id="searchInput" 
-            placeholder="🔍 Search 10,000+ movies, web series, South dubbed..." 
-            oninput="applyAllFilters()"
-            autocomplete="off"
-        >
+    <!-- Search & Sort Bar -->
+    <div class="search-sort-container">
+        <div class="search-wrap">
+            <span class="search-icon">🔍</span>
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="Search by movie title, star cast, or category..." 
+                oninput="applyAllFilters()"
+                autocomplete="off"
+            >
+            <button id="clearSearchBtn" class="clear-btn" onclick="clearSearch()">✕</button>
+        </div>
+
+        <div class="sort-wrap">
+            <select id="sortSelect" onchange="applyAllFilters()">
+                <option value="featured">🔥 Featured Movies</option>
+                <option value="rating">⭐ Top IMDb Rating</option>
+                <option value="latest">📅 Latest Release (New to Old)</option>
+                <option value="name">🔤 Title (A - Z)</option>
+            </select>
+        </div>
     </div>
 
     <!-- Category Filter Tabs -->
@@ -50,25 +83,33 @@
 
     <!-- Resolution Filters -->
     <div class="quality-tabs">
-        <button class="quality-btn active" onclick="filterQuality('all')">All Quality</button>
+        <button class="quality-btn active" onclick="filterQuality('all')">All Resolutions</button>
         <button class="quality-btn" onclick="filterQuality('4K')">4K UHD</button>
         <button class="quality-btn" onclick="filterQuality('1080p')">1080p FHD</button>
         <button class="quality-btn" onclick="filterQuality('720p')">720p HD</button>
         <button class="quality-btn" onclick="filterQuality('480p')">480p SD</button>
     </div>
 
-    <!-- Movies Grid -->
+    <!-- Live Statistics Counter -->
+    <div class="stats-bar">
+        <span>Showing <strong id="movieCounter" class="highlight-cyan">0</strong> Movies & Shows</span>
+    </div>
+
+    <!-- Movie Cards Grid -->
     <main class="grid-container" id="movieList"></main>
 
-    <!-- Bottom Advertisement Banner Slot -->
+    <!-- Bottom Advertisement Slot -->
     <div class="ad-box">
-        <p>[ Bottom Advertisement Banner Slot ]</p>
+        <span class="ad-tag">SPONSORED AD</span>
+        <p>[ Bottom High CPM Banner Slot ]</p>
     </div>
 
     <!-- Footer -->
     <footer>
-        <p>© 2026 CINEHUB Portal. All Rights Reserved.</p>
-        <p>Disclaimer: This site does not store any files on its server. All contents are provided by non-affiliated third parties.</p>
+        <div class="footer-brand">CINE<span>HUB</span> PRO</div>
+        <p>Streaming & High-Speed Media Showcase Engine</p>
+        <p class="disclaimer">Disclaimer: CINEHUB does not store any files on its web server. All videos and files are hosted on non-affiliated 3rd party cloud providers.</p>
+        <p class="copyright">© 2026 CINEHUB. Engineered with Glowing Neon UI.</p>
     </footer>
 
     <!-- Master Movie Details Modal Popup -->
@@ -84,7 +125,10 @@
                 </div>
                 
                 <div class="modal-details">
-                    <h2 id="modalTitle"></h2>
+                    <div class="modal-header-row">
+                        <h2 id="modalTitle"></h2>
+                        <button id="modalFavBtn" class="modal-heart-btn" title="Add to Watchlist">🤍</button>
+                    </div>
                     
                     <!-- Metadata Tags -->
                     <div class="modal-meta">
@@ -111,7 +155,7 @@
                         <button class="neon-share-btn btn-telegram" onclick="shareOnTelegram()">✈ TELEGRAM</button>
                     </div>
 
-                    <p class="storyline-heading">STORYLINE</p>
+                    <p class="storyline-heading">SYNOPSIS & STORYLINE</p>
                     <p id="modalStory" class="modal-story"></p>
 
                     <!-- Multi-Server Download Section -->
@@ -123,7 +167,7 @@
                     <!-- Utility Buttons: Subtitles & Report -->
                     <div class="utility-btn-bar">
                         <button id="modalSubtitlesBtn" class="utility-btn btn-sub">
-                            📥 Download Subtitles (.SRT)
+                            📥 Subtitles (.SRT)
                         </button>
                         <button class="utility-btn btn-report" onclick="reportBrokenLink()">
                             ⚠️ Report Dead Link
@@ -135,15 +179,19 @@
         </div>
     </div>
 
-    <!-- Video Trailer Player Modal -->
-    <div id="trailerModal" class="modal-overlay" onclick="closeTrailerOnBackdrop(event)">
-        <div class="modal-box trailer-box">
-            <button class="modal-close" onclick="closeTrailer()">&times;</button>
+    <!-- Video Streaming & Trailer Player Modal -->
+    <div id="playerModal" class="modal-overlay" onclick="closePlayerOnBackdrop(event)">
+        <div class="modal-box player-box">
+            <button class="modal-close" onclick="closePlayer()">&times;</button>
+            <h3 id="playerTitle" class="player-title"></h3>
             <div class="video-wrapper">
-                <iframe id="trailerFrame" src="" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+                <iframe id="videoPlayerFrame" src="" frameborder="0" allowfullscreen allow="autoplay"></iframe>
             </div>
         </div>
     </div>
+
+    <!-- Glowing Neon Toast Notification -->
+    <div id="neonToast" class="neon-toast"></div>
 
     <script src="script.js"></script>
 </body>

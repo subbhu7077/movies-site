@@ -1,20 +1,21 @@
+// ⚠️ Put your Adsterra Direct Link here
 const ADSTERRA_DIRECT_LINK = "https://your-adsterra-direct-link-here.com";
 
-// Full Comprehensive Movie Database
+// Comprehensive Movie Catalog
 const movies = [
     {
         id: 1,
         name: "Cyberpunk 2099",
         category: "action",
         quality: "4K",
-        rating: "8.6",
+        rating: "8.8",
         size: "2.4 GB",
-        year: "2024",
+        year: "2025",
         audio: "Dual [Hin+Eng]",
-        story: "In a neon-drenched dystopian megacity, a rogue mercenary hacks into a corporate neural network to expose a global mind-control project.",
+        story: "In a neon-drenched dystopian megacity, a rogue mercenary hacks into a corporate neural net, uncovering a conspiracy that could bring down the digital empire.",
         poster: "https://picsum.photos/300/400?random=1",
         trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        streamUrl: "https://mega.nz/stream-link-1",
+        streamUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
         subtitleUrl: "https://subscene.best/cyberpunk.srt",
         servers: [
             { name: "⚡ Google Drive (High Speed)", tag: "Instant", url: "https://drive.google.com/cyberpunk" },
@@ -28,14 +29,14 @@ const movies = [
         name: "Ishq Sufiyana",
         category: "bollywood",
         quality: "1080p",
-        rating: "8.1",
+        rating: "8.2",
         size: "1.2 GB",
-        year: "2023",
+        year: "2024",
         audio: "Hindi (Original)",
-        story: "A soulful musical romance set across historic towns, where two passionate artists cross paths amidst family rivalries and timeless poetry.",
+        story: "A soulful musical romance set across historic towns, testing timeless poetry and forbidden connections against family rivalries.",
         poster: "https://picsum.photos/300/400?random=2",
         trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        streamUrl: "https://drive.google.com/stream-link-2",
+        streamUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
         subtitleUrl: "https://subscene.best/ishq.srt",
         servers: [
             { name: "⚡ Google Drive Direct", tag: "Instant", url: "https://drive.google.com/ishq" },
@@ -48,14 +49,14 @@ const movies = [
         name: "Crash Landing Love",
         category: "kdrama",
         quality: "720p",
-        rating: "8.9",
+        rating: "9.0",
         size: "850 MB",
-        year: "2022",
+        year: "2023",
         audio: "Korean [Hin Sub]",
-        story: "A paragliding mishap lands a South Korean heiress across the border, where an army officer decides to protect and hide her from authorities.",
+        story: "A paragliding mishap lands an heiress in unfamiliar borders, sparking an unforgettable secret romance with an honorable officer.",
         poster: "https://picsum.photos/300/400?random=3",
         trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        streamUrl: "https://mega.nz/stream-kdrama",
+        streamUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
         subtitleUrl: "https://subscene.best/kdrama.srt",
         servers: [
             { name: "⚡ Cloud Direct Stream Link", tag: "Direct", url: "https://mega.nz/kdrama" },
@@ -67,14 +68,14 @@ const movies = [
         name: "KGF: Chapter 3",
         category: "south",
         quality: "4K",
-        rating: "9.2",
-        size: "3.1 GB",
+        rating: "9.3",
+        size: "3.2 GB",
         year: "2025",
         audio: "Dual [Hin+Kan]",
-        story: "Rocky Bhai's legacy continues across international waters as underworld syndicates unite to challenge his absolute gold empire.",
+        story: "Rocky Bhai's legacy echoes across international waters as global syndicates unite to challenge his absolute golden empire.",
         poster: "https://picsum.photos/300/400?random=6",
         trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        streamUrl: "https://drive.google.com/stream-kgf",
+        streamUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
         subtitleUrl: "https://subscene.best/kgf.srt",
         servers: [
             { name: "⚡ Google Drive 4K HDR", tag: "Ultra Speed", url: "https://drive.google.com/kgf3" },
@@ -86,17 +87,17 @@ const movies = [
         name: "Avengers: Secret Wars",
         category: "hollywood",
         quality: "4K",
-        rating: "9.4",
-        size: "3.8 GB",
+        rating: "9.5",
+        size: "3.9 GB",
         year: "2026",
         audio: "Dual [Hin+Eng]",
-        story: "Multiverses collide as heroes and villains from every dimension converge in a desperate battle for reality's survival.",
+        story: "Multiverses collide in a cosmic battlefield where heroes and variants from every dimension wage the ultimate war for existence.",
         poster: "https://picsum.photos/300/400?random=7",
         trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        streamUrl: "https://drive.google.com/stream-avengers",
+        streamUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
         subtitleUrl: "https://subscene.best/avengers.srt",
         servers: [
-            { name: "⚡ IMAX Enhanced Server", tag: "4K UHD", url: "https://drive.google.com/avengers" },
+            { name: "⚡ IMAX Enhanced 4K", tag: "4K UHD", url: "https://drive.google.com/avengers" },
             { name: "🚀 Direct High Speed Cloud", tag: "Instant", url: "https://mega.nz/avengers" }
         ]
     },
@@ -105,42 +106,143 @@ const movies = [
         name: "Solo Leveling: Season 2",
         category: "anime",
         quality: "1080p",
-        rating: "9.0",
+        rating: "9.1",
         size: "1.4 GB",
         year: "2025",
         audio: "Dual [Hin+Jap]",
-        story: "Sung Jinwoo awakens his true Monarch powers, conquering deepest shadow gates and commanding armies of the dead.",
+        story: "Sung Jinwoo unlocks the true power of the Shadow Monarch, raising immortal shadow armies to conquer deepest dungeon cataclysms.",
         poster: "https://picsum.photos/300/400?random=8",
         trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        streamUrl: "https://mega.nz/solo-stream",
+        streamUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
         subtitleUrl: "https://subscene.best/solo.srt",
         servers: [
             { name: "⚡ Mega Anime Server", tag: "1080p 10bit", url: "https://mega.nz/sololeveling" },
             { name: "🚀 Google Drive All Episodes", tag: "Batch Pack", url: "https://drive.google.com/solo" }
         ]
+    },
+    {
+        id: 7,
+        name: "Mirzapur: The Final War",
+        category: "series",
+        quality: "1080p",
+        rating: "8.9",
+        size: "2.1 GB",
+        year: "2025",
+        audio: "Hindi [5.1 Audio]",
+        story: "The throne of Purvanchal witnesses bloodiest clashes as old scores, broken alliances, and fierce rivalries ignite the final battle.",
+        poster: "https://picsum.photos/300/400?random=9",
+        trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        streamUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        subtitleUrl: "https://subscene.best/mirzapur.srt",
+        servers: [
+            { name: "⚡ Google Drive Complete Pack", tag: "All Episodes", url: "https://drive.google.com/mirzapur" },
+            { name: "🚀 High Speed Zip Server", tag: "Resume OK", url: "https://mega.nz/mirzapur" }
+        ]
+    },
+    {
+        id: 8,
+        name: "Retro City Turbo",
+        category: "action",
+        quality: "480p",
+        rating: "7.8",
+        size: "420 MB",
+        year: "2023",
+        audio: "Hindi Dubbed",
+        story: "High-octane neon drag racing syndicate battles take over the streets in this adrenaline pumping retro speed thriller.",
+        poster: "https://picsum.photos/300/400?random=4",
+        trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        streamUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        subtitleUrl: "https://subscene.best/retro.srt",
+        servers: [
+            { name: "⚡ Fast Mobile Direct Link", tag: "Compressed", url: "https://mega.nz/retro" }
+        ]
     }
 ];
 
+// State Variables
 let currentCategory = 'all';
 let currentQuality = 'all';
 let currentModalMovieId = null;
+let showOnlyFavorites = false;
 
+// LocalStorage Favorites
+function getFavorites() {
+    return JSON.parse(localStorage.getItem('cinehub_favs')) || [];
+}
+
+function saveFavorites(favs) {
+    localStorage.setItem('cinehub_favs', JSON.stringify(favs));
+    updateFavCount();
+}
+
+function updateFavCount() {
+    const favs = getFavorites();
+    const countEl = document.getElementById('favCount');
+    if (countEl) countEl.innerText = favs.length;
+}
+
+function toggleFavorite(e, movieId) {
+    e.stopPropagation();
+    let favs = getFavorites();
+    if (favs.includes(movieId)) {
+        favs = favs.filter(id => id !== movieId);
+        showToast("Removed from Watchlist! 💔");
+    } else {
+        favs.push(movieId);
+        showToast("Added to Watchlist! ❤️");
+    }
+    saveFavorites(favs);
+    applyAllFilters();
+    updateModalHeart(movieId);
+}
+
+function updateModalHeart(movieId) {
+    const heartBtn = document.getElementById('modalFavBtn');
+    if (!heartBtn) return;
+    const favs = getFavorites();
+    heartBtn.innerHTML = favs.includes(movieId) ? '❤️' : '🤍';
+}
+
+function toggleFavoritesView() {
+    showOnlyFavorites = !showOnlyFavorites;
+    const btn = document.querySelector('.fav-tool-btn');
+    if (btn) btn.classList.toggle('active', showOnlyFavorites);
+    applyAllFilters();
+}
+
+// Render Movies
 function renderMovies(list) {
     const container = document.getElementById('movieList');
+    const counter = document.getElementById('movieCounter');
+    const favs = getFavorites();
+
+    if (counter) counter.innerText = list.length;
+
     if (list.length === 0) {
-        container.innerHTML = `<div class="no-results">No movies or series match your search.</div>`;
+        container.innerHTML = `<div class="no-results">No movies found matching your selected filters! 🎬</div>`;
         return;
     }
 
     container.innerHTML = list.map(item => {
         const badgeClass = `badge-${item.quality.toLowerCase()}`;
+        const isFav = favs.includes(item.id);
+
         return `
             <div class="card" onclick="openModal(${item.id})">
                 <span class="rating-badge">⭐ ${item.rating}</span>
                 <span class="quality-badge ${badgeClass}">${item.quality}</span>
-                <img src="${item.poster}" alt="${item.name}">
+                <img src="${item.poster}" alt="${item.name}" loading="lazy">
                 <div class="card-body">
-                    <h3>${item.name}</h3>
+                    <div class="card-title-row">
+                        <h3>${item.name}</h3>
+                        <button class="card-heart-btn" onclick="toggleFavorite(event, ${item.id})">
+                            ${isFav ? '❤️' : '🤍'}
+                        </button>
+                    </div>
+                    <div class="card-footer-meta">
+                        <span>📅 ${item.year}</span>
+                        <span>💾 ${item.size}</span>
+                    </div>
                     <button class="neon-download-btn" style="pointer-events: none;">
                         VIEW DETAILS
                     </button>
@@ -150,15 +252,39 @@ function renderMovies(list) {
     }).join('');
 }
 
+// Unified Filter & Sort Engine
 function applyAllFilters() {
     const query = document.getElementById('searchInput').value.toLowerCase().trim();
-    const filtered = movies.filter(m => {
-        const matchesSearch = m.name.toLowerCase().includes(query);
+    const clearBtn = document.getElementById('clearSearchBtn');
+    const sortVal = document.getElementById('sortSelect').value;
+    const favs = getFavorites();
+
+    if (clearBtn) clearBtn.style.display = query.length > 0 ? 'block' : 'none';
+
+    let filtered = movies.filter(m => {
+        const matchesSearch = m.name.toLowerCase().includes(query) || m.audio.toLowerCase().includes(query);
         const matchesCategory = (currentCategory === 'all') || (m.category === currentCategory);
         const matchesQuality = (currentQuality === 'all') || (m.quality.toUpperCase() === currentQuality.toUpperCase());
-        return matchesSearch && matchesCategory && matchesQuality;
+        const matchesFav = !showOnlyFavorites || favs.includes(m.id);
+
+        return matchesSearch && matchesCategory && matchesQuality && matchesFav;
     });
+
+    // Sort Logic
+    if (sortVal === 'rating') {
+        filtered.sort((a, b) => parseFloat(b.rating) - parseFloat(a.rating));
+    } else if (sortVal === 'latest') {
+        filtered.sort((a, b) => parseInt(b.year) - parseInt(a.year));
+    } else if (sortVal === 'name') {
+        filtered.sort((a, b) => a.name.localeCompare(b.name));
+    }
+
     renderMovies(filtered);
+}
+
+function clearSearch() {
+    document.getElementById('searchInput').value = '';
+    applyAllFilters();
 }
 
 function filterCategory(cat) {
@@ -175,6 +301,7 @@ function filterQuality(quality) {
     applyAllFilters();
 }
 
+// Modal Controls
 function openModal(movieId) {
     const movie = movies.find(m => m.id === movieId);
     if (!movie) return;
@@ -200,27 +327,30 @@ function openModal(movieId) {
     qualityBadge.innerText = movie.quality;
     qualityBadge.className = `quality-badge badge-${movie.quality.toLowerCase()}`;
 
-    // Stream Online Button Click
+    updateModalHeart(movieId);
+    document.getElementById('modalFavBtn').onclick = (e) => toggleFavorite(e, movieId);
+
+    // Stream Online
     const streamBtn = document.getElementById('modalStreamBtn');
     streamBtn.className = 'stream-btn';
     streamBtn.innerText = '▶ WATCH ONLINE (STREAM)';
     streamBtn.onclick = function() {
-        startDownloadWithAd(this, movie.streamUrl, "BUFFERING PLAYER");
+        startDownloadWithAd(this, () => openPlayer(movie.name, movie.streamUrl), "INITIALIZING STREAM");
     };
 
-    // Watch Trailer Button Click
+    // Watch Trailer
     const trailerBtn = document.getElementById('modalTrailerBtn');
     trailerBtn.onclick = function() {
-        openTrailer(movie.trailerUrl);
+        openPlayer(`${movie.name} - Official Trailer`, movie.trailerUrl);
     };
 
-    // Subtitles Button
+    // Subtitle Download
     const subBtn = document.getElementById('modalSubtitlesBtn');
     subBtn.onclick = function() {
         window.open(movie.subtitleUrl, '_blank');
     };
 
-    // Dynamic Download Servers List
+    // Server Buttons
     const serverList = document.getElementById('modalServerList');
     serverList.innerHTML = movie.servers.map(srv => `
         <button class="server-btn" onclick="startDownloadWithAd(this, '${srv.url}', 'CONNECTING SERVER')">
@@ -241,30 +371,32 @@ function handleBackdropClick(e) {
     if (e.target.id === 'movieModal') closeModal();
 }
 
-// Trailer Video Modal Controls
-function openTrailer(url) {
-    document.getElementById('trailerFrame').src = url + "?autoplay=1";
-    document.getElementById('trailerModal').style.display = 'flex';
+// In-App Video Player Modal Controls
+function openPlayer(title, url) {
+    document.getElementById('playerTitle').innerText = title;
+    document.getElementById('videoPlayerFrame').src = url + "?autoplay=1";
+    document.getElementById('playerModal').style.display = 'flex';
 }
 
-function closeTrailer() {
-    document.getElementById('trailerFrame').src = "";
-    document.getElementById('trailerModal').style.display = 'none';
+function closePlayer() {
+    document.getElementById('videoPlayerFrame').src = "";
+    document.getElementById('playerModal').style.display = 'none';
 }
 
-function closeTrailerOnBackdrop(e) {
-    if (e.target.id === 'trailerModal') closeTrailer();
+function closePlayerOnBackdrop(e) {
+    if (e.target.id === 'playerModal') closePlayer();
 }
 
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
         closeModal();
-        closeTrailer();
+        closePlayer();
     }
 });
 
 // Ad Trigger + 5s Glowing Countdown
-function startDownloadWithAd(button, realUrl, waitingText = "CONNECTING") {
+function startDownloadWithAd(button, targetAction, waitingText = "CONNECTING") {
+    // 1. Trigger Popunder / Direct link ad
     window.open(ADSTERRA_DIRECT_LINK, '_blank');
 
     const originalHTML = button.innerHTML;
@@ -280,10 +412,14 @@ function startDownloadWithAd(button, realUrl, waitingText = "CONNECTING") {
             clearInterval(countdown);
             button.classList.remove('timer-active');
             button.classList.add('timer-ready');
-            button.innerText = "STARTING...";
+            button.innerText = "READY! OPENING...";
 
             setTimeout(() => {
-                window.location.href = realUrl;
+                if (typeof targetAction === 'function') {
+                    targetAction();
+                } else {
+                    window.location.href = targetAction;
+                }
                 button.classList.remove('timer-ready');
                 button.innerHTML = originalHTML;
             }, 1000);
@@ -291,7 +427,7 @@ function startDownloadWithAd(button, realUrl, waitingText = "CONNECTING") {
     }, 1000);
 }
 
-// Share Functions
+// Social Sharing & Deep Links
 function getShareInfo() {
     if (!currentModalMovieId) return null;
     const movie = movies.find(m => m.id === currentModalMovieId);
@@ -308,6 +444,7 @@ function copyShareLink() {
         const btn = document.getElementById('modalShareBtn');
         btn.classList.add('copied');
         btn.innerText = '✔ COPIED!';
+        showToast("Deep Link copied to clipboard! 🔗");
         setTimeout(() => {
             btn.classList.remove('copied');
             btn.innerText = '🔗 COPY';
@@ -318,7 +455,7 @@ function copyShareLink() {
 function shareOnWhatsApp() {
     const info = getShareInfo();
     if (!info) return;
-    const msg = `🍿 *Watch/Download: ${info.movie.name}* (${info.movie.quality})\n⭐ IMDb: ${info.movie.rating} | 🔊 Audio: ${info.movie.audio}\n💾 Size: ${info.movie.size}\n\n⚡ Direct Link:\n${info.shareUrl}`;
+    const msg = `🍿 *Watch/Download: ${info.movie.name}* (${info.movie.quality})\n⭐ IMDb: ${info.movie.rating} | 🔊 Audio: ${info.movie.audio}\n💾 Size: ${info.movie.size}\n\n⚡ Stream & Download Here:\n${info.shareUrl}`;
     window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(msg)}`, '_blank');
 }
 
@@ -335,12 +472,23 @@ function reportBrokenLink() {
     window.open(`https://t.me/your_telegram_channel?text=Report%20Broken%20Link:%20${encodeURIComponent(movieName)}`, '_blank');
 }
 
+// Toast Alert
+function showToast(msg) {
+    const toast = document.getElementById('neonToast');
+    if (!toast) return;
+    toast.innerText = msg;
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 2500);
+}
+
+// URL Check (?id=1)
 function checkUrlForDirectMovie() {
     const params = new URLSearchParams(window.location.search);
     const movieId = parseInt(params.get('id'));
     if (movieId) openModal(movieId);
 }
 
-// Initial Run
+// Initial App Boot
+updateFavCount();
 renderMovies(movies);
 checkUrlForDirectMovie();
