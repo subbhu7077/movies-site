@@ -22,7 +22,7 @@ function trackEvent(type, id = null) {
 }
 trackEvent('view');
 
-// IN-APP NEON PIN MODAL LOGIC (No Browser Popup)
+// PIN Modal Functions
 function showPinModal() {
     const modal = document.getElementById('pinModal');
     const input = document.getElementById('modalPinInput');
@@ -47,8 +47,6 @@ function closePinModalOnBackdrop(e) {
 function verifyAdminPin() {
     const input = document.getElementById('modalPinInput').value.trim();
     const err = document.getElementById('modalPinError');
-    
-    // Master Security PIN: 7077
     if (input === "7077") {
         sessionStorage.setItem('cinehub_admin_auth', 'true');
         window.location.href = "admin.html";
@@ -57,40 +55,31 @@ function verifyAdminPin() {
     }
 }
 
-// Enter Key on PIN input triggers verification
-document.addEventListener('DOMContentLoaded', () => {
-    const pinInput = document.getElementById('modalPinInput');
-    if (pinInput) {
-        pinInput.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter') verifyAdminPin();
-        });
-    }
-});
-
-// Movies Database
+// ==========================================
+// MOVIES CATALOG (AAPKI FILEMOON MOVIE TOP PAR HAI)
+// ==========================================
 const movies = [
-{
-    "id": 1790169864435,
-    "name": "Special Upload (Filemoon)",
-    "category": "action",
-    "quality": "1080p",
-    "rating": "9.0",
-    "size": "1.5 GB",
-    "year": "2025",
-    "audio": "Hindi Dubbed",
-    "story": "Direct high-speed stream and download uploaded via Filemoon unlimited cloud storage.",
-    "poster": "https://picsum.photos/300/400?random=20",
-    "trailerUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    "streamUrl": "https://filemoon.org/e/l76mZJaomanY",
-    "subtitleUrl": "https://subscene.best/sub.srt",
-    "servers": [
-        {
-            "name": "⚡ Filemoon Ultra Stream Server",
-            "tag": "Instant",
-            "url": "https://filemoon.org/en/l76mZJaomanY/file"
-        }
-    ]
-},
+    {
+        id: 100,
+        name: "Special Upload (Filemoon)",
+        category: "action",
+        quality: "1080p",
+        rating: "9.2",
+        size: "1.6 GB",
+        year: "2025",
+        audio: "Hindi Dubbed",
+        story: "High speed direct stream and cloud download hosted via Filemoon cloud storage servers.",
+        poster: "https://picsum.photos/300/400?random=25",
+        trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        // 🔥 AAPKA FILEMOON STREAM LINK:
+        streamUrl: "https://filemoon.org/e/l76mZJaomanY",
+        subtitleUrl: "https://subscene.best/sub.srt",
+        servers: [
+            // 🔥 AAPKA FILEMOON DOWNLOAD LINK:
+            { name: "⚡ Filemoon Cloud Direct Server", tag: "Ultra Speed", url: "https://filemoon.org/en/l76mZJaomanY/file" },
+            { name: "🚀 High Speed Mirror Link", tag: "Instant", url: "https://filemoon.org/en/l76mZJaomanY/file" }
+        ]
+    },
     {
         id: 1,
         name: "Cyberpunk 2099",
@@ -100,16 +89,14 @@ const movies = [
         size: "2.4 GB",
         year: "2025",
         audio: "Dual [Hin+Eng]",
-        story: "In a neon-drenched dystopian megacity, a rogue mercenary hacks into a corporate neural net, uncovering a conspiracy that could bring down the digital empire.",
+        story: "In a neon-drenched dystopian megacity, a rogue mercenary hacks into a corporate neural net.",
         poster: "https://picsum.photos/300/400?random=1",
         trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
         streamUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
         subtitleUrl: "https://subscene.best/cyberpunk.srt",
         servers: [
             { name: "⚡ Google Drive (High Speed)", tag: "Instant", url: "https://drive.google.com/cyberpunk" },
-            { name: "🚀 Mega NZ Direct Cloud", tag: "Ultra 4K", url: "https://mega.nz/cyberpunk" },
-            { name: "💾 Fast Server Mirror 2", tag: "Resume OK", url: "https://fastserver.com/cyberpunk" },
-            { name: "📥 Torrent Magnet / Zip", tag: "P2P Fast", url: "https://torrent.com/cyberpunk" }
+            { name: "🚀 Mega NZ Direct Cloud", tag: "Ultra 4K", url: "https://mega.nz/cyberpunk" }
         ]
     },
     {
@@ -121,15 +108,13 @@ const movies = [
         size: "1.2 GB",
         year: "2024",
         audio: "Hindi (Original)",
-        story: "A soulful musical romance set across historic towns, testing timeless poetry and forbidden connections against family rivalries.",
+        story: "A soulful musical romance set across historic towns amidst family rivalries.",
         poster: "https://picsum.photos/300/400?random=2",
         trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
         streamUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
         subtitleUrl: "https://subscene.best/ishq.srt",
         servers: [
-            { name: "⚡ Google Drive Direct", tag: "Instant", url: "https://drive.google.com/ishq" },
-            { name: "🚀 Fast Cloud Mirror", tag: "Backup", url: "https://mega.nz/ishq" },
-            { name: "💾 1080p WebRip Server", tag: "Fast", url: "https://webrip.com/ishq" }
+            { name: "⚡ Google Drive Direct", tag: "Instant", url: "https://drive.google.com/ishq" }
         ]
     },
     {
@@ -141,14 +126,13 @@ const movies = [
         size: "850 MB",
         year: "2023",
         audio: "Korean [Hin Sub]",
-        story: "A paragliding mishap lands an heiress in unfamiliar borders, sparking an unforgettable secret romance with an honorable officer.",
+        story: "A paragliding mishap lands an heiress in unfamiliar borders with a secret romance.",
         poster: "https://picsum.photos/300/400?random=3",
         trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
         streamUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
         subtitleUrl: "https://subscene.best/kdrama.srt",
         servers: [
-            { name: "⚡ Cloud Direct Stream Link", tag: "Direct", url: "https://mega.nz/kdrama" },
-            { name: "🚀 Multi-Episode Fast Pack", tag: "Zip 720p", url: "https://mega.nz/kdrama-zip" }
+            { name: "⚡ Cloud Direct Link", tag: "Direct", url: "https://mega.nz/kdrama" }
         ]
     },
     {
@@ -160,89 +144,13 @@ const movies = [
         size: "3.2 GB",
         year: "2025",
         audio: "Dual [Hin+Kan]",
-        story: "Rocky Bhai's legacy echoes across international waters as global syndicates unite to challenge his absolute golden empire.",
+        story: "Rocky Bhai's legacy echoes across international waters.",
         poster: "https://picsum.photos/300/400?random=6",
         trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
         streamUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
         subtitleUrl: "https://subscene.best/kgf.srt",
         servers: [
-            { name: "⚡ Google Drive 4K HDR", tag: "Ultra Speed", url: "https://drive.google.com/kgf3" },
-            { name: "🚀 Mega 60FPS Server", tag: "Instant", url: "https://mega.nz/kgf3" }
-        ]
-    },
-    {
-        id: 5,
-        name: "Avengers: Secret Wars",
-        category: "hollywood",
-        quality: "4K",
-        rating: "9.5",
-        size: "3.9 GB",
-        year: "2026",
-        audio: "Dual [Hin+Eng]",
-        story: "Multiverses collide in a cosmic battlefield where heroes and variants from every dimension wage the ultimate war for existence.",
-        poster: "https://picsum.photos/300/400?random=7",
-        trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        streamUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        subtitleUrl: "https://subscene.best/avengers.srt",
-        servers: [
-            { name: "⚡ IMAX Enhanced 4K", tag: "4K UHD", url: "https://drive.google.com/avengers" },
-            { name: "🚀 Direct High Speed Cloud", tag: "Instant", url: "https://mega.nz/avengers" }
-        ]
-    },
-    {
-        id: 6,
-        name: "Solo Leveling: Season 2",
-        category: "anime",
-        quality: "1080p",
-        rating: "9.1",
-        size: "1.4 GB",
-        year: "2025",
-        audio: "Dual [Hin+Jap]",
-        story: "Sung Jinwoo unlocks the true power of the Shadow Monarch, raising immortal shadow armies to conquer deepest dungeon cataclysms.",
-        poster: "https://picsum.photos/300/400?random=8",
-        trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        streamUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        subtitleUrl: "https://subscene.best/solo.srt",
-        servers: [
-            { name: "⚡ Mega Anime Server", tag: "1080p 10bit", url: "https://mega.nz/sololeveling" },
-            { name: "🚀 Google Drive All Episodes", tag: "Batch Pack", url: "https://drive.google.com/solo" }
-        ]
-    },
-    {
-        id: 7,
-        name: "Mirzapur: The Final War",
-        category: "series",
-        quality: "1080p",
-        rating: "8.9",
-        size: "2.1 GB",
-        year: "2025",
-        audio: "Hindi [5.1 Audio]",
-        story: "The throne of Purvanchal witnesses bloodiest clashes as old scores, broken alliances, and fierce rivalries ignite the final battle.",
-        poster: "https://picsum.photos/300/400?random=9",
-        trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        streamUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        subtitleUrl: "https://subscene.best/mirzapur.srt",
-        servers: [
-            { name: "⚡ Google Drive Complete Pack", tag: "All Episodes", url: "https://drive.google.com/mirzapur" },
-            { name: "🚀 High Speed Zip Server", tag: "Resume OK", url: "https://mega.nz/mirzapur" }
-        ]
-    },
-    {
-        id: 8,
-        name: "Retro City Turbo",
-        category: "action",
-        quality: "480p",
-        rating: "7.8",
-        size: "420 MB",
-        year: "2023",
-        audio: "Hindi Dubbed",
-        story: "High-octane neon drag racing syndicate battles take over the streets in this adrenaline pumping retro speed thriller.",
-        poster: "https://picsum.photos/300/400?random=4",
-        trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        streamUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        subtitleUrl: "https://subscene.best/retro.srt",
-        servers: [
-            { name: "⚡ Fast Mobile Direct Link", tag: "Compressed", url: "https://mega.nz/retro" }
+            { name: "⚡ Google Drive 4K HDR", tag: "Ultra Speed", url: "https://drive.google.com/kgf3" }
         ]
     }
 ];
@@ -304,7 +212,7 @@ function renderMovies(list) {
     if (counter) counter.innerText = list.length;
 
     if (list.length === 0) {
-        container.innerHTML = `<div class="no-results">No movies found matching your selected filters! 🎬</div>`;
+        container.innerHTML = `<div class="no-results">No movies found! 🎬</div>`;
         return;
     }
 
@@ -413,6 +321,7 @@ function openModal(movieId) {
     updateModalHeart(movieId);
     document.getElementById('modalFavBtn').onclick = (e) => toggleFavorite(e, movieId);
 
+    // Watch Online Stream (Filemoon Video)
     const streamBtn = document.getElementById('modalStreamBtn');
     streamBtn.className = 'stream-btn';
     streamBtn.innerText = '▶ WATCH ONLINE (STREAM)';
@@ -430,6 +339,7 @@ function openModal(movieId) {
         window.open(movie.subtitleUrl, '_blank');
     };
 
+    // Download Servers
     const serverList = document.getElementById('modalServerList');
     serverList.innerHTML = movie.servers.map(srv => `
         <button class="server-btn" onclick="startDownloadWithAd(this, '${srv.url}', 'CONNECTING SERVER', ${movie.id})">
@@ -452,7 +362,7 @@ function handleBackdropClick(e) {
 
 function openPlayer(title, url) {
     document.getElementById('playerTitle').innerText = title;
-    document.getElementById('videoPlayerFrame').src = url + "?autoplay=1";
+    document.getElementById('videoPlayerFrame').src = url;
     document.getElementById('playerModal').style.display = 'flex';
 }
 
@@ -521,7 +431,7 @@ function copyShareLink() {
         const btn = document.getElementById('modalShareBtn');
         btn.classList.add('copied');
         btn.innerText = '✔ COPIED!';
-        showToast("Deep Link copied to clipboard! 🔗");
+        showToast("Link copied! 🔗");
         setTimeout(() => {
             btn.classList.remove('copied');
             btn.innerText = '🔗 COPY';
@@ -532,7 +442,7 @@ function copyShareLink() {
 function shareOnWhatsApp() {
     const info = getShareInfo();
     if (!info) return;
-    const msg = `🍿 *Watch/Download: ${info.movie.name}* (${info.movie.quality})\n⭐ IMDb: ${info.movie.rating} | 🔊 Audio: ${info.movie.audio}\n💾 Size: ${info.movie.size}\n\n⚡ Stream & Download Here:\n${info.shareUrl}`;
+    const msg = `🍿 *Watch/Download: ${info.movie.name}* (${info.movie.quality})\n⭐ IMDb: ${info.movie.rating} | 🔊 Audio: ${info.movie.audio}\n\n⚡ Stream & Download Here:\n${info.shareUrl}`;
     window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(msg)}`, '_blank');
 }
 
