@@ -248,13 +248,16 @@
 
     <!-- Category Tabs -->
     <nav class="category-tabs" aria-label="Movie Categories">
-        <button class="tab-btn active" onclick="filterCategory('all')">🔥 All Trending (Worldwide)</button>
+        <button class="tab-btn active" onclick="filterCategory('all')">🔥 All Trending</button>
+        <button class="tab-btn" onclick="filterCategory('tollywood')">⚡ Tollywood (Telugu)</button>
+        <button class="tab-btn" onclick="filterCategory('kollywood')">🏹 Kollywood (Tamil)</button>
+        <button class="tab-btn" onclick="filterCategory('mollywood')">🌴 Mollywood (Malayalam)</button>
+        <button class="tab-btn" onclick="filterCategory('sandalwood')">👑 Sandalwood (Kannada)</button>
         <button class="tab-btn" onclick="filterCategory('bollywood')">🇮🇳 Bollywood (Hindi)</button>
-        <button class="tab-btn" onclick="filterCategory('south')">⚡ South Indian (Telugu/Tamil/Mal)</button>
         <button class="tab-btn" onclick="filterCategory('hollywood')">🎬 Hollywood (English 4K)</button>
-        <button class="tab-btn" onclick="filterCategory('kdrama')">🇰🇷 K-Drama & Asian</button>
-        <button class="tab-btn" onclick="filterCategory('anime')">⛩️ Anime</button>
-        <button class="tab-btn" onclick="filterCategory('series')">📺 Web Series</button>
+        <button class="tab-btn" onclick="filterCategory('kdrama')">🇰🇷 K-Drama (Korean)</button>
+        <button class="tab-btn" onclick="filterCategory('anime')">⛩️ Anime Universe</button>
+        <button class="tab-btn" onclick="filterCategory('series')">📺 Web Series & OTT</button>
     </nav>
 
     <!-- Quality Tabs -->
@@ -450,6 +453,7 @@
     <div id="neonToast" class="neon-toast"></div>
 
     <script src="catalog.js?v=200"></script>
+    <script src="catalog-engine.js?v=300"></script>
     <script src="script.js?v=200"></script>
 </body>
 </html>
