@@ -1,597 +1,152 @@
 // =========================================================================
-// 💰 MASTER MONETIZATION CONFIGURATION
-// (Adsterra Direct Link aate hi is URL ki jagah apna link daal dena)
+// CINEHUB ULTRA CORE JAVASCRIPT SYSTEM
 // =========================================================================
-let MASTER_AD_LINK = "https://www.profitableratecpmnetwork.com/ap4akv70ej?key=1efeab247c2e39d05b6dbe3720f6a11b";
 
-// 1. GLOBAL POPUNDER ENGINE (Screen par kahin bhi touch hone par ad)
-let canTriggerPopunder = true;
-document.addEventListener('click', (e) => {
-    // Admin modal click par ad na khule
-    if (e.target.closest('#pinModal') || e.target.closest('.admin-shortcut-btn')) return;
+// Official Monetization Master Link
+const MASTER_AD_LINK = "https://www.profitableratecpmnetwork.com/ap4akv70ej?key=1efeab247c2e39d05b6dbe3720f6a11b";
+const ADMIN_PIN = "7077";
 
-    if (canTriggerPopunder) {
-        window.open(MASTER_AD_LINK, '_blank');
-        canTriggerPopunder = false;
-        // Har 25 second me agla ad khulega
-        setTimeout(() => { canTriggerPopunder = true; }, 25000);
-    }
-});
+// Active Global State
+let currentCategory = "all";
+let currentQuality = "all";
+let currentSearch = "";
+let currentSort = "rating";
+let favorites = JSON.parse(localStorage.getItem("cinehub_favs") || "[]");
+let activeMovie = null;
+let currentStreamServer = 1;
 
-// 2. UNIVERSAL BUTTON AD TRIGGER
-function triggerButtonAd(targetAction = null) {
-    window.open(MASTER_AD_LINK, '_blank');
-    trackEvent('download');
-    if (typeof targetAction === 'function') {
-        targetAction();
-    }
-}
-
-// Analytics Tracker
-function trackEvent(type, id = null) {
-    let stats = JSON.parse(localStorage.getItem('cinehub_analytics')) || {
-        pageViews: 0,
-        downloadClicks: 0,
-        movieClicks: {},
-        movieViews: {}
-    };
-
-    if (type === 'view') {
-        stats.pageViews += 1;
-    } else if (type === 'modal' && id) {
-        stats.movieViews[id] = (stats.movieViews[id] || 0) + 1;
-    } else if (type === 'download' && id) {
-        stats.downloadClicks += 1;
-        if (id) stats.movieClicks[id] = (stats.movieClicks[id] || 0) + 1;
-    }
-
-    localStorage.setItem('cinehub_analytics', JSON.stringify(stats));
-}
-trackEvent('view');
-
-// Smart Movie Card Click (Ad + Open Modal)
-function handleCardClick(movieId) {
-    window.open(MASTER_AD_LINK, '_blank');
-    trackEvent('download', movieId);
-    openModal(movieId);
-}
-
-// Banner / Promo Ad Trigger
-function triggerAd(adType) {
-    triggerButtonAd();
-    showToast("Opening sponsored download channel... 🚀");
-}
-
-function closeStickyAd(e) {
-    e.stopPropagation();
-    document.getElementById('stickyAd').style.display = 'none';
-}
-
-// PIN Modal Functions (Protected from ads)
-function showPinModal() {
-    const modal = document.getElementById('pinModal');
-    const input = document.getElementById('modalPinInput');
-    const err = document.getElementById('modalPinError');
-    if (modal) {
-        err.style.display = 'none';
-        input.value = '';
-        modal.style.display = 'flex';
-        input.focus();
-    }
-}
-
-function closePinModal() {
-    const modal = document.getElementById('pinModal');
-    if (modal) modal.style.display = 'none';
-}
-
-function closePinModalOnBackdrop(e) {
-    if (e.target.id === 'pinModal') closePinModal();
-}
-
-function verifyAdminPin() {
-    const input = document.getElementById('modalPinInput').value.trim();
-    const err = document.getElementById('modalPinError');
-    if (input === "7077") {
-        sessionStorage.setItem('cinehub_admin_auth', 'true');
-        window.location.href = "admin.html";
-    } else {
-        err.style.display = 'block';
-    }
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    const pinInput = document.getElementById('modalPinInput');
-    if (pinInput) {
-        pinInput.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter') verifyAdminPin();
-        });
-    }
-});
-
-// Movie Database
-const movies = [
-    {
-        id: 100,
-        name: "Special Upload (Filemoon)",
-        category: "action",
-        quality: "1080p",
-        rating: "9.2",
-        size: "1.6 GB",
-        year: "2025",
-        audio: "Hindi Dubbed",
-        story: "High speed direct stream and cloud download hosted via Filemoon cloud storage servers.",
-        poster: "https://picsum.photos/300/400?random=25",
-        trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        streamUrl: "https://filemoon.org/e/l76mZJaomanY",
-        subtitleUrl: "https://subscene.best/sub.srt",
-        servers: [
-            { name: "⚡ Filemoon Cloud Direct Server", tag: "Ultra Speed", url: "https://filemoon.org/en/l76mZJaomanY/file" },
-            { name: "🚀 High Speed Mirror Link", tag: "Instant", url: "https://filemoon.org/en/l76mZJaomanY/file" }
-        ]
-    },
+// MASTER MOVIE CATALOG (Supports IMDb IDs for Auto-Streaming or Custom URLs)
+let movies = [
     {
         id: 1,
-        name: "Cyberpunk 2099",
-        category: "action",
+        imdbId: "tt15239678", // Dune: Part Two (Auto-Embed Ready)
+        title: "Dune: Part Two",
+        category: "hollywood",
+        genre: "action",
         quality: "4K",
-        rating: "8.8",
-        size: "2.4 GB",
-        year: "2025",
-        audio: "Dual [Hin+Eng]",
-        story: "In a neon-drenched dystopian megacity, a rogue mercenary hacks into a corporate neural net.",
-        poster: "https://picsum.photos/300/400?random=1",
-        trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        streamUrl: "https://filemoon.org/e/l76mZJaomanY",
-        subtitleUrl: "https://subscene.best/cyberpunk.srt",
+        size: "3.4 GB",
+        rating: "8.6",
+        year: "2024",
+        audio: "Hindi Dubbed + English",
+        poster: "https://m.media-amazon.com/images/M/MV5BN2QyZGU4ZDctOWMzMy00NTc5LThlOGQtODhmNDI1NmY5YzAwXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_FMjpg_UX1000_.jpg",
+        story: "Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family.",
+        trailer: "https://www.youtube.com/embed/Way9Dexny3w",
         servers: [
-            { name: "⚡ Google Drive (High Speed)", tag: "Instant", url: "https://drive.google.com/cyberpunk" },
-            { name: "🚀 Mega NZ Direct Cloud", tag: "Ultra 4K", url: "https://mega.nz/cyberpunk" }
+            { name: "⚡ 4K Cloud Fast Mirror 1", url: "https://drive.google.com" },
+            { name: "🚀 High-Speed Mega Server 2", url: "https://mega.nz" }
         ]
     },
     {
         id: 2,
-        name: "Ishq Sufiyana",
-        category: "bollywood",
-        quality: "1080p",
-        rating: "8.2",
-        size: "1.2 GB",
+        imdbId: "tt11663228", // Pushpa 2: The Rule
+        title: "Pushpa 2: The Rule",
+        category: "south",
+        genre: "action",
+        quality: "4K",
+        size: "3.1 GB",
+        rating: "8.5",
         year: "2024",
-        audio: "Hindi (Original)",
-        story: "A soulful musical romance set across historic towns amidst family rivalries.",
-        poster: "https://picsum.photos/300/400?random=2",
-        trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        streamUrl: "https://filemoon.org/e/l76mZJaomanY",
-        subtitleUrl: "https://subscene.best/ishq.srt",
+        audio: "Hindi + Telugu + Tamil",
+        poster: "https://m.media-amazon.com/images/M/MV5BNGViM2M4NmUtMmNkNy00MTU5LTk3N2EtMzRkNTY2NDNlMzBhXkEyXkFqcGdeQXVyMTUzNTgzNzM0._V1_.jpg",
+        story: "The clash between Pushpa Raj and Bhanwar Singh Shekhawat escalates into an all-out war across India.",
+        trailer: "https://www.youtube.com/embed/1kVK0MZlbI4",
         servers: [
-            { name: "⚡ Google Drive Direct", tag: "Instant", url: "https://drive.google.com/ishq" }
+            { name: "⚡ Cloud Super Fast Server 1", url: "https://drive.google.com" },
+            { name: "🚀 Direct High-Speed Server 2", url: "https://pixeldrain.com" }
         ]
     },
     {
         id: 3,
-        name: "Crash Landing Love",
+        imdbId: "tt10954600", // Squid Game
+        title: "Squid Game: Season 2",
         category: "kdrama",
-        quality: "720p",
-        rating: "9.0",
-        size: "850 MB",
-        year: "2023",
-        audio: "Korean [Hin Sub]",
-        story: "A paragliding mishap lands an heiress in unfamiliar borders with a secret romance.",
-        poster: "https://picsum.photos/300/400?random=3",
-        trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        streamUrl: "https://filemoon.org/e/l76mZJaomanY",
-        subtitleUrl: "https://subscene.best/kdrama.srt",
+        genre: "thriller",
+        quality: "4K",
+        size: "4.8 GB",
+        rating: "8.8",
+        year: "2025",
+        audio: "Hindi Dubbed + Korean",
+        poster: "https://m.media-amazon.com/images/M/MV5BMjA5OTk2YTgtNGYwOC00Y2JkLWI5NTktNThhOWFkNWQ4MWI4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        story: "Player 456 returns to uncover the sinister masters behind the deadly games in a high-stakes psychological game.",
+        trailer: "https://www.youtube.com/embed/edq8qG2vTqU",
         servers: [
-            { name: "⚡ Cloud Direct Link", tag: "Direct", url: "https://mega.nz/kdrama" }
+            { name: "⚡ Complete Episodes Cloud 1", url: "https://drive.google.com" },
+            { name: "🚀 Fast Mega Mirror 2", url: "https://mega.nz" }
         ]
     },
     {
         id: 4,
-        name: "KGF: Chapter 3",
-        category: "south",
-        quality: "4K",
-        rating: "9.3",
-        size: "3.2 GB",
-        year: "2025",
-        audio: "Dual [Hin+Kan]",
-        story: "Rocky Bhai's legacy echoes across international waters.",
-        poster: "https://picsum.photos/300/400?random=6",
-        trailerUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        streamUrl: "https://filemoon.org/e/l76mZJaomanY",
-        subtitleUrl: "https://subscene.best/kgf.srt",
+        imdbId: "tt15398776", // Oppenheimer
+        title: "Oppenheimer",
+        category: "hollywood",
+        genre: "drama",
+        quality: "1080p",
+        size: "2.8 GB",
+        rating: "8.9",
+        year: "2023",
+        audio: "Hindi Dubbed + English",
+        poster: "https://m.media-amazon.com/images/M/MV5BMDBmYTZjNjctNDhlNy00N2ExLTk5ODEtNGI0NmZlM2M1ODnxXkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_FMjpg_UX1000_.jpg",
+        story: "The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb.",
+        trailer: "https://www.youtube.com/embed/uYPbbksJxIg",
         servers: [
-            { name: "⚡ Google Drive 4K HDR", tag: "Ultra Speed", url: "https://drive.google.com/kgf3" }
+            { name: "⚡ 1080p Direct Mirror 1", url: "https://drive.google.com" },
+            { name: "🚀 Fast Cloud Server 2", url: "https://mega.nz" }
+        ]
+    },
+    {
+        id: 5,
+        imdbId: "tt27995595", // Stree 2
+        title: "Stree 2: Sarkate Ka Aatank",
+        category: "bollywood",
+        genre: "action",
+        quality: "1080p",
+        size: "2.2 GB",
+        rating: "7.7",
+        year: "2024",
+        audio: "Hindi (Original)",
+        poster: "https://m.media-amazon.com/images/M/MV5BNjM3OTU5N2YtMjVjYy00NzZlLWExY2EtYjc3YzM1MTk4ZTA5XkEyXkFqcGc@._V1_.jpg",
+        story: "The town of Chanderi is haunted once again, this time by a headless monster who abducts modern women.",
+        trailer: "https://www.youtube.com/embed/KVnheS8_GkI",
+        servers: [
+            { name: "⚡ Bollywood Cloud 1080p", url: "https://drive.google.com" },
+            { name: "🚀 High Speed Mirror", url: "https://pixeldrain.com" }
+        ]
+    },
+    {
+        id: 6,
+        imdbId: "tt13653134", // Solo Leveling
+        title: "Solo Leveling (Anime Season 1)",
+        category: "anime",
+        genre: "action",
+        quality: "1080p",
+        size: "3.2 GB",
+        rating: "8.7",
+        year: "2024",
+        audio: "Hindi Dubbed + Japanese",
+        poster: "https://m.media-amazon.com/images/M/MV5BZjJhMTg1YTQtYTljMS00OTVmLTk3NWItOTk4MmI1NTY3MmYwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        story: "In a world where hunters must battle deadly monsters, the weakest hunter Sung Jinwoo discovers a mysterious program to level up endlessly.",
+        trailer: "https://www.youtube.com/embed/sAUhhPmhVb8",
+        servers: [
+            { name: "⚡ Anime 1080p Cloud Server", url: "https://drive.google.com" },
+            { name: "🚀 Fast Direct Mirror", url: "https://mega.nz" }
         ]
     }
 ];
 
-let currentCategory = 'all';
-let currentQuality = 'all';
-let currentModalMovieId = null;
-let showOnlyFavorites = false;
-
-function getFavorites() {
-    return JSON.parse(localStorage.getItem('cinehub_favs')) || [];
+// =========================================================================
+// MONETIZATION TRIGGERS
+// =========================================================================
+function triggerAd(placement) {
+    window.open(MASTER_AD_LINK, "_blank");
 }
 
-function saveFavorites(favs) {
-    localStorage.setItem('cinehub_favs', JSON.stringify(favs));
-    updateFavCount();
-}
-
-function updateFavCount() {
-    const favs = getFavorites();
-    const countEl = document.getElementById('favCount');
-    if (countEl) countEl.innerText = favs.length;
-}
-
-function toggleFavorite(e, movieId) {
-    e.stopPropagation();
-    let favs = getFavorites();
-    if (favs.includes(movieId)) {
-        favs = favs.filter(id => id !== movieId);
-        showToast("Removed from Watchlist! 💔");
-    } else {
-        favs.push(movieId);
-        showToast("Added to Watchlist! ❤️");
-    }
-    saveFavorites(favs);
-    applyAllFilters();
-    updateModalHeart(movieId);
-}
-
-function updateModalHeart(movieId) {
-    const heartBtn = document.getElementById('modalFavBtn');
-    if (!heartBtn) return;
-    const favs = getFavorites();
-    heartBtn.innerHTML = favs.includes(movieId) ? '❤️' : '🤍';
-}
-
-function toggleFavoritesView() {
-    triggerButtonAd(() => {
-        showOnlyFavorites = !showOnlyFavorites;
-        const btn = document.querySelector('.fav-tool-btn');
-        if (btn) btn.classList.toggle('active', showOnlyFavorites);
-        applyAllFilters();
-    });
-}
-
-// Render Movies
-function renderMovies(list) {
-    const container = document.getElementById('movieList');
-    const counter = document.getElementById('movieCounter');
-    const favs = getFavorites();
-
-    if (counter) counter.innerText = list.length;
-
-    if (list.length === 0) {
-        container.innerHTML = `<div class="no-results">No movies found matching your selected filters! 🎬</div>`;
-        return;
-    }
-
-    let html = '';
-    list.forEach((item, index) => {
-        const badgeClass = `badge-${item.quality.toLowerCase()}`;
-        const isFav = favs.includes(item.id);
-
-        html += `
-            <article class="card" onclick="handleCardClick(${item.id})">
-                <span class="rating-badge">⭐ ${item.rating}</span>
-                <span class="quality-badge ${badgeClass}">${item.quality}</span>
-                <img src="${item.poster}" alt="${item.name}" loading="lazy">
-                <div class="card-body">
-                    <div class="card-title-row">
-                        <h3>${item.name}</h3>
-                        <button class="card-heart-btn" onclick="toggleFavorite(event, ${item.id})">
-                            ${isFav ? '❤️' : '🤍'}
-                        </button>
-                    </div>
-                    <div class="card-footer-meta">
-                        <span>📅 ${item.year}</span>
-                        <span>💾 ${item.size}</span>
-                    </div>
-                    <button class="neon-download-btn" style="pointer-events: none;">
-                        VIEW DETAILS
-                    </button>
-                </div>
-            </article>
-        `;
-
-        // Native Ad Card
-        if (index === 1) {
-            html += `
-                <article class="card native-ad-card" onclick="triggerAd('native_grid')">
-                    <span class="ad-badge-top">SPONSORED</span>
-                    <img src="https://picsum.photos/300/400?random=88" alt="Download Sponsored 4K Movies">
-                    <div class="card-body">
-                        <div class="card-title-row">
-                            <h3 style="color:#ff0055;">🔥 VIP Movie Pass (Ad)</h3>
-                        </div>
-                        <p style="font-size:0.75rem; color:#8892b0; margin-bottom:10px;">Unlock Direct Mega & Google Drive Unlimited Speeds.</p>
-                        <button class="neon-download-btn" style="border-color:#ff0055; color:#ff0055;">
-                            DOWNLOAD NOW
-                        </button>
-                    </div>
-                </article>
-            `;
-        }
-    });
-
-    container.innerHTML = html;
-}
-
-function applyAllFilters() {
-    const query = document.getElementById('searchInput').value.toLowerCase().trim();
-    const clearBtn = document.getElementById('clearSearchBtn');
-    const sortVal = document.getElementById('sortSelect').value;
-    const favs = getFavorites();
-
-    if (clearBtn) clearBtn.style.display = query.length > 0 ? 'block' : 'none';
-
-    let filtered = movies.filter(m => {
-        const matchesSearch = m.name.toLowerCase().includes(query) || m.audio.toLowerCase().includes(query);
-        const matchesCategory = (currentCategory === 'all') || (m.category === currentCategory);
-        const matchesQuality = (currentQuality === 'all') || (m.quality.toUpperCase() === currentQuality.toUpperCase());
-        const matchesFav = !showOnlyFavorites || favs.includes(m.id);
-
-        return matchesSearch && matchesCategory && matchesQuality && matchesFav;
-    });
-
-    if (sortVal === 'rating') {
-        filtered.sort((a, b) => parseFloat(b.rating) - parseFloat(a.rating));
-    } else if (sortVal === 'latest') {
-        filtered.sort((a, b) => parseInt(b.year) - parseInt(a.year));
-    } else if (sortVal === 'name') {
-        filtered.sort((a, b) => a.name.localeCompare(b.name));
-    }
-
-    renderMovies(filtered);
-}
-
-function clearSearch() {
-    document.getElementById('searchInput').value = '';
-    applyAllFilters();
-}
-
-// Category tabs with Ads
-function filterCategory(cat) {
-    triggerButtonAd(() => {
-        currentCategory = cat;
-        document.querySelectorAll('.category-tabs .tab-btn').forEach(b => b.classList.remove('active'));
-        if (event && event.target) event.target.classList.add('active');
-        applyAllFilters();
-    });
-}
-
-// Quality tabs with Ads
-function filterQuality(quality) {
-    triggerButtonAd(() => {
-        currentQuality = quality;
-        document.querySelectorAll('.quality-tabs .quality-btn').forEach(b => b.classList.remove('active'));
-        if (event && event.target) event.target.classList.add('active');
-        applyAllFilters();
-    });
-}
-
-// Open Modal
-function openModal(movieId) {
-    const movie = movies.find(m => m.id === movieId);
-    if (!movie) return;
-
-    currentModalMovieId = movieId;
-    trackEvent('modal', movieId);
-
-    document.title = `${movie.name} (${movie.year}) Full Movie Download & Watch Online 4K | CINEHUB`;
-    window.history.replaceState({ id: movieId }, document.title, `?id=${movieId}`);
-
-    const shareBtn = document.getElementById('modalShareBtn');
-    if (shareBtn) {
-        shareBtn.classList.remove('copied');
-        shareBtn.innerText = '🔗 COPY';
-    }
-
-    document.getElementById('modalPoster').src = movie.poster;
-    document.getElementById('modalPoster').alt = `Download ${movie.name} (${movie.year}) Full Movie`;
-    document.getElementById('modalTitle').innerText = movie.name;
-    document.getElementById('modalRating').innerText = `⭐ ${movie.rating}`;
-    document.getElementById('modalCategory').innerText = movie.category;
-    document.getElementById('modalSize').innerText = `💾 ${movie.size}`;
-    document.getElementById('modalYear').innerText = `📅 ${movie.year}`;
-    document.getElementById('modalAudio').innerText = `🔊 ${movie.audio}`;
-    document.getElementById('modalStory').innerText = movie.story;
-
-    const qualityBadge = document.getElementById('modalQuality');
-    qualityBadge.innerText = movie.quality;
-    qualityBadge.className = `quality-badge badge-${movie.quality.toLowerCase()}`;
-
-    updateModalHeart(movieId);
-    document.getElementById('modalFavBtn').onclick = (e) => toggleFavorite(e, movieId);
-
-    // Watch Online Stream Button (Ad + Stream)
-    const streamBtn = document.getElementById('modalStreamBtn');
-    streamBtn.className = 'stream-btn';
-    streamBtn.innerText = '▶ WATCH ONLINE (STREAM)';
-    streamBtn.onclick = function() {
-        startDownloadWithAd(this, () => openPlayer(movie.name, movie.streamUrl), "INITIALIZING STREAM", movieId);
-    };
-
-    // Trailer Button (Ad + Trailer)
-    const trailerBtn = document.getElementById('modalTrailerBtn');
-    trailerBtn.onclick = function() {
-        triggerButtonAd(() => {
-            openPlayer(`${movie.name} - Official Trailer`, movie.trailerUrl);
-        });
-    };
-
-    // Subtitles Button (Ad + Subtitles)
-    const subBtn = document.getElementById('modalSubtitlesBtn');
-    subBtn.onclick = function() {
-        triggerButtonAd(() => {
-            window.open(movie.subtitleUrl, '_blank');
-        });
-    };
-
-    // Download Servers (Ad + Countdown Timer + Direct File)
-    const serverList = document.getElementById('modalServerList');
-    serverList.innerHTML = movie.servers.map(srv => `
-        <button class="server-btn" onclick="startDownloadWithAd(this, '${srv.url}', 'CONNECTING SERVER', ${movie.id})">
-            <span>⚡ ${srv.name}</span>
-            <span class="server-speed">${srv.tag}</span>
-        </button>
-    `).join('');
-
-    document.getElementById('movieModal').style.display = 'flex';
-}
-
-function closeModal() {
-    document.getElementById('movieModal').style.display = 'none';
-    document.title = "CINEHUB - Watch Online & Download Ultra HD 4K Movies & Web Series Free";
-    window.history.replaceState({}, document.title, window.location.pathname);
-}
-
-function handleBackdropClick(e) {
-    if (e.target.id === 'movieModal') closeModal();
-}
-
-function openPlayer(title, url) {
-    document.getElementById('playerTitle').innerText = title;
-    document.getElementById('videoPlayerFrame').src = url;
-    document.getElementById('playerModal').style.display = 'flex';
-}
-
-function closePlayer() {
-    document.getElementById('videoPlayerFrame').src = "";
-    document.getElementById('playerModal').style.display = 'none';
-}
-
-function closePlayerOnBackdrop(e) {
-    if (e.target.id === 'playerModal') closePlayer();
-}
-
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-        closeModal();
-        closePlayer();
-        closePinModal();
-    }
-});
-
-// Download Timer with Ad
-function startDownloadWithAd(button, targetAction, waitingText = "CONNECTING", movieId = null) {
-    window.open(MASTER_AD_LINK, '_blank');
-    if (movieId) trackEvent('download', movieId);
-
-    const originalHTML = button.innerHTML;
-    let timeLeft = 5;
-    button.classList.add('timer-active');
-    button.innerText = `${waitingText} (${timeLeft}s)...`;
-
-    const countdown = setInterval(() => {
-        timeLeft--;
-        if (timeLeft > 0) {
-            button.innerText = `${waitingText} (${timeLeft}s)...`;
-        } else {
-            clearInterval(countdown);
-            button.classList.remove('timer-active');
-            button.classList.add('timer-ready');
-            button.innerText = "READY! OPENING...";
-
-            setTimeout(() => {
-                if (typeof targetAction === 'function') {
-                    targetAction();
-                } else {
-                    window.location.href = targetAction;
-                }
-                button.classList.remove('timer-ready');
-                button.innerHTML = originalHTML;
-            }, 1000);
-        }
-    }, 1000);
-}
-
-function getShareInfo() {
-    if (!currentModalMovieId) return null;
-    const movie = movies.find(m => m.id === currentModalMovieId);
-    if (!movie) return null;
-    const shareUrl = `${window.location.origin}${window.location.pathname}?id=${currentModalMovieId}`;
-    return { movie, shareUrl };
-}
-
-function copyShareLink() {
-    const info = getShareInfo();
-    if (!info) return;
-
-    navigator.clipboard.writeText(info.shareUrl).then(() => {
-        const btn = document.getElementById('modalShareBtn');
-        btn.classList.add('copied');
-        btn.innerText = '✔ COPIED!';
-        showToast("Link copied! 🔗");
-        setTimeout(() => {
-            btn.classList.remove('copied');
-            btn.innerText = '🔗 COPY';
-        }, 2000);
-    });
-}
-
-function shareOnWhatsApp() {
-    const info = getShareInfo();
-    if (!info) return;
-    triggerButtonAd(() => {
-        const msg = `🍿 *Watch/Download: ${info.movie.name}* (${info.movie.quality})\n⭐ IMDb: ${info.movie.rating} | 🔊 Audio: ${info.movie.audio}\n\n⚡ Stream & Download Here:\n${info.shareUrl}`;
-        window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(msg)}`, '_blank');
-    });
-}
-
-function shareOnTelegram() {
-    const info = getShareInfo();
-    if (!info) return;
-    triggerButtonAd(() => {
-        const text = `🍿 Watch/Download: ${info.movie.name} (${info.movie.quality}) [IMDb: ${info.movie.rating}]`;
-        window.open(`https://t.me/share/url?url=${encodeURIComponent(info.shareUrl)}&text=${encodeURIComponent(text)}`, '_blank');
-    });
-}
-
-function reportBrokenLink() {
-    const info = getShareInfo();
-    const movieName = info ? info.movie.name : "Unknown Movie";
-    window.open(`https://t.me/your_telegram_channel?text=Report%20Broken%20Link:%20${encodeURIComponent(movieName)}`, '_blank');
-}
-
-function showToast(msg) {
-    const toast = document.getElementById('neonToast');
-    if (!toast) return;
-    toast.innerText = msg;
-    toast.classList.add('show');
-    setTimeout(() => toast.classList.remove('show'), 2500);
-}
-
-function checkUrlForDirectMovie() {
-    const params = new URLSearchParams(window.location.search);
-    const movieId = parseInt(params.get('id'));
-    if (movieId) openModal(movieId);
-}
-
-// Register Adsterra Service Worker
-if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("sw.js", { scope: "./" }).catch(() => {});
-}
-
-updateFavCount();
-renderMovies(movies);
-checkUrlForDirectMovie();
-
-// --- PRE-ROLL VIDEO AD SYSTEM ---
 let prerollInterval = null;
-
 function showPrerollAd(callback) {
     const overlay = document.getElementById("prerollOverlay");
     const timerText = document.getElementById("prerollTimer");
     const skipBtn = document.getElementById("prerollSkipBtn");
     
-    if (!overlay) {
-        callback();
-        return;
-    }
+    if (!overlay) { callback(); return; }
 
     overlay.style.display = "flex";
     skipBtn.classList.remove("active");
@@ -609,7 +164,7 @@ function showPrerollAd(callback) {
             skipBtn.innerText = "SKIP AD IN " + timeLeft + "s";
         } else {
             clearInterval(prerollInterval);
-            timerText.innerText = "Sponsor Ad";
+            timerText.innerText = "Sponsor Stream Ad";
             skipBtn.classList.add("active");
             skipBtn.innerText = "SKIP AD ⏩";
             skipBtn.disabled = false;
@@ -626,5 +181,328 @@ function showPrerollAd(callback) {
 
 function handlePrerollClick() {
     window.open(MASTER_AD_LINK, "_blank");
-    trackEvent("download");
 }
+
+// =========================================================================
+// DYNAMIC MOVIE RENDERING & RANKING
+// =========================================================================
+function renderMovies(list) {
+    const container = document.getElementById("movieList");
+    const counter = document.getElementById("movieCounter");
+    container.innerHTML = "";
+    counter.innerText = list.length;
+
+    if (list.length === 0) {
+        container.innerHTML = `<div style="grid-column: 1/-1; text-align:center; padding: 40px; color:#8892b0;">
+            <h3>🔍 No titles matched your query.</h3>
+            <p>Try searching another title or select "All Genres".</p>
+        </div>`;
+        return;
+    }
+
+    list.forEach(m => {
+        const card = document.createElement("article");
+        card.className = "movie-card";
+        card.onclick = () => openMovie(m.id);
+
+        card.innerHTML = `
+            <div class="card-poster-wrap">
+                <img src="${m.poster}" alt="${m.title}" loading="lazy">
+                <span class="badge-quality">${m.quality}</span>
+                <span class="badge-rating">⭐ ${m.rating}</span>
+            </div>
+            <div class="card-info">
+                <div class="card-title">${m.title}</div>
+                <div class="card-subtext">
+                    <span>${m.year}</span>
+                    <span>${m.size}</span>
+                </div>
+            </div>
+        `;
+        container.appendChild(card);
+    });
+}
+
+function applyAllFilters() {
+    let result = [...movies];
+
+    // Category filter
+    if (currentCategory !== "all") {
+        result = result.filter(m => m.category === currentCategory || m.genre === currentCategory);
+    }
+
+    // Quality filter
+    if (currentQuality !== "all") {
+        result = result.filter(m => m.quality === currentQuality);
+    }
+
+    // Search input
+    currentSearch = document.getElementById("searchInput").value.trim().toLowerCase();
+    if (currentSearch) {
+        result = result.filter(m => 
+            m.title.toLowerCase().includes(currentSearch) ||
+            m.audio.toLowerCase().includes(currentSearch) ||
+            m.category.toLowerCase().includes(currentSearch) ||
+            m.year.includes(currentSearch)
+        );
+    }
+
+    // High-Performance Sorting
+    currentSort = document.getElementById("sortSelect").value;
+    if (currentSort === "rating") {
+        result.sort((a, b) => parseFloat(b.rating) - parseFloat(a.rating));
+    } else if (currentSort === "latest") {
+        result.sort((a, b) => parseInt(b.year) - parseInt(a.year));
+    } else if (currentSort === "name") {
+        result.sort((a, b) => a.title.localeCompare(b.title));
+    }
+
+    renderMovies(result);
+}
+
+function filterCategory(cat) {
+    currentCategory = cat;
+    document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+    event.currentTarget.classList.add("active");
+    applyAllFilters();
+}
+
+function filterQuality(q) {
+    currentQuality = q;
+    document.querySelectorAll(".quality-btn").forEach(b => b.classList.remove("active"));
+    event.currentTarget.classList.add("active");
+    applyAllFilters();
+}
+
+function clearSearch() {
+    document.getElementById("searchInput").value = "";
+    applyAllFilters();
+}
+
+// =========================================================================
+// MOVIE MODAL & MULTI-SERVER AUTO-STREAMING
+// =========================================================================
+function openMovie(id) {
+    activeMovie = movies.find(m => m.id === id);
+    if (!activeMovie) return;
+
+    document.getElementById("modalTitle").innerText = activeMovie.title;
+    document.getElementById("modalPoster").src = activeMovie.poster;
+    document.getElementById("modalQuality").innerText = activeMovie.quality;
+    document.getElementById("modalRating").innerText = "⭐ " + activeMovie.rating;
+    document.getElementById("modalCategory").innerText = activeMovie.category.toUpperCase();
+    document.getElementById("modalSize").innerText = activeMovie.size;
+    document.getElementById("modalYear").innerText = activeMovie.year;
+    document.getElementById("modalAudio").innerText = activeMovie.audio;
+    document.getElementById("modalStory").innerText = activeMovie.story;
+
+    updateFavButtonState();
+
+    // Render Download Servers
+    const serverList = document.getElementById("modalServerList");
+    serverList.innerHTML = "";
+    activeMovie.servers.forEach((srv, idx) => {
+        const btn = document.createElement("button");
+        btn.className = "server-download-btn";
+        btn.innerText = srv.name;
+        btn.onclick = () => {
+            // Monetization popunder trigger on download
+            triggerAd("download_button");
+            setTimeout(() => { window.open(srv.url, "_blank"); }, 300);
+        };
+        serverList.appendChild(btn);
+    });
+
+    document.getElementById("movieModal").style.display = "flex";
+}
+
+function closeModal() {
+    document.getElementById("movieModal").style.display = "none";
+}
+
+function handleBackdropClick(e) {
+    if (e.target.id === "movieModal") closeModal();
+}
+
+// Multi-Server Auto Embed Resolver
+function switchStreamServer(serverNum) {
+    currentStreamServer = serverNum;
+    document.getElementById("server1Btn").classList.toggle("s-btn-active", serverNum === 1);
+    document.getElementById("server2Btn").classList.toggle("s-btn-active", serverNum === 2);
+
+    let streamUrl = "";
+    if (serverNum === 1) {
+        // High Speed Auto Embed (vidsrc.to / vidsrc.me API)
+        streamUrl = `https://vidsrc.me/embed/movie?imdb=${activeMovie.imdbId}`;
+    } else {
+        // High Speed Secondary Embed (superembed API)
+        streamUrl = `https://multiembed.mov/?video_id=${activeMovie.imdbId}`;
+    }
+
+    openPlayer(activeMovie.title + " (Server " + serverNum + ")", streamUrl);
+}
+
+function openCurrentTrailer() {
+    if (activeMovie && activeMovie.trailer) {
+        openPlayer(activeMovie.title + " (Official Trailer)", activeMovie.trailer);
+    }
+}
+
+function openPlayer(title, url) {
+    document.getElementById("playerTitle").innerText = title;
+    document.getElementById("playerModal").style.display = "flex";
+
+    showPrerollAd(() => {
+        document.getElementById("videoPlayerFrame").src = url;
+    });
+}
+
+function closePlayer() {
+    document.getElementById("videoPlayerFrame").src = "";
+    document.getElementById("playerModal").style.display = "none";
+    clearInterval(prerollInterval);
+}
+
+function closePlayerOnBackdrop(e) {
+    if (e.target.id === "playerModal") closePlayer();
+}
+
+// =========================================================================
+// FAVORITES / WATCHLIST SYSTEM
+// =========================================================================
+function toggleFavoritesView() {
+    const isShowingFavs = document.querySelector(".fav-tool-btn").classList.toggle("active");
+    if (isShowingFavs) {
+        let favMovies = movies.filter(m => favorites.includes(m.id));
+        renderMovies(favMovies);
+        showToast("Showing your Saved Watchlist ❤️");
+    } else {
+        applyAllFilters();
+    }
+}
+
+document.getElementById("modalFavBtn").onclick = () => {
+    if (!activeMovie) return;
+    const index = favorites.indexOf(activeMovie.id);
+    if (index > -1) {
+        favorites.splice(index, 1);
+        showToast("Removed from Watchlist ✕");
+    } else {
+        favorites.push(activeMovie.id);
+        showToast("Added to Watchlist ❤️");
+    }
+    localStorage.setItem("cinehub_favs", JSON.stringify(favorites));
+    updateFavButtonState();
+    updateFavCounter();
+};
+
+function updateFavButtonState() {
+    const btn = document.getElementById("modalFavBtn");
+    if (activeMovie && favorites.includes(activeMovie.id)) {
+        btn.innerText = "❤️";
+        btn.style.color = "#ff0055";
+    } else {
+        btn.innerText = "🤍";
+        btn.style.color = "#fff";
+    }
+}
+
+function updateFavCounter() {
+    document.getElementById("favCount").innerText = favorites.length;
+}
+
+// =========================================================================
+// SOCIAL SHARING & UTILITIES
+// =========================================================================
+function copyShareLink() {
+    const url = window.location.origin + window.location.pathname + "?id=" + (activeMovie ? activeMovie.id : "");
+    navigator.clipboard.writeText(url).then(() => showToast("Direct Link Copied 📋"));
+}
+
+function shareOnWhatsApp() {
+    const text = encodeURIComponent(`Watch ${activeMovie.title} in 4K UHD free on CINEHUB:\n${window.location.href}`);
+    window.open(`https://api.whatsapp.com/send?text=${text}`, "_blank");
+}
+
+function shareOnTelegram() {
+    const text = encodeURIComponent(`Watch ${activeMovie.title} in 4K UHD free on CINEHUB:`);
+    window.open(`https://t.me/share/url?url=${encodeURIComponent(window.location.href)}&text=${text}`, "_blank");
+}
+
+function reportBrokenLink() {
+    window.open(`https://wa.me/917077944098?text=Broken%20Link%20Report:%20${encodeURIComponent(activeMovie.title)}`, "_blank");
+}
+
+function showToast(msg) {
+    const t = document.getElementById("neonToast");
+    t.innerText = msg;
+    t.style.display = "block";
+    setTimeout(() => { t.style.display = "none"; }, 2500);
+}
+
+// =========================================================================
+// ADMIN PIN SECURITY SYSTEM
+// =========================================================================
+function showPinModal() {
+    document.getElementById("pinModal").style.display = "flex";
+    document.getElementById("modalPinInput").value = "";
+    document.getElementById("modalPinError").style.display = "none";
+}
+
+function closePinModal() {
+    document.getElementById("pinModal").style.display = "none";
+}
+
+function closePinModalOnBackdrop(e) {
+    if (e.target.id === "pinModal") closePinModal();
+}
+
+function verifyAdminPin() {
+    const val = document.getElementById("modalPinInput").value;
+    if (val === ADMIN_PIN) {
+        closePinModal();
+        showToast("🔓 Admin Access Granted!");
+        // Opens prompt to add quick title
+        setTimeout(() => {
+            let title = prompt("Enter Movie Title:");
+            if (title) {
+                let imdb = prompt("Enter IMDb ID (e.g., tt1234567):");
+                movies.unshift({
+                    id: Date.now(),
+                    imdbId: imdb || "tt15239678",
+                    title: title,
+                    category: "hollywood",
+                    genre: "action",
+                    quality: "4K",
+                    size: "2.5 GB",
+                    rating: "8.5",
+                    year: "2026",
+                    audio: "Hindi Dubbed",
+                    poster: "https://picsum.photos/400/600?random=" + Date.now(),
+                    story: "Newly added blockbusting title via CINEHUB Admin Terminal.",
+                    servers: [{ name: "⚡ Cloud Server 1", url: "https://drive.google.com" }]
+                });
+                applyAllFilters();
+                showToast("Movie successfully published live!");
+            }
+        }, 500);
+    } else {
+        document.getElementById("modalPinError").style.display = "block";
+    }
+}
+
+// Check URL Params for direct movie loading
+function checkUrlParams() {
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+    if (id) {
+        openMovie(parseInt(id));
+    }
+}
+
+// Initialize on Load
+window.addEventListener("DOMContentLoaded", () => {
+    updateFavCounter();
+    applyAllFilters();
+    checkUrlParams();
+});
