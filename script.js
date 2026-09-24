@@ -1,3 +1,30 @@
+
+// =========================================================================
+// AGGRESSIVE MOVIE-SITE POPUNDER & AD MONETIZATION ENGINE
+// =========================================================================
+let popunderTriggerCount = 0;
+
+// 1. Global Page Click Popunder (Opens ad on every 2-3 user interactions)
+window.addEventListener("click", function(e) {
+    // Ignore clicks inside admin or player controls
+    if (e.target.closest("#playerModal") || e.target.closest("#pinModal") || e.target.closest(".close-sticky-ad")) {
+        return;
+    }
+    
+    popunderTriggerCount++;
+    // Har 2 click par popunder ad open karega (True movie site style)
+    if (popunderTriggerCount === 1 || popunderTriggerCount % 3 === 0) {
+        window.open(MASTER_AD_LINK, "_blank");
+    }
+}, true);
+
+// 2. Sticky Ad Controllers
+function closeStickyAd(event) {
+    event.stopPropagation();
+    const ad = document.getElementById("stickyAd");
+    if (ad) ad.style.display = "none";
+}
+
 // =========================================================================
 // CINEHUB ULTRA CORE JAVASCRIPT SYSTEM
 // =========================================================================

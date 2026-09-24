@@ -732,3 +732,98 @@ footer {
     cursor: pointer;
 }
 .pin-error-text { color: var(--pink); font-size: 0.8rem; margin-top: 10px; display: none; }
+
+/* --- Floating Sticky Mobile Bottom Banner --- */
+.sticky-bottom-ad {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(10, 16, 32, 0.98), rgba(20, 10, 30, 0.98));
+    border-top: 2px solid var(--cyan);
+    padding: 10px 14px;
+    z-index: 99;
+    box-shadow: 0 -4px 20px rgba(0, 229, 255, 0.25);
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.sticky-ad-content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 0.84rem;
+    color: #fff;
+}
+
+.ad-badge {
+    background: var(--pink);
+    color: #fff;
+    font-size: 0.65rem;
+    font-weight: 900;
+    padding: 3px 6px;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.sticky-cta-btn {
+    background: var(--cyan);
+    color: #000;
+    font-weight: 900;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    box-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+}
+
+.close-sticky-ad {
+    position: absolute;
+    top: -12px;
+    right: 15px;
+    background: #ff0055;
+    color: #fff;
+    border: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    font-size: 0.75rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* --- Floating Corner Social Bar Widget --- */
+.social-bar-prompt {
+    position: fixed;
+    bottom: 75px;
+    right: 15px;
+    background: rgba(15, 23, 42, 0.95);
+    border: 1px solid var(--cyan);
+    padding: 10px 14px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 98;
+    cursor: pointer;
+    box-shadow: 0 0 18px rgba(0, 229, 255, 0.35);
+    animation: socialPulse 3s infinite ease-in-out;
+}
+
+.pulse-icon { font-size: 1.2rem; }
+.social-text strong { display: block; font-size: 0.78rem; color: #fff; }
+.social-text p { font-size: 0.68rem; color: var(--green); margin: 0; }
+.social-arrow { color: var(--cyan); font-weight: bold; font-size: 0.85rem; }
+
+@keyframes socialPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+@media (max-width: 600px) {
+    .social-bar-prompt { display: none; }
+}
