@@ -1,10 +1,31 @@
-const ADS_CONFIG = {
-    DOWNLOAD_DIRECT_LINK: "https://your-adsterra-direct-link-here.com",
-    POPUNDER_DIRECT_LINK: "https://your-adsterra-direct-link-here.com",
-    PROMO_DIRECT_LINK: "https://your-adsterra-direct-link-here.com"
-};
+// =========================================================================
+// 💰 MASTER MONETIZATION CONFIGURATION
+// (Adsterra Direct Link aate hi is URL ki jagah apna link daal dena)
+// =========================================================================
+let MASTER_AD_LINK = "https://your-adsterra-direct-link-here.com";
 
-const DEFAULT_PAGE_TITLE = "CINEHUB - Watch Online & Download Ultra HD 4K Movies & Web Series Free";
+// 1. GLOBAL POPUNDER ENGINE (Screen par kahin bhi touch hone par ad)
+let canTriggerPopunder = true;
+document.addEventListener('click', (e) => {
+    // Admin modal click par ad na khule
+    if (e.target.closest('#pinModal') || e.target.closest('.admin-shortcut-btn')) return;
+
+    if (canTriggerPopunder) {
+        window.open(MASTER_AD_LINK, '_blank');
+        canTriggerPopunder = false;
+        // Har 25 second me agla ad khulega
+        setTimeout(() => { canTriggerPopunder = true; }, 25000);
+    }
+});
+
+// 2. UNIVERSAL BUTTON AD TRIGGER
+function triggerButtonAd(targetAction = null) {
+    window.open(MASTER_AD_LINK, '_blank');
+    trackEvent('download');
+    if (typeof targetAction === 'function') {
+        targetAction();
+    }
+}
 
 // Analytics Tracker
 function trackEvent(type, id = null) {
@@ -28,17 +49,17 @@ function trackEvent(type, id = null) {
 }
 trackEvent('view');
 
-// Smart Popunder
+// Smart Movie Card Click (Ad + Open Modal)
 function handleCardClick(movieId) {
-    window.open(ADS_CONFIG.POPUNDER_DIRECT_LINK, '_blank');
+    window.open(MASTER_AD_LINK, '_blank');
     trackEvent('download', movieId);
     openModal(movieId);
 }
 
+// Banner / Promo Ad Trigger
 function triggerAd(adType) {
-    window.open(ADS_CONFIG.PROMO_DIRECT_LINK, '_blank');
-    trackEvent('download');
-    showToast("Opening high-speed download channel... 🚀");
+    triggerButtonAd();
+    showToast("Opening sponsored download channel... 🚀");
 }
 
 function closeStickyAd(e) {
@@ -46,7 +67,7 @@ function closeStickyAd(e) {
     document.getElementById('stickyAd').style.display = 'none';
 }
 
-// PIN Modal Functions
+// PIN Modal Functions (Protected from ads)
 function showPinModal() {
     const modal = document.getElementById('pinModal');
     const input = document.getElementById('modalPinInput');
@@ -227,13 +248,15 @@ function updateModalHeart(movieId) {
 }
 
 function toggleFavoritesView() {
-    showOnlyFavorites = !showOnlyFavorites;
-    const btn = document.querySelector('.fav-tool-btn');
-    if (btn) btn.classList.toggle('active', showOnlyFavorites);
-    applyAllFilters();
+    triggerButtonAd(() => {
+        showOnlyFavorites = !showOnlyFavorites;
+        const btn = document.querySelector('.fav-tool-btn');
+        if (btn) btn.classList.toggle('active', showOnlyFavorites);
+        applyAllFilters();
+    });
 }
 
-// Render Movies with Proper Semantic markup
+// Render Movies
 function renderMovies(list) {
     const container = document.getElementById('movieList');
     const counter = document.getElementById('movieCounter');
@@ -255,7 +278,7 @@ function renderMovies(list) {
             <article class="card" onclick="handleCardClick(${item.id})">
                 <span class="rating-badge">⭐ ${item.rating}</span>
                 <span class="quality-badge ${badgeClass}">${item.quality}</span>
-                <img src="${item.poster}" alt="Watch ${item.name} (${item.year}) Free HD" loading="lazy">
+                <img src="${item.poster}" alt="${item.name}" loading="lazy">
                 <div class="card-body">
                     <div class="card-title-row">
                         <h3>${item.name}</h3>
@@ -274,6 +297,7 @@ function renderMovies(list) {
             </article>
         `;
 
+        // Native Ad Card
         if (index === 1) {
             html += `
                 <article class="card native-ad-card" onclick="triggerAd('native_grid')">
@@ -329,21 +353,27 @@ function clearSearch() {
     applyAllFilters();
 }
 
+// Category tabs with Ads
 function filterCategory(cat) {
-    currentCategory = cat;
-    document.querySelectorAll('.category-tabs .tab-btn').forEach(b => b.classList.remove('active'));
-    event.target.classList.add('active');
-    applyAllFilters();
+    triggerButtonAd(() => {
+        currentCategory = cat;
+        document.querySelectorAll('.category-tabs .tab-btn').forEach(b => b.classList.remove('active'));
+        if (event && event.target) event.target.classList.add('active');
+        applyAllFilters();
+    });
 }
 
+// Quality tabs with Ads
 function filterQuality(quality) {
-    currentQuality = quality;
-    document.querySelectorAll('.quality-tabs .quality-btn').forEach(b => b.classList.remove('active'));
-    event.target.classList.add('active');
-    applyAllFilters();
+    triggerButtonAd(() => {
+        currentQuality = quality;
+        document.querySelectorAll('.quality-tabs .quality-btn').forEach(b => b.classList.remove('active'));
+        if (event && event.target) event.target.classList.add('active');
+        applyAllFilters();
+    });
 }
 
-// Open Modal with Dynamic SEO Title & URL State
+// Open Modal
 function openModal(movieId) {
     const movie = movies.find(m => m.id === movieId);
     if (!movie) return;
@@ -351,7 +381,6 @@ function openModal(movieId) {
     currentModalMovieId = movieId;
     trackEvent('modal', movieId);
 
-    // 🚀 DYNAMIC SEO TITLE UPDATE (For Google Search & Social Bots)
     document.title = `${movie.name} (${movie.year}) Full Movie Download & Watch Online 4K | CINEHUB`;
     window.history.replaceState({ id: movieId }, document.title, `?id=${movieId}`);
 
@@ -378,6 +407,7 @@ function openModal(movieId) {
     updateModalHeart(movieId);
     document.getElementById('modalFavBtn').onclick = (e) => toggleFavorite(e, movieId);
 
+    // Watch Online Stream Button (Ad + Stream)
     const streamBtn = document.getElementById('modalStreamBtn');
     streamBtn.className = 'stream-btn';
     streamBtn.innerText = '▶ WATCH ONLINE (STREAM)';
@@ -385,16 +415,23 @@ function openModal(movieId) {
         startDownloadWithAd(this, () => openPlayer(movie.name, movie.streamUrl), "INITIALIZING STREAM", movieId);
     };
 
+    // Trailer Button (Ad + Trailer)
     const trailerBtn = document.getElementById('modalTrailerBtn');
     trailerBtn.onclick = function() {
-        openPlayer(`${movie.name} - Official Trailer`, movie.trailerUrl);
+        triggerButtonAd(() => {
+            openPlayer(`${movie.name} - Official Trailer`, movie.trailerUrl);
+        });
     };
 
+    // Subtitles Button (Ad + Subtitles)
     const subBtn = document.getElementById('modalSubtitlesBtn');
     subBtn.onclick = function() {
-        window.open(movie.subtitleUrl, '_blank');
+        triggerButtonAd(() => {
+            window.open(movie.subtitleUrl, '_blank');
+        });
     };
 
+    // Download Servers (Ad + Countdown Timer + Direct File)
     const serverList = document.getElementById('modalServerList');
     serverList.innerHTML = movie.servers.map(srv => `
         <button class="server-btn" onclick="startDownloadWithAd(this, '${srv.url}', 'CONNECTING SERVER', ${movie.id})">
@@ -408,7 +445,7 @@ function openModal(movieId) {
 
 function closeModal() {
     document.getElementById('movieModal').style.display = 'none';
-    document.title = DEFAULT_PAGE_TITLE;
+    document.title = "CINEHUB - Watch Online & Download Ultra HD 4K Movies & Web Series Free";
     window.history.replaceState({}, document.title, window.location.pathname);
 }
 
@@ -439,8 +476,9 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
+// Download Timer with Ad
 function startDownloadWithAd(button, targetAction, waitingText = "CONNECTING", movieId = null) {
-    window.open(ADS_CONFIG.DOWNLOAD_DIRECT_LINK, '_blank');
+    window.open(MASTER_AD_LINK, '_blank');
     if (movieId) trackEvent('download', movieId);
 
     const originalHTML = button.innerHTML;
@@ -498,15 +536,19 @@ function copyShareLink() {
 function shareOnWhatsApp() {
     const info = getShareInfo();
     if (!info) return;
-    const msg = `🍿 *Watch/Download: ${info.movie.name}* (${info.movie.quality})\n⭐ IMDb: ${info.movie.rating} | 🔊 Audio: ${info.movie.audio}\n\n⚡ Stream & Download Here:\n${info.shareUrl}`;
-    window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(msg)}`, '_blank');
+    triggerButtonAd(() => {
+        const msg = `🍿 *Watch/Download: ${info.movie.name}* (${info.movie.quality})\n⭐ IMDb: ${info.movie.rating} | 🔊 Audio: ${info.movie.audio}\n\n⚡ Stream & Download Here:\n${info.shareUrl}`;
+        window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(msg)}`, '_blank');
+    });
 }
 
 function shareOnTelegram() {
     const info = getShareInfo();
     if (!info) return;
-    const text = `🍿 Watch/Download: ${info.movie.name} (${info.movie.quality}) [IMDb: ${info.movie.rating}]`;
-    window.open(`https://t.me/share/url?url=${encodeURIComponent(info.shareUrl)}&text=${encodeURIComponent(text)}`, '_blank');
+    triggerButtonAd(() => {
+        const text = `🍿 Watch/Download: ${info.movie.name} (${info.movie.quality}) [IMDb: ${info.movie.rating}]`;
+        window.open(`https://t.me/share/url?url=${encodeURIComponent(info.shareUrl)}&text=${encodeURIComponent(text)}`, '_blank');
+    });
 }
 
 function reportBrokenLink() {
@@ -527,6 +569,11 @@ function checkUrlForDirectMovie() {
     const params = new URLSearchParams(window.location.search);
     const movieId = parseInt(params.get('id'));
     if (movieId) openModal(movieId);
+}
+
+// Register Adsterra Service Worker
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js", { scope: "./" }).catch(() => {});
 }
 
 updateFavCount();
