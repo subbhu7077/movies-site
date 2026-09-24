@@ -6,22 +6,4 @@
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
-    <url>
-        <loc>https://subbhu7077.github.io/movies-site/?id=100</loc>
-        <lastmod>2026-09-24</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://subbhu7077.github.io/movies-site/?id=1</loc>
-        <lastmod>2026-09-24</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://subbhu7077.github.io/movies-site/?id=4</loc>
-        <lastmod>2026-09-24</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
 </urlset>

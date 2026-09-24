@@ -4,55 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Primary Global SEO Meta Tags -->
-    <title>CINEHUB - Watch Online & Download Ultra HD 4K Movies & Web Series Free</title>
-    <meta name="title" content="CINEHUB - Watch Online & Download Ultra HD 4K Movies & Web Series Free">
-    <meta name="description" content="Stream and download latest 2026 Hollywood, Bollywood, South Hindi Dubbed, Anime and K-Drama movies in Ultra HD 4K, 1080p, and 720p. High-speed direct cloud servers with zero waiting.">
-    <meta name="keywords" content="movies download 2026, free 4k movies, watch online hd movies, direct mega link, google drive movie link, bollywood movies 1080p, hollywood hindi dubbed, south dubbed 4k, anime episode download, cinehub movies">
+    <!-- PRIMARY GLOBAL SEO (Rank #1 Focus) -->
+    <title>CINEHUB - Download & Watch Online 4K Ultra HD Movies Free 2026</title>
+    <meta name="title" content="CINEHUB - Download & Watch Online 4K Ultra HD Movies Free 2026">
+    <meta name="description" content="Watch and download the latest 2026 movies, Hollywood, Bollywood, South Hindi Dubbed, and K-Dramas in 4K Ultra HD and 1080p. 100% Free fast direct cloud links. No buffering.">
+    <meta name="keywords" content="movies, download movies, watch online movies, free 4k movies, bollywood 2026, hollywood in hindi, south dubbed movies, k-drama download, latest series, hd movies free, cinehub, cinehub movies">
+    
+    <!-- ADVANCED CRAWLER DIRECTIVES -->
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="author" content="CINEHUB">
-    <meta name="theme-color" content="#00e5ff">
+    <meta name="googlebot" content="index, follow">
+    <meta name="bingbot" content="index, follow">
     <link rel="canonical" href="https://subbhu7077.github.io/movies-site/">
 
-    <!-- Open Graph / Facebook / WhatsApp SEO Tags -->
+    <!-- OPEN GRAPH / SOCIAL MEDIA (WhatsApp, Facebook, Telegram Preview) -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://subbhu7077.github.io/movies-site/">
     <meta property="og:site_name" content="CINEHUB">
-    <meta property="og:title" content="CINEHUB - Ultra Fast 4K Movies & Streaming Portal">
+    <meta property="og:title" content="CINEHUB - Ultra Fast 4K Movies Streaming Portal">
     <meta property="og:description" content="Direct high-speed stream & download links for latest movies in 4K, 1080p & 720p. Watch online without buffering.">
     <meta property="og:image" content="https://picsum.photos/1200/630?random=100">
 
-    <!-- Twitter Card SEO Tags -->
+    <!-- TWITTER CARDS -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://subbhu7077.github.io/movies-site/">
     <meta name="twitter:title" content="CINEHUB - Ultra Fast 4K Movies Portal">
     <meta name="twitter:description" content="Watch & Download Ultra HD 4K Movies & Web Series with direct cloud links.">
     <meta name="twitter:image" content="https://picsum.photos/1200/630?random=100">
 
-    <!-- Structured Data: Google Schema.org JSON-LD (Search Rich Snippets) -->
+    <!-- GOOGLE STRUCTURED DATA (Schema.org / JSON-LD for Rich Snippets in Search) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "CINEHUB",
+      "alternateName": ["CineHub Movies", "Cine Hub"],
       "url": "https://subbhu7077.github.io/movies-site/",
       "description": "Ultra Fast 4K Movies Streaming & Direct Cloud Download Platform.",
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://subbhu7077.github.io/movies-site/?search={search_term_string}",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://subbhu7077.github.io/movies-site/?search={search_term_string}"
+        },
         "query-input": "required name=search_term_string"
       }
     }
     </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "CINEHUB",
+      "url": "https://subbhu7077.github.io/movies-site/",
+      "logo": "https://picsum.photos/512/512?random=100"
+    }
+    </script>
 
-    <link rel="stylesheet" href="style.css?v=30">
+    <link rel="stylesheet" href="style.css?v=50">
 </head>
 <body>
 
     <div class="ambient-glow glow-cyan"></div>
     <div class="ambient-glow glow-pink"></div>
 
-    <!-- Announcement Bar -->
     <div class="top-notice">
         <div class="notice-text">
             <span class="live-dot"></span>
@@ -63,13 +77,12 @@
         </a>
     </div>
 
-    <!-- Header Section -->
     <header>
         <div class="logo-wrap">
             <h1 class="neon-title">CINE<span>HUB</span></h1>
             <div class="neon-glow-line"></div>
         </div>
-        <p class="subtitle">ULTRA FAST SERVERS • DIRECT 4K DOWNLOAD • INSTANT STREAM</p>
+        <h2 class="subtitle" style="font-size: 0.8rem;">ULTRA FAST SERVERS • DIRECT 4K DOWNLOAD • INSTANT STREAM</h2>
 
         <div class="header-tools">
             <button class="fav-tool-btn" onclick="toggleFavoritesView()">
@@ -81,7 +94,6 @@
         </div>
     </header>
 
-    <!-- Sponsored Top Ad Slot -->
     <div class="ad-box" onclick="triggerAd('top_banner')">
         <span class="ad-tag">SPONSORED AD</span>
         <div class="ad-inner-content">
@@ -89,8 +101,7 @@
         </div>
     </div>
 
-    <!-- Search & Filter Controls -->
-    <section class="search-sort-container" aria-label="Search and Filter">
+    <section class="search-sort-container" aria-label="Search and Filter Movies">
         <div class="search-wrap">
             <span class="search-icon">🔍</span>
             <input 
@@ -101,7 +112,7 @@
                 autocomplete="off"
                 aria-label="Search movies"
             >
-            <button id="clearSearchBtn" class="clear-btn" onclick="clearSearch()">✕</button>
+            <button id="clearSearchBtn" class="clear-btn" onclick="clearSearch()" aria-label="Clear Search">✕</button>
         </div>
 
         <div class="sort-wrap">
@@ -114,7 +125,6 @@
         </div>
     </section>
 
-    <!-- Category Tabs -->
     <nav class="category-tabs" aria-label="Movie Categories">
         <button class="tab-btn active" onclick="filterCategory('all')">All Genres</button>
         <button class="tab-btn" onclick="filterCategory('action')">Action</button>
@@ -126,7 +136,6 @@
         <button class="tab-btn" onclick="filterCategory('anime')">Anime</button>
     </nav>
 
-    <!-- Quality Tabs -->
     <nav class="quality-tabs" aria-label="Movie Resolutions">
         <button class="quality-btn active" onclick="filterQuality('all')">All Resolutions</button>
         <button class="quality-btn" onclick="filterQuality('4K')">4K UHD</button>
@@ -139,10 +148,8 @@
         <span>Showing <strong id="movieCounter" class="highlight-cyan">0</strong> Movies & Shows</span>
     </div>
 
-    <!-- Movie Grid -->
     <main class="grid-container" id="movieList"></main>
 
-    <!-- Bottom Ad Slot -->
     <div class="ad-box" onclick="triggerAd('bottom_banner')">
         <span class="ad-tag">SPONSORED AD</span>
         <div class="ad-inner-content">
@@ -150,7 +157,6 @@
         </div>
     </div>
 
-    <!-- Semantic Footer -->
     <footer>
         <div class="footer-brand">CINE<span>HUB</span> PRO</div>
         <p>Streaming & High-Speed Media Showcase Engine</p>
@@ -159,7 +165,6 @@
         <p class="copyright">© 2026 CINEHUB. Engineered for Ultra-Fast Global Indexing.</p>
     </footer>
 
-    <!-- Sticky Mobile Ad -->
     <aside class="sticky-bottom-ad" id="stickyAd">
         <button class="close-sticky-ad" onclick="closeStickyAd(event)" aria-label="Close ad">✕</button>
         <div class="sticky-ad-content" onclick="triggerAd('sticky_banner')">
@@ -169,7 +174,6 @@
         </div>
     </aside>
 
-    <!-- Social Bar Prompt -->
     <aside class="social-bar-prompt" id="socialPrompt" onclick="triggerAd('social_bar')">
         <span class="pulse-icon">🎁</span>
         <div class="social-text">
@@ -179,7 +183,7 @@
         <span class="social-arrow">➔</span>
     </aside>
 
-    <!-- Admin PIN Modal -->
+    <!-- Modals -->
     <div id="pinModal" class="modal-overlay" onclick="closePinModalOnBackdrop(event)">
         <div class="modal-box pin-modal-box">
             <button class="modal-close" onclick="closePinModal()">&times;</button>
@@ -194,7 +198,6 @@
         </div>
     </div>
 
-    <!-- Movie Details Modal -->
     <div id="movieModal" class="modal-overlay" onclick="handleBackdropClick(event)">
         <div class="modal-box">
             <button class="modal-close" onclick="closeModal()">&times;</button>
@@ -247,19 +250,18 @@
         </div>
     </div>
 
-    <!-- Player Modal -->
     <div id="playerModal" class="modal-overlay" onclick="closePlayerOnBackdrop(event)">
         <div class="modal-box player-box">
             <button class="modal-close" onclick="closePlayer()">&times;</button>
             <h3 id="playerTitle" class="player-title"></h3>
             <div class="video-wrapper">
-                <iframe id="videoPlayerFrame" src="" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+                <iframe id="videoPlayerFrame" src="" frameborder="0" allowfullscreen allow="autoplay" title="Movie Video Player"></iframe>
             </div>
         </div>
     </div>
 
     <div id="neonToast" class="neon-toast"></div>
 
-    <script src="script.js?v=30"></script>
+    <script src="script.js?v=50"></script>
 </body>
 </html>
