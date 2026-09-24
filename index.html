@@ -172,6 +172,7 @@
     </div>
 
     <!-- Header Section with Floating Glowing Cinema Logo -->
+    <section class="hero-slider-wrap" id="heroSlider"></section>
     <header>
         <div class="logo-wrap">
             <h1 class="neon-title">
@@ -390,6 +391,13 @@
                         <div id="modalServerList" class="server-btn-grid"></div>
                     </div>
 
+                    
+                    <!-- Seasons & Episode Selector for Series -->
+                    <div id="seasonEpisodeSection" class="season-episode-box" style="display:none;"></div>
+                    
+                    <!-- Official Legal Watch Providers -->
+                    <div id="legalWatchSection" class="legal-watch-box"></div>
+    
                     <div class="utility-btn-bar">
                         <button id="modalSubtitlesBtn" class="utility-btn btn-sub" onclick="downloadSubtitles()">📥 Subtitles (.SRT)</button>
                         <button class="utility-btn btn-report" onclick="reportBrokenLink()">⚠️ Report Dead Link</button>
@@ -441,6 +449,7 @@
 
     <div id="neonToast" class="neon-toast"></div>
 
+    <script src="catalog.js?v=200"></script>
     <script src="script.js?v=200"></script>
 </body>
 </html>
