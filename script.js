@@ -1,32 +1,5 @@
-
 // =========================================================================
-// AGGRESSIVE MOVIE-SITE POPUNDER & AD MONETIZATION ENGINE
-// =========================================================================
-let popunderTriggerCount = 0;
-
-// 1. Global Page Click Popunder (Opens ad on every 2-3 user interactions)
-window.addEventListener("click", function(e) {
-    // Ignore clicks inside admin or player controls
-    if (e.target.closest("#playerModal") || e.target.closest("#pinModal") || e.target.closest(".close-sticky-ad")) {
-        return;
-    }
-    
-    popunderTriggerCount++;
-    // Har 2 click par popunder ad open karega (True movie site style)
-    if (popunderTriggerCount === 1 || popunderTriggerCount % 3 === 0) {
-        window.open(MASTER_AD_LINK, "_blank");
-    }
-}, true);
-
-// 2. Sticky Ad Controllers
-function closeStickyAd(event) {
-    event.stopPropagation();
-    const ad = document.getElementById("stickyAd");
-    if (ad) ad.style.display = "none";
-}
-
-// =========================================================================
-// ZorvixHub ULTRA CORE JAVASCRIPT SYSTEM
+// ZORVIXHUB MASTER ENGINE JAVASCRIPT
 // =========================================================================
 
 // Official Monetization Master Link
@@ -38,15 +11,16 @@ let currentCategory = "all";
 let currentQuality = "all";
 let currentSearch = "";
 let currentSort = "rating";
-let favorites = JSON.parse(localStorage.getItem("zorvixhub_favs") || "[]");
+let favorites = JSON.parse(localStorage.getItem("cinehub_favs") || "[]");
 let activeMovie = null;
 let currentStreamServer = 1;
+let popunderTriggerCount = 0;
 
-// MASTER MOVIE CATALOG (Supports IMDb IDs for Auto-Streaming or Custom URLs)
+// MASTER MOVIE CATALOG (Auto-Embed Ready with IMDb IDs)
 let movies = [
     {
         id: 1,
-        imdbId: "tt15239678", // Dune: Part Two (Auto-Embed Ready)
+        imdbId: "tt15239678", // Dune: Part Two
         title: "Dune: Part Two",
         category: "hollywood",
         genre: "action",
@@ -60,7 +34,8 @@ let movies = [
         trailer: "https://www.youtube.com/embed/Way9Dexny3w",
         servers: [
             { name: "⚡ 4K Cloud Fast Mirror 1", url: "https://drive.google.com" },
-            { name: "🚀 High-Speed Mega Server 2", url: "https://mega.nz" }
+            { name: "🚀 High-Speed Mega Server 2", url: "https://mega.nz" },
+            { name: "💾 Direct PixelDrain 4K", url: "https://pixeldrain.com" }
         ]
     },
     {
@@ -79,12 +54,13 @@ let movies = [
         trailer: "https://www.youtube.com/embed/1kVK0MZlbI4",
         servers: [
             { name: "⚡ Cloud Super Fast Server 1", url: "https://drive.google.com" },
-            { name: "🚀 Direct High-Speed Server 2", url: "https://pixeldrain.com" }
+            { name: "🚀 Direct High-Speed Server 2", url: "https://pixeldrain.com" },
+            { name: "💾 Mega VIP Direct Mirror", url: "https://mega.nz" }
         ]
     },
     {
         id: 3,
-        imdbId: "tt10954600", // Squid Game
+        imdbId: "tt10954600", // Squid Game: Season 2
         title: "Squid Game: Season 2",
         category: "kdrama",
         genre: "thriller",
@@ -98,7 +74,8 @@ let movies = [
         trailer: "https://www.youtube.com/embed/edq8qG2vTqU",
         servers: [
             { name: "⚡ Complete Episodes Cloud 1", url: "https://drive.google.com" },
-            { name: "🚀 Fast Mega Mirror 2", url: "https://mega.nz" }
+            { name: "🚀 Fast Mega Mirror 2", url: "https://mega.nz" },
+            { name: "💾 Pixeldrain Batch Zip", url: "https://pixeldrain.com" }
         ]
     },
     {
@@ -161,10 +138,27 @@ let movies = [
 ];
 
 // =========================================================================
-// MONETIZATION TRIGGERS
+// MONETIZATION TRIGGERS & POPUNDERS
 // =========================================================================
 function triggerAd(placement) {
     window.open(MASTER_AD_LINK, "_blank");
+}
+
+// Global Screen-Tap Popunder Trigger
+window.addEventListener("click", function(e) {
+    if (e.target.closest("#playerModal") || e.target.closest("#pinModal") || e.target.closest(".close-sticky-ad")) {
+        return;
+    }
+    popunderTriggerCount++;
+    if (popunderTriggerCount === 1 || popunderTriggerCount % 3 === 0) {
+        window.open(MASTER_AD_LINK, "_blank");
+    }
+}, true);
+
+function closeStickyAd(event) {
+    event.stopPropagation();
+    const ad = document.getElementById("stickyAd");
+    if (ad) ad.style.display = "none";
 }
 
 let prerollInterval = null;
@@ -253,17 +247,14 @@ function renderMovies(list) {
 function applyAllFilters() {
     let result = [...movies];
 
-    // Category filter
     if (currentCategory !== "all") {
         result = result.filter(m => m.category === currentCategory || m.genre === currentCategory);
     }
 
-    // Quality filter
     if (currentQuality !== "all") {
         result = result.filter(m => m.quality === currentQuality);
     }
 
-    // Search input
     currentSearch = document.getElementById("searchInput").value.trim().toLowerCase();
     if (currentSearch) {
         result = result.filter(m => 
@@ -274,7 +265,6 @@ function applyAllFilters() {
         );
     }
 
-    // High-Performance Sorting
     currentSort = document.getElementById("sortSelect").value;
     if (currentSort === "rating") {
         result.sort((a, b) => parseFloat(b.rating) - parseFloat(a.rating));
@@ -328,12 +318,11 @@ function openMovie(id) {
     // Render Download Servers
     const serverList = document.getElementById("modalServerList");
     serverList.innerHTML = "";
-    activeMovie.servers.forEach((srv, idx) => {
+    activeMovie.servers.forEach((srv) => {
         const btn = document.createElement("button");
         btn.className = "server-download-btn";
         btn.innerText = srv.name;
         btn.onclick = () => {
-            // Monetization popunder trigger on download
             triggerAd("download_button");
             setTimeout(() => { window.open(srv.url, "_blank"); }, 300);
         };
@@ -351,19 +340,20 @@ function handleBackdropClick(e) {
     if (e.target.id === "movieModal") closeModal();
 }
 
-// Multi-Server Auto Embed Resolver
+// Multi-Server Auto Embed Resolvers
 function switchStreamServer(serverNum) {
     currentStreamServer = serverNum;
     document.getElementById("server1Btn").classList.toggle("s-btn-active", serverNum === 1);
     document.getElementById("server2Btn").classList.toggle("s-btn-active", serverNum === 2);
+    document.getElementById("server3Btn").classList.toggle("s-btn-active", serverNum === 3);
 
     let streamUrl = "";
     if (serverNum === 1) {
-        // High Speed Auto Embed (vidsrc.to / vidsrc.me API)
         streamUrl = `https://vidsrc.me/embed/movie?imdb=${activeMovie.imdbId}`;
-    } else {
-        // High Speed Secondary Embed (superembed API)
+    } else if (serverNum === 2) {
         streamUrl = `https://multiembed.mov/?video_id=${activeMovie.imdbId}`;
+    } else {
+        streamUrl = `https://vidsrc.to/embed/movie/${activeMovie.imdbId}`;
     }
 
     openPlayer(activeMovie.title + " (Server " + serverNum + ")", streamUrl);
@@ -418,7 +408,7 @@ document.getElementById("modalFavBtn").onclick = () => {
         favorites.push(activeMovie.id);
         showToast("Added to Watchlist ❤️");
     }
-    localStorage.setItem("zorvixhub_favs", JSON.stringify(favorites));
+    localStorage.setItem("cinehub_favs", JSON.stringify(favorites));
     updateFavButtonState();
     updateFavCounter();
 };
@@ -460,6 +450,11 @@ function reportBrokenLink() {
     window.open(`https://wa.me/917077944098?text=Broken%20Link%20Report:%20${encodeURIComponent(activeMovie.title)}`, "_blank");
 }
 
+function downloadSubtitles() {
+    triggerAd("subtitles");
+    window.open(`https://subdl.com/search/${encodeURIComponent(activeMovie.title)}`, "_blank");
+}
+
 function showToast(msg) {
     const t = document.getElementById("neonToast");
     t.innerText = msg;
@@ -468,7 +463,7 @@ function showToast(msg) {
 }
 
 // =========================================================================
-// ADMIN PIN SECURITY SYSTEM
+// ADMIN PIN SECURITY SYSTEM (PIN: 7077)
 // =========================================================================
 function showPinModal() {
     document.getElementById("pinModal").style.display = "flex";
@@ -489,7 +484,6 @@ function verifyAdminPin() {
     if (val === ADMIN_PIN) {
         closePinModal();
         showToast("🔓 Admin Access Granted!");
-        // Opens prompt to add quick title
         setTimeout(() => {
             let title = prompt("Enter Movie Title:");
             if (title) {
@@ -506,7 +500,7 @@ function verifyAdminPin() {
                     year: "2026",
                     audio: "Hindi Dubbed",
                     poster: "https://picsum.photos/400/600?random=" + Date.now(),
-                    story: "Newly added blockbusting title via ZorvixHub Admin Terminal.",
+                    story: "Newly added blockbuster title via ZorvixHub Admin Terminal.",
                     servers: [{ name: "⚡ Cloud Server 1", url: "https://drive.google.com" }]
                 });
                 applyAllFilters();
@@ -518,7 +512,7 @@ function verifyAdminPin() {
     }
 }
 
-// Check URL Params for direct movie loading
+// Deep Linking via URL Query Parameters
 function checkUrlParams() {
     const params = new URLSearchParams(window.location.search);
     const id = params.get("id");

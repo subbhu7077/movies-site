@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Search Engine & Ad Verifications -->
+    <!-- Search Engine & Monetization Verifications -->
     <meta name="google-site-verification" content="EJWRlxUQaINlHcEwIKoQT2uw1uPdCqK98JJCROmM9QI" />
     <meta name="monetag" content="31e8a74ea8560d8a04b7a0386dc97819" />
 
@@ -56,7 +56,7 @@
     }
     </script>
 
-    <link rel="stylesheet" href="style.css?v=100">
+    <link rel="stylesheet" href="style.css?v=200">
 </head>
 <body>
 
@@ -69,7 +69,9 @@
             <span class="live-dot"></span>
             <span>Join our VIP Telegram channel for daily requested 4K movies and web series links!</span>
         </div>
-        <a href="https://t.me/chine_hub" target="_blank" class="notice-btn" rel="noopener">✈ JOIN TELEGRAM</a>
+        <a href="https://t.me/chine_hub" target="_blank" class="notice-btn" rel="noopener">
+            ✈ JOIN TELEGRAM
+        </a>
     </div>
 
     <!-- Header Section with Floating Glowing Cinema Logo -->
@@ -184,7 +186,7 @@
 
     <!-- Crawler SEO Directory (Googlebot Indexing Magnet) -->
     <section class="seo-keyword-directory">
-        <h3>🌐 ZorvixHub GLOBAL ENTERTAINMENT INDEX DIRECTORY</h3>
+        <h3>🌐 ZORVIXHUB GLOBAL ENTERTAINMENT INDEX DIRECTORY</h3>
         <p><strong>Supported Categories:</strong> Hollywood Movies, Bollywood Movies, South Indian (Tollywood, Kollywood, Mollywood, Sandalwood), Korean Drama (K-Drama), Chinese Drama (C-Drama), Japanese Anime Series, Original Web Series, Documentaries.</p>
         <p><strong>Streaming & Download Encodings:</strong> 4K UHD, 2160p, 1080p FHD, 720p HD, 480p SD, HDR10, Dolby Vision, WEB-DL, WEBRip, BluRay, REMUX, HEVC x265, AV1 10-Bit with Dual Audio Hindi Dubbed and English Subtitles.</p>
     </section>
@@ -213,11 +215,33 @@
             <a href="https://wa.me/917077944098" target="_blank" style="color:#25d366;">WhatsApp (+91 7077944098)</a>
             <span>•</span>
             <a href="https://instagram.com/itz_subratx" target="_blank" style="color:#ff0055;">Instagram (@itz_subratx)</a>
+            <span>•</span>
+            <a href="https://t.me/chine_hub" target="_blank" style="color:#0088cc;">Telegram (@chine_hub)</a>
         </div>
 
         <p class="disclaimer">Disclaimer: ZorvixHub does not host any media files on its servers. All videos and files are hosted on non-affiliated third-party cloud platforms.</p>
         <p class="copyright">© 2026 ZorvixHub. Engineered for Ultra-Fast Global Indexing.</p>
     </footer>
+
+    <!-- Floating Sticky Bottom Mobile Banner -->
+    <aside class="sticky-bottom-ad" id="stickyAd" onclick="triggerAd('sticky_banner')">
+        <button class="close-sticky-ad" onclick="closeStickyAd(event)" aria-label="Close ad">✕</button>
+        <div class="sticky-ad-content">
+            <span class="ad-badge">VIP AD</span>
+            <span>⚡ <strong>Stream 4K Ultra HD:</strong> Fast Direct Cloud Mirrors Ready!</span>
+            <button class="sticky-cta-btn">GET LINK</button>
+        </div>
+    </aside>
+
+    <!-- Floating Social Bar Prompt -->
+    <aside class="social-bar-prompt" id="socialPrompt" onclick="triggerAd('social_bar')">
+        <span class="pulse-icon">🎁</span>
+        <div class="social-text">
+            <strong>VIP 4K Cloud Pass</strong>
+            <p>Direct Google Drive & Mega Links</p>
+        </div>
+        <span class="social-arrow">➔</span>
+    </aside>
 
     <!-- Movie Detail Modal -->
     <div id="movieModal" class="modal-overlay" onclick="handleBackdropClick(event)">
@@ -249,6 +273,7 @@
                         <div class="stream-btn-row">
                             <button id="server1Btn" class="stream-btn s-btn-active" onclick="switchStreamServer(1)">▶ SERVER 1 (AUTO 1080P)</button>
                             <button id="server2Btn" class="stream-btn" onclick="switchStreamServer(2)">⚡ SERVER 2 (SUPER EMBED)</button>
+                            <button id="server3Btn" class="stream-btn" onclick="switchStreamServer(3)">🚀 SERVER 3 (MULTI EMBED)</button>
                             <button id="trailerBtn" class="trailer-btn" onclick="openCurrentTrailer()">🎬 TRAILER</button>
                         </div>
                     </div>
@@ -270,7 +295,7 @@
                     </div>
 
                     <div class="utility-btn-bar">
-                        <button id="modalSubtitlesBtn" class="utility-btn btn-sub">📥 Subtitles (.SRT)</button>
+                        <button id="modalSubtitlesBtn" class="utility-btn btn-sub" onclick="downloadSubtitles()">📥 Subtitles (.SRT)</button>
                         <button class="utility-btn btn-report" onclick="reportBrokenLink()">⚠️ Report Dead Link</button>
                     </div>
                 </div>
@@ -285,7 +310,6 @@
             <h3 id="playerTitle" class="player-title"></h3>
             
             <div class="video-wrapper" style="position: relative;">
-                <!-- Pre-Roll Video Ad Overlay -->
                 <div id="prerollOverlay" class="preroll-overlay">
                     <div class="preroll-top-bar">
                         <span id="prerollTimer" class="preroll-timer">Ad: Video starts in 5s</span>
@@ -304,27 +328,6 @@
         </div>
     </div>
 
-    
-    <!-- Floating Sticky Bottom Mobile Banner -->
-    <aside class="sticky-bottom-ad" id="stickyAd" onclick="triggerAd("sticky_banner")">
-        <button class="close-sticky-ad" onclick="closeStickyAd(event)" aria-label="Close ad">✕</button>
-        <div class="sticky-ad-content">
-            <span class="ad-badge">VIP AD</span>
-            <span>⚡ <strong>Stream 4K Ultra HD:</strong> Fast Direct Cloud Mirrors Ready!</span>
-            <button class="sticky-cta-btn">GET LINK</button>
-        </div>
-    </aside>
-
-    <!-- Floating Social Bar Prompt -->
-    <aside class="social-bar-prompt" id="socialPrompt" onclick="triggerAd("social_bar")">
-        <span class="pulse-icon">🎁</span>
-        <div class="social-text">
-            <strong>VIP 4K Cloud Pass</strong>
-            <p>Direct Google Drive & Mega Links</p>
-        </div>
-        <span class="social-arrow">➔</span>
-    </aside>
-
     <!-- Admin PIN Modal -->
     <div id="pinModal" class="modal-overlay" onclick="closePinModalOnBackdrop(event)">
         <div class="modal-box pin-modal-box">
@@ -342,6 +345,6 @@
 
     <div id="neonToast" class="neon-toast"></div>
 
-    <script src="script.js?v=100"></script>
+    <script src="script.js?v=200"></script>
 </body>
 </html>
