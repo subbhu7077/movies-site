@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
-Disallow: /admin.html
-Disallow: /*?search=
+Disallow: /*?search=*
+Disallow: /admin*
 
+# Sitemaps for Google, Bing, Yandex
 Sitemap: https://subbhu7077.github.io/movies-site/sitemap.xml
