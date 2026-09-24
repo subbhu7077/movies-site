@@ -2,7 +2,7 @@
 // 💰 MASTER MONETIZATION CONFIGURATION
 // (Adsterra Direct Link aate hi is URL ki jagah apna link daal dena)
 // =========================================================================
-let MASTER_AD_LINK = "https://your-adsterra-direct-link-here.com";
+let MASTER_AD_LINK = "https://www.profitableratecpmnetwork.com/ap4akv70ej?key=1efeab247c2e39d05b6dbe3720f6a11b";
 
 // 1. GLOBAL POPUNDER ENGINE (Screen par kahin bhi touch hone par ad)
 let canTriggerPopunder = true;
