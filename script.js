@@ -26,7 +26,7 @@ function closeStickyAd(event) {
 }
 
 // =========================================================================
-// CINEHUB ULTRA CORE JAVASCRIPT SYSTEM
+// ZorvixHub ULTRA CORE JAVASCRIPT SYSTEM
 // =========================================================================
 
 // Official Monetization Master Link
@@ -38,7 +38,7 @@ let currentCategory = "all";
 let currentQuality = "all";
 let currentSearch = "";
 let currentSort = "rating";
-let favorites = JSON.parse(localStorage.getItem("cinehub_favs") || "[]");
+let favorites = JSON.parse(localStorage.getItem("zorvixhub_favs") || "[]");
 let activeMovie = null;
 let currentStreamServer = 1;
 
@@ -418,7 +418,7 @@ document.getElementById("modalFavBtn").onclick = () => {
         favorites.push(activeMovie.id);
         showToast("Added to Watchlist ❤️");
     }
-    localStorage.setItem("cinehub_favs", JSON.stringify(favorites));
+    localStorage.setItem("zorvixhub_favs", JSON.stringify(favorites));
     updateFavButtonState();
     updateFavCounter();
 };
@@ -447,12 +447,12 @@ function copyShareLink() {
 }
 
 function shareOnWhatsApp() {
-    const text = encodeURIComponent(`Watch ${activeMovie.title} in 4K UHD free on CINEHUB:\n${window.location.href}`);
+    const text = encodeURIComponent(`Watch ${activeMovie.title} in 4K UHD free on ZorvixHub:\n${window.location.href}`);
     window.open(`https://api.whatsapp.com/send?text=${text}`, "_blank");
 }
 
 function shareOnTelegram() {
-    const text = encodeURIComponent(`Watch ${activeMovie.title} in 4K UHD free on CINEHUB:`);
+    const text = encodeURIComponent(`Watch ${activeMovie.title} in 4K UHD free on ZorvixHub:`);
     window.open(`https://t.me/share/url?url=${encodeURIComponent(window.location.href)}&text=${text}`, "_blank");
 }
 
@@ -506,7 +506,7 @@ function verifyAdminPin() {
                     year: "2026",
                     audio: "Hindi Dubbed",
                     poster: "https://picsum.photos/400/600?random=" + Date.now(),
-                    story: "Newly added blockbusting title via CINEHUB Admin Terminal.",
+                    story: "Newly added blockbusting title via ZorvixHub Admin Terminal.",
                     servers: [{ name: "⚡ Cloud Server 1", url: "https://drive.google.com" }]
                 });
                 applyAllFilters();
