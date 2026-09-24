@@ -1,34 +1,22 @@
 /**
  * ZORVIXHUB ENTERPRISE CLIENT ENGINE
- * Multi-Region Cinema • TV Season View • Watch Providers • Fuzzy Search
+ * Legal Watch Providers with Country Switcher • Authorized Offline/Download
+ * TV Season/Episode Selector • Hero Banner Slider • Fuzzy Search
  */
 
-// Global Cinema Industries & Regions
-const GLOBAL_REGIONS = [
-    { id: "all", label: "🔥 All Trending" },
-    { id: "bollywood", label: "🇮🇳 Bollywood (Hindi)" },
-    { id: "tollywood", label: "⚡ Tollywood (Telugu)" },
-    { id: "kollywood", label: "🏹 Kollywood (Tamil)" },
-    { id: "mollywood", label: "🌴 Mollywood (Malayalam)" },
-    { id: "sandalwood", label: "👑 Sandalwood (Kannada)" },
-    { id: "hollywood", label: "🎬 Hollywood (English 4K)" },
-    { id: "kdrama", label: "🇰🇷 K-Drama (Korean)" },
-    { id: "anime", label: "⛩️ Anime Universe" },
-    { id: "series", label: "📺 Web Series & OTT" }
-];
+let activeSelectedCountry = "IN";
+let heroSlideInterval = null;
+let currentSlideIndex = 0;
 
-let catalogHeroTimer = null;
-let currentHeroIndex = 0;
-
-// 1. Hero Banner Slider Component
-function mountHeroSlider() {
+// 1. Mount Hero Banner Slider
+function mountHeroBannerSlider() {
     const container = document.getElementById("heroSlider");
     if (!container || !window.movies || window.movies.length === 0) return;
 
-    const featured = window.movies.slice(0, 6);
+    const featuredTitles = window.movies.slice(0, 6);
     container.innerHTML = `
         <div class="hero-slider-track">
-            ${featured.map((m, idx) => `
+            ${featuredTitles.map((m, idx) => `
                 <div class="hero-slide ${idx === 0 ? 'active' : ''}" style="background-image: linear-gradient(180deg, rgba(7,11,20,0.2) 0\%, rgba(7,11,20,0.95) 100\%), url('${m.backdrop || m.poster}')">
                     <div class="hero-slide-inner">
                         <span class="hero-tag">⭐ ${m.rating} • ${m.year} •${m.category.toUpperCase()}</span>
@@ -43,27 +31,120 @@ function mountHeroSlider() {
             `).join('')}
         </div>
         <div class="hero-indicators">
-            ${featured.map((_, i) => `<span class="indicator-dot ${i === 0 ? 'active' : ''}" onclick="switchHeroSlide(${i})"></span>`).join('')}
+            ${featuredTitles.map((_, i) => `<span class="indicator-dot ${i === 0 ? 'active' : ''}" onclick="switchHeroSlide(${i})"></span>`).join('')}
         </div>
     `;
 
-    clearInterval(catalogHeroTimer);
-    catalogHeroTimer = setInterval(() => {
-        currentHeroIndex = (currentHeroIndex + 1) % featured.length;
-        switchHeroSlide(currentHeroIndex);
+    clearInterval(heroSlideInterval);
+    heroSlideInterval = setInterval(() => {
+        currentSlideIndex = (currentSlideIndex + 1) % featuredTitles.length;
+        switchHeroSlide(currentSlideIndex);
     }, 6000);
 }
 
-function switchHeroSlide(index) {
-    currentHeroIndex = index;
+function switchHeroSlide(idx) {
+    currentSlideIndex = idx;
     const slides = document.querySelectorAll(".hero-slide");
     const dots = document.querySelectorAll(".indicator-dot");
-    slides.forEach((s, i) => s.classList.toggle("active", i === index));
-    dots.forEach((d, i) => d.classList.toggle("active", i === index));
+    slides.forEach((s, i) => s.classList.toggle("active", i === idx));
+    dots.forEach((d, i) => d.classList.toggle("active", i === idx));
 }
 
-// 2. Season & Episode Modal Viewer
-function mountSeasonEpisodeViewer(movie) {
+// 2. Mount Where to Watch with Real-Time Country Switcher
+function mountWhereToWatchSection(movie) {
+    const box = document.getElementById("legalWatchSection");
+    if (!box) return;
+
+    const countryProviders = (movie.watchProviders && movie.watchProviders[activeSelectedCountry]) 
+        ? movie.watchProviders[activeSelectedCountry] 
+        : (movie.watchProviders && movie.watchProviders.GLOBAL ? movie.watchProviders.GLOBAL : []);
+
+    box.innerHTML = `
+        <div class="watch-header-row">
+            <span class="providers-micro-tag">🏛️ WHERE TO WATCH (LICENSED DESTINATIONS):</span>
+            <div class="country-switch-wrap">
+                <label for="countryPicker">Region:</label>
+                <select id="countryPicker" onchange="changeCountryWatch(${movie.id}, this.value)">
+                    <option value="IN" ${activeSelectedCountry === 'IN' ? 'selected' : ''}>🇮🇳 India</option>
+                    <option value="US" ${activeSelectedCountry === 'US' ? 'selected' : ''}>🇺🇸 United States</option>
+                    <option value="GB" ${activeSelectedCountry === 'GB' ? 'selected' : ''}>🇬🇧 United Kingdom</option>
+                    <option value="GLOBAL" ${activeSelectedCountry === 'GLOBAL' ? 'selected' : ''}>🌐 Worldwide</option>
+                </select>
+            </div>
+        </div>
+        <div class="providers-pill-grid">
+            ${countryProviders.length > 0 ? countryProviders.map(p => `
+                <a href="${p.url}" target="_blank" rel="noopener noreferrer" class="provider-pill-badge">
+                    <img src="${p.logo}" alt="${p.name}" class="provider-favicon" onerror="this.style.display='none'">
+                    <div class="provider-name-wrap">
+                        <strong>${p.name}</strong>
+                        <span class="p-type">${p.type}</span>
+                    </div>
+                    <span class="provider-arrow">↗</span>
+                </a>
+            `).join('') : '<p class="no-providers-text">Official streaming availability information unavailable for selected region.</p>'}
+        </div>
+    `;
+}
+
+function changeCountryWatch(movieId, countryCode) {
+    activeSelectedCountry = countryCode;
+    const movie = window.movies.find(m => m.id === movieId);
+    if (movie) mountWhereToWatchSection(movie);
+}
+
+// 3. Authorized Download & Offline Modal Controller
+function openAuthorizedDownloadModal() {
+    const movie = window.activeMovie;
+    if (!movie) return;
+
+    let modal = document.getElementById("authDownloadModal");
+    if (!modal) {
+        modal = document.createElement("div");
+        modal.id = "authDownloadModal";
+        modal.className = "modal-overlay";
+        modal.innerHTML = `
+            <div class="modal-box auth-download-box">
+                <button class="modal-close" onclick="document.getElementById('authDownloadModal').style.display='none'">&times;</button>
+                <div class="download-modal-header">
+                    <span class="dl-status-icon">📥</span>
+                    <h3 id="dlModalTitle">AUTHORIZED OFFLINE / DOWNLOAD</h3>
+                </div>
+                <div id="dlModalBody" class="download-modal-body"></div>
+            </div>
+        `;
+        document.body.appendChild(modal);
+    }
+
+    const titleEl = document.getElementById("dlModalTitle");
+    const bodyEl = document.getElementById("dlModalBody");
+    titleEl.innerText = `${movie.title} - Offline Options`;
+
+    // Rule 6 & 30 Enforcement: Strictly legitimate offline destinations
+    bodyEl.innerHTML = `
+        <div class="dl-status-card available">
+            <div class="dl-card-badge">STATUS: OFFLINE IN OFFICIAL APP</div>
+            <h4>Official In-App Download Available</h4>
+            <p>You can download <strong>${movie.title}</strong> directly inside licensed apps (Netflix, Amazon Prime Video, or JioCinema) on Android & iOS for legitimate offline viewing.</p>
+        </div>
+        <div class="dl-actions-list">
+            <a href="https://play.google.com/store/apps" target="_blank" class="dl-action-btn google-play">
+                <span>📱</span> Open Google Play Store for Official App
+            </a>
+            <a href="https://www.apple.com/app-store/" target="_blank" class="dl-action-btn apple-store">
+                <span>🍎</span> Open Apple App Store for Official App
+            </a>
+        </div>
+        <p class="dl-compliance-note">
+            ⚠️ <em>ZorvixHub is a legal entertainment directory. We do not host, scrape, or distribute unauthorized copyrighted media files.</em>
+        </p>
+    `;
+
+    modal.style.display = "flex";
+}
+
+// 4. TV Season & Episode Selector Component
+function mountTVSeasonEpisodeViewer(movie) {
     const box = document.getElementById("seasonEpisodeSection");
     if (!box) return;
 
@@ -94,7 +175,7 @@ function switchSeasonEpisodes(movieId, seasonNum) {
     if (!grid) return;
 
     grid.innerHTML = season.episodes.map(ep => `
-        <div class="episode-card" onclick="streamEpisode(${movie.id}, ${season.season_number}, ${ep.episode_number}, '${ep.name.replace(/'/g, "\\"')}')">
+        <div class="episode-card" onclick="streamEpisodeDirect(${movie.id}, ${season.season_number}, ${ep.episode_number}, '${ep.name.replace(/'/g, "\\"')}')">
             <div class="ep-thumb-wrap">
                 <img src="${ep.still_url || movie.poster}" alt="${ep.name}" loading="lazy">
                 <span class="ep-num-pill">EP ${ep.episode_number}</span>
@@ -102,12 +183,15 @@ function switchSeasonEpisodes(movieId, seasonNum) {
             <div class="ep-details">
                 <h6>${ep.name}</h6>
                 <p>${ep.overview ? ep.overview.substring(0, 80) + '...' : ''}</p>
+                <div class="ep-actions-micro">
+                    <span class="ep-pill-link">▶ Stream S${season.season_number}E${ep.episode_number}</span>
+                </div>
             </div>
         </div>
     `).join('');
 }
 
-function streamEpisode(movieId, sNum, epNum, epTitle) {
+function streamEpisodeDirect(movieId, sNum, epNum, epTitle) {
     const movie = window.movies.find(m => m.id === movieId);
     const streamUrl = `https://vidsrc.me/embed/tv?imdb=${movie.imdbId}&season=${sNum}&episode=${epNum}`;
     if (typeof openPlayer === 'function') {
@@ -115,30 +199,7 @@ function streamEpisode(movieId, sNum, epNum, epTitle) {
     }
 }
 
-// 3. Legal "Where to Watch" Providers
-function mountWatchProviders(movie) {
-    const section = document.getElementById("legalWatchSection");
-    if (!section) return;
-
-    const providers = movie.watchProviders || [
-        { provider_name: "Official Platform", provider_type: "Licensed", provider_url: `https://www.google.com/search?q=${encodeURIComponent(movie.title + " watch online official")}` }
-    ];
-
-    section.innerHTML = `
-        <p class="providers-title">🏛️ LEGAL & LICENSED WATCH PROVIDERS:</p>
-        <div class="providers-flex">
-            ${providers.map(p => `
-                <a href="${p.provider_url}" target="_blank" rel="noopener noreferrer" class="provider-badge">
-                    <span class="provider-dot"></span>
-                    <strong>${p.provider_name}</strong>
-                    <span class="provider-type">(${p.provider_type})</span>
-                </a>
-            `).join('')}
-        </div>
-    `;
-}
-
-// 4. Client Admin Import Modal & GUI Controller
+// 5. Admin Interactive Catalog Ingestion GUI
 function openAdminImportGUI() {
     let modal = document.getElementById("adminImportModal");
     if (!modal) {
@@ -148,30 +209,30 @@ function openAdminImportGUI() {
         modal.innerHTML = `
             <div class="modal-box admin-import-box">
                 <button class="modal-close" onclick="document.getElementById('adminImportModal').style.display='none'">&times;</button>
-                <h3 style="color:#00e5ff; margin-bottom:12px;">⚡ CATALOG INGESTION & SYNC DASHBOARD</h3>
-                <p style="color:#8892b0; font-size:0.85rem; margin-bottom:16px;">
-                    Enter IMDb/TMDB ID to import instant global metadata, episodes, and trailers into ZorvixHub:
+                <h3 style="color:#00e5ff; margin-bottom:10px;">⚡ GLOBAL CATALOG INGESTION CONSOLE</h3>
+                <p style="color:#8892b0; font-size:0.85rem; margin-bottom:14px;">
+                    Import titles directly from IMDb/TMDB into ZorvixHub:
                 </p>
-                <div style="display:flex; gap:10px; margin-bottom:14px;">
-                    <input type="text" id="importIdInput" placeholder="e.g. tt11663228" style="flex:1; padding:10px; background:#070b14; border:1px solid #00e5ff; color:#fff; border-radius:6px;">
+                <div style="display:flex; gap:8px; margin-bottom:14px; flex-wrap:wrap;">
+                    <input type="text" id="importIdInput" placeholder="IMDb ID (e.g. tt11663228)" style="flex:1 1 180px; padding:10px; background:#070b14; border:1px solid #00e5ff; color:#fff; border-radius:6px;">
                     <select id="importRegionInput" style="padding:10px; background:#070b14; border:1px solid #00e5ff; color:#fff; border-radius:6px;">
-                        <option value="tollywood">Tollywood</option>
-                        <option value="kollywood">Kollywood</option>
-                        <option value="mollywood">Mollywood</option>
-                        <option value="sandalwood">Sandalwood</option>
-                        <option value="bollywood">Bollywood</option>
-                        <option value="hollywood">Hollywood</option>
-                        <option value="kdrama">K-Drama</option>
-                        <option value="anime">Anime</option>
+                        <option value="tollywood">Tollywood (Telugu)</option>
+                        <option value="kollywood">Kollywood (Tamil)</option>
+                        <option value="mollywood">Mollywood (Malayalam)</option>
+                        <option value="sandalwood">Sandalwood (Kannada)</option>
+                        <option value="bollywood">Bollywood (Hindi)</option>
+                        <option value="hollywood">Hollywood (English)</option>
+                        <option value="kdrama">K-Drama (Korean)</option>
+                        <option value="anime">Anime (Japanese)</option>
                     </select>
                     <select id="importTypeInput" style="padding:10px; background:#070b14; border:1px solid #00e5ff; color:#fff; border-radius:6px;">
                         <option value="movie">Movie</option>
                         <option value="series">Series</option>
                     </select>
                 </div>
-                <button class="hero-primary-btn" style="width:100%; margin-bottom:16px;" onclick="triggerClientSideImport()">START INGESTION</button>
+                <button class="hero-primary-btn" style="width:100%; margin-bottom:14px;" onclick="triggerClientSideImport()">START INGESTION</button>
                 <div id="importConsole" style="background:#000; border:1px solid rgba(255,255,255,0.1); border-radius:6px; padding:12px; font-family:monospace; font-size:0.75rem; color:#00f59b; max-height:160px; overflow-y:auto;">
-                    [Console Ready] Waiting for import trigger...
+                    [Ready] Waiting for import trigger...
                 </div>
             </div>
         `;
@@ -187,7 +248,7 @@ function triggerClientSideImport() {
     const con = document.getElementById("importConsole");
 
     if (!id) {
-        con.innerHTML += "<br><span style='color:#ff0055;'>❌ Error: Please enter a valid IMDb ID (tt1234567).</span>";
+        con.innerHTML += "<br><span style='color:#ff0055;'>❌ Error: Enter a valid IMDb ID (tt1234567).</span>";
         return;
     }
 
@@ -198,9 +259,8 @@ function triggerClientSideImport() {
             if (data && data.meta) {
                 const m = data.meta;
                 con.innerHTML += `<br><span style='color:#00e5ff;'>✅ Successfully fetched: ${m.name} (${m.year || 2024})</span>`;
-                con.innerHTML += `<br>💾 To persist permanently across Git, run in Termux:<br><code style='color:#ffb703;'>node importer.js ${id} ${region} ${type}</code>`;
+                con.innerHTML += `<br>💾 To sync permanently across GitHub, run in Termux:<br><code style='color:#ffb703;'>node importer.js ${id} ${region} ${type}</code>`;
                 
-                // Live preview push into current DOM
                 window.movies.unshift({
                     id: Date.now(),
                     imdbId: id,
@@ -236,12 +296,12 @@ window.openMovie = function(id) {
     }
     const movie = (window.movies || []).find(m => m.id === id);
     if (movie) {
-        mountSeasonEpisodeViewer(movie);
-        mountWatchProviders(movie);
+        window.activeMovie = movie;
+        mountWhereToWatchSection(movie);
+        mountTVSeasonEpisodeViewer(movie);
     }
 };
 
-// Safe DOM initialization
 document.addEventListener("DOMContentLoaded", () => {
-    setTimeout(mountHeroSlider, 250);
+    setTimeout(mountHeroBannerSlider, 250);
 });

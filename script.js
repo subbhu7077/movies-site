@@ -19,7 +19,7 @@ let popunderTriggerCount = 0;
 // MASTER MOVIE CATALOG (Auto-Embed Ready with IMDb IDs)
 let movies = [
     {
-        "id": 1790276667816,
+        "id": 1790277416821,
         "imdbId": "tt11198330",
         "slug": "house-of-the-dragon-2022",
         "title": "House of the Dragon",
@@ -50,7 +50,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Sue Perkins is joined by super fans Rickie Haywood-Williams and Jenny Ryan and actor Daniel Portman ahead of House of the Dragon’s release.",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/1/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%201%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 2,
@@ -59,7 +61,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Join Jamie East on the red carpet at the House of the Dragon Premiere, and enjoy exclusive interviews with the cast and crew.",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/2/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%202%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 3,
@@ -68,7 +72,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Take a deeper look at the episode \"The Heirs of the Dragon\"",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/3/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%203%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 4,
@@ -77,7 +83,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Take a deeper look at the episode \"The Rogue Prince\"",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/4/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%204%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 5,
@@ -86,7 +94,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Take a deeper look at the episode \"Second of His Name\"",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/5/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%205%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 6,
@@ -95,7 +105,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Take a deeper look at the episode \"King of the Narrow Sea\"",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/6/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%206%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 7,
@@ -104,7 +116,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Take a deeper look at the episode \"We Light the Way\"",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/7/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%207%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 8,
@@ -113,7 +127,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Take a deeper look at the episode \"The Princess and the Queen\"",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/8/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%208%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 9,
@@ -122,7 +138,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Take a deeper look inside the episode \"Driftmark\"",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/9/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%209%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 10,
@@ -131,7 +149,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Take a deeper look inside the episode \"The Lord of the Tides\"",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/10/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%2010%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 11,
@@ -140,7 +160,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Take a deeper look at the episode \"The Green Council\"",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/11/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%2011%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 12,
@@ -149,7 +171,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Take a deeper look inside the episode \"The Black Queen\"",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/12/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%2012%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 13,
@@ -158,25 +182,31 @@ let movies = [
                         "runtime": "45m",
                         "overview": "As season one of House of the Dragon comes to a close, sit down with Sue Perkins, Rickie Haywood-Williams, Joel Dommett and Lauren Layfield and unpack the gory season finale.",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/13/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%2013%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 24,
                         "name": "Episode 24",
                         "air_date": "2022-12-21",
                         "runtime": "45m",
-                        "overview": "Episode 24 of Season 1",
+                        "overview": "Official Episode 24 of Season 1",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/24/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%2024%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 25,
                         "name": "Episode 25",
                         "air_date": "2022-12-21",
                         "runtime": "45m",
-                        "overview": "Episode 25 of Season 1",
+                        "overview": "Official Episode 25 of Season 1",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/25/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%2025%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 26,
@@ -185,7 +215,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Featurette from House of the Dragon season 1.",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/26/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%2026%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 27,
@@ -194,7 +226,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "George R. R. Martin, Ryan Condal and Miguel Sapochnik offer a look at what's to come in Game of Thrones prequel House of the Dragon.",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/27/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%2027%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 28,
@@ -203,7 +237,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "The cast and crew share the thrills and challenges of entering the world Game of Thrones, and approaching it when the Targaryens at the height of their power.",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/28/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%2028%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 29,
@@ -212,7 +248,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Creator and executive producer George R. R. Martin sets up the Game of Thrones prequel, sharing key details on major Houses and relationships featured in the series, alongside illustrations from Fire & Blood artist Doug Wheatley.",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/29/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%2029%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 30,
@@ -221,7 +259,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Paddy Considine, Matt Smith, and more cast and crew discuss how House of the Dragon takes place during the height of the Targaryen reign over Westeros, and how that influenced the story and design of the series.",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/30/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%2030%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 31,
@@ -230,7 +270,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Rhys Ifans, Steve Toussaint, and more cast and crew break down the historical significance and role of the two prominent houses in the series: the Velaryons and the Hightowers.",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/31/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%2031%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 32,
@@ -239,7 +281,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "The cast and crew describe the various changes made to recognizable sets like the Red Keep and the Throne to reflect the decadence of the time period and how they evolved over time.",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/32/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%2032%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 33,
@@ -248,7 +292,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Relive all of Season 1. Season 2 of the HBO Original Series #HouseoftheDragon premieres June 16 on Max.",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/33/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%2033%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 34,
@@ -257,7 +303,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "House of the Dragon is returning. Sue Perkins revisits the world of Westeros with a council of superfans, including Al Murray and Ellie Taylor, before season two arrives.",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/34/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%2034%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 35,
@@ -266,7 +314,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Ryan Condal, Executive Producer, tells us what to expect in the season 2 premiere.",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/35/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%2035%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 36,
@@ -275,7 +325,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Take a deeper look inside the episode \"Rhaenyra the Cruel\"",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/36/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%2036%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 37,
@@ -284,7 +336,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Take a deeper look inside the episode \"The Burning Mill\"",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/37/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%2037%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 38,
@@ -293,7 +347,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Take a deeper look inside the episode \"The Red Dragon and the Gold\"",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/38/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%2038%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 39,
@@ -302,7 +358,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Take a deeper look inside the episode \"Regent\"",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/39/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%2039%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 40,
@@ -311,7 +369,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Take a deeper look inside the episode \"Smallfolk\"",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/40/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%2040%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 41,
@@ -320,7 +380,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Take a deeper look inside the episode \"The Red Sowing\"",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/41/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%2041%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 42,
@@ -329,7 +391,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Take a deeper look inside the episode \"The Queen Who Ever Was\"",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/42/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%2042%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 43,
@@ -338,7 +402,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Recap of Season 1 and 2",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/43/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%2043%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 44,
@@ -347,7 +413,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Co-creator and showrunner Ryan Condal, along with episode director Loni Peristere, and the cast discuss how the first episode of Season 3 unravels in surprising and catastrophic ways. Aegon (Tom Glynn-Carney) is fleeing in the shadows, Alicent (Olivia Cooke) must face the consequences of her bargain with Rhaenyra (Emma D’Arcy), and in the Battle of the Gullet, Rhaenyra suffers another unfathomable loss, as war rages across sea and sky.",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/44/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%2044%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 45,
@@ -356,7 +424,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Co-creator and showrunner Ryan Condal, Emma D’Arcy (Rhaenyra Targaryen), Matt Smith (Daemon Targaryen), and more go in-depth into Episode 2 of Season 3 of #HOTD. They discuss the devastating impact of the Battle of the Gullet, Aemond’s and Daemon’s similar nature, and Rhaenyra’s grief-stricken shift as she edges closer to the Iron Throne.",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/45/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%2045%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 46,
@@ -365,7 +435,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Rhaenyra’s reign begins. Co-creator and showrunner Ryan Condal, Emma D’Arcy (Queen Rhaenyra Targaryen), Steve Toussaint (Lord Corlys Velaryon), James Norton (Lord Ormund Hightower), and more break down season 3, episode 3 of House of the Dragon. They discuss Rhaenyra’s trying first few days as queen, her shifting power dynamics with Alicent, and her revelation of Ormund’s shocking deceit.",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/46/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%2046%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 47,
@@ -374,7 +446,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "House of the Dragon co-creator and showrunner Ryan Condal, Emma D’Arcy (Rhaenyra Targaryen), Olivia Cooke (Alicent Hightower), Matt Smith (Daemon Targaryen), Fabien Frankel (Criston Cole), and James Norton (Ormund Hightower) dive in-depth into Season 3, Episode 4 of #HOTD. They discuss Lord Ormund’s strategic occupation of Tumbleton and its impact on Rhaenyra, Ser Criston’s feelings of betrayal, and Daemon’s conflicting family encounter.",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/47/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%2047%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 48,
@@ -383,7 +457,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Tensions rise and truths are revealed. House of the Dragon co-creator and showrunner Ryan Condal, Emma D’Arcy (Rhaenyra Targaryen), Fabien Frankel (Ser Criston Cole), Olivia Cooke (Alicent Hightower), Matt Smith (Daemon Targaryen), and Ewan Mitchell (Aemond Targaryen) break down Season 3, Episode 5 of #HOTD. They discuss Aegon’s renewed confidence and violent revenge, Alicent’s and Mysaria’s striking similarities, and Lord Ormund’s ruthless plan to return the Iron Throne to its rightful heir.",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/48/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%2048%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 49,
@@ -392,7 +468,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "The longing for power lies with many. House of the Dragon co-creator and showrunner Ryan Condal, Emma D’Arcy (Rhaenyra Targaryen), Matt Smith (Daemon Targaryen), Fabien Frankel (Ser Criston Cole) and James Norton (Lord Ormund Hightower) break down Season 3, Episode 6 of #HOTD. They discuss Daemon’s and Rhaenyra’s conflicting approaches to war, Aemond’s and Alys’s potentially powerful partnership, and Cole's shocking, yet inevitable final moment on the battlefield.  ",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/49/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%2049%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 50,
@@ -401,7 +479,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Secrets and lies come to light. House of the Dragon co-creator and showrunner Ryan Condal, Emma D’Arcy (Rhaenyra Targaryen), Matt Smith (Daemon Targaryen), James Norton (Lord Ormund Hightower), Ewan Mitchell (Aemond Targaryen), and Steve Toussaint (Lord Corlys Velaryon) break down Season 3, Episode 7 of #HOTD. They discuss Daemon’s struggle to balance his loyalties, Alicent’s ill-intentioned reunion with Aemond in Harrenhal, and Aegon’s redemption-turned-rebirth.   ",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/50/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%2050%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 51,
@@ -410,7 +490,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "No one emerges unscathed. House of the Dragon co-creator and showrunner Ryan Condal, Emma D’Arcy (Rhaenyra Targaryen), Matt Smith (Daemon Targaryen), James Norton (Lord Ormund Hightower), Ewan Mitchell (Aemond Targaryen), and Olivia Cooke (Alicent Hightower) explain their character arcs and the evolution of war in the #HOTD Season 3 finale. They dive into Ulf’s impact on the war between the factions, Helaena’s devastating decision, and Rhaenyra’s season-long transformation as a ruler.",
                         "still_url": "https://episodes.metahub.space/tt11198330/0/51/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%2051%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 1,
@@ -419,7 +501,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Viserys hosts a tournament to celebrate the birth of his second child. Rhaenyra welcomes her uncle, Daemon, back to the Red Keep.",
                         "still_url": "https://episodes.metahub.space/tt11198330/1/1/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%201%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 2,
@@ -428,7 +512,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Rhaenyra oversteps at the Small Council. Viserys is urged to secure the succession through marriage. Daemon announces his intentions.",
                         "still_url": "https://episodes.metahub.space/tt11198330/1/2/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%202%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 3,
@@ -437,7 +523,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Daemon and the Sea Snake battle the Crabfeeder. The realm celebrates Aegon’s second nameday. Rhaenyra faces the prospect of marriage.",
                         "still_url": "https://episodes.metahub.space/tt11198330/1/3/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%203%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 4,
@@ -446,7 +534,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "After Rhaenyra cuts short her tour of Westeros, Daemon introduces the princess to the Street of Silk after dark.",
                         "still_url": "https://episodes.metahub.space/tt11198330/1/4/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%204%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 5,
@@ -455,7 +545,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Daemon visits his wife in the Vale. Viserys and Rhaenyra broker agreements with the Velaryons. Alicent seeks the truth about the princess.",
                         "still_url": "https://episodes.metahub.space/tt11198330/1/5/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%205%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 6,
@@ -464,7 +556,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Ten years later. Rhaenyra navigates Alicent’s continued speculation about her children, while Daemon and Laena weigh an offer in Pentos.",
                         "still_url": "https://episodes.metahub.space/tt11198330/1/6/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%206%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 7,
@@ -473,7 +567,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "As the families gather on Driftmark for a funeral, Viserys calls for an end to infighting and Alicent demands justice.",
                         "still_url": "https://episodes.metahub.space/tt11198330/1/7/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%207%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 8,
@@ -482,7 +578,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Six years later. With the Driftmark succession suddenly critical, Rhaenyra attempts to strike a bargain with Rhaenys.",
                         "still_url": "https://episodes.metahub.space/tt11198330/1/8/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%208%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 9,
@@ -491,7 +589,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "While Alicent enlists Cole and Aemond to track down Aegon, Otto gathers the great houses of Westeros to affirm their allegiance.",
                         "still_url": "https://episodes.metahub.space/tt11198330/1/9/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%209%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 10,
@@ -500,7 +600,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "While mourning a tragic loss, Rhaenyra tries to hold the realm together, and Daemon prepares for war.",
                         "still_url": "https://episodes.metahub.space/tt11198330/1/10/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%201%20episode%2010%20official%20stream",
+                        "offline_available": true
                     }
                 ]
             },
@@ -516,7 +618,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "While Rhaenyra struggles to come to terms with her son’s murder, in King’s Landing, Alicent grows concerned that Aegon’s Small Council may lead them to an all-out war. Larys suggests Aegon needs a new Hand, and Rhaenyra arrives at a fateful decision.",
                         "still_url": "https://episodes.metahub.space/tt11198330/2/1/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%202%20episode%201%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 2,
@@ -525,7 +629,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "As Otto schemes to turn the public against her, Rhaenyra questions Daemon’s loyalty. Meanwhile, Ser Criston Cole concocts a misguided plan for revenge.",
                         "still_url": "https://episodes.metahub.space/tt11198330/2/2/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%202%20episode%202%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 3,
@@ -534,7 +640,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "As ancient grudges resurface, Rhaenys suggests that Alicent may see reason while the men around her seek bloodshed. Ser Criston proposes a bold scheme. Daemon arrives at Harrenhal to raise an army for the Blacks.",
                         "still_url": "https://episodes.metahub.space/tt11198330/2/3/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%202%20episode%203%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 4,
@@ -543,7 +651,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "In Rhaenyra’s absence and with no word from Daemon at Harrenhal, Rhaenys tries to keep the peace on the Black Council as Cole mounts a campaign into the Crownlands. In King’s Landing, Aemond continues to undermine Aegon’s fragile hold on authority.",
                         "still_url": "https://episodes.metahub.space/tt11198330/2/4/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%202%20episode%204%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 5,
@@ -552,7 +662,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Amid whispers of bad omens, the Greens consider how to fill a void on Aegon’s Council, Jacaerys sets out on a rogue mission to strike a deal, and Daemon enlists Lord Willem Blackwood to help persuade the Brackens to bend the knee.",
                         "still_url": "https://episodes.metahub.space/tt11198330/2/5/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%202%20episode%205%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 6,
@@ -561,7 +673,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "With few options left, Rhaenyra summons a trusted knight for a risky venture and plots with Mysaria to catalyze the smallfolk. Meanwhile, Daemon’s unease grows, and Aemond takes steps to reshape the Green Council.",
                         "still_url": "https://episodes.metahub.space/tt11198330/2/6/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%202%20episode%206%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 7,
@@ -570,7 +684,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "As Rhaenyra looks to gain an advantage by unusual means, Daemon pressures a young liege lord to raise up his bannermen.",
                         "still_url": "https://episodes.metahub.space/tt11198330/2/7/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%202%20episode%207%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 8,
@@ -579,7 +695,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "As Aemond becomes more volatile, Larys plots an escape, and Alicent grows more concerned about Helaena’s safety. Flush with new power, Rhaenyra looks to press her advantage.",
                         "still_url": "https://episodes.metahub.space/tt11198330/2/8/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%202%20episode%208%20official%20stream",
+                        "offline_available": true
                     }
                 ]
             },
@@ -595,7 +713,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Driven by her faith in Alicent, Rhaenyra positions herself to take King's Landing while the Triarchy sails to take on Corlys in the Gullet.",
                         "still_url": "https://episodes.metahub.space/tt11198330/3/1/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%203%20episode%201%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 2,
@@ -604,7 +724,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "As Alicent risks everything to fulfill her end of the bargain, Rhaenyra must decide whether the Iron Throne is worth the cost.",
                         "still_url": "https://episodes.metahub.space/tt11198330/3/2/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%203%20episode%202%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 3,
@@ -613,7 +735,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Rhaenyra learns the situation in King's Landing is not what she anticipated. Unable to locate her enemies, and with demands coming from all sides, Rhaenyra must navigate a delicate balance between appeasing her supporters and consolidating her rule.",
                         "still_url": "https://episodes.metahub.space/tt11198330/3/3/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%203%20episode%203%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 4,
@@ -622,7 +746,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Ormund's invasion of Tumbleton forces Rhaenyra into a corner.",
                         "still_url": "https://episodes.metahub.space/tt11198330/3/4/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%203%20episode%204%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 5,
@@ -631,7 +757,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "As the search for Aemond and Vhagar continues, Daemon attempts to control the spiraling situation in King's Landing.",
                         "still_url": "https://episodes.metahub.space/tt11198330/3/5/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%203%20episode%205%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 6,
@@ -640,7 +768,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "While Rhaenyra and Daemon focus on how best to deal with Ormund, tensions among their neglected allies begin to erupt.",
                         "still_url": "https://episodes.metahub.space/tt11198330/3/6/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%203%20episode%206%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 7,
@@ -649,7 +779,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Torn between Mysaria and Daemon's visions for her reign, Rhaenyra grows desperate for a sign that she will prevail.",
                         "still_url": "https://episodes.metahub.space/tt11198330/3/7/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%203%20episode%207%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 8,
@@ -658,31 +790,97 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Shifting alliances irrevocably reshape the war as Rhaenyra's forces converge around Tumbleton and both sides vie to gain the upper hand.",
                         "still_url": "https://episodes.metahub.space/tt11198330/3/8/w780.jpg",
-                        "rating": "8.3"
+                        "rating": "8.3",
+                        "watch_link": "https://www.google.com/search?q=House%20of%20the%20Dragon%20season%203%20episode%208%20official%20stream",
+                        "offline_available": true
                     }
                 ]
             }
         ],
-        "watchProviders": [
-            {
-                "provider_name": "Netflix",
-                "provider_type": "Subscription",
-                "provider_logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
-                "provider_url": "https://www.netflix.com/search?q=House%20of%20the%20Dragon"
-            },
-            {
-                "provider_name": "Amazon Prime Video",
-                "provider_type": "Subscription / Rent",
-                "provider_logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
-                "provider_url": "https://www.amazon.com/s?k=House%20of%20the%20Dragon"
-            },
-            {
-                "provider_name": "Official Theatrical / OTT Discovery",
-                "provider_type": "Licensed",
-                "provider_logo": "https://www.google.com/favicon.ico",
-                "provider_url": "https://www.google.com/search?q=House%20of%20the%20Dragon%20watch%20online%20official"
-            }
-        ],
+        "watchProviders": {
+            "IN": [
+                {
+                    "name": "Netflix India",
+                    "type": "Subscription",
+                    "logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
+                    "url": "https://www.netflix.com/search?q=House%20of%20the%20Dragon",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "Amazon Prime Video",
+                    "type": "Subscription / Rent",
+                    "logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
+                    "url": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=House%20of%20the%20Dragon",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "JioCinema / Hotstar",
+                    "type": "Subscription",
+                    "logo": "https://www.jiocinema.com/favicon.ico",
+                    "url": "https://www.jiocinema.com/search/House%20of%20the%20Dragon",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                }
+            ],
+            "US": [
+                {
+                    "name": "Netflix US",
+                    "type": "Subscription",
+                    "logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
+                    "url": "https://www.netflix.com/search?q=House%20of%20the%20Dragon",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "Apple TV",
+                    "type": "Buy / Rent",
+                    "logo": "https://www.apple.com/favicon.ico",
+                    "url": "https://tv.apple.com/us/search?term=House%20of%20the%20Dragon",
+                    "downloadSupported": true,
+                    "downloadType": "RENT_BUY_DOWNLOAD"
+                },
+                {
+                    "name": "Google Play Movies",
+                    "type": "Buy / Rent",
+                    "logo": "https://play-lh.googleusercontent.com/1-hPxO5dH8M6K9OWqIvWD63zqBKgnAnHG5WTexhio4TGgcSD2DJ95hKfdSy4IdDHUg=w240-h480-rw",
+                    "url": "https://play.google.com/store/search?q=House%20of%20the%20Dragon&c=movies",
+                    "downloadSupported": true,
+                    "downloadType": "RENT_BUY_DOWNLOAD"
+                }
+            ],
+            "GB": [
+                {
+                    "name": "Prime Video UK",
+                    "type": "Subscription",
+                    "logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
+                    "url": "https://www.amazon.co.uk/s?k=House%20of%20the%20Dragon",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "BBC iPlayer",
+                    "type": "Free / TV Licence",
+                    "logo": "https://www.bbc.co.uk/favicon.ico",
+                    "url": "https://www.bbc.co.uk/iplayer/search?q=House%20of%20the%20Dragon",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                }
+            ],
+            "GLOBAL": [
+                {
+                    "name": "Official Theatrical & Streaming Finder",
+                    "type": "Licensed",
+                    "logo": "https://www.google.com/favicon.ico",
+                    "url": "https://www.google.com/search?q=House%20of%20the%20Dragon+where+to+watch+official",
+                    "downloadSupported": false,
+                    "downloadType": "NOT_AVAILABLE"
+                }
+            ]
+        },
+        "downloadType": "OFFLINE_IN_APP",
+        "downloadInstructions": "Download for offline viewing is available on official Android/iOS apps of licensed platforms.",
         "servers": [
             {
                 "name": "⚡ Fast Cloud Server 1",
@@ -699,7 +897,7 @@ let movies = [
         ]
     },
     {
-        "id": 1790276667484,
+        "id": 1790277416537,
         "imdbId": "tt1190634",
         "slug": "the-boys-2019",
         "title": "The Boys",
@@ -730,7 +928,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Butcher relives the past, recalling violence and betrayal on the rough road towards finding his wife Becca.",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/1/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%201%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 2,
@@ -739,7 +939,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "A super Star is born! Watch the WORLD PREMIERE of the new #Starlight music video “Never Truly Vanish” now.",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/2/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%202%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 3,
@@ -748,7 +950,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "An update on America's favorite hero, Homelander. Meet the new man: Victoria Neuman announces FBSA hire. Where is Alastair?: Church of the Collective head missing amidst new allegations.",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/3/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%203%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 4,
@@ -757,7 +961,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Is Starlight headed for a supernova? Making Waves: Deep’s bombshell allegations about Church of the Collective. Wall They’ve Got: Homelander fans stand up against super-terrorists.",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/4/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%204%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 5,
@@ -766,7 +972,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "\"Faster than the speed of light, watching as your dreams take flight. I think I should stand and fight, then disappear into the night.”",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/5/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%205%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 6,
@@ -775,7 +983,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Today on Vought News Network: Is the FBSA strong arming Vought? San Diego superhero sees popularity soar! A-Train's new single speeding up the charts.",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/6/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%206%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 7,
@@ -784,7 +994,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Today on Vought News Network: Starlight Sells Out - Heroine’s costume is almost as popular as Homelander’s this halloween. Black Noir hunts serial killer to keep tri-state area safe. FBSA oversteps again as they target Ezekiel. Special Message from Liquid Death Mountain Water.",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/7/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%207%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 8,
@@ -793,7 +1005,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "A Special Message from The Deep, Liquid Death Mountain Water’s new Chief Sustainability Associate.",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/8/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%208%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 9,
@@ -802,7 +1016,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Today on Vought News Network: Victoria Neuman Gives Herself a Virtual Victory Parade. A Train: “I Promise To Have A New Race As Fast As Possible.\" Payback’s Legendary Hero Gunpowder Teaches Kids About The 2nd Amendment.",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/9/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%209%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 10,
@@ -811,7 +1027,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Today on Vought News Network: Silent Knight Brings Bulletproof Cheer; Gecko On Vought’s Naughty List; and Starlight Awarded Top Honor at Holiday Benefit.",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/10/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2010%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 11,
@@ -820,7 +1038,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Today on Vought News Network: Anticipation High for Vought Hero Draft; Tiny Hero's Big Film Premiere; A Fair & Balanced Conversation with the FBSA",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/11/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2011%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 12,
@@ -829,7 +1049,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "This #NationalPizzaDay, there’s no better place to be than Buster Beaver’s. Visit today and sign up for Buster’s Pizza Pals Club to get 7x the tokens. Come on in and Eat the Beav!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/12/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2012%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 13,
@@ -838,7 +1060,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Coming June 3. When darkness descends on the world, and it seems all hope is lost, seven heroes will rise. Seven who will stand. Seven who will fight. Seven who will restore light and hope, and see the sun rise on a new era.\r\n\r\nThis is the true story of the greatest superhero team the world has ever known. This is the Dawn of The Seven.",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/13/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2013%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 14,
@@ -847,7 +1071,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "This Memorial Day, Vought International remembers America's first Superhero - Soldier Boy. In this classic PSA, he spoke up to help protect the youth of our great nation, reminding them that \"taking drugs is not cool, and anyone who does is a loser.\" Be sure to hit the subscribe button to honor his legacy.",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/14/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2014%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 15,
@@ -856,7 +1082,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Tonight at 9/8C on Vought+, it’s the season finale of #AmericanHero! Three contestants remain, but only TWO will join #TheSeven! Will Starlight choose her old flame Supersonic? Or will someone else be moving into the Seven Tower? Tune in tonight for the SHOCKING final episode, brought to you by Lean Lady Frozen Dinners by Vought: Where slim tastes super!\r\n\r\n\r\nOn this exclusive Behind the Scenes Mansion Tour, Vought's own Ashley Barrett takes you inside American Hero Mansion, to see contestants vie for a chance to be America's next top hero. ",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/15/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2015%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 16,
@@ -865,7 +1093,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Soldier Boy serenades the Solid Gold dancers with a super rendition of Blondie's \"Rapture\" in this classic clip recorded just before his heroic final mission. Shortly after this, he was posthumously awarded a Vrammy for Best Special Guest Performance!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/16/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2016%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 17,
@@ -874,7 +1104,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Based on the bestselling autobiography, Deeper: A Memoir, comes a thrilling story of Love, Loss, Redemption, Light, and Fresca. Only on Vought+. \r\n\r\nStarring 3 time Vemmy Award Winner The Deep as Deep, and MTV Movie Award Nominee Billy Zane as Alastair Adana. ",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/17/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2017%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 20,
@@ -883,7 +1115,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "If you feel like #WisdomWednesday is surface-level, it's time for #DeepThoughtsWithTheDeep. Here's a collection of the Lord of the Seven Seas' greatest wisdom that will shape our lives forever. Continue your journey of enlightenment with #DeeperAndDeeper, the most intimate superhero interview of all time, now available on Audible.",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/20/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2020%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 21,
@@ -892,7 +1126,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "We saw your tweets, opened your emails, and read your one-star reviews. That’s why we’re making the brave choice to bring Soldier Boy back to Vought++. Films like Red Thunder will now have this content warning to properly prepare patriots before they press play!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/21/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2021%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 22,
@@ -901,7 +1137,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "For months, you’ve asked to see the most inspirational commercial ever made again. Originally taken off air because the testing was too strong, this is “Taste The Movement,” the full-length spot for A-Train’s Turbo Rush. Look for a super back-to-school sale on 7-Packs now!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/22/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2022%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 24,
@@ -910,7 +1148,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "On this day in 2008, one glance across study hall changed everything. Celebrate 14 years of Rock My Kiss, the chart-topping single from the boys of Super-Sweet. Upgrade to a Voughtify Premium Student subscription to listen to a Supersonic bonus tribute!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/24/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2024%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 25,
@@ -919,7 +1159,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "This National Working Parents Day, we’re proud to support mothers and fathers like Homelander, who somehow manage to keep our country safe while raising the next generation of heroes. Work at Vought and get occasional access to our on-site Vought Tots Daycare!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/25/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2025%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 26,
@@ -928,7 +1170,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "On this special edition of VNN's Seven on 7, Cameron has the details on a new energy drink Vought has partnered with G Fuel on. Inspired by Compound V, it sharpens focus, increases energy, and in select cases, turns you into a weapon of mass destruction.",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/26/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2026%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 27,
@@ -937,7 +1181,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "This Soy Sauce Day, enjoy a bottle of Kirei Shoyu, full of flavor and peak freshness. Now back in stock at your local store, thanks to the Deep personally escorting a cargo shipment across the ocean. Get 7% off with promo code GOODLUCK!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/27/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2027%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 28,
@@ -946,7 +1192,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "This year, we lost one of Deep’s dear friends Timothy, who was sadly eaten by a predator. We can’t bring back Timothy, but we can try to make oceans safer for cephalopods on World Octopus Day. Vought is proud to offer continued support, thoughts and prayers for Timothy’s family!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/28/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2028%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 29,
@@ -955,7 +1203,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Coming to you a week late so we could collect more of your data and iron out a few technical glitches, it’s the 2022 Voughtify Recapped! Join A-Train as we celebrate the Top 5 songs of the year, and remember to separate art (Rapture) from the artist and traitor (Soldier Boy).",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/29/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2029%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 30,
@@ -964,7 +1214,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Transparency has always been our core value at Vought. That’s why ahead of our Q1 earnings call, we’ve prepped this summary for all shareholders to enjoy. Here's CEO Ashley Barrett, who has the board’s full confidence and was just given a new seven-month contract!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/30/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2030%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 31,
@@ -973,7 +1225,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Tonight, we honor Queen Maeve with this emotional in memoriam at the Supie Awards. A hero on and off screen, her acting in Dawn of the Seven and Her Majesty will be studied by performing arts students at Godolkin University for years to come. Rest In Pride, Queen! ????️‍????",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/31/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2031%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 32,
@@ -982,7 +1236,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "It’s a dark day for America. But together, we can keep an innocent hero #HomeFree. Here’s CEO Ashley Barrett with more on Homelander.",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/32/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2032%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 33,
@@ -991,7 +1247,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "If there’s one thing Americans can count on right now, it’s that Cameron is committed to debunking the lies surrounding this shameless facade of a “trial.” Join him every night as he brings you hard-hitting news, and teaches the woke mob basic vocabulary like “loving father”!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/33/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2033%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 35,
@@ -1000,7 +1258,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Congratulations, and welcome to Godolkin University! Join Dean Shetty, Professor Brink and a few of our Super students for this semester’s official Orientation Video. Watch, and then make a cash-only donation to our combat gym renovation at https://www.godolkinuniversity.com/",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/35/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2035%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 36,
@@ -1009,7 +1269,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "At Godolkin University, we encourage our Performing Arts students to learn everything they can about visual media. This semester, they developed their very own campus tour featuring No. 2-ranked Jordan Li. Please excuse any roughness in the edit, they are still learning what Director Bourke-level production quality looks like! ",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/36/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2036%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 37,
@@ -1018,7 +1280,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Come one, come all. At Godolkin University, it doesn't matter who finishes first, as long as no one gets hurt. Watch for tips on having a pleasurable semester, and visit https://supeporn.com/en for a special back-to-school offer!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/37/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2037%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 38,
@@ -1027,7 +1291,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "WARNING: This message is for avid VNN viewers only. If you tuned in to the latest updates this weekend, please listen as CEO Ashley Barrett provides calm and collected reassurance around recent events at Godolkin.",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/38/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2038%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 39,
@@ -1036,7 +1302,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Today, Vought is proud to announce the #ThinkBrink initiative. Consider a sizable donation if you care about the future of education – for you, for God U, for Brink. And cash-only, please!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/39/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2039%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 40,
@@ -1045,7 +1313,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Supercharge your social with V, the new browser powered by Vought and Opera GX. Follow your favorite supers, keep up with the latest at Godolkin University, and more. Homelander has more than 100M followers already!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/40/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2040%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 41,
@@ -1054,7 +1324,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "From the ashes of tragedy, a new generation of heroes will rise. Like, comment and smash that subscribe button to thank the new GUARDIANS OF GODOLKIN for their bravery in saving the lives of countless students. Cate Dunlap and Sam Riordan will return!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/41/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2041%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 42,
@@ -1063,7 +1335,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "After a lifetime of using her super powers to protect America as part of legendary supe team Payback, Crimson Countess is using the power of music to help chimps live happier lives.\r\n",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/42/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2042%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 43,
@@ -1072,7 +1346,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Supersonic may be gone, but he'll live forever in our hearts - and our ears! Reminisce about summer nights cruising in the Jetta with “You Got Your License To Drive (Me Crazy),\" and all of SuperSweet’s catalogue, exclusively on Voughtify.",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/43/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2043%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 44,
@@ -1081,7 +1357,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "BREAKING: Vought and VNN can exclusively confirm that Homelander, Black Noir and a hero who shall not be named are coming to Call of Duty. More insightful soundbites from Noir in this press conference for the ages!\r\n",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/44/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2044%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 45,
@@ -1090,7 +1368,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Today, Vought brings you an exclusive new ad for The Big Game. Rated \"Too Patriotic\" for TV, this is a love letter to AMERICA. Please enjoy with an ice cold Turbo Rush!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/45/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2045%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 46,
@@ -1099,7 +1379,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Despite what the fake news might tell you, Vought and Homelander have ALWAYS been steadfast friends with Robert Singer and Victoria Neuman. This Tuesday, we're proud to stand with them, and work towards a new era for the SUPERhuman community!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/46/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2046%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 47,
@@ -1108,7 +1390,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "At Vought, our primary goal is to create a stronger, MORE SUPER America. That’s why we’re endorsing Robert Singer and Victoria Neuman, who have promised to give Superhumans more just than a seat at the table. We’ll be holding them accountable every step of the way!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/47/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2047%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 48,
@@ -1117,7 +1401,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "We’re tired of socialist teachers brainwashing your kids with their woke takes on the “Civil War” and “Women’s Rights.\" That’s why we’re launching Vought’s American History – designed to teach your lil’ patriots the God-honest truth about this nation’s history. Buy now and get a special edition copy with a foreword from Homelander himself!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/48/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2048%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 49,
@@ -1126,7 +1412,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "This World Oceans Day, Vought is proud to present the triumphant return of Deep Thoughts With The Deep. This time, even Deeper! Listen as The Lord of the Seven Seas ponders provocative questions that no other mind in history has dared to tackle.",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/49/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2049%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 50,
@@ -1135,7 +1423,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Today, The Deep is proud to announce a renewed partnership with Liquid Death. Two years ago, he taught children to bring death to plastic, and now he is educating them on the dangers of sugar. He takes his job as role model and health & wellness ambassador Deep-ly serious!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/50/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2050%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 51,
@@ -1144,7 +1434,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "This Thursday, we’re proud to present Vought on Ice! It’s the most festive, family-friendly show ever – converting non-believers into God-fearing, upstanding citizens in under three hours. Nothing says \"Merry Christmas\" like Homelander landing a triple axel! https://www.voughtonice.com/",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/51/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2051%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 53,
@@ -1153,7 +1445,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "From the studio that brought you Rising Tide and Dawn of the Seven comes TRAINING A-TRAIN. Now in production, directed by award-winning filmmaker Adam Bourke and starring The World’s Fastest Man. Here’s A-Train on why this is his most heart-wrenching role yet!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/53/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2053%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 54,
@@ -1162,7 +1456,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Billy Butcher visits an elementary school to teach students that superheroes ain't always nice.",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/54/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2054%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 56,
@@ -1171,7 +1467,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "At Vought, we see the same spark in Firecracker as Homelander does: a fearless freedom fighter. Hear it for yourself today on this week's episode of Truthbomb as she recounts this weekend’s horrific events, and help ignite the resistance by sharing with #WhereWeGoOneWeGoVought!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/56/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2056%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 58,
@@ -1180,7 +1478,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Vought is proud to usher in a new era of Internet privacy. Together with Opera GX, we’ve built BROWSER by Vought. What it lacks in branding creativity, it makes up for in speed and security. Download it today and you’ll be review bombing woke TV shows in no time!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/58/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2058%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 59,
@@ -1189,7 +1489,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "You saw it already on Firecracker’s recent six-hour VNN special, but for the first time ever online, it’s her full performance of “Up Where We Belong” featuring Deep. God Himself smiled down from heaven as they sang, and we bet He’ll be streaming on Voughtify too!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/59/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2059%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 60,
@@ -1198,7 +1500,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "If you missed #V52, we trust you had a completely invalid excuse or were trapped under something heavy. Here’s A-Train, Deep and Noir to recap the most important and influential day in entertainment history, destined to shape culture for at least the next seven decades!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/60/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2060%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 61,
@@ -1207,7 +1511,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Ever wonder how CEO Ashley Barrett looks so composed in every meeting or press conference? Her secret is simple – Voughtality! Featuring a line of products that will have you feeling fresh and moist on every level. Voughtality – For A Super You.",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/61/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2061%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 62,
@@ -1216,7 +1522,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "At Vought Fresh Farms, we’ll do anything to make sure you get the right amount of dairy. That’s why our milk is made from only the youngest and most God-fearing of cows, homegrown right here in America. Vought Fresh Farms, the only choice for true patriots like Homelander!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/62/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2062%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 63,
@@ -1225,7 +1533,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "At Vought, our top priority always has been transparency. That’s why CEO Ashley Barrett is here to debunk the woke conspiracy theories on the dark web. Remember, if you’re going to share misinformation, make sure you get it from reputable patriots like Firecracker!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/63/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2063%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 64,
@@ -1234,7 +1544,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Back by popular demand, Vought proudly presents a new wave of Deep Thoughts with The Deep. Keep the waters of your mind still as you soak in these pearls of wisdom. Then when you’re done, be sure to share with a bro!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/64/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2064%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 65,
@@ -1243,7 +1555,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "This week, Olympics viewers will be delighted watching the events AND the ad breaks. Here's a first look at a new TV spot featuring The Deep, the greatest swimmer of all-time. He'd easily be world champion if Supers were allowed to compete!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/65/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2065%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 66,
@@ -1252,7 +1566,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Our social media department on Floor 47 has seen lots of conversation about Soldier Boy the past few days. He’s still a traitor, but it’s footage like this that helps us remember his better days as a true hero. Share to tell someone you love GOD BLESS AMERICA!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/66/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%2066%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 104,
@@ -1261,7 +1577,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "It’s more than a festive tune – it’s a cry of freedom from patriots everywhere! SEE SOMETHING, SAY SOMETHING. Performed by puppets, adored by everyone. Sing along, then call the hotline to report those groomers. Remember - T is for TRAITOR!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/104/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%20104%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 105,
@@ -1270,7 +1588,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Critics, families and online trolls have all been raving about Vought On Ice! That’s why we’re bringing you an exclusive and extended look at the magic. \r\n\r\nOnce you’re done watching, stream “Let’s Put the Christ Back in Christmas” anytime on Voughtify! ",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/105/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%20105%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 106,
@@ -1279,16 +1599,20 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Today, we present our most groundbreaking Superclass yet. Join legendary director Adam Bourke (Dawn of the Seven, Training A-Train) as he unveils proprietary trade secrets for dominating awards season. Actors, if you're putting up massive ratings and TikTok views, but have never hoisted the hardware, this video is for you!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/106/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%20106%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 107,
                         "name": "Episode 107",
                         "air_date": "2025-08-28",
                         "runtime": "45m",
-                        "overview": "Episode 107 of Season 1",
+                        "overview": "Official Episode 107 of Season 1",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/107/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%20107%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 108,
@@ -1297,7 +1621,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Back by popular demand, it’s Deep Thoughts With The Deep! These are his Deepest ones yet, as he’s plunged to Marianas Trench depths of enlightenment that no human has ever explored. James Cameron could never. But The Deep can. And could. And did. And will.",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/108/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%20108%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 109,
@@ -1306,7 +1632,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Get ready for another TRUTHBOMB, patriots! Today, Firecracker sets the record straight on the whereabouts of A-Train. He is STILL on his top-secret, extended overseas mission serving the people of this great nation. All other rumors to the contrary are Starlighter propaganda!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/109/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%20109%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 110,
@@ -1315,7 +1643,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "This week, the manosphere won’t know what hit it, as Deep and Noir are here with a truly goated episode of MANHANDLED. Get a sneak peek Wednesday on Vought+, then look out for an extended version online later in the week. Strength, independence, SIGMA!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/110/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%20110%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 111,
@@ -1324,7 +1654,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "It’s time, Manhandlers, a new episode with Deep and Noir is live NOW. This is about to be the dopest 15 minutes of your entire life. All sigma, no beta! ",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/111/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%20111%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 112,
@@ -1333,7 +1665,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Vought is proud to partner with Ashley Barrett in her new role as Vice President. We knew she was destined for big things as we watched her climb the corporate ladder here in Vought Tower. Keep breaking those glass ceilings, Ashley!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/112/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%20112%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 113,
@@ -1342,7 +1676,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Introducing the Manhandled Manscaping Kit, for bros that want to take their anal wellness to the next level. If you’ve been tanning your taint without it, stop whatever you’re doing and order now! VoughtCoin accepted at purchase.",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/113/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%20113%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 114,
@@ -1351,7 +1687,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "This Lord’s Day, we set our sights to the heavens above, and say “see you soon” to A-Train. As Homelander so eloquently put at his recent memorial service, “he was a good friend, and used to be very fast.” Thank you for everything, A-Train, it was a good run!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/114/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%20114%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 115,
@@ -1360,7 +1698,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "We're live with the next gen of Vought heroes, Teenage Kix! Spend a few minutes with Jetstreak, Sheline and Countess Crow from their HQ in the beautiful state of Ohio.",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/115/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%20115%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 116,
@@ -1369,7 +1709,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "For A-Train’s memorial service, Oh Father paid his respects by organizing a gospel choir to sing a soulful rendition of his hit song “Faster.” Watch the official music video, and lift your voice up to the heavens so A-Train and the angels can hear!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/116/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%20116%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 117,
@@ -1378,7 +1720,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Following his recent bombshell press conference at Vought Tower, Soldier Boy was kind enough to answer a few follow-up questions for VNN. His eloquent, straight-shooting professionalism will make him a perfect fit for The Seven!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/117/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%20117%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 118,
@@ -1387,7 +1731,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Today, we honor visionary writer, director and storyteller Adam Bourke. He recently died doing what he loved – giving back to the creative community directing a play. Crime Analytics will find the Starlighter responsible for his death, there’s something fishy about the circumstances!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/118/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%20118%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 119,
@@ -1396,7 +1742,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "As gas prices continue to skyrocket, Deep has taken matters into his very muscular hands. He’s worked with Vought Petroleum to open a brand new, eco-friendly pipeline in Alaskan waters that will deliver gas to your tank and extra cash to your wallet. The Deep says sea life is stoked with America’s Energy Independence!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/119/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%20119%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 120,
@@ -1405,7 +1753,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Firecracker was a defender of honest, common sense straight talk.  But tragically, Starlight doesn’t want you to know the truth, so she murdered Firecracker in cold blood.  Rest in power Firecracker.  We’re sure you’re soaring to Heaven on the wings of an eagle!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/120/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%20120%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 121,
@@ -1414,7 +1764,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Here’s one from the archives featuring an original hero, Bombsight. He and his good friend Soldier Boy not only kept America safe from Communists, but also were the face of many new revolutionary products like this one. Then and now, you can always trust a hero-recommended brand!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/121/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%20121%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 122,
@@ -1423,7 +1775,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "We trust that right now, the angels on high are singing the name of Homelander. And lucky for us, we have the voice of an angel in Oh Father to “Raise Him Up” here. Watch his full performance and stream the song that’s already climbed to the top of the Voughtify charts!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/122/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%20122%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 123,
@@ -1432,7 +1786,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Today, we are proud to help introduce a new spokesperson for @liquiddeath – Ashley Barrett. Just like Homelander, she cares deeply about what Americans put in their bodies. Throw out your nut milk and treat yourself to an easy drinking sparkling energy – guaranteed to not explode your head! (NOTE: President Barrett was still Vice President at time of filming)",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/123/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%20123%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 124,
@@ -1441,7 +1797,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Bro down, patriots. The Deep heroically gave his life saving his beloved marine animals from the Vought Pipeline, which to be clear, was a product of the corrupt Homelander administration.  Dolphins and octopi everywhere are in mourning, and the Manhandled Podcast is on pause until further notice.",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/124/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%20124%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 125,
@@ -1450,7 +1808,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "A Series Retrospective of The Boys featuring cast and crew interviews presented in six chapters: Origin Story, Building the World, Establishing the Voice, Crafting the Magic, Beyond the Screen, and Legacy.",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/125/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%20125%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 126,
@@ -1459,7 +1819,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "On the Lord’s Day, we take a moment to remember Oh Father, who was brutally murdered by Homelander in his recent reign of terror. He was a spiritual leader unlike any other, and his voice will never be gagged. Rest in power, Oh Father!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/126/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%20126%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 127,
@@ -1468,7 +1830,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "We’ve seen your questions on Black Noir’s whereabouts, and can assure you he has merely departed on yet another critical mission overseas. If he could speak, he would tell you reports of his demise are greatly exaggerated. Thank you for your service, Noir, and for being the best bro this nation could ask for!",
                         "still_url": "https://episodes.metahub.space/tt1190634/0/127/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%20127%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 1,
@@ -1477,7 +1841,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "When a Supe kills the love of his life, A/V salesman Hughie Campbell teams up with Billy Butcher, a vigilante hell-bent on punishing corrupt Supes -- and Hughie’s life will never be the same again.",
                         "still_url": "https://episodes.metahub.space/tt1190634/1/1/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%201%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 2,
@@ -1486,7 +1852,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "The Boys get themselves a Superhero, Starlight gets payback, Homelander gets naughty, and a Senator gets naughtier.",
                         "still_url": "https://episodes.metahub.space/tt1190634/1/2/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%202%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 3,
@@ -1495,7 +1863,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "It’s the race of the century. A-Train versus Shockwave, vying for the title of World’s Fastest Man. Meanwhile, the Boys are reunited and it feels so good.",
                         "still_url": "https://episodes.metahub.space/tt1190634/1/3/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%203%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 4,
@@ -1504,7 +1874,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "On a very special episode of The Boys... an hour of guts, gutterballs, airplane hijackings, madness, ghosts, and one very intriguing Female. Oh, and lots of heart -- both in the sentimental sense, and in the gory literal sense.",
                         "still_url": "https://episodes.metahub.space/tt1190634/1/4/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%204%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 5,
@@ -1513,7 +1885,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "The Boys head to the “Believe” Expo to follow a promising lead in their ongoing war against the Supes. There might -- MIGHT -- be a homicidal infant, but you'll have to see for yourself.",
                         "still_url": "https://episodes.metahub.space/tt1190634/1/5/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%205%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 6,
@@ -1522,7 +1896,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "SUPER IN AMERICA (2019). Vought Studios. Genre: Reality.   Starring: Homelander, Queen Maeve, Black Noir, The Deep, A-Train, Starlight, Tara Reid, Billy Zane.",
                         "still_url": "https://episodes.metahub.space/tt1190634/1/6/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%206%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 7,
@@ -1531,7 +1907,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Never trust a washed-up Supe -- the Boys learn this lesson the hard way. Meanwhile, Homelander digs into his past, Starlight discovers that love hurts, and if you’re ever in Sandusky, Ohio and a girl asks if she can touch your gills, say NO.",
                         "still_url": "https://episodes.metahub.space/tt1190634/1/7/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%207%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 8,
@@ -1540,7 +1918,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Season Finale Time! Questions answered! Secrets revealed! Conflicts… conflicted! Characters exploded! And so much more!",
                         "still_url": "https://episodes.metahub.space/tt1190634/1/8/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%201%20episode%208%20official%20stream",
+                        "offline_available": true
                     }
                 ]
             },
@@ -1556,7 +1936,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Season 2! New and improved! Now with 50% more explosive decapitations, terrorists, S&M hookers, cults, and a new pine fresh scent! But wait, there’s more! 2X MORE blood, guts and gore than the other leading brands! This exclusive offer is available only on Amazon Prime Video! Don’t delay! Order now!",
                         "still_url": "https://episodes.metahub.space/tt1190634/2/1/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%202%20episode%201%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 2,
@@ -1565,7 +1947,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "The Boys get themselves a Super Terrorist, Starlight gets evidence against Vought, The Deep gets in touch with his feelings, and Homelander gets himself a family (sort of).  All that, and a hard-hitting exposé on why Super Suits don’t have pockets.",
                         "still_url": "https://episodes.metahub.space/tt1190634/2/2/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%202%20episode%202%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 3,
@@ -1574,7 +1958,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Attention: If you or a loved one were exposed to Compound V, you may be entitled to financial compensation. Vought has given the drug to multiple victims, without their knowledge or consent. If you believe that you or a loved one were administered Compound V, call the law firm of Bremmer & Bremmer at 1-888-177-2774 for a free legal consultation. Know your rights!",
                         "still_url": "https://episodes.metahub.space/tt1190634/2/3/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%202%20episode%203%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 4,
@@ -1583,7 +1969,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Road trip!  The Boys head to North Carolina to follow a lead on a mysterious Supe named Liberty.  And did you know a person’s choice of candy bars might tell you if they’re a serial killer?  Watch and learn the warning signs!  This episode could save your life!",
                         "still_url": "https://episodes.metahub.space/tt1190634/2/4/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%202%20episode%204%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 5,
@@ -1592,7 +1980,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "VoughtStudios is pleased to announce that filming has begun on #DawnOfTheSeven. 12 years of VCU movies have led to this. If you like movies about One Hero, you’ll love a movie about Seven Heroes. Introducing newest member @RealStormfront! See how the legend began! In theaters Summer 2021!",
                         "still_url": "https://episodes.metahub.space/tt1190634/2/5/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%202%20episode%205%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 6,
@@ -1601,7 +1991,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "The Sage Grove Center® is dedicated to caring for those struggling with mental illness. Our compassionate doctors and counselors provide personalized services to help patients live their best lives. If you or a loved one need help, call the Sage Grove Center today at 1-800-122-8585. A proud subsidiary of Global Wellness Services®, which is a proud subsidiary of Vought International®",
                         "still_url": "https://episodes.metahub.space/tt1190634/2/6/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%202%20episode%206%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 7,
@@ -1610,7 +2002,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Congresswoman Victoria Neuman’s sham Congressional Hearing against Vought takes place in 3 DAYS. Are we going to let her criminalize Superheroes when we need them most? We have to stand up against such blatant partisan politics. Please join fellow Patriotic Americans and send $20 to VOUGHTPROMISE.COM to tell Neuman and her Kangaroo Court Cronies that they won’t win, “Not On Our Watch”™.",
                         "still_url": "https://episodes.metahub.space/tt1190634/2/7/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%202%20episode%207%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 8,
@@ -1619,7 +2013,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "***SUPER VILLAIN ALERT*** YOU ARE RECEIVING THIS NOTIFICATION FROM THE DEPARTMENT OF HOMELAND SECURITY. A SUPER VILLAIN ALERT HAS BEEN ISSUED FOR YOUR AREA. PLEASE BE VIGILANT AND REPORT ANY SUSPICIOUS PERSONS OR ACTIVITY. IF YOU BELIEVE YOU HAVE SEEN A SUPER VILLAIN, DO NOT APPROACH OR ATTEMPT TO APPREHEND THEM. CONTACT LAW ENFORCEMENT IMMEDIATELY",
                         "still_url": "https://episodes.metahub.space/tt1190634/2/8/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%202%20episode%208%20official%20stream",
+                        "offline_available": true
                     }
                 ]
             },
@@ -1635,7 +2031,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "You and a guest are invited to the premiere of DAWN OF THE SEVEN this Tuesday at 7PM in Vought Tower’s Lamplighter Memorial Theater! Screening will be followed by a Q&A with director Adam Bourke and an after-party with Supe DJ Malchemical on the turntables! Join us for the greatest true origin story ever told about America’s number one Superhero team and see how the legend began!",
                         "still_url": "https://episodes.metahub.space/tt1190634/3/1/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%203%20episode%201%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 2,
@@ -1644,7 +2042,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Homelander. America’s greatest Superhero. Defending our shores from sea to shining sea. Today, America honors him on his birthday. And the Vought Shopping Network is celebrating by offering the exclusive Homelander Limited Birthday Edition Gold Coin for only $99.95 (plus tax and shipping) while supplies last. Vought Gold Commemorative Coins: An investment that lasts a lifetime.",
                         "still_url": "https://episodes.metahub.space/tt1190634/3/2/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%203%20episode%202%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 3,
@@ -1653,7 +2053,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Tonight at 9/8C on Vought Plus, it’s the season finale of #AmericanHero! Three contestants remain, but only TWO will join #TheSeven! Will Starlight choose her old flame Supersonic? Or will someone else be moving into the Seven Tower? Tune in tonight for the SHOCKING final episode, brought to you by Lean Lady Frozen Dinners by Vought: Where slim tastes super!",
                         "still_url": "https://episodes.metahub.space/tt1190634/3/3/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%203%20episode%203%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 4,
@@ -1662,7 +2064,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Tonight, streaming live exclusively for Supeporn.com Super-Subscribers, it’s the #ClashOfTheDildos! Which of The Seven-inspired dildos will crush the competition in this tip-to-tip challenge? Will it be the reigning champion Homelander Star-Spangled Banger or Starlight’s electrified Star-Brator? Join us as we put these pleasure-pounding penetrators through their paces! Only on Supeporn.com!",
                         "still_url": "https://episodes.metahub.space/tt1190634/3/4/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%203%20episode%204%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 5,
@@ -1671,7 +2075,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Did you know chimpanzees are an endangered species largely because of human activity? But you can help by supporting construction costs for Crimson Countess’s Chimp Country! This beautiful refuge for chimpanzees will feature a banana plantation, four daily stunt shows, and a petting zoo! And when you donate, you’ll be entered to win a private video chat with Crimson Countess! Donate today!",
                         "still_url": "https://episodes.metahub.space/tt1190634/3/5/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%203%20episode%205%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 6,
@@ -1680,7 +2086,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "You’re invited to the 70th Annual Herogasm! You must present this invitation in order to be admitted! Same rules as always: no cameras, no non-Supe guests unless they sign an NDA and they’re DTF, and no telling any news media! It’s BYOD, but food, alcohol and lube will be provided! And please remember to RSVP so we can get an accurate headcount for the caterer!",
                         "still_url": "https://episodes.metahub.space/tt1190634/3/6/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%203%20episode%206%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 7,
@@ -1689,7 +2097,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Did someone say birthday? Come celebrate at Buster Beaver’s with our new Deluxe VIP Birthday Package, with seating for up to 30 guests, ten large two-topping pizzas, and ten pitchers of your choice of soda! And of course, a special birthday play starring Buster Beaver and his cast of furry forest friends! All for only $199.99 + tax! Buster Beaver’s Pizza! Where Kids Make the Rules®!",
                         "still_url": "https://episodes.metahub.space/tt1190634/3/7/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%203%20episode%207%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 8,
@@ -1698,7 +2108,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Calling all patriots! Let’s show Homelander we’ve got his back and we’re not going to let Starlight and her Starlight House of Horrors get away with trafficking children and drinking their adrenaline! It’s time for real Americans to fight back! Join the Hometeamers and Stormchasers tomorrow at Vought Square! Stand back and stand by!",
                         "still_url": "https://episodes.metahub.space/tt1190634/3/8/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%203%20episode%208%20official%20stream",
+                        "offline_available": true
                     }
                 ]
             },
@@ -1714,7 +2126,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "CALLING ALL PATRIOTS.  BE AT THE COURTHOUSE TOMORROW FOR HOMELANDER’S #VERDICT AND BE READY.  IF THE CORRUPT “JUSTICE” SYSTEM WANTS TO F**K AROUND, THEY’RE GONNA FIND OUT.  #HOMEFREE",
                         "still_url": "https://episodes.metahub.space/tt1190634/4/1/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%204%20episode%201%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 2,
@@ -1723,7 +2137,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Did you know globalists put chemicals in food to make us gay, Dakota Bob is a demon from hell, and the Moon isn’t real? Find out what they don’t want you to know at #TruthCon!",
                         "still_url": "https://episodes.metahub.space/tt1190634/4/2/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%204%20episode%202%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 3,
@@ -1732,7 +2148,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "This December at VoughtCoin Arena, experience the story of Christmas the way it was meant to be told... on ice! Vought Presents Vought on Ice! Tickets available now at VoughtOnIce.com!",
                         "still_url": "https://episodes.metahub.space/tt1190634/4/3/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%204%20episode%203%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 4,
@@ -1741,7 +2159,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Vought News Network is proud to announce its new series #Truthbomb! Join host Firecracker and her celebrity guests for the live 6-hour premiere as they expose Starlight’s Adrenochrome Parties!",
                         "still_url": "https://episodes.metahub.space/tt1190634/4/4/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%204%20episode%204%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 5,
@@ -1750,7 +2170,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Attention #superfans! This year at #V52 see A-Train live and in person, as he presents an exclusive sneak peek at his powerful, true-life story: TRAINING A-TRAIN! V52: Powered by fans, for fans!",
                         "still_url": "https://episodes.metahub.space/tt1190634/4/5/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%204%20episode%205%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 6,
@@ -1759,7 +2181,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Vernon Correctional Services provides compassionate rehabilitation to those in our care to prepare them for successful community reentry. At Vernon, it’s not about custody. It’s about family.",
                         "still_url": "https://episodes.metahub.space/tt1190634/4/6/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%204%20episode%206%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 7,
@@ -1768,7 +2192,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Hey kids! Did you know your neighbor, uncle, or even Mom and Dad might be trying to destroy America? Find out how to stop them on the Avenue V Christmas Special! If you see something, say something!",
                         "still_url": "https://episodes.metahub.space/tt1190634/4/7/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%204%20episode%207%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 8,
@@ -1777,7 +2203,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Calling all patriots! We will not allow this stolen election to be certified tomorrow! We must stop Bob Singer’s woke anti-Supe agenda! PREPARE FOR WAR! #WhereWeGoOneWeGoVought",
                         "still_url": "https://episodes.metahub.space/tt1190634/4/8/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%204%20episode%208%20official%20stream",
+                        "offline_available": true
                     }
                 ]
             },
@@ -1793,7 +2221,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "ATTENTION FREEDOM CAMPERS: ESCAPE ATTEMPTS WILL BE MET WITH DEADLY FORCE. Have a super day!",
                         "still_url": "https://episodes.metahub.space/tt1190634/5/1/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%205%20episode%201%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 2,
@@ -1802,7 +2232,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Tonight at 9/8C a @VoughtNews special report: Is your loved one a secret Starlighter terrorist?",
                         "still_url": "https://episodes.metahub.space/tt1190634/5/2/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%205%20episode%202%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 3,
@@ -1811,7 +2243,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Storm her senses with V-Bro Mango Thunder Body Spray by Vought! She'll never know what hit her!",
                         "still_url": "https://episodes.metahub.space/tt1190634/5/3/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%205%20episode%203%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 4,
@@ -1820,7 +2254,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "IN THIS HOUSE WE BELIEVE IN HOMELANDER!",
                         "still_url": "https://episodes.metahub.space/tt1190634/5/4/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%205%20episode%204%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 5,
@@ -1829,7 +2265,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Tonight at 9/8C a @VoughtNews special report: Treason in Tinseltown! Find out which of your favorite Hollywood stars are rumored to be Starlighters!",
                         "still_url": "https://episodes.metahub.space/tt1190634/5/5/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%205%20episode%205%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 6,
@@ -1838,7 +2276,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Available now, EXCLUSIVELY at @VMCtheaters, get the new #DeepPopcornBucket for only $32.99!",
                         "still_url": "https://episodes.metahub.space/tt1190634/5/6/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%205%20episode%206%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 7,
@@ -1847,7 +2287,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "WARNING: EXERCISE CAUTION WHEN ENTERING SOUNDSTAGE. PERFORMERS MAY BE USING SUPERPOWERS.",
                         "still_url": "https://episodes.metahub.space/tt1190634/5/7/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%205%20episode%207%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 8,
@@ -1856,31 +2298,97 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Easter Sunday. 2PM. Live on @VoughtNews. Bear witness as Homelander reboots the universe.",
                         "still_url": "https://episodes.metahub.space/tt1190634/5/8/w780.jpg",
-                        "rating": "8.5"
+                        "rating": "8.5",
+                        "watch_link": "https://www.google.com/search?q=The%20Boys%20season%205%20episode%208%20official%20stream",
+                        "offline_available": true
                     }
                 ]
             }
         ],
-        "watchProviders": [
-            {
-                "provider_name": "Netflix",
-                "provider_type": "Subscription",
-                "provider_logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
-                "provider_url": "https://www.netflix.com/search?q=The%20Boys"
-            },
-            {
-                "provider_name": "Amazon Prime Video",
-                "provider_type": "Subscription / Rent",
-                "provider_logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
-                "provider_url": "https://www.amazon.com/s?k=The%20Boys"
-            },
-            {
-                "provider_name": "Official Theatrical / OTT Discovery",
-                "provider_type": "Licensed",
-                "provider_logo": "https://www.google.com/favicon.ico",
-                "provider_url": "https://www.google.com/search?q=The%20Boys%20watch%20online%20official"
-            }
-        ],
+        "watchProviders": {
+            "IN": [
+                {
+                    "name": "Netflix India",
+                    "type": "Subscription",
+                    "logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
+                    "url": "https://www.netflix.com/search?q=The%20Boys",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "Amazon Prime Video",
+                    "type": "Subscription / Rent",
+                    "logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
+                    "url": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=The%20Boys",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "JioCinema / Hotstar",
+                    "type": "Subscription",
+                    "logo": "https://www.jiocinema.com/favicon.ico",
+                    "url": "https://www.jiocinema.com/search/The%20Boys",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                }
+            ],
+            "US": [
+                {
+                    "name": "Netflix US",
+                    "type": "Subscription",
+                    "logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
+                    "url": "https://www.netflix.com/search?q=The%20Boys",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "Apple TV",
+                    "type": "Buy / Rent",
+                    "logo": "https://www.apple.com/favicon.ico",
+                    "url": "https://tv.apple.com/us/search?term=The%20Boys",
+                    "downloadSupported": true,
+                    "downloadType": "RENT_BUY_DOWNLOAD"
+                },
+                {
+                    "name": "Google Play Movies",
+                    "type": "Buy / Rent",
+                    "logo": "https://play-lh.googleusercontent.com/1-hPxO5dH8M6K9OWqIvWD63zqBKgnAnHG5WTexhio4TGgcSD2DJ95hKfdSy4IdDHUg=w240-h480-rw",
+                    "url": "https://play.google.com/store/search?q=The%20Boys&c=movies",
+                    "downloadSupported": true,
+                    "downloadType": "RENT_BUY_DOWNLOAD"
+                }
+            ],
+            "GB": [
+                {
+                    "name": "Prime Video UK",
+                    "type": "Subscription",
+                    "logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
+                    "url": "https://www.amazon.co.uk/s?k=The%20Boys",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "BBC iPlayer",
+                    "type": "Free / TV Licence",
+                    "logo": "https://www.bbc.co.uk/favicon.ico",
+                    "url": "https://www.bbc.co.uk/iplayer/search?q=The%20Boys",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                }
+            ],
+            "GLOBAL": [
+                {
+                    "name": "Official Theatrical & Streaming Finder",
+                    "type": "Licensed",
+                    "logo": "https://www.google.com/favicon.ico",
+                    "url": "https://www.google.com/search?q=The%20Boys+where+to+watch+official",
+                    "downloadSupported": false,
+                    "downloadType": "NOT_AVAILABLE"
+                }
+            ]
+        },
+        "downloadType": "OFFLINE_IN_APP",
+        "downloadInstructions": "Download for offline viewing is available on official Android/iOS apps of licensed platforms.",
         "servers": [
             {
                 "name": "⚡ Fast Cloud Server 1",
@@ -1897,7 +2405,7 @@ let movies = [
         ]
     },
     {
-        "id": 1790276667131,
+        "id": 1790277416209,
         "imdbId": "tt15239678",
         "slug": "dune-part-two-2024",
         "title": "Dune: Part Two",
@@ -1916,26 +2424,90 @@ let movies = [
         "story": "Paul Atreides unites with the Fremen while on a warpath of revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the universe, he endeavors to prevent a terrible fu...",
         "trailer": "https://www.youtube.com/embed/U2Qp5pL3ovA",
         "seasons": [],
-        "watchProviders": [
-            {
-                "provider_name": "Netflix",
-                "provider_type": "Subscription",
-                "provider_logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
-                "provider_url": "https://www.netflix.com/search?q=Dune%3A%20Part%20Two"
-            },
-            {
-                "provider_name": "Amazon Prime Video",
-                "provider_type": "Subscription / Rent",
-                "provider_logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
-                "provider_url": "https://www.amazon.com/s?k=Dune%3A%20Part%20Two"
-            },
-            {
-                "provider_name": "Official Theatrical / OTT Discovery",
-                "provider_type": "Licensed",
-                "provider_logo": "https://www.google.com/favicon.ico",
-                "provider_url": "https://www.google.com/search?q=Dune%3A%20Part%20Two%20watch%20online%20official"
-            }
-        ],
+        "watchProviders": {
+            "IN": [
+                {
+                    "name": "Netflix India",
+                    "type": "Subscription",
+                    "logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
+                    "url": "https://www.netflix.com/search?q=Dune%3A%20Part%20Two",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "Amazon Prime Video",
+                    "type": "Subscription / Rent",
+                    "logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
+                    "url": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=Dune%3A%20Part%20Two",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "JioCinema / Hotstar",
+                    "type": "Subscription",
+                    "logo": "https://www.jiocinema.com/favicon.ico",
+                    "url": "https://www.jiocinema.com/search/Dune%3A%20Part%20Two",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                }
+            ],
+            "US": [
+                {
+                    "name": "Netflix US",
+                    "type": "Subscription",
+                    "logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
+                    "url": "https://www.netflix.com/search?q=Dune%3A%20Part%20Two",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "Apple TV",
+                    "type": "Buy / Rent",
+                    "logo": "https://www.apple.com/favicon.ico",
+                    "url": "https://tv.apple.com/us/search?term=Dune%3A%20Part%20Two",
+                    "downloadSupported": true,
+                    "downloadType": "RENT_BUY_DOWNLOAD"
+                },
+                {
+                    "name": "Google Play Movies",
+                    "type": "Buy / Rent",
+                    "logo": "https://play-lh.googleusercontent.com/1-hPxO5dH8M6K9OWqIvWD63zqBKgnAnHG5WTexhio4TGgcSD2DJ95hKfdSy4IdDHUg=w240-h480-rw",
+                    "url": "https://play.google.com/store/search?q=Dune%3A%20Part%20Two&c=movies",
+                    "downloadSupported": true,
+                    "downloadType": "RENT_BUY_DOWNLOAD"
+                }
+            ],
+            "GB": [
+                {
+                    "name": "Prime Video UK",
+                    "type": "Subscription",
+                    "logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
+                    "url": "https://www.amazon.co.uk/s?k=Dune%3A%20Part%20Two",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "BBC iPlayer",
+                    "type": "Free / TV Licence",
+                    "logo": "https://www.bbc.co.uk/favicon.ico",
+                    "url": "https://www.bbc.co.uk/iplayer/search?q=Dune%3A%20Part%20Two",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                }
+            ],
+            "GLOBAL": [
+                {
+                    "name": "Official Theatrical & Streaming Finder",
+                    "type": "Licensed",
+                    "logo": "https://www.google.com/favicon.ico",
+                    "url": "https://www.google.com/search?q=Dune%3A%20Part%20Two+where+to+watch+official",
+                    "downloadSupported": false,
+                    "downloadType": "NOT_AVAILABLE"
+                }
+            ]
+        },
+        "downloadType": "OFFLINE_IN_APP",
+        "downloadInstructions": "Download for offline viewing is available on official Android/iOS apps of licensed platforms.",
         "servers": [
             {
                 "name": "⚡ Fast Cloud Server 1",
@@ -1952,7 +2524,7 @@ let movies = [
         ]
     },
     {
-        "id": 1790276666862,
+        "id": 1790277415953,
         "imdbId": "tt18412256",
         "slug": "alien-romulus-2024",
         "title": "Alien: Romulus",
@@ -1971,26 +2543,90 @@ let movies = [
         "story": "While scavenging the deep ends of a derelict space station, a group of young space colonists come face to face with the most terrifying life form in the universe.",
         "trailer": "https://www.youtube.com/embed/x0XDEhP4MQs",
         "seasons": [],
-        "watchProviders": [
-            {
-                "provider_name": "Netflix",
-                "provider_type": "Subscription",
-                "provider_logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
-                "provider_url": "https://www.netflix.com/search?q=Alien%3A%20Romulus"
-            },
-            {
-                "provider_name": "Amazon Prime Video",
-                "provider_type": "Subscription / Rent",
-                "provider_logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
-                "provider_url": "https://www.amazon.com/s?k=Alien%3A%20Romulus"
-            },
-            {
-                "provider_name": "Official Theatrical / OTT Discovery",
-                "provider_type": "Licensed",
-                "provider_logo": "https://www.google.com/favicon.ico",
-                "provider_url": "https://www.google.com/search?q=Alien%3A%20Romulus%20watch%20online%20official"
-            }
-        ],
+        "watchProviders": {
+            "IN": [
+                {
+                    "name": "Netflix India",
+                    "type": "Subscription",
+                    "logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
+                    "url": "https://www.netflix.com/search?q=Alien%3A%20Romulus",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "Amazon Prime Video",
+                    "type": "Subscription / Rent",
+                    "logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
+                    "url": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=Alien%3A%20Romulus",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "JioCinema / Hotstar",
+                    "type": "Subscription",
+                    "logo": "https://www.jiocinema.com/favicon.ico",
+                    "url": "https://www.jiocinema.com/search/Alien%3A%20Romulus",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                }
+            ],
+            "US": [
+                {
+                    "name": "Netflix US",
+                    "type": "Subscription",
+                    "logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
+                    "url": "https://www.netflix.com/search?q=Alien%3A%20Romulus",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "Apple TV",
+                    "type": "Buy / Rent",
+                    "logo": "https://www.apple.com/favicon.ico",
+                    "url": "https://tv.apple.com/us/search?term=Alien%3A%20Romulus",
+                    "downloadSupported": true,
+                    "downloadType": "RENT_BUY_DOWNLOAD"
+                },
+                {
+                    "name": "Google Play Movies",
+                    "type": "Buy / Rent",
+                    "logo": "https://play-lh.googleusercontent.com/1-hPxO5dH8M6K9OWqIvWD63zqBKgnAnHG5WTexhio4TGgcSD2DJ95hKfdSy4IdDHUg=w240-h480-rw",
+                    "url": "https://play.google.com/store/search?q=Alien%3A%20Romulus&c=movies",
+                    "downloadSupported": true,
+                    "downloadType": "RENT_BUY_DOWNLOAD"
+                }
+            ],
+            "GB": [
+                {
+                    "name": "Prime Video UK",
+                    "type": "Subscription",
+                    "logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
+                    "url": "https://www.amazon.co.uk/s?k=Alien%3A%20Romulus",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "BBC iPlayer",
+                    "type": "Free / TV Licence",
+                    "logo": "https://www.bbc.co.uk/favicon.ico",
+                    "url": "https://www.bbc.co.uk/iplayer/search?q=Alien%3A%20Romulus",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                }
+            ],
+            "GLOBAL": [
+                {
+                    "name": "Official Theatrical & Streaming Finder",
+                    "type": "Licensed",
+                    "logo": "https://www.google.com/favicon.ico",
+                    "url": "https://www.google.com/search?q=Alien%3A%20Romulus+where+to+watch+official",
+                    "downloadSupported": false,
+                    "downloadType": "NOT_AVAILABLE"
+                }
+            ]
+        },
+        "downloadType": "OFFLINE_IN_APP",
+        "downloadInstructions": "Download for offline viewing is available on official Android/iOS apps of licensed platforms.",
         "servers": [
             {
                 "name": "⚡ Fast Cloud Server 1",
@@ -2007,7 +2643,7 @@ let movies = [
         ]
     },
     {
-        "id": 1790276666032,
+        "id": 1790277415688,
         "imdbId": "tt9218128",
         "slug": "gladiator-ii-2024",
         "title": "Gladiator II",
@@ -2026,26 +2662,90 @@ let movies = [
         "story": "After his home is conquered by the tyrannical emperors who now lead Rome, Lucius is forced to enter the Colosseum and must look to his past to find strength to return the glory of Rome to its people.",
         "trailer": "https://www.youtube.com/embed/TQwSz88ITAE",
         "seasons": [],
-        "watchProviders": [
-            {
-                "provider_name": "Netflix",
-                "provider_type": "Subscription",
-                "provider_logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
-                "provider_url": "https://www.netflix.com/search?q=Gladiator%20II"
-            },
-            {
-                "provider_name": "Amazon Prime Video",
-                "provider_type": "Subscription / Rent",
-                "provider_logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
-                "provider_url": "https://www.amazon.com/s?k=Gladiator%20II"
-            },
-            {
-                "provider_name": "Official Theatrical / OTT Discovery",
-                "provider_type": "Licensed",
-                "provider_logo": "https://www.google.com/favicon.ico",
-                "provider_url": "https://www.google.com/search?q=Gladiator%20II%20watch%20online%20official"
-            }
-        ],
+        "watchProviders": {
+            "IN": [
+                {
+                    "name": "Netflix India",
+                    "type": "Subscription",
+                    "logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
+                    "url": "https://www.netflix.com/search?q=Gladiator%20II",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "Amazon Prime Video",
+                    "type": "Subscription / Rent",
+                    "logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
+                    "url": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=Gladiator%20II",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "JioCinema / Hotstar",
+                    "type": "Subscription",
+                    "logo": "https://www.jiocinema.com/favicon.ico",
+                    "url": "https://www.jiocinema.com/search/Gladiator%20II",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                }
+            ],
+            "US": [
+                {
+                    "name": "Netflix US",
+                    "type": "Subscription",
+                    "logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
+                    "url": "https://www.netflix.com/search?q=Gladiator%20II",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "Apple TV",
+                    "type": "Buy / Rent",
+                    "logo": "https://www.apple.com/favicon.ico",
+                    "url": "https://tv.apple.com/us/search?term=Gladiator%20II",
+                    "downloadSupported": true,
+                    "downloadType": "RENT_BUY_DOWNLOAD"
+                },
+                {
+                    "name": "Google Play Movies",
+                    "type": "Buy / Rent",
+                    "logo": "https://play-lh.googleusercontent.com/1-hPxO5dH8M6K9OWqIvWD63zqBKgnAnHG5WTexhio4TGgcSD2DJ95hKfdSy4IdDHUg=w240-h480-rw",
+                    "url": "https://play.google.com/store/search?q=Gladiator%20II&c=movies",
+                    "downloadSupported": true,
+                    "downloadType": "RENT_BUY_DOWNLOAD"
+                }
+            ],
+            "GB": [
+                {
+                    "name": "Prime Video UK",
+                    "type": "Subscription",
+                    "logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
+                    "url": "https://www.amazon.co.uk/s?k=Gladiator%20II",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "BBC iPlayer",
+                    "type": "Free / TV Licence",
+                    "logo": "https://www.bbc.co.uk/favicon.ico",
+                    "url": "https://www.bbc.co.uk/iplayer/search?q=Gladiator%20II",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                }
+            ],
+            "GLOBAL": [
+                {
+                    "name": "Official Theatrical & Streaming Finder",
+                    "type": "Licensed",
+                    "logo": "https://www.google.com/favicon.ico",
+                    "url": "https://www.google.com/search?q=Gladiator%20II+where+to+watch+official",
+                    "downloadSupported": false,
+                    "downloadType": "NOT_AVAILABLE"
+                }
+            ]
+        },
+        "downloadType": "OFFLINE_IN_APP",
+        "downloadInstructions": "Download for offline viewing is available on official Android/iOS apps of licensed platforms.",
         "servers": [
             {
                 "name": "⚡ Fast Cloud Server 1",
@@ -2062,7 +2762,7 @@ let movies = [
         ]
     },
     {
-        "id": 1790276665260,
+        "id": 1790277415410,
         "imdbId": "tt6263850",
         "slug": "deadpool-wolverine-2024",
         "title": "Deadpool & Wolverine",
@@ -2081,26 +2781,90 @@ let movies = [
         "story": "Deadpool is offered a place in the Marvel Cinematic Universe by the Time Variance Authority, but instead recruits a variant of Wolverine to save his universe from extinction.",
         "trailer": "https://www.youtube.com/embed/Idh8n5XuYIA",
         "seasons": [],
-        "watchProviders": [
-            {
-                "provider_name": "Netflix",
-                "provider_type": "Subscription",
-                "provider_logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
-                "provider_url": "https://www.netflix.com/search?q=Deadpool%20%26%20Wolverine"
-            },
-            {
-                "provider_name": "Amazon Prime Video",
-                "provider_type": "Subscription / Rent",
-                "provider_logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
-                "provider_url": "https://www.amazon.com/s?k=Deadpool%20%26%20Wolverine"
-            },
-            {
-                "provider_name": "Official Theatrical / OTT Discovery",
-                "provider_type": "Licensed",
-                "provider_logo": "https://www.google.com/favicon.ico",
-                "provider_url": "https://www.google.com/search?q=Deadpool%20%26%20Wolverine%20watch%20online%20official"
-            }
-        ],
+        "watchProviders": {
+            "IN": [
+                {
+                    "name": "Netflix India",
+                    "type": "Subscription",
+                    "logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
+                    "url": "https://www.netflix.com/search?q=Deadpool%20%26%20Wolverine",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "Amazon Prime Video",
+                    "type": "Subscription / Rent",
+                    "logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
+                    "url": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=Deadpool%20%26%20Wolverine",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "JioCinema / Hotstar",
+                    "type": "Subscription",
+                    "logo": "https://www.jiocinema.com/favicon.ico",
+                    "url": "https://www.jiocinema.com/search/Deadpool%20%26%20Wolverine",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                }
+            ],
+            "US": [
+                {
+                    "name": "Netflix US",
+                    "type": "Subscription",
+                    "logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
+                    "url": "https://www.netflix.com/search?q=Deadpool%20%26%20Wolverine",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "Apple TV",
+                    "type": "Buy / Rent",
+                    "logo": "https://www.apple.com/favicon.ico",
+                    "url": "https://tv.apple.com/us/search?term=Deadpool%20%26%20Wolverine",
+                    "downloadSupported": true,
+                    "downloadType": "RENT_BUY_DOWNLOAD"
+                },
+                {
+                    "name": "Google Play Movies",
+                    "type": "Buy / Rent",
+                    "logo": "https://play-lh.googleusercontent.com/1-hPxO5dH8M6K9OWqIvWD63zqBKgnAnHG5WTexhio4TGgcSD2DJ95hKfdSy4IdDHUg=w240-h480-rw",
+                    "url": "https://play.google.com/store/search?q=Deadpool%20%26%20Wolverine&c=movies",
+                    "downloadSupported": true,
+                    "downloadType": "RENT_BUY_DOWNLOAD"
+                }
+            ],
+            "GB": [
+                {
+                    "name": "Prime Video UK",
+                    "type": "Subscription",
+                    "logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
+                    "url": "https://www.amazon.co.uk/s?k=Deadpool%20%26%20Wolverine",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "BBC iPlayer",
+                    "type": "Free / TV Licence",
+                    "logo": "https://www.bbc.co.uk/favicon.ico",
+                    "url": "https://www.bbc.co.uk/iplayer/search?q=Deadpool%20%26%20Wolverine",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                }
+            ],
+            "GLOBAL": [
+                {
+                    "name": "Official Theatrical & Streaming Finder",
+                    "type": "Licensed",
+                    "logo": "https://www.google.com/favicon.ico",
+                    "url": "https://www.google.com/search?q=Deadpool%20%26%20Wolverine+where+to+watch+official",
+                    "downloadSupported": false,
+                    "downloadType": "NOT_AVAILABLE"
+                }
+            ]
+        },
+        "downloadType": "OFFLINE_IN_APP",
+        "downloadInstructions": "Download for offline viewing is available on official Android/iOS apps of licensed platforms.",
         "servers": [
             {
                 "name": "⚡ Fast Cloud Server 1",
@@ -2117,7 +2881,7 @@ let movies = [
         ]
     },
     {
-        "id": 1790276664987,
+        "id": 1790277415109,
         "imdbId": "tt15242330",
         "slug": "the-first-slam-dunk-2022",
         "title": "The First Slam Dunk",
@@ -2136,26 +2900,90 @@ let movies = [
         "story": "Follows 17-year-old Ryota Miyagi, who struggles to accomplish his late elder brother's dream of becoming a basketball star.",
         "trailer": "https://www.youtube.com/embed/E-gGTCru5ZM",
         "seasons": [],
-        "watchProviders": [
-            {
-                "provider_name": "Netflix",
-                "provider_type": "Subscription",
-                "provider_logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
-                "provider_url": "https://www.netflix.com/search?q=The%20First%20Slam%20Dunk"
-            },
-            {
-                "provider_name": "Amazon Prime Video",
-                "provider_type": "Subscription / Rent",
-                "provider_logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
-                "provider_url": "https://www.amazon.com/s?k=The%20First%20Slam%20Dunk"
-            },
-            {
-                "provider_name": "Official Theatrical / OTT Discovery",
-                "provider_type": "Licensed",
-                "provider_logo": "https://www.google.com/favicon.ico",
-                "provider_url": "https://www.google.com/search?q=The%20First%20Slam%20Dunk%20watch%20online%20official"
-            }
-        ],
+        "watchProviders": {
+            "IN": [
+                {
+                    "name": "Netflix India",
+                    "type": "Subscription",
+                    "logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
+                    "url": "https://www.netflix.com/search?q=The%20First%20Slam%20Dunk",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "Amazon Prime Video",
+                    "type": "Subscription / Rent",
+                    "logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
+                    "url": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=The%20First%20Slam%20Dunk",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "JioCinema / Hotstar",
+                    "type": "Subscription",
+                    "logo": "https://www.jiocinema.com/favicon.ico",
+                    "url": "https://www.jiocinema.com/search/The%20First%20Slam%20Dunk",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                }
+            ],
+            "US": [
+                {
+                    "name": "Netflix US",
+                    "type": "Subscription",
+                    "logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
+                    "url": "https://www.netflix.com/search?q=The%20First%20Slam%20Dunk",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "Apple TV",
+                    "type": "Buy / Rent",
+                    "logo": "https://www.apple.com/favicon.ico",
+                    "url": "https://tv.apple.com/us/search?term=The%20First%20Slam%20Dunk",
+                    "downloadSupported": true,
+                    "downloadType": "RENT_BUY_DOWNLOAD"
+                },
+                {
+                    "name": "Google Play Movies",
+                    "type": "Buy / Rent",
+                    "logo": "https://play-lh.googleusercontent.com/1-hPxO5dH8M6K9OWqIvWD63zqBKgnAnHG5WTexhio4TGgcSD2DJ95hKfdSy4IdDHUg=w240-h480-rw",
+                    "url": "https://play.google.com/store/search?q=The%20First%20Slam%20Dunk&c=movies",
+                    "downloadSupported": true,
+                    "downloadType": "RENT_BUY_DOWNLOAD"
+                }
+            ],
+            "GB": [
+                {
+                    "name": "Prime Video UK",
+                    "type": "Subscription",
+                    "logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
+                    "url": "https://www.amazon.co.uk/s?k=The%20First%20Slam%20Dunk",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "BBC iPlayer",
+                    "type": "Free / TV Licence",
+                    "logo": "https://www.bbc.co.uk/favicon.ico",
+                    "url": "https://www.bbc.co.uk/iplayer/search?q=The%20First%20Slam%20Dunk",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                }
+            ],
+            "GLOBAL": [
+                {
+                    "name": "Official Theatrical & Streaming Finder",
+                    "type": "Licensed",
+                    "logo": "https://www.google.com/favicon.ico",
+                    "url": "https://www.google.com/search?q=The%20First%20Slam%20Dunk+where+to+watch+official",
+                    "downloadSupported": false,
+                    "downloadType": "NOT_AVAILABLE"
+                }
+            ]
+        },
+        "downloadType": "OFFLINE_IN_APP",
+        "downloadInstructions": "Download for offline viewing is available on official Android/iOS apps of licensed platforms.",
         "servers": [
             {
                 "name": "⚡ Fast Cloud Server 1",
@@ -2172,7 +3000,7 @@ let movies = [
         ]
     },
     {
-        "id": 1790276641366,
+        "id": 1790277405876,
         "imdbId": "tt6473300",
         "slug": "mirzapur-2018",
         "title": "Mirzapur",
@@ -2201,9 +3029,11 @@ let movies = [
                         "name": "Episode 1",
                         "air_date": "2024-08-30",
                         "runtime": "45m",
-                        "overview": "Episode 1 of Season 1",
+                        "overview": "Official Episode 1 of Season 1",
                         "still_url": "https://episodes.metahub.space/tt6473300/0/1/w780.jpg",
-                        "rating": "8.4"
+                        "rating": "8.4",
+                        "watch_link": "https://www.google.com/search?q=Mirzapur%20season%201%20episode%201%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 1,
@@ -2212,7 +3042,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "A shocking incident at a wedding procession ignites a series of events entangling the lives of two families in the lawless city of Mirzapur.",
                         "still_url": "https://episodes.metahub.space/tt6473300/1/1/w780.jpg",
-                        "rating": "8.4"
+                        "rating": "8.4",
+                        "watch_link": "https://www.google.com/search?q=Mirzapur%20season%201%20episode%201%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 2,
@@ -2221,7 +3053,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Guddu and Bablu have a life-altering choice to make. Munna gets a lesson in loyalty. A new, diabolical contender for Mirzapur emerges.",
                         "still_url": "https://episodes.metahub.space/tt6473300/1/2/w780.jpg",
-                        "rating": "8.4"
+                        "rating": "8.4",
+                        "watch_link": "https://www.google.com/search?q=Mirzapur%20season%201%20episode%202%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 3,
@@ -2230,7 +3064,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "A generation-old rivalry is rekindled.",
                         "still_url": "https://episodes.metahub.space/tt6473300/1/3/w780.jpg",
-                        "rating": "8.4"
+                        "rating": "8.4",
+                        "watch_link": "https://www.google.com/search?q=Mirzapur%20season%201%20episode%203%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 4,
@@ -2239,7 +3075,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Akhandanand tests the boys' moral fibre, leading them down a path of no return. And Sweety must choose between Munna and Guddu.",
                         "still_url": "https://episodes.metahub.space/tt6473300/1/4/w780.jpg",
-                        "rating": "8.4"
+                        "rating": "8.4",
+                        "watch_link": "https://www.google.com/search?q=Mirzapur%20season%201%20episode%204%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 5,
@@ -2248,7 +3086,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Guddu and Bablu hatch an ambitious plan to increase the gun trade, but for this, both the cops and criminals of Mirzapur must cooperate.",
                         "still_url": "https://episodes.metahub.space/tt6473300/1/5/w780.jpg",
-                        "rating": "8.4"
+                        "rating": "8.4",
+                        "watch_link": "https://www.google.com/search?q=Mirzapur%20season%201%20episode%205%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 6,
@@ -2257,7 +3097,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "A meeting of the mafia heads of Purvanchal masquerading as a Holi party leads to a fracas' that threatens to transform all equations.",
                         "still_url": "https://episodes.metahub.space/tt6473300/1/6/w780.jpg",
-                        "rating": "8.4"
+                        "rating": "8.4",
+                        "watch_link": "https://www.google.com/search?q=Mirzapur%20season%201%20episode%206%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 7,
@@ -2266,7 +3108,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Guddu and Bablu have come into their own in their private and professional lives as gangsters. But is it time for a rethink?",
                         "still_url": "https://episodes.metahub.space/tt6473300/1/7/w780.jpg",
-                        "rating": "8.4"
+                        "rating": "8.4",
+                        "watch_link": "https://www.google.com/search?q=Mirzapur%20season%201%20episode%207%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 8,
@@ -2275,7 +3119,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Tempers reach a head between Guddu and Bablu while they're in exile. And it's time for the Mr. Purvanchal contest.",
                         "still_url": "https://episodes.metahub.space/tt6473300/1/8/w780.jpg",
-                        "rating": "8.4"
+                        "rating": "8.4",
+                        "watch_link": "https://www.google.com/search?q=Mirzapur%20season%201%20episode%208%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 9,
@@ -2284,7 +3130,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Three generations of Tripathis show the world who they really are.",
                         "still_url": "https://episodes.metahub.space/tt6473300/1/9/w780.jpg",
-                        "rating": "8.4"
+                        "rating": "8.4",
+                        "watch_link": "https://www.google.com/search?q=Mirzapur%20season%201%20episode%209%20official%20stream",
+                        "offline_available": true
                     }
                 ]
             },
@@ -2300,7 +3148,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "The Gorakhpur wedding massacre is a thing of the past for Akhandanand Tripathi. His focus is now on the present - the business and conquering larger territory to remain the King of Mirzapur. Everyone who survived that violent night has come out a different person. Despite horrific memories, they know that survival is their only option.",
                         "still_url": "https://episodes.metahub.space/tt6473300/2/1/w780.jpg",
-                        "rating": "8.4"
+                        "rating": "8.4",
+                        "watch_link": "https://www.google.com/search?q=Mirzapur%20season%202%20episode%201%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 2,
@@ -2309,7 +3159,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "The Tripathis, still unaware that Guddu and Golu are alive, continue to form new alliances. Munna impresses Bauji and Akhandanand with the way he has handled a negotiation. Akhandanand helps the Chief Minister of Uttar Pradesh close the wedding massacre chapter. Guddu, Golu and Dimpy who are still in hiding, reunite with a loyal partner and set their sights on Mirzapur.",
                         "still_url": "https://episodes.metahub.space/tt6473300/2/2/w780.jpg",
-                        "rating": "8.4"
+                        "rating": "8.4",
+                        "watch_link": "https://www.google.com/search?q=Mirzapur%20season%202%20episode%202%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 3,
@@ -2318,7 +3170,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Akhandanand’s woes in the bedroom lead him to the doors of a sexologist. Beena continues to be gripped by the traumatic incident she endured but finds a compelling reason to survive. Guddu has to push himself to think beyond his physical strength while Golu has to learn the ropes of the trade. They make use of Dimpy’s past friendship and end up sending the Tripathis a strong message.",
                         "still_url": "https://episodes.metahub.space/tt6473300/2/3/w780.jpg",
-                        "rating": "8.4"
+                        "rating": "8.4",
+                        "watch_link": "https://www.google.com/search?q=Mirzapur%20season%202%20episode%203%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 4,
@@ -2327,7 +3181,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Guddu and Golu are still not a threat to Akhandanand, but Munna thinks differently. Akhandanand assigns Munna to take charge of youth canvassing in the state along with the CM’s daughter, Madhuri Yadav. Beena safeguards a big secret. Guddu and Golu’s alliance with Lala begins to affect Akhandanand’s business. Golu decides to get Robin’s expertise. Sharad’s emotions overpower his thought process.",
                         "still_url": "https://episodes.metahub.space/tt6473300/2/4/w780.jpg",
-                        "rating": "8.4"
+                        "rating": "8.4",
+                        "watch_link": "https://www.google.com/search?q=Mirzapur%20season%202%20episode%204%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 5,
@@ -2336,7 +3192,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Akhandanand reprimands Munna and Sharad for their impulsive actions. Bablu’s diary becomes a key in learning secrets about the Tripathi family for Golu. In order to impress Akhandanand Tripathi, Sharad introduces him and Munna to one of Bihar’s most powerful business family, the Tyagis. A fortunate coincidence triggers an unexpected alliance between parties that have a common goal.",
                         "still_url": "https://episodes.metahub.space/tt6473300/2/5/w780.jpg",
-                        "rating": "8.4"
+                        "rating": "8.4",
+                        "watch_link": "https://www.google.com/search?q=Mirzapur%20season%202%20episode%205%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 6,
@@ -2345,7 +3203,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "There has been a huge setback in the Tripathi family’s business, Akhandanand smells a rat but uses this set back to his advantage. Munna is coerced in to taking a big step in his life which makes the Tripathis’ political alliances stronger. Ramakant is surprised to find an unexpected ally. Golu makes a business proposition to Shatrughan, but it falls through. The elections come to an end.",
                         "still_url": "https://episodes.metahub.space/tt6473300/2/6/w780.jpg",
-                        "rating": "8.4"
+                        "rating": "8.4",
+                        "watch_link": "https://www.google.com/search?q=Mirzapur%20season%202%20episode%206%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 7,
@@ -2354,7 +3214,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Guddu and Golu are growing from strength to strength, Guddu strives to become the bahubali of Balia. On the personal front, Guddu is getting closer to Shabnam, who asks him to let go of the past. Shatrugan doesn’t have the same influence in his family as his elder brother, a fact that Golu notices and uses to her advantage. The wheels of a Adventuretic political coup are set in to motion.",
                         "still_url": "https://episodes.metahub.space/tt6473300/2/7/w780.jpg",
-                        "rating": "8.4"
+                        "rating": "8.4",
+                        "watch_link": "https://www.google.com/search?q=Mirzapur%20season%202%20episode%207%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 8,
@@ -2363,7 +3225,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Sharad Shukla and JP Yadav successfully manage to dent Akhandanand’s political aspirations. JP Yadav then calls for a debauche celebration with Zarina in private. After suffering a significant personal loss, Guddu takes upon an unexpected responsibility and Shabnam agrees to help. Golu doesn’t take this too well as she feels Shabnam will come in the way of their larger objective.",
                         "still_url": "https://episodes.metahub.space/tt6473300/2/8/w780.jpg",
-                        "rating": "8.4"
+                        "rating": "8.4",
+                        "watch_link": "https://www.google.com/search?q=Mirzapur%20season%202%20episode%208%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 9,
@@ -2372,7 +3236,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Beena gives birth to a boy and is worried about the safety of the child. Lala is unhappy with Guddu’s closeness to Shabnam. Golu herself is in immense pain, questions what she has become. Maurya is frustrated with constant setbacks and decides to meet with the IG. Munna takes matters in his own hands when Maqbool’s lies are resurfaced. Loyalties are at stake as a repercussion of Munna’s actions.",
                         "still_url": "https://episodes.metahub.space/tt6473300/2/9/w780.jpg",
-                        "rating": "8.4"
+                        "rating": "8.4",
+                        "watch_link": "https://www.google.com/search?q=Mirzapur%20season%202%20episode%209%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 10,
@@ -2381,7 +3247,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Beena confronts the horrors of her past, leaving the Tripathi household in chaos. Munna’s new found power through Madhuri leads him to make a drastic confrontation with Akhandanand. Dadda calls for a meeting with Mama, Shatrughan and Bharat. Ramakant is forced to confront his own beliefs. Guddu and Golu assure Beena of the promise they made. Sharad looks to bring his plan to a conclusion.",
                         "still_url": "https://episodes.metahub.space/tt6473300/2/10/w780.jpg",
-                        "rating": "8.4"
+                        "rating": "8.4",
+                        "watch_link": "https://www.google.com/search?q=Mirzapur%20season%202%20episode%2010%20official%20stream",
+                        "offline_available": true
                     }
                 ]
             },
@@ -2397,7 +3265,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "While Ramakant is tried for the murder of SSP Maurya, Guddu and Golu's claim to the throne is questioned because Kaleen Bhaiya's body is missing. Madhuri vows to fulfill her father's mission of a crime free state.",
                         "still_url": "https://episodes.metahub.space/tt6473300/3/1/w780.jpg",
-                        "rating": "8.4"
+                        "rating": "8.4",
+                        "watch_link": "https://www.google.com/search?q=Mirzapur%20season%203%20episode%201%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 2,
@@ -2406,7 +3276,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Guddu and Golu kickstart the business again, but are still looking for a supply of opium which would allow them to establish control over Purvanchal's underworld. In the hunt for the same control, Sharad tries to crack a deal with one of Guddu's old allies, while Madhuri tries to eliminate Guddu.",
                         "still_url": "https://episodes.metahub.space/tt6473300/3/2/w780.jpg",
-                        "rating": "8.4"
+                        "rating": "8.4",
+                        "watch_link": "https://www.google.com/search?q=Mirzapur%20season%203%20episode%202%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 3,
@@ -2415,7 +3287,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Guddu cements his power over Mirzapur while Sharad finally makes a very strong ally. Golu receives a threat from Bharat. Ramakant turns down Robin's offer and faces danger in prison. Meanwhile Madhuri strategises to bring Guddu down in other ways.",
                         "still_url": "https://episodes.metahub.space/tt6473300/3/3/w780.jpg",
-                        "rating": "8.4"
+                        "rating": "8.4",
+                        "watch_link": "https://www.google.com/search?q=Mirzapur%20season%203%20episode%203%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 4,
@@ -2424,7 +3298,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Ramakant's case is in danger with the appearance of a new witness. In an attempt to save her father's opium business from collapsing, Shabnam turns to Guddu for help. Meanwhile Golu gets some much awaited information about the still missing Kaleen Bhaiya.",
                         "still_url": "https://episodes.metahub.space/tt6473300/3/4/w780.jpg",
-                        "rating": "8.4"
+                        "rating": "8.4",
+                        "watch_link": "https://www.google.com/search?q=Mirzapur%20season%203%20episode%204%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 5,
@@ -2433,7 +3309,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Golu plans an attack outside Mirzapur without Guddu. Guddu returns from Nepal to find Golu missing. Sharad senses something is amiss in Siwan and decides to shift his most guarded secret to Jaunpur.",
                         "still_url": "https://episodes.metahub.space/tt6473300/3/5/w780.jpg",
-                        "rating": "8.4"
+                        "rating": "8.4",
+                        "watch_link": "https://www.google.com/search?q=Mirzapur%20season%203%20episode%205%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 6,
@@ -2442,7 +3320,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Purvanchal is set ablaze with a gang war between Sharad and Guddu. Madhuri makes strong decisions to break the police-gangster nexus, while a ghost from the past resurfaces. Ramakant finds a purpose in prison, which catches Lala's attention.",
                         "still_url": "https://episodes.metahub.space/tt6473300/3/6/w780.jpg",
-                        "rating": "8.4"
+                        "rating": "8.4",
+                        "watch_link": "https://www.google.com/search?q=Mirzapur%20season%203%20episode%206%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 7,
@@ -2451,7 +3331,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Purvanchal is thrown into turmoil following the shocking incident in the jail. Dadda confronts his son, while Sharad and Bharat have a fallout as well. A baithak is called to resolve the gang feud.",
                         "still_url": "https://episodes.metahub.space/tt6473300/3/7/w780.jpg",
-                        "rating": "8.4"
+                        "rating": "8.4",
+                        "watch_link": "https://www.google.com/search?q=Mirzapur%20season%203%20episode%207%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 8,
@@ -2460,7 +3342,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Guddu goes down a dark downward spiral as he loses people close to him. A new judge is assigned before Ramakant's final hearing. Meanwhile, Saloni discovers her husband's secrets. IG Dubey is reinstated and is tasked with one mission: Capturing Guddu Pandit.",
                         "still_url": "https://episodes.metahub.space/tt6473300/3/8/w780.jpg",
-                        "rating": "8.4"
+                        "rating": "8.4",
+                        "watch_link": "https://www.google.com/search?q=Mirzapur%20season%203%20episode%208%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 9,
@@ -2469,7 +3353,9 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Beena is compelled to find safety after the fall of Guddu. Madhuri urges Sharad to let go of the past for a better future. Will Shatrughan be able to convince Saloni to keep his secret? A broken Dimpy wants to take matters into her own hands.",
                         "still_url": "https://episodes.metahub.space/tt6473300/3/9/w780.jpg",
-                        "rating": "8.4"
+                        "rating": "8.4",
+                        "watch_link": "https://www.google.com/search?q=Mirzapur%20season%203%20episode%209%20official%20stream",
+                        "offline_available": true
                     },
                     {
                         "episode_number": 10,
@@ -2478,31 +3364,97 @@ let movies = [
                         "runtime": "45m",
                         "overview": "Golu returns to Mirzapur only to discover the chaos that ensued in her absence. Madhuri inaugurates Aam Bagh despite the threat of JP Yadav looming large. As Dussehra closes in, there is only one question: Who will ascend the throne of Mirzapur?",
                         "still_url": "https://episodes.metahub.space/tt6473300/3/10/w780.jpg",
-                        "rating": "8.4"
+                        "rating": "8.4",
+                        "watch_link": "https://www.google.com/search?q=Mirzapur%20season%203%20episode%2010%20official%20stream",
+                        "offline_available": true
                     }
                 ]
             }
         ],
-        "watchProviders": [
-            {
-                "provider_name": "Netflix",
-                "provider_type": "Subscription",
-                "provider_logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
-                "provider_url": "https://www.netflix.com/search?q=Mirzapur"
-            },
-            {
-                "provider_name": "Amazon Prime Video",
-                "provider_type": "Subscription / Rent",
-                "provider_logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
-                "provider_url": "https://www.amazon.com/s?k=Mirzapur"
-            },
-            {
-                "provider_name": "Official Theatrical / OTT Discovery",
-                "provider_type": "Licensed",
-                "provider_logo": "https://www.google.com/favicon.ico",
-                "provider_url": "https://www.google.com/search?q=Mirzapur%20watch%20online%20official"
-            }
-        ],
+        "watchProviders": {
+            "IN": [
+                {
+                    "name": "Netflix India",
+                    "type": "Subscription",
+                    "logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
+                    "url": "https://www.netflix.com/search?q=Mirzapur",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "Amazon Prime Video",
+                    "type": "Subscription / Rent",
+                    "logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
+                    "url": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=Mirzapur",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "JioCinema / Hotstar",
+                    "type": "Subscription",
+                    "logo": "https://www.jiocinema.com/favicon.ico",
+                    "url": "https://www.jiocinema.com/search/Mirzapur",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                }
+            ],
+            "US": [
+                {
+                    "name": "Netflix US",
+                    "type": "Subscription",
+                    "logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
+                    "url": "https://www.netflix.com/search?q=Mirzapur",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "Apple TV",
+                    "type": "Buy / Rent",
+                    "logo": "https://www.apple.com/favicon.ico",
+                    "url": "https://tv.apple.com/us/search?term=Mirzapur",
+                    "downloadSupported": true,
+                    "downloadType": "RENT_BUY_DOWNLOAD"
+                },
+                {
+                    "name": "Google Play Movies",
+                    "type": "Buy / Rent",
+                    "logo": "https://play-lh.googleusercontent.com/1-hPxO5dH8M6K9OWqIvWD63zqBKgnAnHG5WTexhio4TGgcSD2DJ95hKfdSy4IdDHUg=w240-h480-rw",
+                    "url": "https://play.google.com/store/search?q=Mirzapur&c=movies",
+                    "downloadSupported": true,
+                    "downloadType": "RENT_BUY_DOWNLOAD"
+                }
+            ],
+            "GB": [
+                {
+                    "name": "Prime Video UK",
+                    "type": "Subscription",
+                    "logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
+                    "url": "https://www.amazon.co.uk/s?k=Mirzapur",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "BBC iPlayer",
+                    "type": "Free / TV Licence",
+                    "logo": "https://www.bbc.co.uk/favicon.ico",
+                    "url": "https://www.bbc.co.uk/iplayer/search?q=Mirzapur",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                }
+            ],
+            "GLOBAL": [
+                {
+                    "name": "Official Theatrical & Streaming Finder",
+                    "type": "Licensed",
+                    "logo": "https://www.google.com/favicon.ico",
+                    "url": "https://www.google.com/search?q=Mirzapur+where+to+watch+official",
+                    "downloadSupported": false,
+                    "downloadType": "NOT_AVAILABLE"
+                }
+            ]
+        },
+        "downloadType": "OFFLINE_IN_APP",
+        "downloadInstructions": "Download for offline viewing is available on official Android/iOS apps of licensed platforms.",
         "servers": [
             {
                 "name": "⚡ Fast Cloud Server 1",
@@ -2519,7 +3471,7 @@ let movies = [
         ]
     },
     {
-        "id": 1790276622239,
+        "id": 1790277401605,
         "imdbId": "tt26932223",
         "slug": "bhool-bhulaiyaa-3-2024",
         "title": "Bhool Bhulaiyaa 3",
@@ -2538,26 +3490,90 @@ let movies = [
         "story": "Ruhaan, a fraudster posing as an exorcist, takes on a lucrative case at a haunted castle, unraveling a sinister plot involving mischievous priests, culminating in a hilarious yet thrilling ride filled with unexpected twists and sc...",
         "trailer": "https://www.youtube.com/embed/6YMY62tMLUA",
         "seasons": [],
-        "watchProviders": [
-            {
-                "provider_name": "Netflix",
-                "provider_type": "Subscription",
-                "provider_logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
-                "provider_url": "https://www.netflix.com/search?q=Bhool%20Bhulaiyaa%203"
-            },
-            {
-                "provider_name": "Amazon Prime Video",
-                "provider_type": "Subscription / Rent",
-                "provider_logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
-                "provider_url": "https://www.amazon.com/s?k=Bhool%20Bhulaiyaa%203"
-            },
-            {
-                "provider_name": "Official Theatrical / OTT Discovery",
-                "provider_type": "Licensed",
-                "provider_logo": "https://www.google.com/favicon.ico",
-                "provider_url": "https://www.google.com/search?q=Bhool%20Bhulaiyaa%203%20watch%20online%20official"
-            }
-        ],
+        "watchProviders": {
+            "IN": [
+                {
+                    "name": "Netflix India",
+                    "type": "Subscription",
+                    "logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
+                    "url": "https://www.netflix.com/search?q=Bhool%20Bhulaiyaa%203",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "Amazon Prime Video",
+                    "type": "Subscription / Rent",
+                    "logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
+                    "url": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=Bhool%20Bhulaiyaa%203",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "JioCinema / Hotstar",
+                    "type": "Subscription",
+                    "logo": "https://www.jiocinema.com/favicon.ico",
+                    "url": "https://www.jiocinema.com/search/Bhool%20Bhulaiyaa%203",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                }
+            ],
+            "US": [
+                {
+                    "name": "Netflix US",
+                    "type": "Subscription",
+                    "logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
+                    "url": "https://www.netflix.com/search?q=Bhool%20Bhulaiyaa%203",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "Apple TV",
+                    "type": "Buy / Rent",
+                    "logo": "https://www.apple.com/favicon.ico",
+                    "url": "https://tv.apple.com/us/search?term=Bhool%20Bhulaiyaa%203",
+                    "downloadSupported": true,
+                    "downloadType": "RENT_BUY_DOWNLOAD"
+                },
+                {
+                    "name": "Google Play Movies",
+                    "type": "Buy / Rent",
+                    "logo": "https://play-lh.googleusercontent.com/1-hPxO5dH8M6K9OWqIvWD63zqBKgnAnHG5WTexhio4TGgcSD2DJ95hKfdSy4IdDHUg=w240-h480-rw",
+                    "url": "https://play.google.com/store/search?q=Bhool%20Bhulaiyaa%203&c=movies",
+                    "downloadSupported": true,
+                    "downloadType": "RENT_BUY_DOWNLOAD"
+                }
+            ],
+            "GB": [
+                {
+                    "name": "Prime Video UK",
+                    "type": "Subscription",
+                    "logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
+                    "url": "https://www.amazon.co.uk/s?k=Bhool%20Bhulaiyaa%203",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "BBC iPlayer",
+                    "type": "Free / TV Licence",
+                    "logo": "https://www.bbc.co.uk/favicon.ico",
+                    "url": "https://www.bbc.co.uk/iplayer/search?q=Bhool%20Bhulaiyaa%203",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                }
+            ],
+            "GLOBAL": [
+                {
+                    "name": "Official Theatrical & Streaming Finder",
+                    "type": "Licensed",
+                    "logo": "https://www.google.com/favicon.ico",
+                    "url": "https://www.google.com/search?q=Bhool%20Bhulaiyaa%203+where+to+watch+official",
+                    "downloadSupported": false,
+                    "downloadType": "NOT_AVAILABLE"
+                }
+            ]
+        },
+        "downloadType": "OFFLINE_IN_APP",
+        "downloadInstructions": "Download for offline viewing is available on official Android/iOS apps of licensed platforms.",
         "servers": [
             {
                 "name": "⚡ Fast Cloud Server 1",
@@ -2574,7 +3590,7 @@ let movies = [
         ]
     },
     {
-        "id": 1790276618069,
+        "id": 1790277399368,
         "imdbId": "tt15327088",
         "slug": "kantara-2022",
         "title": "Kantara",
@@ -2593,26 +3609,90 @@ let movies = [
         "story": "When greed paves the way for betrayal, scheming and murder, a young tribal reluctantly dons the traditions of his ancestors to seek justice.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Kantara%20official%20trailer",
         "seasons": [],
-        "watchProviders": [
-            {
-                "provider_name": "Netflix",
-                "provider_type": "Subscription",
-                "provider_logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
-                "provider_url": "https://www.netflix.com/search?q=Kantara"
-            },
-            {
-                "provider_name": "Amazon Prime Video",
-                "provider_type": "Subscription / Rent",
-                "provider_logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
-                "provider_url": "https://www.amazon.com/s?k=Kantara"
-            },
-            {
-                "provider_name": "Official Theatrical / OTT Discovery",
-                "provider_type": "Licensed",
-                "provider_logo": "https://www.google.com/favicon.ico",
-                "provider_url": "https://www.google.com/search?q=Kantara%20watch%20online%20official"
-            }
-        ],
+        "watchProviders": {
+            "IN": [
+                {
+                    "name": "Netflix India",
+                    "type": "Subscription",
+                    "logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
+                    "url": "https://www.netflix.com/search?q=Kantara",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "Amazon Prime Video",
+                    "type": "Subscription / Rent",
+                    "logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
+                    "url": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=Kantara",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "JioCinema / Hotstar",
+                    "type": "Subscription",
+                    "logo": "https://www.jiocinema.com/favicon.ico",
+                    "url": "https://www.jiocinema.com/search/Kantara",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                }
+            ],
+            "US": [
+                {
+                    "name": "Netflix US",
+                    "type": "Subscription",
+                    "logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
+                    "url": "https://www.netflix.com/search?q=Kantara",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "Apple TV",
+                    "type": "Buy / Rent",
+                    "logo": "https://www.apple.com/favicon.ico",
+                    "url": "https://tv.apple.com/us/search?term=Kantara",
+                    "downloadSupported": true,
+                    "downloadType": "RENT_BUY_DOWNLOAD"
+                },
+                {
+                    "name": "Google Play Movies",
+                    "type": "Buy / Rent",
+                    "logo": "https://play-lh.googleusercontent.com/1-hPxO5dH8M6K9OWqIvWD63zqBKgnAnHG5WTexhio4TGgcSD2DJ95hKfdSy4IdDHUg=w240-h480-rw",
+                    "url": "https://play.google.com/store/search?q=Kantara&c=movies",
+                    "downloadSupported": true,
+                    "downloadType": "RENT_BUY_DOWNLOAD"
+                }
+            ],
+            "GB": [
+                {
+                    "name": "Prime Video UK",
+                    "type": "Subscription",
+                    "logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
+                    "url": "https://www.amazon.co.uk/s?k=Kantara",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "BBC iPlayer",
+                    "type": "Free / TV Licence",
+                    "logo": "https://www.bbc.co.uk/favicon.ico",
+                    "url": "https://www.bbc.co.uk/iplayer/search?q=Kantara",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                }
+            ],
+            "GLOBAL": [
+                {
+                    "name": "Official Theatrical & Streaming Finder",
+                    "type": "Licensed",
+                    "logo": "https://www.google.com/favicon.ico",
+                    "url": "https://www.google.com/search?q=Kantara+where+to+watch+official",
+                    "downloadSupported": false,
+                    "downloadType": "NOT_AVAILABLE"
+                }
+            ]
+        },
+        "downloadType": "OFFLINE_IN_APP",
+        "downloadInstructions": "Download for offline viewing is available on official Android/iOS apps of licensed platforms.",
         "servers": [
             {
                 "name": "⚡ Fast Cloud Server 1",
@@ -2629,7 +3709,7 @@ let movies = [
         ]
     },
     {
-        "id": 1790276617269,
+        "id": 1790277399052,
         "imdbId": "tt10698680",
         "slug": "k-g-f-chapter-2-2022",
         "title": "K.G.F: Chapter 2",
@@ -2648,26 +3728,90 @@ let movies = [
         "story": "In the blood-soaked Kolar Gold Fields, Rocky's name strikes fear into his foes, while the government sees him as a threat to law and order. Rocky must battle threats from all sides for unchallenged supremacy.",
         "trailer": "https://www.youtube.com/embed/Qah9sSIXJqk",
         "seasons": [],
-        "watchProviders": [
-            {
-                "provider_name": "Netflix",
-                "provider_type": "Subscription",
-                "provider_logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
-                "provider_url": "https://www.netflix.com/search?q=K.G.F%3A%20Chapter%202"
-            },
-            {
-                "provider_name": "Amazon Prime Video",
-                "provider_type": "Subscription / Rent",
-                "provider_logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
-                "provider_url": "https://www.amazon.com/s?k=K.G.F%3A%20Chapter%202"
-            },
-            {
-                "provider_name": "Official Theatrical / OTT Discovery",
-                "provider_type": "Licensed",
-                "provider_logo": "https://www.google.com/favicon.ico",
-                "provider_url": "https://www.google.com/search?q=K.G.F%3A%20Chapter%202%20watch%20online%20official"
-            }
-        ],
+        "watchProviders": {
+            "IN": [
+                {
+                    "name": "Netflix India",
+                    "type": "Subscription",
+                    "logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
+                    "url": "https://www.netflix.com/search?q=K.G.F%3A%20Chapter%202",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "Amazon Prime Video",
+                    "type": "Subscription / Rent",
+                    "logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
+                    "url": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=K.G.F%3A%20Chapter%202",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "JioCinema / Hotstar",
+                    "type": "Subscription",
+                    "logo": "https://www.jiocinema.com/favicon.ico",
+                    "url": "https://www.jiocinema.com/search/K.G.F%3A%20Chapter%202",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                }
+            ],
+            "US": [
+                {
+                    "name": "Netflix US",
+                    "type": "Subscription",
+                    "logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
+                    "url": "https://www.netflix.com/search?q=K.G.F%3A%20Chapter%202",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "Apple TV",
+                    "type": "Buy / Rent",
+                    "logo": "https://www.apple.com/favicon.ico",
+                    "url": "https://tv.apple.com/us/search?term=K.G.F%3A%20Chapter%202",
+                    "downloadSupported": true,
+                    "downloadType": "RENT_BUY_DOWNLOAD"
+                },
+                {
+                    "name": "Google Play Movies",
+                    "type": "Buy / Rent",
+                    "logo": "https://play-lh.googleusercontent.com/1-hPxO5dH8M6K9OWqIvWD63zqBKgnAnHG5WTexhio4TGgcSD2DJ95hKfdSy4IdDHUg=w240-h480-rw",
+                    "url": "https://play.google.com/store/search?q=K.G.F%3A%20Chapter%202&c=movies",
+                    "downloadSupported": true,
+                    "downloadType": "RENT_BUY_DOWNLOAD"
+                }
+            ],
+            "GB": [
+                {
+                    "name": "Prime Video UK",
+                    "type": "Subscription",
+                    "logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
+                    "url": "https://www.amazon.co.uk/s?k=K.G.F%3A%20Chapter%202",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "BBC iPlayer",
+                    "type": "Free / TV Licence",
+                    "logo": "https://www.bbc.co.uk/favicon.ico",
+                    "url": "https://www.bbc.co.uk/iplayer/search?q=K.G.F%3A%20Chapter%202",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                }
+            ],
+            "GLOBAL": [
+                {
+                    "name": "Official Theatrical & Streaming Finder",
+                    "type": "Licensed",
+                    "logo": "https://www.google.com/favicon.ico",
+                    "url": "https://www.google.com/search?q=K.G.F%3A%20Chapter%202+where+to+watch+official",
+                    "downloadSupported": false,
+                    "downloadType": "NOT_AVAILABLE"
+                }
+            ]
+        },
+        "downloadType": "OFFLINE_IN_APP",
+        "downloadInstructions": "Download for offline viewing is available on official Android/iOS apps of licensed platforms.",
         "servers": [
             {
                 "name": "⚡ Fast Cloud Server 1",
@@ -2684,7 +3828,7 @@ let movies = [
         ]
     },
     {
-        "id": 1790276602237,
+        "id": 1790277386314,
         "imdbId": "tt15654328",
         "slug": "leo-2023",
         "title": "Leo",
@@ -2703,26 +3847,90 @@ let movies = [
         "story": "Parthiban is a mild-mannered cafe owner who fends off a gang of murderous thugs and gains attention from a drug cartel claiming he was once a part of them.",
         "trailer": "https://www.youtube.com/embed/FZYhL_bVQUQ",
         "seasons": [],
-        "watchProviders": [
-            {
-                "provider_name": "Netflix",
-                "provider_type": "Subscription",
-                "provider_logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
-                "provider_url": "https://www.netflix.com/search?q=Leo"
-            },
-            {
-                "provider_name": "Amazon Prime Video",
-                "provider_type": "Subscription / Rent",
-                "provider_logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
-                "provider_url": "https://www.amazon.com/s?k=Leo"
-            },
-            {
-                "provider_name": "Official Theatrical / OTT Discovery",
-                "provider_type": "Licensed",
-                "provider_logo": "https://www.google.com/favicon.ico",
-                "provider_url": "https://www.google.com/search?q=Leo%20watch%20online%20official"
-            }
-        ],
+        "watchProviders": {
+            "IN": [
+                {
+                    "name": "Netflix India",
+                    "type": "Subscription",
+                    "logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
+                    "url": "https://www.netflix.com/search?q=Leo",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "Amazon Prime Video",
+                    "type": "Subscription / Rent",
+                    "logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
+                    "url": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=Leo",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "JioCinema / Hotstar",
+                    "type": "Subscription",
+                    "logo": "https://www.jiocinema.com/favicon.ico",
+                    "url": "https://www.jiocinema.com/search/Leo",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                }
+            ],
+            "US": [
+                {
+                    "name": "Netflix US",
+                    "type": "Subscription",
+                    "logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
+                    "url": "https://www.netflix.com/search?q=Leo",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "Apple TV",
+                    "type": "Buy / Rent",
+                    "logo": "https://www.apple.com/favicon.ico",
+                    "url": "https://tv.apple.com/us/search?term=Leo",
+                    "downloadSupported": true,
+                    "downloadType": "RENT_BUY_DOWNLOAD"
+                },
+                {
+                    "name": "Google Play Movies",
+                    "type": "Buy / Rent",
+                    "logo": "https://play-lh.googleusercontent.com/1-hPxO5dH8M6K9OWqIvWD63zqBKgnAnHG5WTexhio4TGgcSD2DJ95hKfdSy4IdDHUg=w240-h480-rw",
+                    "url": "https://play.google.com/store/search?q=Leo&c=movies",
+                    "downloadSupported": true,
+                    "downloadType": "RENT_BUY_DOWNLOAD"
+                }
+            ],
+            "GB": [
+                {
+                    "name": "Prime Video UK",
+                    "type": "Subscription",
+                    "logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
+                    "url": "https://www.amazon.co.uk/s?k=Leo",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "BBC iPlayer",
+                    "type": "Free / TV Licence",
+                    "logo": "https://www.bbc.co.uk/favicon.ico",
+                    "url": "https://www.bbc.co.uk/iplayer/search?q=Leo",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                }
+            ],
+            "GLOBAL": [
+                {
+                    "name": "Official Theatrical & Streaming Finder",
+                    "type": "Licensed",
+                    "logo": "https://www.google.com/favicon.ico",
+                    "url": "https://www.google.com/search?q=Leo+where+to+watch+official",
+                    "downloadSupported": false,
+                    "downloadType": "NOT_AVAILABLE"
+                }
+            ]
+        },
+        "downloadType": "OFFLINE_IN_APP",
+        "downloadInstructions": "Download for offline viewing is available on official Android/iOS apps of licensed platforms.",
         "servers": [
             {
                 "name": "⚡ Fast Cloud Server 1",
@@ -2739,7 +3947,7 @@ let movies = [
         ]
     },
     {
-        "id": 1790276601444,
+        "id": 1790277386019,
         "imdbId": "tt26443597",
         "slug": "zootopia-2-2025",
         "title": "Zootopia 2",
@@ -2758,26 +3966,90 @@ let movies = [
         "story": "Brave rabbit cop Judy Hopps and her friend, the fox Nick Wilde, team up again to crack a new case, the most perilous and intricate of their careers.",
         "trailer": "https://www.youtube.com/embed/sEgPQ7HKoBA",
         "seasons": [],
-        "watchProviders": [
-            {
-                "provider_name": "Netflix",
-                "provider_type": "Subscription",
-                "provider_logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
-                "provider_url": "https://www.netflix.com/search?q=Zootopia%202"
-            },
-            {
-                "provider_name": "Amazon Prime Video",
-                "provider_type": "Subscription / Rent",
-                "provider_logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
-                "provider_url": "https://www.amazon.com/s?k=Zootopia%202"
-            },
-            {
-                "provider_name": "Official Theatrical / OTT Discovery",
-                "provider_type": "Licensed",
-                "provider_logo": "https://www.google.com/favicon.ico",
-                "provider_url": "https://www.google.com/search?q=Zootopia%202%20watch%20online%20official"
-            }
-        ],
+        "watchProviders": {
+            "IN": [
+                {
+                    "name": "Netflix India",
+                    "type": "Subscription",
+                    "logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
+                    "url": "https://www.netflix.com/search?q=Zootopia%202",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "Amazon Prime Video",
+                    "type": "Subscription / Rent",
+                    "logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
+                    "url": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=Zootopia%202",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "JioCinema / Hotstar",
+                    "type": "Subscription",
+                    "logo": "https://www.jiocinema.com/favicon.ico",
+                    "url": "https://www.jiocinema.com/search/Zootopia%202",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                }
+            ],
+            "US": [
+                {
+                    "name": "Netflix US",
+                    "type": "Subscription",
+                    "logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
+                    "url": "https://www.netflix.com/search?q=Zootopia%202",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "Apple TV",
+                    "type": "Buy / Rent",
+                    "logo": "https://www.apple.com/favicon.ico",
+                    "url": "https://tv.apple.com/us/search?term=Zootopia%202",
+                    "downloadSupported": true,
+                    "downloadType": "RENT_BUY_DOWNLOAD"
+                },
+                {
+                    "name": "Google Play Movies",
+                    "type": "Buy / Rent",
+                    "logo": "https://play-lh.googleusercontent.com/1-hPxO5dH8M6K9OWqIvWD63zqBKgnAnHG5WTexhio4TGgcSD2DJ95hKfdSy4IdDHUg=w240-h480-rw",
+                    "url": "https://play.google.com/store/search?q=Zootopia%202&c=movies",
+                    "downloadSupported": true,
+                    "downloadType": "RENT_BUY_DOWNLOAD"
+                }
+            ],
+            "GB": [
+                {
+                    "name": "Prime Video UK",
+                    "type": "Subscription",
+                    "logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
+                    "url": "https://www.amazon.co.uk/s?k=Zootopia%202",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "BBC iPlayer",
+                    "type": "Free / TV Licence",
+                    "logo": "https://www.bbc.co.uk/favicon.ico",
+                    "url": "https://www.bbc.co.uk/iplayer/search?q=Zootopia%202",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                }
+            ],
+            "GLOBAL": [
+                {
+                    "name": "Official Theatrical & Streaming Finder",
+                    "type": "Licensed",
+                    "logo": "https://www.google.com/favicon.ico",
+                    "url": "https://www.google.com/search?q=Zootopia%202+where+to+watch+official",
+                    "downloadSupported": false,
+                    "downloadType": "NOT_AVAILABLE"
+                }
+            ]
+        },
+        "downloadType": "OFFLINE_IN_APP",
+        "downloadInstructions": "Download for offline viewing is available on official Android/iOS apps of licensed platforms.",
         "servers": [
             {
                 "name": "⚡ Fast Cloud Server 1",
@@ -2794,7 +4066,7 @@ let movies = [
         ]
     },
     {
-        "id": 1790276594391,
+        "id": 1790277382798,
         "imdbId": "tt27487934",
         "slug": "the-greatest-of-all-time-2024",
         "title": "The Greatest of All Time",
@@ -2813,26 +4085,90 @@ let movies = [
         "story": "Gandhi is a hostage negotiator, field agent, and spy working for the Special Anti-Terrorist Squad (SATS). After years of service, he is called back for a critical mission that sets him on a dangerous collision course with his own ...",
         "trailer": "https://www.youtube.com/embed/B5GAjuSnNuQ",
         "seasons": [],
-        "watchProviders": [
-            {
-                "provider_name": "Netflix",
-                "provider_type": "Subscription",
-                "provider_logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
-                "provider_url": "https://www.netflix.com/search?q=The%20Greatest%20of%20All%20Time"
-            },
-            {
-                "provider_name": "Amazon Prime Video",
-                "provider_type": "Subscription / Rent",
-                "provider_logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
-                "provider_url": "https://www.amazon.com/s?k=The%20Greatest%20of%20All%20Time"
-            },
-            {
-                "provider_name": "Official Theatrical / OTT Discovery",
-                "provider_type": "Licensed",
-                "provider_logo": "https://www.google.com/favicon.ico",
-                "provider_url": "https://www.google.com/search?q=The%20Greatest%20of%20All%20Time%20watch%20online%20official"
-            }
-        ],
+        "watchProviders": {
+            "IN": [
+                {
+                    "name": "Netflix India",
+                    "type": "Subscription",
+                    "logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
+                    "url": "https://www.netflix.com/search?q=The%20Greatest%20of%20All%20Time",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "Amazon Prime Video",
+                    "type": "Subscription / Rent",
+                    "logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
+                    "url": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=The%20Greatest%20of%20All%20Time",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "JioCinema / Hotstar",
+                    "type": "Subscription",
+                    "logo": "https://www.jiocinema.com/favicon.ico",
+                    "url": "https://www.jiocinema.com/search/The%20Greatest%20of%20All%20Time",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                }
+            ],
+            "US": [
+                {
+                    "name": "Netflix US",
+                    "type": "Subscription",
+                    "logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
+                    "url": "https://www.netflix.com/search?q=The%20Greatest%20of%20All%20Time",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "Apple TV",
+                    "type": "Buy / Rent",
+                    "logo": "https://www.apple.com/favicon.ico",
+                    "url": "https://tv.apple.com/us/search?term=The%20Greatest%20of%20All%20Time",
+                    "downloadSupported": true,
+                    "downloadType": "RENT_BUY_DOWNLOAD"
+                },
+                {
+                    "name": "Google Play Movies",
+                    "type": "Buy / Rent",
+                    "logo": "https://play-lh.googleusercontent.com/1-hPxO5dH8M6K9OWqIvWD63zqBKgnAnHG5WTexhio4TGgcSD2DJ95hKfdSy4IdDHUg=w240-h480-rw",
+                    "url": "https://play.google.com/store/search?q=The%20Greatest%20of%20All%20Time&c=movies",
+                    "downloadSupported": true,
+                    "downloadType": "RENT_BUY_DOWNLOAD"
+                }
+            ],
+            "GB": [
+                {
+                    "name": "Prime Video UK",
+                    "type": "Subscription",
+                    "logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
+                    "url": "https://www.amazon.co.uk/s?k=The%20Greatest%20of%20All%20Time",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "BBC iPlayer",
+                    "type": "Free / TV Licence",
+                    "logo": "https://www.bbc.co.uk/favicon.ico",
+                    "url": "https://www.bbc.co.uk/iplayer/search?q=The%20Greatest%20of%20All%20Time",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                }
+            ],
+            "GLOBAL": [
+                {
+                    "name": "Official Theatrical & Streaming Finder",
+                    "type": "Licensed",
+                    "logo": "https://www.google.com/favicon.ico",
+                    "url": "https://www.google.com/search?q=The%20Greatest%20of%20All%20Time+where+to+watch+official",
+                    "downloadSupported": false,
+                    "downloadType": "NOT_AVAILABLE"
+                }
+            ]
+        },
+        "downloadType": "OFFLINE_IN_APP",
+        "downloadInstructions": "Download for offline viewing is available on official Android/iOS apps of licensed platforms.",
         "servers": [
             {
                 "name": "⚡ Fast Cloud Server 1",
@@ -2849,7 +4185,7 @@ let movies = [
         ]
     },
     {
-        "id": 1790276583557,
+        "id": 1790277378214,
         "imdbId": "tt27829106",
         "slug": "untitled-2024",
         "category": "kdrama",
@@ -2862,29 +4198,93 @@ let movies = [
         "trending": true,
         "type": "movie",
         "poster": "https://images.metahub.space/poster/medium/tt27829106/img.jpg",
-        "story": "Detailed global catalog synopsis coming soon.",
+        "story": "Official synopsis available via licensed platforms.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=undefined%20official%20trailer",
         "seasons": [],
-        "watchProviders": [
-            {
-                "provider_name": "Netflix",
-                "provider_type": "Subscription",
-                "provider_logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
-                "provider_url": "https://www.netflix.com/search?q=undefined"
-            },
-            {
-                "provider_name": "Amazon Prime Video",
-                "provider_type": "Subscription / Rent",
-                "provider_logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
-                "provider_url": "https://www.amazon.com/s?k=undefined"
-            },
-            {
-                "provider_name": "Official Theatrical / OTT Discovery",
-                "provider_type": "Licensed",
-                "provider_logo": "https://www.google.com/favicon.ico",
-                "provider_url": "https://www.google.com/search?q=undefined%20watch%20online%20official"
-            }
-        ],
+        "watchProviders": {
+            "IN": [
+                {
+                    "name": "Netflix India",
+                    "type": "Subscription",
+                    "logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
+                    "url": "https://www.netflix.com/search?q=undefined",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "Amazon Prime Video",
+                    "type": "Subscription / Rent",
+                    "logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
+                    "url": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=undefined",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "JioCinema / Hotstar",
+                    "type": "Subscription",
+                    "logo": "https://www.jiocinema.com/favicon.ico",
+                    "url": "https://www.jiocinema.com/search/undefined",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                }
+            ],
+            "US": [
+                {
+                    "name": "Netflix US",
+                    "type": "Subscription",
+                    "logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
+                    "url": "https://www.netflix.com/search?q=undefined",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "Apple TV",
+                    "type": "Buy / Rent",
+                    "logo": "https://www.apple.com/favicon.ico",
+                    "url": "https://tv.apple.com/us/search?term=undefined",
+                    "downloadSupported": true,
+                    "downloadType": "RENT_BUY_DOWNLOAD"
+                },
+                {
+                    "name": "Google Play Movies",
+                    "type": "Buy / Rent",
+                    "logo": "https://play-lh.googleusercontent.com/1-hPxO5dH8M6K9OWqIvWD63zqBKgnAnHG5WTexhio4TGgcSD2DJ95hKfdSy4IdDHUg=w240-h480-rw",
+                    "url": "https://play.google.com/store/search?q=undefined&c=movies",
+                    "downloadSupported": true,
+                    "downloadType": "RENT_BUY_DOWNLOAD"
+                }
+            ],
+            "GB": [
+                {
+                    "name": "Prime Video UK",
+                    "type": "Subscription",
+                    "logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
+                    "url": "https://www.amazon.co.uk/s?k=undefined",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "BBC iPlayer",
+                    "type": "Free / TV Licence",
+                    "logo": "https://www.bbc.co.uk/favicon.ico",
+                    "url": "https://www.bbc.co.uk/iplayer/search?q=undefined",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                }
+            ],
+            "GLOBAL": [
+                {
+                    "name": "Official Theatrical & Streaming Finder",
+                    "type": "Licensed",
+                    "logo": "https://www.google.com/favicon.ico",
+                    "url": "https://www.google.com/search?q=undefined+where+to+watch+official",
+                    "downloadSupported": false,
+                    "downloadType": "NOT_AVAILABLE"
+                }
+            ]
+        },
+        "downloadType": "OFFLINE_IN_APP",
+        "downloadInstructions": "Download for offline viewing is available on official Android/iOS apps of licensed platforms.",
         "servers": [
             {
                 "name": "⚡ Fast Cloud Server 1",
@@ -2901,7 +4301,7 @@ let movies = [
         ]
     },
     {
-        "id": 1790276578496,
+        "id": 1790277377147,
         "imdbId": "tt11858890",
         "slug": "the-creator-2023",
         "title": "The Creator",
@@ -2920,26 +4320,90 @@ let movies = [
         "story": "Against the backdrop of a war between humans and robots with artificial intelligence, a former soldier finds the robots' secret weapon to end the conflict, an AI in the form of a child.",
         "trailer": "https://www.youtube.com/embed/MAZuGdi32bk",
         "seasons": [],
-        "watchProviders": [
-            {
-                "provider_name": "Netflix",
-                "provider_type": "Subscription",
-                "provider_logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
-                "provider_url": "https://www.netflix.com/search?q=The%20Creator"
-            },
-            {
-                "provider_name": "Amazon Prime Video",
-                "provider_type": "Subscription / Rent",
-                "provider_logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
-                "provider_url": "https://www.amazon.com/s?k=The%20Creator"
-            },
-            {
-                "provider_name": "Official Theatrical / OTT Discovery",
-                "provider_type": "Licensed",
-                "provider_logo": "https://www.google.com/favicon.ico",
-                "provider_url": "https://www.google.com/search?q=The%20Creator%20watch%20online%20official"
-            }
-        ],
+        "watchProviders": {
+            "IN": [
+                {
+                    "name": "Netflix India",
+                    "type": "Subscription",
+                    "logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
+                    "url": "https://www.netflix.com/search?q=The%20Creator",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "Amazon Prime Video",
+                    "type": "Subscription / Rent",
+                    "logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
+                    "url": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=The%20Creator",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "JioCinema / Hotstar",
+                    "type": "Subscription",
+                    "logo": "https://www.jiocinema.com/favicon.ico",
+                    "url": "https://www.jiocinema.com/search/The%20Creator",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                }
+            ],
+            "US": [
+                {
+                    "name": "Netflix US",
+                    "type": "Subscription",
+                    "logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
+                    "url": "https://www.netflix.com/search?q=The%20Creator",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "Apple TV",
+                    "type": "Buy / Rent",
+                    "logo": "https://www.apple.com/favicon.ico",
+                    "url": "https://tv.apple.com/us/search?term=The%20Creator",
+                    "downloadSupported": true,
+                    "downloadType": "RENT_BUY_DOWNLOAD"
+                },
+                {
+                    "name": "Google Play Movies",
+                    "type": "Buy / Rent",
+                    "logo": "https://play-lh.googleusercontent.com/1-hPxO5dH8M6K9OWqIvWD63zqBKgnAnHG5WTexhio4TGgcSD2DJ95hKfdSy4IdDHUg=w240-h480-rw",
+                    "url": "https://play.google.com/store/search?q=The%20Creator&c=movies",
+                    "downloadSupported": true,
+                    "downloadType": "RENT_BUY_DOWNLOAD"
+                }
+            ],
+            "GB": [
+                {
+                    "name": "Prime Video UK",
+                    "type": "Subscription",
+                    "logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
+                    "url": "https://www.amazon.co.uk/s?k=The%20Creator",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "BBC iPlayer",
+                    "type": "Free / TV Licence",
+                    "logo": "https://www.bbc.co.uk/favicon.ico",
+                    "url": "https://www.bbc.co.uk/iplayer/search?q=The%20Creator",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                }
+            ],
+            "GLOBAL": [
+                {
+                    "name": "Official Theatrical & Streaming Finder",
+                    "type": "Licensed",
+                    "logo": "https://www.google.com/favicon.ico",
+                    "url": "https://www.google.com/search?q=The%20Creator+where+to+watch+official",
+                    "downloadSupported": false,
+                    "downloadType": "NOT_AVAILABLE"
+                }
+            ]
+        },
+        "downloadType": "OFFLINE_IN_APP",
+        "downloadInstructions": "Download for offline viewing is available on official Android/iOS apps of licensed platforms.",
         "servers": [
             {
                 "name": "⚡ Fast Cloud Server 1",
@@ -2956,7 +4420,7 @@ let movies = [
         ]
     },
     {
-        "id": 1790276577672,
+        "id": 1790277376054,
         "imdbId": "tt11663228",
         "slug": "jailer-2023",
         "title": "Jailer",
@@ -2975,26 +4439,90 @@ let movies = [
         "story": "A retired jailer goes on a manhunt to find his son's killers. But the road leads him to a familiar, albeit a bit darker place. Can he emerge from this complex situation successfully?",
         "trailer": "https://www.youtube.com/embed/xenOE1Tma0A",
         "seasons": [],
-        "watchProviders": [
-            {
-                "provider_name": "Netflix",
-                "provider_type": "Subscription",
-                "provider_logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
-                "provider_url": "https://www.netflix.com/search?q=Jailer"
-            },
-            {
-                "provider_name": "Amazon Prime Video",
-                "provider_type": "Subscription / Rent",
-                "provider_logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
-                "provider_url": "https://www.amazon.com/s?k=Jailer"
-            },
-            {
-                "provider_name": "Official Theatrical / OTT Discovery",
-                "provider_type": "Licensed",
-                "provider_logo": "https://www.google.com/favicon.ico",
-                "provider_url": "https://www.google.com/search?q=Jailer%20watch%20online%20official"
-            }
-        ],
+        "watchProviders": {
+            "IN": [
+                {
+                    "name": "Netflix India",
+                    "type": "Subscription",
+                    "logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
+                    "url": "https://www.netflix.com/search?q=Jailer",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "Amazon Prime Video",
+                    "type": "Subscription / Rent",
+                    "logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
+                    "url": "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=Jailer",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "JioCinema / Hotstar",
+                    "type": "Subscription",
+                    "logo": "https://www.jiocinema.com/favicon.ico",
+                    "url": "https://www.jiocinema.com/search/Jailer",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                }
+            ],
+            "US": [
+                {
+                    "name": "Netflix US",
+                    "type": "Subscription",
+                    "logo": "https://assets.nflxext.com/ffe/siteui/common/icons/nficon2023.ico",
+                    "url": "https://www.netflix.com/search?q=Jailer",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "Apple TV",
+                    "type": "Buy / Rent",
+                    "logo": "https://www.apple.com/favicon.ico",
+                    "url": "https://tv.apple.com/us/search?term=Jailer",
+                    "downloadSupported": true,
+                    "downloadType": "RENT_BUY_DOWNLOAD"
+                },
+                {
+                    "name": "Google Play Movies",
+                    "type": "Buy / Rent",
+                    "logo": "https://play-lh.googleusercontent.com/1-hPxO5dH8M6K9OWqIvWD63zqBKgnAnHG5WTexhio4TGgcSD2DJ95hKfdSy4IdDHUg=w240-h480-rw",
+                    "url": "https://play.google.com/store/search?q=Jailer&c=movies",
+                    "downloadSupported": true,
+                    "downloadType": "RENT_BUY_DOWNLOAD"
+                }
+            ],
+            "GB": [
+                {
+                    "name": "Prime Video UK",
+                    "type": "Subscription",
+                    "logo": "https://m.media-amazon.com/images/G/01/digital/video/web/Logo-min.png",
+                    "url": "https://www.amazon.co.uk/s?k=Jailer",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                },
+                {
+                    "name": "BBC iPlayer",
+                    "type": "Free / TV Licence",
+                    "logo": "https://www.bbc.co.uk/favicon.ico",
+                    "url": "https://www.bbc.co.uk/iplayer/search?q=Jailer",
+                    "downloadSupported": true,
+                    "downloadType": "OFFLINE_IN_APP"
+                }
+            ],
+            "GLOBAL": [
+                {
+                    "name": "Official Theatrical & Streaming Finder",
+                    "type": "Licensed",
+                    "logo": "https://www.google.com/favicon.ico",
+                    "url": "https://www.google.com/search?q=Jailer+where+to+watch+official",
+                    "downloadSupported": false,
+                    "downloadType": "NOT_AVAILABLE"
+                }
+            ]
+        },
+        "downloadType": "OFFLINE_IN_APP",
+        "downloadInstructions": "Download for offline viewing is available on official Android/iOS apps of licensed platforms.",
         "servers": [
             {
                 "name": "⚡ Fast Cloud Server 1",
