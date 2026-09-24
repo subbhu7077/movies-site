@@ -31,7 +31,7 @@ let movies = [
         "audio": "Hindi + Telugu + Tamil",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt11663228/img.jpg",
-        "story": "Pushpa Raj expands his sandalwood syndicate nationwide, triggering a ruthless war against SP Bhanwar Singh Shekhawat.",
+        "story": "Pushpa Raj expands his syndicate nationwide, igniting a war of supremacy against SP Bhanwar Singh Shekhawat.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Pushpa%202%3A%20The%20Rule%20official%20trailer",
         "servers": [
             {
@@ -61,7 +61,7 @@ let movies = [
         "audio": "Hindi + Telugu",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt11858890/img.jpg",
-        "story": "In a dystopian post-apocalyptic era, Ashwatthama rises to defend the mother of the prophesied divine tenth avatar.",
+        "story": "In a post-apocalyptic future, the immortal Ashwatthama battles supreme forces to protect the mother of the divine tenth avatar.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Kalki%202898%20AD%20official%20trailer",
         "servers": [
             {
@@ -91,7 +91,7 @@ let movies = [
         "audio": "Hindi + Telugu + Tamil",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt22154402/img.jpg",
-        "story": "A fearless coastal chieftain wages a solitary crusade against weapons smugglers in the blood-soaked waters of the Red Sea.",
+        "story": "A fearless coastal chieftain wages a dangerous campaign against ocean weapons smuggling to protect his people.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Devara%3A%20Part%201%20official%20trailer",
         "servers": [
             {
@@ -121,7 +121,7 @@ let movies = [
         "audio": "Hindi + Telugu",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt13619278/img.jpg",
-        "story": "A battle-hardened warrior enters the fortress city of Khansaar to fulfill a blood-oath to his exiled childhood prince.",
+        "story": "A fearsome warrior enters the lawless sovereign city-state of Khansaar to defend his exiled childhood prince.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Salaar%3A%20Part%201%20-%20Ceasefire%20official%20trailer",
         "servers": [
             {
@@ -151,7 +151,7 @@ let movies = [
         "audio": "Hindi + Telugu + Tamil",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt15428130/img.jpg",
-        "story": "An honest IAS officer takes on corrupt political cartels to revolutionize electoral democracy through fair governance.",
+        "story": "An uncompromising IAS officer wages war against systemic political corruption to deliver electoral justice.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Game%20Changer%20official%20trailer",
         "servers": [
             {
@@ -181,7 +181,7 @@ let movies = [
         "audio": "Hindi + Telugu",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt14738360/img.jpg",
-        "story": "A petty thief in the village of Anjanadri gains the celestial superpowers of Lord Hanuman to safeguard his people.",
+        "story": "A simple youth in Anjanadri discovers a celestial gem granting him the divine powers of Lord Hanuman to fight ruthless villains.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Hanu-Man%20official%20trailer",
         "servers": [
             {
@@ -200,22 +200,22 @@ let movies = [
     },
     {
         "id": 7,
-        "imdbId": "tt8178634",
-        "title": "RRR",
+        "imdbId": "tt26549970",
+        "title": "Lucky Baskhar",
         "category": "south",
-        "genre": "action",
-        "quality": "4K",
-        "size": "3.6 GB",
-        "rating": "7.8",
-        "year": "2022",
-        "audio": "Hindi + Telugu + Tamil",
+        "genre": "thriller",
+        "quality": "1080p",
+        "size": "2.5 GB",
+        "rating": "8.1",
+        "year": "2024",
+        "audio": "Hindi Dubbed + Telugu",
         "trending": true,
-        "poster": "https://images.metahub.space/poster/medium/tt8178634/img.jpg",
-        "story": "Two legendary Indian revolutionaries forge an unbreakable bond before waging a fiery rebellion against British tyranny.",
-        "trailer": "https://www.youtube.com/embed?listType=search&list=RRR%20official%20trailer",
+        "poster": "https://images.metahub.space/poster/medium/tt26549970/img.jpg",
+        "story": "A common bank cashier gets entangled in the risky, corrupt financial markets of 1990s Bombay to amass colossal wealth.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=Lucky%20Baskhar%20official%20trailer",
         "servers": [
             {
-                "name": "⚡ 4K Fast Cloud Mirror 1",
+                "name": "⚡ 1080p Fast Cloud Mirror 1",
                 "url": "https://drive.google.com"
             },
             {
@@ -223,13 +223,43 @@ let movies = [
                 "url": "https://mega.nz"
             },
             {
-                "name": "💾 Direct PixelDrain 4K",
+                "name": "💾 Direct PixelDrain 1080p",
                 "url": "https://pixeldrain.com"
             }
         ]
     },
     {
         "id": 8,
+        "imdbId": "tt29584348",
+        "title": "Saripodhaa Sanivaaram",
+        "category": "south",
+        "genre": "action",
+        "quality": "1080p",
+        "size": "2.6 GB",
+        "rating": "7.2",
+        "year": "2024",
+        "audio": "Hindi Dubbed + Telugu",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt29584348/img.jpg",
+        "story": "A man who controls his fury all week only to unleash vigilante wrath on Saturdays confronts a tyrannical psychopathic police inspector.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=Saripodhaa%20Sanivaaram%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 1080p Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 1080p",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
+        "id": 9,
         "imdbId": "tt27487934",
         "title": "The Greatest of All Time (GOAT)",
         "category": "south",
@@ -241,7 +271,7 @@ let movies = [
         "audio": "Hindi Dubbed + Tamil",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt27487934/img.jpg",
-        "story": "A legendary counter-terrorist squad leader is dragged back into combat when a deadlier cloned reflection of his past resurfaces.",
+        "story": "A retired elite counter-terrorist squad leader is dragged back into battle against a rogue clone created from his past.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=The%20Greatest%20of%20All%20Time%20(GOAT)%20official%20trailer",
         "servers": [
             {
@@ -259,7 +289,7 @@ let movies = [
         ]
     },
     {
-        "id": 9,
+        "id": 10,
         "imdbId": "tt26734796",
         "title": "Amaran",
         "category": "south",
@@ -271,7 +301,7 @@ let movies = [
         "audio": "Hindi Dubbed + Tamil",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt26734796/img.jpg",
-        "story": "The heroic, inspiring real-life tribute to Major Mukund Varadarajan and his supreme sacrifice for India in Kashmir.",
+        "story": "The heroic, inspiring real-life biopic of Major Mukund Varadarajan and his supreme martyrdom fighting terrorists in Kashmir.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Amaran%20official%20trailer",
         "servers": [
             {
@@ -289,7 +319,7 @@ let movies = [
         ]
     },
     {
-        "id": 10,
+        "id": 11,
         "imdbId": "tt27663224",
         "title": "Vettaiyan",
         "category": "south",
@@ -301,7 +331,7 @@ let movies = [
         "audio": "Hindi Dubbed + Tamil",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt27663224/img.jpg",
-        "story": "An uncompromising encounter specialist policeman locks horns with a retired Supreme Court judge over systemic extrajudicial justice.",
+        "story": "A celebrated encounter specialist police officer clashes with human rights defenders after an encounter reveals an education scam.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Vettaiyan%20official%20trailer",
         "servers": [
             {
@@ -319,7 +349,7 @@ let movies = [
         ]
     },
     {
-        "id": 11,
+        "id": 12,
         "imdbId": "tt22039234",
         "title": "Kanguva",
         "category": "south",
@@ -331,7 +361,7 @@ let movies = [
         "audio": "Hindi + Tamil + Telugu",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt22039234/img.jpg",
-        "story": "An ancient warrior's sacred promise in 1678 connects across time with a futuristic bounty hunter in modern-day Goa.",
+        "story": "An ancient warrior's sacred oath in 1678 connects across generations with a futuristic bounty hunter in modern times.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Kanguva%20official%20trailer",
         "servers": [
             {
@@ -349,7 +379,7 @@ let movies = [
         ]
     },
     {
-        "id": 12,
+        "id": 13,
         "imdbId": "tt26443597",
         "title": "Maharaja",
         "category": "south",
@@ -361,7 +391,7 @@ let movies = [
         "audio": "Hindi Dubbed + Tamil",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt26443597/img.jpg",
-        "story": "A humble barber approaches the police reporting a stolen metal dustbin named Lakshmi, hiding a shocking tale of brutal retribution.",
+        "story": "A quiet barber files a complaint about his stolen metal dustbin named Lakshmi, masking an explosive quest for revenge.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Maharaja%20official%20trailer",
         "servers": [
             {
@@ -379,20 +409,20 @@ let movies = [
         ]
     },
     {
-        "id": 13,
-        "imdbId": "tt15654328",
-        "title": "Leo",
+        "id": 14,
+        "imdbId": "tt27791016",
+        "title": "Raayan",
         "category": "south",
         "genre": "action",
         "quality": "4K",
-        "size": "3.4 GB",
-        "rating": "7.2",
-        "year": "2023",
-        "audio": "Hindi + Tamil + Telugu",
+        "size": "3.1 GB",
+        "rating": "7.1",
+        "year": "2024",
+        "audio": "Hindi Dubbed + Tamil",
         "trending": true,
-        "poster": "https://images.metahub.space/poster/medium/tt15654328/img.jpg",
-        "story": "A peaceful cafe owner in Kashmir is pursued by a notorious drug cartel claiming he is their feared estranged hitman Leo Das.",
-        "trailer": "https://www.youtube.com/embed?listType=search&list=Leo%20official%20trailer",
+        "poster": "https://images.metahub.space/poster/medium/tt27791016/img.jpg",
+        "story": "A peaceful fast-food vendor is pushed beyond his limits to protect his siblings, unleashing ruthless violence across North Chennai.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=Raayan%20official%20trailer",
         "servers": [
             {
                 "name": "⚡ 4K Fast Cloud Mirror 1",
@@ -409,7 +439,7 @@ let movies = [
         ]
     },
     {
-        "id": 14,
+        "id": 15,
         "imdbId": "tt26421319",
         "title": "Manjummel Boys",
         "category": "south",
@@ -421,7 +451,7 @@ let movies = [
         "audio": "Hindi Dubbed + Malayalam",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt26421319/img.jpg",
-        "story": "A band of friends risk their lives inside the abyss of Guna Caves to pull off the most impossible real-life cave rescue.",
+        "story": "A tight-knit gang of friends risk everything inside the treacherous Devil's Kitchen cave to pull off the ultimate real-life rescue.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Manjummel%20Boys%20official%20trailer",
         "servers": [
             {
@@ -439,7 +469,7 @@ let movies = [
         ]
     },
     {
-        "id": 15,
+        "id": 16,
         "imdbId": "tt31006494",
         "title": "Aavesham",
         "category": "south",
@@ -451,7 +481,7 @@ let movies = [
         "audio": "Hindi Dubbed + Malayalam",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt31006494/img.jpg",
-        "story": "Three college students seek help from Ranga, an eccentric all-white-wearing Bangalore gangster who throws unforgettable parties.",
+        "story": "Three college students seek protection from Ranga, an eccentric all-white-clad local Bangalore gangster who loves loud celebrations.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Aavesham%20official%20trailer",
         "servers": [
             {
@@ -469,7 +499,7 @@ let movies = [
         ]
     },
     {
-        "id": 16,
+        "id": 17,
         "imdbId": "tt30278783",
         "title": "Premalu",
         "category": "south",
@@ -481,7 +511,7 @@ let movies = [
         "audio": "Hindi Dubbed + Malayalam",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt30278783/img.jpg",
-        "story": "A young graduate looking for a quick gateway to the UK finds hilarious unexpected romance while working in Hyderabad.",
+        "story": "A young engineer preparing for GATE encounters hilarious romantic confusion and unexpected love in the tech corridors of Hyderabad.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Premalu%20official%20trailer",
         "servers": [
             {
@@ -499,7 +529,7 @@ let movies = [
         ]
     },
     {
-        "id": 17,
+        "id": 18,
         "imdbId": "tt28639206",
         "title": "Bramayugam",
         "category": "south",
@@ -511,7 +541,7 @@ let movies = [
         "audio": "Hindi Dubbed + Malayalam",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt28639206/img.jpg",
-        "story": "A stranded singer takes refuge in a decaying manor ruled by Kodumon Potti, discovering ancient supernatural dark sorcery.",
+        "story": "A fleeing court singer seeks refuge in a mysterious crumbling manor ruled by Kodumon Potti, discovering horrifying black magic rituals.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Bramayugam%20official%20trailer",
         "servers": [
             {
@@ -529,7 +559,7 @@ let movies = [
         ]
     },
     {
-        "id": 18,
+        "id": 19,
         "imdbId": "tt21834044",
         "title": "ARM: Ajayante Randam Moshanam",
         "category": "south",
@@ -541,7 +571,7 @@ let movies = [
         "audio": "Hindi Dubbed + Malayalam",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt21834044/img.jpg",
-        "story": "Spanning three generations across Northern Kerala, three heroes defend their village's mystical meteor-crafted golden treasure.",
+        "story": "Spanning three different timelines across Kerala, three generations of warriors guard their village's mythical celestial treasure.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=ARM%3A%20Ajayante%20Randam%20Moshanam%20official%20trailer",
         "servers": [
             {
@@ -559,7 +589,67 @@ let movies = [
         ]
     },
     {
-        "id": 19,
+        "id": 20,
+        "imdbId": "tt4354038",
+        "title": "The Goat Life (Aadujeevitham)",
+        "category": "south",
+        "genre": "thriller",
+        "quality": "1080p",
+        "size": "2.7 GB",
+        "rating": "8.2",
+        "year": "2024",
+        "audio": "Hindi Dubbed + Malayalam",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt4354038/img.jpg",
+        "story": "The harrowing true survival ordeal of an Indian immigrant trapped as an isolated goat herder in the merciless Arabian desert.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=The%20Goat%20Life%20(Aadujeevitham)%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 1080p Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 1080p",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "imdbId": "tt13670698",
+        "title": "Bagheera",
+        "category": "south",
+        "genre": "action",
+        "quality": "4K",
+        "size": "3.2 GB",
+        "rating": "7.0",
+        "year": "2024",
+        "audio": "Hindi Dubbed + Kannada",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt13670698/img.jpg",
+        "story": "An upright IPS officer dons a dark superhero mantle by night to punish corrupt predators whom the legal system cannot touch.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=Bagheera%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 4K Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 4K",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
+        "id": 22,
         "imdbId": "tt26932223",
         "title": "Bhool Bhulaiyaa 3",
         "category": "bollywood",
@@ -571,7 +661,7 @@ let movies = [
         "audio": "Hindi (Original)",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt26932223/img.jpg",
-        "story": "Rooh Baba returns to the royal corridors of Raktaghat, facing double supernatural terror from two vengeful Manjulikas.",
+        "story": "Rooh Baba returns to investigate the historic palace of Raktaghat, trapped between two vengeful spirits claiming to be Manjulika.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Bhool%20Bhulaiyaa%203%20official%20trailer",
         "servers": [
             {
@@ -589,7 +679,7 @@ let movies = [
         ]
     },
     {
-        "id": 20,
+        "id": 23,
         "imdbId": "tt11454532",
         "title": "Singham Again",
         "category": "bollywood",
@@ -601,7 +691,7 @@ let movies = [
         "audio": "Hindi (Original)",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt11454532/img.jpg",
-        "story": "DCP Bajirao Singham assembles India's fiercest cop heroes in an explosive mission across Sri Lanka to save his captured wife.",
+        "story": "DCP Bajirao Singham unites the cop universe in a relentless rescue mission across borders inspired by the epic Ramayana.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Singham%20Again%20official%20trailer",
         "servers": [
             {
@@ -619,7 +709,7 @@ let movies = [
         ]
     },
     {
-        "id": 21,
+        "id": 24,
         "imdbId": "tt27995595",
         "title": "Stree 2: Sarkate Ka Aatank",
         "category": "bollywood",
@@ -631,7 +721,7 @@ let movies = [
         "audio": "Hindi (Original)",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt27995595/img.jpg",
-        "story": "When a headless phantom abducts the women of Chanderi, Vicky, Bitta, and friends must ally with the mysterious spirit Stree.",
+        "story": "Chanderi faces fresh supernatural terror from the decapitated monster Sarkata, forcing Vicky and the gang to call upon Stree.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Stree%202%3A%20Sarkate%20Ka%20Aatank%20official%20trailer",
         "servers": [
             {
@@ -649,7 +739,7 @@ let movies = [
         ]
     },
     {
-        "id": 22,
+        "id": 25,
         "imdbId": "tt28014526",
         "title": "Chhaava",
         "category": "bollywood",
@@ -661,7 +751,7 @@ let movies = [
         "audio": "Hindi (Original)",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt28014526/img.jpg",
-        "story": "The roaring saga of Chhatrapati Sambhaji Maharaj, the lion of Swarajya, defying the full military might of the Mughal Empire.",
+        "story": "The heroic Maratha saga of Chhatrapati Sambhaji Maharaj defiantly defending Swarajya against the mighty Mughal army.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Chhaava%20official%20trailer",
         "servers": [
             {
@@ -679,7 +769,7 @@ let movies = [
         ]
     },
     {
-        "id": 23,
+        "id": 26,
         "imdbId": "tt27818458",
         "title": "Munjya",
         "category": "bollywood",
@@ -691,7 +781,7 @@ let movies = [
         "audio": "Hindi (Original)",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt27818458/img.jpg",
-        "story": "A timid young man returns to his ancestral coastal village and accidentally unchains the restless, mischievous spirit of Munjya.",
+        "story": "A young man uncovers a secret in his ancestral Konkan village, accidentally setting free the mischievous spirit of Munjya.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Munjya%20official%20trailer",
         "servers": [
             {
@@ -709,7 +799,7 @@ let movies = [
         ]
     },
     {
-        "id": 24,
+        "id": 27,
         "imdbId": "tt27734492",
         "title": "Shaitaan",
         "category": "bollywood",
@@ -721,7 +811,7 @@ let movies = [
         "audio": "Hindi (Original)",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt27734492/img.jpg",
-        "story": "A serene family getaway descends into pure psychological hell when an intruder uses black magic to hypnotize their daughter.",
+        "story": "A serene family farmhouse holiday turns into psychological terror when an evil stranger hypnotizes their teenage daughter.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Shaitaan%20official%20trailer",
         "servers": [
             {
@@ -739,7 +829,7 @@ let movies = [
         ]
     },
     {
-        "id": 25,
+        "id": 28,
         "imdbId": "tt13818368",
         "title": "Fighter",
         "category": "bollywood",
@@ -751,7 +841,7 @@ let movies = [
         "audio": "Hindi (Original)",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt13818368/img.jpg",
-        "story": "Top IAF Air Dragons aviators execute breathtaking aerial strikes to neutralize cross-border militant operations.",
+        "story": "Elite Indian Air Force fighter pilots execute daring supersonic dogfights across the skies to avenge a brutal terror attack.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Fighter%20official%20trailer",
         "servers": [
             {
@@ -769,7 +859,97 @@ let movies = [
         ]
     },
     {
-        "id": 26,
+        "id": 29,
+        "imdbId": "tt28259169",
+        "title": "Kill",
+        "category": "bollywood",
+        "genre": "action",
+        "quality": "1080p",
+        "size": "2.3 GB",
+        "rating": "7.6",
+        "year": "2024",
+        "audio": "Hindi (Original)",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt28259169/img.jpg",
+        "story": "An army commando boards a New Delhi-bound train and wages a brutal, close-quarters war against a gang of armed dacoits.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=Kill%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 1080p Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 1080p",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
+        "id": 30,
+        "imdbId": "tt29290074",
+        "title": "Jigra",
+        "category": "bollywood",
+        "genre": "action",
+        "quality": "1080p",
+        "size": "2.4 GB",
+        "rating": "6.4",
+        "year": "2024",
+        "audio": "Hindi (Original)",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt29290074/img.jpg",
+        "story": "A fiercely determined sister orchestrates a daring foreign prison break to save her falsely convicted brother from death row.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=Jigra%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 1080p Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 1080p",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
+        "id": 31,
+        "imdbId": "tt23849204",
+        "title": "12th Fail",
+        "category": "bollywood",
+        "genre": "action",
+        "quality": "1080p",
+        "size": "2.4 GB",
+        "rating": "8.9",
+        "year": "2023",
+        "audio": "Hindi (Original)",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt23849204/img.jpg",
+        "story": "The remarkable true story of Manoj Kumar Sharma overcoming extreme poverty to clear the world's toughest UPSC exam.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=12th%20Fail%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 1080p Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 1080p",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
+        "id": 32,
         "imdbId": "tt13751694",
         "title": "Animal",
         "category": "bollywood",
@@ -781,7 +961,7 @@ let movies = [
         "audio": "Hindi (Original)",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt13751694/img.jpg",
-        "story": "A fiercely loyal son unleashes an unhinged wave of carnage upon the underworld after an assassination attempt on his distant father.",
+        "story": "A ruthless son unleashes unrestrained criminal chaos across the underworld after an assassination attempt on his distant father.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Animal%20official%20trailer",
         "servers": [
             {
@@ -799,7 +979,7 @@ let movies = [
         ]
     },
     {
-        "id": 27,
+        "id": 33,
         "imdbId": "tt6263850",
         "title": "Deadpool & Wolverine",
         "category": "hollywood",
@@ -811,7 +991,7 @@ let movies = [
         "audio": "Hindi Dubbed + English",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt6263850/img.jpg",
-        "story": "Wade Wilson recruits a battle-scarred Wolverine on a chaotic multiverse mission to save his dying timeline from TVA purge.",
+        "story": "Deadpool teams up with a cynical Wolverine on a wild multiverse rescue mission to save his home timeline from TVA collapse.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Deadpool%20%26%20Wolverine%20official%20trailer",
         "servers": [
             {
@@ -829,7 +1009,7 @@ let movies = [
         ]
     },
     {
-        "id": 28,
+        "id": 34,
         "imdbId": "tt9218128",
         "title": "Gladiator II",
         "category": "hollywood",
@@ -841,7 +1021,7 @@ let movies = [
         "audio": "Hindi Dubbed + English",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt9218128/img.jpg",
-        "story": "Years after Maximus, Lucius enters the Colosseum's sands to break the tyrannical grip of twin emperors upon Rome.",
+        "story": "Years after the fall of Maximus, Lucius enters the Colosseum's deadly sands to challenge the corrupt co-emperors of Rome.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Gladiator%20II%20official%20trailer",
         "servers": [
             {
@@ -859,7 +1039,7 @@ let movies = [
         ]
     },
     {
-        "id": 29,
+        "id": 35,
         "imdbId": "tt18412256",
         "title": "Alien: Romulus",
         "category": "hollywood",
@@ -871,7 +1051,7 @@ let movies = [
         "audio": "Hindi Dubbed + English",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt18412256/img.jpg",
-        "story": "Space colonizers exploring an abandoned Weyland-Yutani station trigger a terrifying outbreak of deadly Xenomorphs.",
+        "story": "Young space scavengers boarding a derelict station awaken the most lethal xenomorphic predator in the universe.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Alien%3A%20Romulus%20official%20trailer",
         "servers": [
             {
@@ -889,7 +1069,7 @@ let movies = [
         ]
     },
     {
-        "id": 30,
+        "id": 36,
         "imdbId": "tt15239678",
         "title": "Dune: Part Two",
         "category": "hollywood",
@@ -901,7 +1081,7 @@ let movies = [
         "audio": "Hindi Dubbed + English",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt15239678/img.jpg",
-        "story": "Paul Muad'Dib Atreides leads the Fremen in an all-out holy war across the sands of Arrakis against House Harkonnen.",
+        "story": "Paul Atreides unites with Chani and the Fremen to wage holy war across the sands of Arrakis against House Harkonnen.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Dune%3A%20Part%20Two%20official%20trailer",
         "servers": [
             {
@@ -919,7 +1099,7 @@ let movies = [
         ]
     },
     {
-        "id": 31,
+        "id": 37,
         "imdbId": "tt16366836",
         "title": "Venom: The Last Dance",
         "category": "hollywood",
@@ -931,7 +1111,7 @@ let movies = [
         "audio": "Hindi Dubbed + English",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt16366836/img.jpg",
-        "story": "Eddie and Venom are hunted across both worlds by military forces and symbiotic creators, forcing an ultimate sacrifice.",
+        "story": "Eddie Brock and Venom find themselves hunted by both government operatives and alien symbionts in their final stand.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Venom%3A%20The%20Last%20Dance%20official%20trailer",
         "servers": [
             {
@@ -949,7 +1129,7 @@ let movies = [
         ]
     },
     {
-        "id": 32,
+        "id": 38,
         "imdbId": "tt22022452",
         "title": "Inside Out 2",
         "category": "hollywood",
@@ -961,7 +1141,7 @@ let movies = [
         "audio": "Hindi Dubbed + English",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt22022452/img.jpg",
-        "story": "Headquarters undergoes a sudden demolition to make room for unexpected teenage emotions led by neurotic Anxiety.",
+        "story": "Riley enters puberty, causing Headquarters to be overhauled by new chaotic emotions spearheaded by Anxiety.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Inside%20Out%202%20official%20trailer",
         "servers": [
             {
@@ -979,7 +1159,7 @@ let movies = [
         ]
     },
     {
-        "id": 33,
+        "id": 39,
         "imdbId": "tt29623480",
         "title": "The Wild Robot",
         "category": "hollywood",
@@ -991,7 +1171,7 @@ let movies = [
         "audio": "Hindi Dubbed + English",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt29623480/img.jpg",
-        "story": "Roz the intelligent unit washes ashore on an uninhabited island, learning survival and motherhood from its creatures.",
+        "story": "A stranded intelligent robot named Roz learns wilderness survival by forming heartwarming bonds with forest creatures.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=The%20Wild%20Robot%20official%20trailer",
         "servers": [
             {
@@ -1009,7 +1189,7 @@ let movies = [
         ]
     },
     {
-        "id": 34,
+        "id": 40,
         "imdbId": "tt13622970",
         "title": "Moana 2",
         "category": "hollywood",
@@ -1021,7 +1201,7 @@ let movies = [
         "audio": "Hindi Dubbed + English",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt13622970/img.jpg",
-        "story": "Moana journeys alongside Maui across treacherous lost seas after receiving an urgent summons from wayfinding ancestors.",
+        "story": "Moana receives an ancestral call and voyages alongside Maui into dangerous long-lost Pacific waters.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Moana%202%20official%20trailer",
         "servers": [
             {
@@ -1039,7 +1219,7 @@ let movies = [
         ]
     },
     {
-        "id": 35,
+        "id": 41,
         "imdbId": "tt4220202",
         "title": "Wicked",
         "category": "hollywood",
@@ -1051,7 +1231,7 @@ let movies = [
         "audio": "Hindi Dubbed + English",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt4220202/img.jpg",
-        "story": "The magical untold bond and fateful division between Elphaba, the future Wicked Witch, and popular Glinda the Good.",
+        "story": "The untold friendship and magical origins of Elphaba, the future Wicked Witch, and popular Glinda in the Land of Oz.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Wicked%20official%20trailer",
         "servers": [
             {
@@ -1069,7 +1249,127 @@ let movies = [
         ]
     },
     {
-        "id": 36,
+        "id": 42,
+        "imdbId": "tt2049403",
+        "title": "Beetlejuice Beetlejuice",
+        "category": "hollywood",
+        "genre": "action",
+        "quality": "4K",
+        "size": "3.0 GB",
+        "rating": "6.8",
+        "year": "2024",
+        "audio": "Hindi Dubbed + English",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt2049403/img.jpg",
+        "story": "Three generations of the Deetz family return to Winter River, accidentally opening the portal to the hilarious Netherworld.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=Beetlejuice%20Beetlejuice%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 4K Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 4K",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
+        "id": 43,
+        "imdbId": "tt12584954",
+        "title": "Twisters",
+        "category": "hollywood",
+        "genre": "action",
+        "quality": "4K",
+        "size": "3.1 GB",
+        "rating": "6.6",
+        "year": "2024",
+        "audio": "Hindi Dubbed + English",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt12584954/img.jpg",
+        "story": "Rival storm chasers cross paths in Oklahoma as unprecedented, terrifying multi-vortex tornadoes threaten their lives.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=Twisters%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 4K Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 4K",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
+        "id": 44,
+        "imdbId": "tt14539740",
+        "title": "Godzilla x Kong: The New Empire",
+        "category": "hollywood",
+        "genre": "action",
+        "quality": "4K",
+        "size": "3.2 GB",
+        "rating": "6.1",
+        "year": "2024",
+        "audio": "Hindi Dubbed + English",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt14539740/img.jpg",
+        "story": "Godzilla and Kong must unite against a colossal hidden Hollow Earth threat led by the tyrant Skar King.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=Godzilla%20x%20Kong%3A%20The%20New%20Empire%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 4K Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 4K",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
+        "id": 45,
+        "imdbId": "tt4919268",
+        "title": "Bad Boys: Ride or Die",
+        "category": "hollywood",
+        "genre": "action",
+        "quality": "4K",
+        "size": "3.1 GB",
+        "rating": "6.7",
+        "year": "2024",
+        "audio": "Hindi Dubbed + English",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt4919268/img.jpg",
+        "story": "Miami detectives Mike Lowrey and Marcus Burnett become fugitives on the run to clear the name of their late Captain.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=Bad%20Boys%3A%20Ride%20or%20Die%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 4K Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 4K",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
+        "id": 46,
         "imdbId": "tt14513804",
         "title": "Captain America: Brave New World",
         "category": "hollywood",
@@ -1081,7 +1381,7 @@ let movies = [
         "audio": "Hindi Dubbed + English",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt14513804/img.jpg",
-        "story": "Sam Wilson takes flight as the shield-bearing Captain America, uncovering a global plot tied to the monstrous Red Hulk.",
+        "story": "Sam Wilson takes flight with the shield to stop a global conspiracy involving President Thaddeus Ross and Red Hulk.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Captain%20America%3A%20Brave%20New%20World%20official%20trailer",
         "servers": [
             {
@@ -1099,7 +1399,7 @@ let movies = [
         ]
     },
     {
-        "id": 37,
+        "id": 47,
         "imdbId": "tt5950044",
         "title": "Superman",
         "category": "hollywood",
@@ -1111,7 +1411,7 @@ let movies = [
         "audio": "Hindi Dubbed + English",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt5950044/img.jpg",
-        "story": "Kal-El reconciles his celestial Kryptonian legacy with his Kansas upbringing under the watchful eyes of Lois Lane and Lex Luthor.",
+        "story": "Superman balances his Kryptonian ancestry with his Kansas human values in a cynical world needing hope.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Superman%20official%20trailer",
         "servers": [
             {
@@ -1129,7 +1429,7 @@ let movies = [
         ]
     },
     {
-        "id": 38,
+        "id": 48,
         "imdbId": "tt10954600",
         "title": "Squid Game: Season 2",
         "category": "kdrama",
@@ -1141,7 +1441,7 @@ let movies = [
         "audio": "Hindi Dubbed + Korean",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt10954600/img.jpg",
-        "story": "Player 456 enters the deadly competition again with cold determination to destroy the VIP syndicate from the inside.",
+        "story": "Player 456 re-enters the deadly competition to expose and permanently terminate the brutal game organizers.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Squid%20Game%3A%20Season%202%20official%20trailer",
         "servers": [
             {
@@ -1159,7 +1459,7 @@ let movies = [
         ]
     },
     {
-        "id": 39,
+        "id": 49,
         "imdbId": "tt27448348",
         "title": "Queen of Tears",
         "category": "kdrama",
@@ -1171,7 +1471,7 @@ let movies = [
         "audio": "Hindi Dubbed + Korean",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt27448348/img.jpg",
-        "story": "A chaotic corporate marriage on the brink of divorce is reignited by courage and vulnerability amid medical tragedy.",
+        "story": "A corporate retail queen and her humble small-town husband rekindle their fading love amidst medical and familial crises.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Queen%20of%20Tears%20official%20trailer",
         "servers": [
             {
@@ -1189,7 +1489,7 @@ let movies = [
         ]
     },
     {
-        "id": 40,
+        "id": 50,
         "imdbId": "tt27829106",
         "title": "Exhuma",
         "category": "kdrama",
@@ -1201,7 +1501,7 @@ let movies = [
         "audio": "Hindi Dubbed + Korean",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt27829106/img.jpg",
-        "story": "Shamans and a geomancer unearth an ominous grave on a remote hilltop, releasing an ancient malevolent samurai entity.",
+        "story": "Shamans exhume an ancestral grave on a cursed hill, unleashing a horrifying malevolent ancient demon.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Exhuma%20official%20trailer",
         "servers": [
             {
@@ -1219,7 +1519,7 @@ let movies = [
         ]
     },
     {
-        "id": 41,
+        "id": 51,
         "imdbId": "tt30217036",
         "title": "Dandadan (Season 1)",
         "category": "anime",
@@ -1231,7 +1531,7 @@ let movies = [
         "audio": "Hindi Dubbed + Japanese",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt30217036/img.jpg",
-        "story": "Two high schoolers testing the occult awaken hyper-powered alien invaders and turbocharged spirit grandmothers across Tokyo.",
+        "story": "High schoolers testing ghosts and alien abductions awaken bizarre supernatural battles and monstrous spirits across Japan.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Dandadan%20(Season%201)%20official%20trailer",
         "servers": [
             {
@@ -1249,7 +1549,7 @@ let movies = [
         ]
     },
     {
-        "id": 42,
+        "id": 52,
         "imdbId": "tt13653134",
         "title": "Solo Leveling (Season 1)",
         "category": "anime",
@@ -1261,7 +1561,7 @@ let movies = [
         "audio": "Hindi Dubbed + Japanese",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt13653134/img.jpg",
-        "story": "Sung Jinwoo, the weakest hunter in the world, survives a double dungeon trial and awakens a game interface that makes him godlike.",
+        "story": "The world's weakest hunter unlocks a secret quest window, allowing him to endlessly level up into a shadow monarch.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Solo%20Leveling%20(Season%201)%20official%20trailer",
         "servers": [
             {
@@ -1279,7 +1579,7 @@ let movies = [
         ]
     },
     {
-        "id": 43,
+        "id": 53,
         "imdbId": "tt21650338",
         "title": "Kaiju No. 8",
         "category": "anime",
@@ -1291,7 +1591,7 @@ let movies = [
         "audio": "Hindi Dubbed + Japanese",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt21650338/img.jpg",
-        "story": "A defense-force cleanup worker accidentally swallows a parasitic kaiju larva and gains the power to smash giant monsters.",
+        "story": "A defense-force cleanup worker accidentally digests a parasitic kaiju and gains colossal monstrous strength.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Kaiju%20No.%208%20official%20trailer",
         "servers": [
             {
@@ -1309,7 +1609,7 @@ let movies = [
         ]
     },
     {
-        "id": 44,
+        "id": 54,
         "imdbId": "tt22008740",
         "title": "Culpa Mía (My Fault)",
         "category": "hollywood",
@@ -1321,7 +1621,7 @@ let movies = [
         "audio": "Hindi Dubbed + Spanish",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt22008740/img.jpg",
-        "story": "Noah must leave her hometown for her mother's wealthy new marriage, colliding with rebellious stepbrother Nick in high-speed street racing.",
+        "story": "Noah moves into her stepfather's mansion and falls into an irresistible street-racing romance with bad-boy stepbrother Nick.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Culpa%20M%C3%ADa%20(My%20Fault)%20official%20trailer",
         "servers": [
             {
@@ -1339,7 +1639,7 @@ let movies = [
         ]
     },
     {
-        "id": 45,
+        "id": 55,
         "imdbId": "tt28531776",
         "title": "Culpa Tuya (Your Fault)",
         "category": "hollywood",
@@ -1351,7 +1651,7 @@ let movies = [
         "audio": "Hindi Dubbed + Spanish",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt28531776/img.jpg",
-        "story": "Noah and Nick face university pressures, jealous exes, and scheming parents determined to tear their fiery romance apart.",
+        "story": "Noah and Nick face university temptations, vengeful ex-partners, and family plots determined to break their fiery bond.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Culpa%20Tuya%20(Your%20Fault)%20official%20trailer",
         "servers": [
             {
@@ -1369,7 +1669,7 @@ let movies = [
         ]
     },
     {
-        "id": 46,
+        "id": 56,
         "imdbId": "tt6473300",
         "title": "Mirzapur (Season 3)",
         "category": "series",
@@ -1399,7 +1699,7 @@ let movies = [
         ]
     },
     {
-        "id": 47,
+        "id": 57,
         "imdbId": "tt11990494",
         "title": "Panchayat (Season 3)",
         "category": "series",
@@ -1411,7 +1711,7 @@ let movies = [
         "audio": "Hindi (Original)",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt11990494/img.jpg",
-        "story": "Sachiv ji fights to balance his love, career, and violent village turf wars as Vidhayak ji turns Phulera upside down.",
+        "story": "Abhishek Tripathi battles local village politics, romance, and fierce bureaucratic rivalry in the beloved village of Phulera.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=Panchayat%20(Season%203)%20official%20trailer",
         "servers": [
             {
@@ -1429,7 +1729,7 @@ let movies = [
         ]
     },
     {
-        "id": 48,
+        "id": 58,
         "imdbId": "tt1190634",
         "title": "The Boys (Season 4)",
         "category": "series",
@@ -1441,7 +1741,7 @@ let movies = [
         "audio": "Hindi Dubbed + English",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt1190634/img.jpg",
-        "story": "Homelander asserts absolute control over Vought and the nation while Butcher searches for a lethal anti-supe biological virus.",
+        "story": "Homelander tightens his grip on the nation while Butcher races against terminal illness to find an anti-supe biological virus.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=The%20Boys%20(Season%204)%20official%20trailer",
         "servers": [
             {
@@ -1459,7 +1759,7 @@ let movies = [
         ]
     },
     {
-        "id": 49,
+        "id": 59,
         "imdbId": "tt11198330",
         "title": "House of the Dragon (Season 2)",
         "category": "series",
@@ -1471,7 +1771,7 @@ let movies = [
         "audio": "Hindi Dubbed + English",
         "trending": true,
         "poster": "https://images.metahub.space/poster/medium/tt11198330/img.jpg",
-        "story": "Dragons dance across the skies of Westeros in a brutal war of succession between Queen Rhaenyra and King Aegon II.",
+        "story": "The Targaryen civil war turns catastrophic as dragons battle over Westeros between King Aegon II and Queen Rhaenyra.",
         "trailer": "https://www.youtube.com/embed?listType=search&list=House%20of%20the%20Dragon%20(Season%202)%20official%20trailer",
         "servers": [
             {
@@ -1489,7 +1789,127 @@ let movies = [
         ]
     },
     {
-        "id": 50,
+        "id": 60,
+        "imdbId": "tt12637874",
+        "title": "Fallout (Season 1)",
+        "category": "series",
+        "genre": "action",
+        "quality": "4K",
+        "size": "4.9 GB",
+        "rating": "8.4",
+        "year": "2024",
+        "audio": "Hindi Dubbed + English",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt12637874/img.jpg",
+        "story": "A naive subterranean Vault dweller explores the violent irradiated wasteland of ruined Los Angeles to rescue her kidnapped father.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=Fallout%20(Season%201)%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 4K Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 4K",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
+        "id": 61,
+        "imdbId": "tt2788316",
+        "title": "Shōgun",
+        "category": "series",
+        "genre": "action",
+        "quality": "4K",
+        "size": "5.4 GB",
+        "rating": "8.7",
+        "year": "2024",
+        "audio": "Hindi Dubbed + Japanese",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt2788316/img.jpg",
+        "story": "In 1600 feudal Japan, Lord Toranaga fights for survival against political rivals when a mysterious shipwreck brings unexpected weapons.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=Sh%C5%8Dgun%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 4K Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 4K",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
+        "id": 62,
+        "imdbId": "tt8178634",
+        "title": "RRR",
+        "category": "south",
+        "genre": "action",
+        "quality": "4K",
+        "size": "3.6 GB",
+        "rating": "7.8",
+        "year": "2022",
+        "audio": "Hindi + Telugu + Tamil",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt8178634/img.jpg",
+        "story": "Two legendary Indian revolutionaries forge an unbreakable bond before waging a fiery rebellion against British tyranny.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=RRR%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 4K Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 4K",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
+        "id": 63,
+        "imdbId": "tt15654328",
+        "title": "Leo",
+        "category": "south",
+        "genre": "action",
+        "quality": "4K",
+        "size": "3.4 GB",
+        "rating": "7.2",
+        "year": "2023",
+        "audio": "Hindi + Tamil + Telugu",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt15654328/img.jpg",
+        "story": "A peaceful cafe owner in Kashmir is pursued by a notorious drug cartel claiming he is their feared estranged hitman Leo Das.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=Leo%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 4K Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 4K",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
+        "id": 64,
         "imdbId": "tt27438466",
         "title": "War 2",
         "category": "bollywood",
@@ -1519,7 +1939,7 @@ let movies = [
         ]
     },
     {
-        "id": 51,
+        "id": 65,
         "imdbId": "tt0499549",
         "title": "Avatar",
         "category": "hollywood",
@@ -1548,7 +1968,7 @@ let movies = [
         ]
     },
     {
-        "id": 52,
+        "id": 66,
         "imdbId": "tt1630029",
         "title": "Avatar: The Way of Water",
         "category": "hollywood",
@@ -1577,7 +1997,7 @@ let movies = [
         ]
     },
     {
-        "id": 53,
+        "id": 67,
         "imdbId": "tt0120338",
         "title": "Titanic",
         "category": "hollywood",
@@ -1606,7 +2026,7 @@ let movies = [
         ]
     },
     {
-        "id": 54,
+        "id": 68,
         "imdbId": "tt4154796",
         "title": "Avengers: Endgame",
         "category": "hollywood",
@@ -1635,7 +2055,7 @@ let movies = [
         ]
     },
     {
-        "id": 55,
+        "id": 69,
         "imdbId": "tt4154756",
         "title": "Avengers: Infinity War",
         "category": "hollywood",
@@ -1664,7 +2084,7 @@ let movies = [
         ]
     },
     {
-        "id": 56,
+        "id": 70,
         "imdbId": "tt10872600",
         "title": "Spider-Man: No Way Home",
         "category": "hollywood",
@@ -1693,7 +2113,7 @@ let movies = [
         ]
     },
     {
-        "id": 57,
+        "id": 71,
         "imdbId": "tt2250912",
         "title": "Spider-Man: Homecoming",
         "category": "hollywood",
@@ -1722,7 +2142,7 @@ let movies = [
         ]
     },
     {
-        "id": 58,
+        "id": 72,
         "imdbId": "tt0468569",
         "title": "The Dark Knight",
         "category": "hollywood",
@@ -1751,7 +2171,7 @@ let movies = [
         ]
     },
     {
-        "id": 59,
+        "id": 73,
         "imdbId": "tt1877830",
         "title": "The Batman",
         "category": "hollywood",
@@ -1780,7 +2200,7 @@ let movies = [
         ]
     },
     {
-        "id": 60,
+        "id": 74,
         "imdbId": "tt7286456",
         "title": "Joker",
         "category": "hollywood",
@@ -1809,7 +2229,7 @@ let movies = [
         ]
     },
     {
-        "id": 61,
+        "id": 75,
         "imdbId": "tt1375666",
         "title": "Inception",
         "category": "hollywood",
@@ -1838,7 +2258,7 @@ let movies = [
         ]
     },
     {
-        "id": 62,
+        "id": 76,
         "imdbId": "tt0816692",
         "title": "Interstellar",
         "category": "hollywood",
@@ -1867,7 +2287,7 @@ let movies = [
         ]
     },
     {
-        "id": 63,
+        "id": 77,
         "imdbId": "tt15398776",
         "title": "Oppenheimer",
         "category": "hollywood",
@@ -1896,7 +2316,7 @@ let movies = [
         ]
     },
     {
-        "id": 64,
+        "id": 78,
         "imdbId": "tt0133093",
         "title": "The Matrix",
         "category": "hollywood",
@@ -1925,7 +2345,7 @@ let movies = [
         ]
     },
     {
-        "id": 65,
+        "id": 79,
         "imdbId": "tt2911666",
         "title": "John Wick",
         "category": "hollywood",
@@ -1954,7 +2374,7 @@ let movies = [
         ]
     },
     {
-        "id": 66,
+        "id": 80,
         "imdbId": "tt4425200",
         "title": "John Wick: Chapter 2",
         "category": "hollywood",
@@ -1983,7 +2403,7 @@ let movies = [
         ]
     },
     {
-        "id": 67,
+        "id": 81,
         "imdbId": "tt6146586",
         "title": "John Wick: Chapter 3 - Parabellum",
         "category": "hollywood",
@@ -2012,7 +2432,7 @@ let movies = [
         ]
     },
     {
-        "id": 68,
+        "id": 82,
         "imdbId": "tt10366206",
         "title": "John Wick: Chapter 4",
         "category": "hollywood",
@@ -2041,7 +2461,7 @@ let movies = [
         ]
     },
     {
-        "id": 69,
+        "id": 83,
         "imdbId": "tt0232500",
         "title": "The Fast and the Furious",
         "category": "hollywood",
@@ -2070,7 +2490,7 @@ let movies = [
         ]
     },
     {
-        "id": 70,
+        "id": 84,
         "imdbId": "tt0107290",
         "title": "Jurassic Park",
         "category": "hollywood",
@@ -2099,7 +2519,7 @@ let movies = [
         ]
     },
     {
-        "id": 71,
+        "id": 85,
         "imdbId": "tt3694708",
         "title": "Jurassic World",
         "category": "hollywood",
@@ -2128,7 +2548,7 @@ let movies = [
         ]
     },
     {
-        "id": 72,
+        "id": 86,
         "imdbId": "tt0418279",
         "title": "Transformers",
         "category": "hollywood",
@@ -2157,7 +2577,7 @@ let movies = [
         ]
     },
     {
-        "id": 73,
+        "id": 87,
         "imdbId": "tt0117060",
         "title": "Mission: Impossible",
         "category": "hollywood",
@@ -2186,7 +2606,7 @@ let movies = [
         ]
     },
     {
-        "id": 74,
+        "id": 88,
         "imdbId": "tt1745960",
         "title": "Top Gun: Maverick",
         "category": "hollywood",
@@ -2215,7 +2635,7 @@ let movies = [
         ]
     },
     {
-        "id": 75,
+        "id": 89,
         "imdbId": "tt0120737",
         "title": "The Lord of the Rings: Fellowship",
         "category": "hollywood",
@@ -2244,7 +2664,7 @@ let movies = [
         ]
     },
     {
-        "id": 76,
+        "id": 90,
         "imdbId": "tt0241527",
         "title": "Harry Potter & Sorcerer's Stone",
         "category": "hollywood",
@@ -2273,7 +2693,7 @@ let movies = [
         ]
     },
     {
-        "id": 77,
+        "id": 91,
         "imdbId": "tt0325980",
         "title": "Pirates of the Caribbean",
         "category": "hollywood",
@@ -2302,7 +2722,7 @@ let movies = [
         ]
     },
     {
-        "id": 78,
+        "id": 92,
         "imdbId": "tt1392170",
         "title": "The Hunger Games",
         "category": "hollywood",
@@ -2331,7 +2751,7 @@ let movies = [
         ]
     },
     {
-        "id": 79,
+        "id": 93,
         "imdbId": "tt1099212",
         "title": "Twilight",
         "category": "hollywood",
@@ -2360,7 +2780,7 @@ let movies = [
         ]
     },
     {
-        "id": 80,
+        "id": 94,
         "imdbId": "tt1457767",
         "title": "The Conjuring",
         "category": "hollywood",
@@ -2389,7 +2809,7 @@ let movies = [
         ]
     },
     {
-        "id": 81,
+        "id": 95,
         "imdbId": "tt1396484",
         "title": "It",
         "category": "hollywood",
@@ -2418,7 +2838,7 @@ let movies = [
         ]
     },
     {
-        "id": 82,
+        "id": 96,
         "imdbId": "tt6644200",
         "title": "A Quiet Place",
         "category": "hollywood",
@@ -2447,7 +2867,7 @@ let movies = [
         ]
     },
     {
-        "id": 83,
+        "id": 97,
         "imdbId": "tt0070047",
         "title": "The Exorcist",
         "category": "hollywood",
@@ -2476,7 +2896,7 @@ let movies = [
         ]
     },
     {
-        "id": 84,
+        "id": 98,
         "imdbId": "tt0117571",
         "title": "Scream",
         "category": "hollywood",
@@ -2505,7 +2925,7 @@ let movies = [
         ]
     },
     {
-        "id": 85,
+        "id": 99,
         "imdbId": "tt1591095",
         "title": "Insidious",
         "category": "hollywood",
@@ -2534,7 +2954,7 @@ let movies = [
         ]
     },
     {
-        "id": 86,
+        "id": 100,
         "imdbId": "tt3322940",
         "title": "Annabelle",
         "category": "hollywood",
@@ -2563,7 +2983,7 @@ let movies = [
         ]
     },
     {
-        "id": 87,
+        "id": 101,
         "imdbId": "tt5814060",
         "title": "The Nun",
         "category": "hollywood",
@@ -2592,7 +3012,7 @@ let movies = [
         ]
     },
     {
-        "id": 88,
+        "id": 102,
         "imdbId": "tt0082348",
         "title": "Evil Dead",
         "category": "hollywood",
@@ -2621,7 +3041,7 @@ let movies = [
         ]
     },
     {
-        "id": 89,
+        "id": 103,
         "imdbId": "tt0111161",
         "title": "The Shawshank Redemption",
         "category": "hollywood",
@@ -2650,7 +3070,7 @@ let movies = [
         ]
     },
     {
-        "id": 90,
+        "id": 104,
         "imdbId": "tt0109830",
         "title": "Forrest Gump",
         "category": "hollywood",
@@ -2679,7 +3099,7 @@ let movies = [
         ]
     },
     {
-        "id": 91,
+        "id": 105,
         "imdbId": "tt0068646",
         "title": "The Godfather",
         "category": "hollywood",
@@ -2708,7 +3128,7 @@ let movies = [
         ]
     },
     {
-        "id": 92,
+        "id": 106,
         "imdbId": "tt0099685",
         "title": "Goodfellas",
         "category": "hollywood",
@@ -2737,7 +3157,7 @@ let movies = [
         ]
     },
     {
-        "id": 93,
+        "id": 107,
         "imdbId": "tt0137523",
         "title": "Fight Club",
         "category": "hollywood",
@@ -2766,7 +3186,7 @@ let movies = [
         ]
     },
     {
-        "id": 94,
+        "id": 108,
         "imdbId": "tt0993846",
         "title": "The Wolf of Wall Street",
         "category": "hollywood",
@@ -2795,7 +3215,7 @@ let movies = [
         ]
     },
     {
-        "id": 95,
+        "id": 109,
         "imdbId": "tt0120689",
         "title": "The Green Mile",
         "category": "hollywood",
@@ -2824,7 +3244,7 @@ let movies = [
         ]
     },
     {
-        "id": 96,
+        "id": 110,
         "imdbId": "tt0458339",
         "title": "The Pursuit of Happyness",
         "category": "hollywood",
@@ -2853,7 +3273,7 @@ let movies = [
         ]
     },
     {
-        "id": 97,
+        "id": 111,
         "imdbId": "tt0332280",
         "title": "The Notebook",
         "category": "hollywood",
@@ -2882,7 +3302,7 @@ let movies = [
         ]
     },
     {
-        "id": 98,
+        "id": 112,
         "imdbId": "tt3783958",
         "title": "La La Land",
         "category": "hollywood",
@@ -2911,7 +3331,7 @@ let movies = [
         ]
     },
     {
-        "id": 99,
+        "id": 113,
         "imdbId": "tt2674426",
         "title": "Me Before You",
         "category": "hollywood",
@@ -2940,7 +3360,7 @@ let movies = [
         ]
     },
     {
-        "id": 100,
+        "id": 114,
         "imdbId": "tt6472976",
         "title": "Five Feet Apart",
         "category": "hollywood",
@@ -2969,7 +3389,7 @@ let movies = [
         ]
     },
     {
-        "id": 101,
+        "id": 115,
         "imdbId": "tt4126424",
         "title": "After",
         "category": "hollywood",
@@ -2998,7 +3418,7 @@ let movies = [
         ]
     },
     {
-        "id": 102,
+        "id": 116,
         "imdbId": "tt2582846",
         "title": "The Fault in Our Stars",
         "category": "hollywood",
@@ -3027,7 +3447,7 @@ let movies = [
         ]
     },
     {
-        "id": 103,
+        "id": 117,
         "imdbId": "tt4726236",
         "title": "Call Me by Your Name",
         "category": "hollywood",
@@ -3056,7 +3476,7 @@ let movies = [
         ]
     },
     {
-        "id": 104,
+        "id": 118,
         "imdbId": "tt3104988",
         "title": "Crazy Rich Asians",
         "category": "hollywood",
@@ -3085,7 +3505,7 @@ let movies = [
         ]
     },
     {
-        "id": 105,
+        "id": 119,
         "imdbId": "tt26047818",
         "title": "Anyone But You",
         "category": "hollywood",
@@ -3114,7 +3534,7 @@ let movies = [
         ]
     },
     {
-        "id": 106,
+        "id": 120,
         "imdbId": "tt14439896",
         "title": "Through My Window",
         "category": "hollywood",
@@ -3143,7 +3563,7 @@ let movies = [
         ]
     },
     {
-        "id": 107,
+        "id": 121,
         "imdbId": "tt32420999",
         "title": "My Fault: London",
         "category": "hollywood",
@@ -3172,7 +3592,7 @@ let movies = [
         ]
     },
     {
-        "id": 108,
+        "id": 122,
         "imdbId": "tt6751668",
         "title": "Parasite",
         "category": "kdrama",
@@ -3201,7 +3621,7 @@ let movies = [
         ]
     },
     {
-        "id": 109,
+        "id": 123,
         "imdbId": "tt5700672",
         "title": "Train to Busan",
         "category": "kdrama",
@@ -3230,7 +3650,7 @@ let movies = [
         ]
     },
     {
-        "id": 110,
+        "id": 124,
         "imdbId": "tt0364569",
         "title": "Oldboy",
         "category": "kdrama",
@@ -3259,7 +3679,7 @@ let movies = [
         ]
     },
     {
-        "id": 111,
+        "id": 125,
         "imdbId": "tt4016934",
         "title": "The Handmaiden",
         "category": "kdrama",
@@ -3288,7 +3708,7 @@ let movies = [
         ]
     },
     {
-        "id": 112,
+        "id": 126,
         "imdbId": "tt12477780",
         "title": "Decision to Leave",
         "category": "kdrama",
@@ -3317,7 +3737,7 @@ let movies = [
         ]
     },
     {
-        "id": 113,
+        "id": 127,
         "imdbId": "tt0353969",
         "title": "Memories of Murder",
         "category": "kdrama",
@@ -3346,7 +3766,7 @@ let movies = [
         ]
     },
     {
-        "id": 114,
+        "id": 128,
         "imdbId": "tt7160070",
         "title": "Along with the Gods",
         "category": "kdrama",
@@ -3375,7 +3795,7 @@ let movies = [
         ]
     },
     {
-        "id": 115,
+        "id": 129,
         "imdbId": "tt21966128",
         "title": "20th Century Girl",
         "category": "kdrama",
@@ -3404,7 +3824,7 @@ let movies = [
         ]
     },
     {
-        "id": 116,
+        "id": 130,
         "imdbId": "tt10530176",
         "title": "The Call",
         "category": "kdrama",
@@ -3433,7 +3853,7 @@ let movies = [
         ]
     },
     {
-        "id": 117,
+        "id": 131,
         "imdbId": "tt7282468",
         "title": "Burning",
         "category": "kdrama",
@@ -3462,7 +3882,7 @@ let movies = [
         ]
     },
     {
-        "id": 118,
+        "id": 132,
         "imdbId": "tt9541108",
         "title": "Extreme Job",
         "category": "kdrama",
@@ -3491,7 +3911,7 @@ let movies = [
         ]
     },
     {
-        "id": 119,
+        "id": 133,
         "imdbId": "tt2631186",
         "title": "Baahubali: The Beginning",
         "category": "south",
@@ -3520,7 +3940,7 @@ let movies = [
         ]
     },
     {
-        "id": 120,
+        "id": 134,
         "imdbId": "tt4849438",
         "title": "Baahubali 2: The Conclusion",
         "category": "south",
@@ -3549,7 +3969,7 @@ let movies = [
         ]
     },
     {
-        "id": 121,
+        "id": 135,
         "imdbId": "tt9389998",
         "title": "Pushpa: The Rise",
         "category": "south",
@@ -3578,7 +3998,7 @@ let movies = [
         ]
     },
     {
-        "id": 122,
+        "id": 136,
         "imdbId": "tt7292634",
         "title": "Arjun Reddy",
         "category": "south",
@@ -3607,7 +4027,7 @@ let movies = [
         ]
     },
     {
-        "id": 123,
+        "id": 137,
         "imdbId": "tt9851608",
         "title": "Jersey",
         "category": "south",
@@ -3636,7 +4056,7 @@ let movies = [
         ]
     },
     {
-        "id": 124,
+        "id": 138,
         "imdbId": "tt2258337",
         "title": "Eega (Makkhi)",
         "category": "south",
@@ -3665,7 +4085,7 @@ let movies = [
         ]
     },
     {
-        "id": 125,
+        "id": 139,
         "imdbId": "tt1447500",
         "title": "Magadheera",
         "category": "south",
@@ -3694,7 +4114,7 @@ let movies = [
         ]
     },
     {
-        "id": 126,
+        "id": 140,
         "imdbId": "tt20850406",
         "title": "Sita Ramam",
         "category": "south",
@@ -3723,7 +4143,7 @@ let movies = [
         ]
     },
     {
-        "id": 127,
+        "id": 141,
         "imdbId": "tt21867166",
         "title": "Kushi",
         "category": "south",
@@ -3752,7 +4172,7 @@ let movies = [
         ]
     },
     {
-        "id": 128,
+        "id": 142,
         "imdbId": "tt7725596",
         "title": "K.G.F: Chapter 1",
         "category": "south",
@@ -3781,7 +4201,7 @@ let movies = [
         ]
     },
     {
-        "id": 129,
+        "id": 143,
         "imdbId": "tt10698680",
         "title": "K.G.F: Chapter 2",
         "category": "south",
@@ -3810,7 +4230,7 @@ let movies = [
         ]
     },
     {
-        "id": 130,
+        "id": 144,
         "imdbId": "tt15327088",
         "title": "Kantara",
         "category": "south",
@@ -3839,7 +4259,7 @@ let movies = [
         ]
     },
     {
-        "id": 131,
+        "id": 145,
         "imdbId": "tt11488102",
         "title": "777 Charlie",
         "category": "south",
@@ -3868,7 +4288,7 @@ let movies = [
         ]
     },
     {
-        "id": 132,
+        "id": 146,
         "imdbId": "tt11317208",
         "title": "Vikrant Rona",
         "category": "south",
@@ -3897,7 +4317,7 @@ let movies = [
         ]
     },
     {
-        "id": 133,
+        "id": 147,
         "imdbId": "tt29528999",
         "title": "Kantara: Chapter 1",
         "category": "south",
@@ -3926,7 +4346,7 @@ let movies = [
         ]
     },
     {
-        "id": 134,
+        "id": 148,
         "imdbId": "tt22081510",
         "title": "2018: Everyone is a Hero",
         "category": "south",
@@ -3955,7 +4375,7 @@ let movies = [
         ]
     },
     {
-        "id": 135,
+        "id": 149,
         "imdbId": "tt8760280",
         "title": "Lucifer",
         "category": "south",
@@ -3984,7 +4404,7 @@ let movies = [
         ]
     },
     {
-        "id": 136,
+        "id": 150,
         "imdbId": "tt3417422",
         "title": "Drishyam (Malayalam)",
         "category": "south",
@@ -4013,7 +4433,7 @@ let movies = [
         ]
     },
     {
-        "id": 137,
+        "id": 151,
         "imdbId": "tt3578768",
         "title": "Bangalore Days",
         "category": "south",
@@ -4042,7 +4462,7 @@ let movies = [
         ]
     },
     {
-        "id": 138,
+        "id": 152,
         "imdbId": "tt11394308",
         "title": "Hridayam",
         "category": "south",
@@ -4071,7 +4491,7 @@ let movies = [
         ]
     },
     {
-        "id": 139,
+        "id": 153,
         "imdbId": "tt8436694",
         "title": "Kumbalangi Nights",
         "category": "south",
@@ -4100,7 +4520,7 @@ let movies = [
         ]
     },
     {
-        "id": 140,
+        "id": 154,
         "imdbId": "tt9179430",
         "title": "Vikram",
         "category": "south",
@@ -4129,7 +4549,7 @@ let movies = [
         ]
     },
     {
-        "id": 141,
+        "id": 155,
         "imdbId": "tt9850384",
         "title": "Kaithi",
         "category": "south",
@@ -4158,7 +4578,7 @@ let movies = [
         ]
     },
     {
-        "id": 142,
+        "id": 156,
         "imdbId": "tt11663224",
         "title": "Jailer",
         "category": "south",
@@ -4187,7 +4607,7 @@ let movies = [
         ]
     },
     {
-        "id": 143,
+        "id": 157,
         "imdbId": "tt10579994",
         "title": "Master",
         "category": "south",
@@ -4216,7 +4636,7 @@ let movies = [
         ]
     },
     {
-        "id": 144,
+        "id": 158,
         "imdbId": "tt7019842",
         "title": "96",
         "category": "south",
@@ -4245,7 +4665,7 @@ let movies = [
         ]
     },
     {
-        "id": 145,
+        "id": 159,
         "imdbId": "tt8466564",
         "title": "Vada Chennai",
         "category": "south",
@@ -4274,7 +4694,7 @@ let movies = [
         ]
     },
     {
-        "id": 146,
+        "id": 160,
         "imdbId": "tt9654108",
         "title": "Asuran",
         "category": "south",
@@ -4303,7 +4723,7 @@ let movies = [
         ]
     },
     {
-        "id": 147,
+        "id": 161,
         "imdbId": "tt24151752",
         "title": "Jigarthanda DoubleX",
         "category": "south",
@@ -4332,7 +4752,7 @@ let movies = [
         ]
     },
     {
-        "id": 148,
+        "id": 162,
         "imdbId": "tt10701074",
         "title": "Ponniyin Selvan: Part I",
         "category": "south",
@@ -4361,7 +4781,7 @@ let movies = [
         ]
     },
     {
-        "id": 149,
+        "id": 163,
         "imdbId": "tt22081514",
         "title": "Ponniyin Selvan: Part II",
         "category": "south",
@@ -4390,7 +4810,7 @@ let movies = [
         ]
     },
     {
-        "id": 150,
+        "id": 164,
         "imdbId": "tt15354916",
         "title": "Jawan",
         "category": "bollywood",
@@ -4419,7 +4839,7 @@ let movies = [
         ]
     },
     {
-        "id": 151,
+        "id": 165,
         "imdbId": "tt12844910",
         "title": "Pathaan",
         "category": "bollywood",
@@ -4448,7 +4868,7 @@ let movies = [
         ]
     },
     {
-        "id": 152,
+        "id": 166,
         "imdbId": "tt15428134",
         "title": "Dunki",
         "category": "bollywood",
@@ -4477,7 +4897,7 @@ let movies = [
         ]
     },
     {
-        "id": 153,
+        "id": 167,
         "imdbId": "tt8983202",
         "title": "Kabir Singh",
         "category": "bollywood",
@@ -4506,7 +4926,7 @@ let movies = [
         ]
     },
     {
-        "id": 154,
+        "id": 168,
         "imdbId": "tt2178784",
         "title": "Yeh Jawaani Hai Deewani",
         "category": "bollywood",
@@ -4535,7 +4955,7 @@ let movies = [
         ]
     },
     {
-        "id": 155,
+        "id": 169,
         "imdbId": "tt1187043",
         "title": "3 Idiots",
         "category": "bollywood",
@@ -4564,7 +4984,7 @@ let movies = [
         ]
     },
     {
-        "id": 156,
+        "id": 170,
         "imdbId": "tt5074352",
         "title": "Dangal",
         "category": "bollywood",
@@ -4593,7 +5013,7 @@ let movies = [
         ]
     },
     {
-        "id": 157,
+        "id": 171,
         "imdbId": "tt2338151",
         "title": "PK",
         "category": "bollywood",
@@ -4622,7 +5042,7 @@ let movies = [
         ]
     },
     {
-        "id": 158,
+        "id": 172,
         "imdbId": "tt3863552",
         "title": "Bajrangi Bhaijaan",
         "category": "bollywood",
@@ -4651,7 +5071,7 @@ let movies = [
         ]
     },
     {
-        "id": 159,
+        "id": 173,
         "imdbId": "tt7459422",
         "title": "War",
         "category": "bollywood",
@@ -4680,7 +5100,7 @@ let movies = [
         ]
     },
     {
-        "id": 160,
+        "id": 174,
         "imdbId": "tt5956100",
         "title": "Tiger Zinda Hai",
         "category": "bollywood",
@@ -4709,7 +5129,7 @@ let movies = [
         ]
     },
     {
-        "id": 161,
+        "id": 175,
         "imdbId": "tt8096176",
         "title": "Stree",
         "category": "bollywood",
@@ -4738,7 +5158,7 @@ let movies = [
         ]
     },
     {
-        "id": 162,
+        "id": 176,
         "imdbId": "tt0985633",
         "title": "Bhool Bhulaiyaa",
         "category": "bollywood",
@@ -4767,7 +5187,7 @@ let movies = [
         ]
     },
     {
-        "id": 163,
+        "id": 177,
         "imdbId": "tt10839088",
         "title": "Bhool Bhulaiyaa 2",
         "category": "bollywood",
@@ -4796,7 +5216,7 @@ let movies = [
         ]
     },
     {
-        "id": 164,
+        "id": 178,
         "imdbId": "tt8239946",
         "title": "Tumbbad",
         "category": "bollywood",
@@ -4825,7 +5245,7 @@ let movies = [
         ]
     },
     {
-        "id": 165,
+        "id": 179,
         "imdbId": "tt8108198",
         "title": "Andhadhun",
         "category": "bollywood",
@@ -4854,7 +5274,7 @@ let movies = [
         ]
     },
     {
-        "id": 166,
+        "id": 180,
         "imdbId": "tt15501640",
         "title": "Drishyam 2 (Hindi)",
         "category": "bollywood",
@@ -4883,7 +5303,7 @@ let movies = [
         ]
     },
     {
-        "id": 167,
+        "id": 181,
         "imdbId": "tt7929424",
         "title": "Gully Boy",
         "category": "bollywood",
@@ -4912,7 +5332,7 @@ let movies = [
         ]
     },
     {
-        "id": 168,
+        "id": 182,
         "imdbId": "tt1562872",
         "title": "Zindagi Na Milegi Dobara",
         "category": "bollywood",
@@ -4941,7 +5361,7 @@ let movies = [
         ]
     },
     {
-        "id": 169,
+        "id": 183,
         "imdbId": "tt2082197",
         "title": "Barfi!",
         "category": "bollywood",
@@ -4970,7 +5390,7 @@ let movies = [
         ]
     },
     {
-        "id": 170,
+        "id": 184,
         "imdbId": "tt3322420",
         "title": "Queen",
         "category": "bollywood",
@@ -4999,7 +5419,7 @@ let movies = [
         ]
     },
     {
-        "id": 171,
+        "id": 185,
         "imdbId": "tt1839596",
         "title": "Rockstar",
         "category": "bollywood",
@@ -5028,7 +5448,7 @@ let movies = [
         ]
     },
     {
-        "id": 172,
+        "id": 186,
         "imdbId": "tt3847842",
         "title": "Tamasha",
         "category": "bollywood",
@@ -5057,7 +5477,7 @@ let movies = [
         ]
     },
     {
-        "id": 173,
+        "id": 187,
         "imdbId": "tt7098658",
         "title": "Raazi",
         "category": "bollywood",
@@ -5086,7 +5506,7 @@ let movies = [
         ]
     },
     {
-        "id": 174,
+        "id": 188,
         "imdbId": "tt10292608",
         "title": "Shershaah",
         "category": "bollywood",
@@ -5115,7 +5535,7 @@ let movies = [
         ]
     },
     {
-        "id": 175,
+        "id": 189,
         "imdbId": "tt9075772",
         "title": "Chhichhore",
         "category": "bollywood",
@@ -5144,7 +5564,7 @@ let movies = [
         ]
     },
     {
-        "id": 176,
+        "id": 190,
         "imdbId": "tt1821480",
         "title": "Kahaani",
         "category": "bollywood",
@@ -5173,7 +5593,7 @@ let movies = [
         ]
     },
     {
-        "id": 177,
+        "id": 191,
         "imdbId": "tt5311514",
         "title": "Your Name. (Kimi no Na wa.)",
         "category": "anime",
@@ -5202,7 +5622,7 @@ let movies = [
         ]
     },
     {
-        "id": 178,
+        "id": 192,
         "imdbId": "tt5323662",
         "title": "A Silent Voice",
         "category": "anime",
@@ -5231,7 +5651,7 @@ let movies = [
         ]
     },
     {
-        "id": 179,
+        "id": 193,
         "imdbId": "tt9426210",
         "title": "Weathering with You",
         "category": "anime",
@@ -5260,7 +5680,7 @@ let movies = [
         ]
     },
     {
-        "id": 180,
+        "id": 194,
         "imdbId": "tt16428256",
         "title": "Suzume",
         "category": "anime",
@@ -5289,7 +5709,7 @@ let movies = [
         ]
     },
     {
-        "id": 181,
+        "id": 195,
         "imdbId": "tt11032374",
         "title": "Demon Slayer: Mugen Train",
         "category": "anime",
@@ -5318,7 +5738,7 @@ let movies = [
         ]
     },
     {
-        "id": 182,
+        "id": 196,
         "imdbId": "tt0245429",
         "title": "Spirited Away",
         "category": "anime",
@@ -5347,7 +5767,7 @@ let movies = [
         ]
     },
     {
-        "id": 183,
+        "id": 197,
         "imdbId": "tt0347149",
         "title": "Howl's Moving Castle",
         "category": "anime",
@@ -5376,7 +5796,7 @@ let movies = [
         ]
     },
     {
-        "id": 184,
+        "id": 198,
         "imdbId": "tt16183464",
         "title": "One Piece Film: Red",
         "category": "anime",
@@ -5405,7 +5825,7 @@ let movies = [
         ]
     },
     {
-        "id": 185,
+        "id": 199,
         "imdbId": "tt14331144",
         "title": "Jujutsu Kaisen 0",
         "category": "anime",
@@ -5434,7 +5854,7 @@ let movies = [
         ]
     },
     {
-        "id": 186,
+        "id": 200,
         "imdbId": "tt7961060",
         "title": "Dragon Ball Super: Broly",
         "category": "anime",
@@ -5463,7 +5883,7 @@ let movies = [
         ]
     },
     {
-        "id": 187,
+        "id": 201,
         "imdbId": "tt5008578",
         "title": "Your Lie in April",
         "category": "anime",
@@ -5492,7 +5912,7 @@ let movies = [
         ]
     },
     {
-        "id": 188,
+        "id": 202,
         "imdbId": "tt15242330",
         "title": "The First Slam Dunk",
         "category": "anime",
@@ -5521,7 +5941,7 @@ let movies = [
         ]
     },
     {
-        "id": 189,
+        "id": 203,
         "imdbId": "tt9586294",
         "title": "Better Days",
         "category": "hollywood",
@@ -5550,7 +5970,7 @@ let movies = [
         ]
     },
     {
-        "id": 190,
+        "id": 204,
         "imdbId": "tt7605617",
         "title": "The Wandering Earth",
         "category": "hollywood",
@@ -5579,7 +5999,7 @@ let movies = [
         ]
     },
     {
-        "id": 191,
+        "id": 205,
         "imdbId": "tt13320662",
         "title": "Hi, Mom",
         "category": "hollywood",
@@ -5608,7 +6028,7 @@ let movies = [
         ]
     },
     {
-        "id": 192,
+        "id": 206,
         "imdbId": "tt8316274",
         "title": "Us and Them",
         "category": "hollywood",
@@ -5637,7 +6057,7 @@ let movies = [
         ]
     },
     {
-        "id": 193,
+        "id": 207,
         "imdbId": "tt5189770",
         "title": "Detective Chinatown",
         "category": "hollywood",
@@ -5666,7 +6086,7 @@ let movies = [
         ]
     },
     {
-        "id": 194,
+        "id": 208,
         "imdbId": "tt4701660",
         "title": "The Mermaid",
         "category": "hollywood",

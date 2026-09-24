@@ -237,9 +237,9 @@
 
         <div class="sort-wrap">
             <select id="sortSelect" onchange="applyAllFilters()">
-                <option value="rating">⭐ Top IMDb Rating (Ranking High-to-Low)</option>
+                <option value="featured" selected>🔥 Worldwide Trending First (Default)</option>
+                <option value="rating">⭐ Top IMDb Rating (High-to-Low)</option>
                 <option value="latest">📅 Latest 2026 Releases</option>
-                <option value="featured">🔥 Featured & Trending</option>
                 <option value="name">🔤 Title (A - Z)</option>
             </select>
         </div>
@@ -247,15 +247,13 @@
 
     <!-- Category Tabs -->
     <nav class="category-tabs" aria-label="Movie Categories">
-        <button class="tab-btn" onclick="filterCategory('trending')" style="border-color: #ff0055; color: #ff0055;">🔥 Trending Now</button>
-        <button class="tab-btn active" onclick="filterCategory('all')">All Genres</button>
-        <button class="tab-btn" onclick="filterCategory('bollywood')">Bollywood</button>
-        <button class="tab-btn" onclick="filterCategory('hollywood')">Hollywood</button>
-        <button class="tab-btn" onclick="filterCategory('south')">South Dubbed</button>
-        <button class="tab-btn" onclick="filterCategory('kdrama')">K-Drama</button>
-        <button class="tab-btn" onclick="filterCategory('series')">Web Series</button>
-        <button class="tab-btn" onclick="filterCategory('anime')">Anime</button>
-        <button class="tab-btn" onclick="filterCategory('action')">Action & Thriller</button>
+        <button class="tab-btn active" onclick="filterCategory('all')">🔥 All Trending (Worldwide)</button>
+        <button class="tab-btn" onclick="filterCategory('bollywood')">🇮🇳 Bollywood (Hindi)</button>
+        <button class="tab-btn" onclick="filterCategory('south')">⚡ South Indian (Telugu/Tamil/Mal)</button>
+        <button class="tab-btn" onclick="filterCategory('hollywood')">🎬 Hollywood (English 4K)</button>
+        <button class="tab-btn" onclick="filterCategory('kdrama')">🇰🇷 K-Drama & Asian</button>
+        <button class="tab-btn" onclick="filterCategory('anime')">⛩️ Anime</button>
+        <button class="tab-btn" onclick="filterCategory('series')">📺 Web Series</button>
     </nav>
 
     <!-- Quality Tabs -->
