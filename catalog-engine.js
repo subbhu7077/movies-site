@@ -1,7 +1,7 @@
 /**
  * ZORVIXHUB ENTERPRISE CLIENT ENGINE
- * Legal Watch Providers with Country Switcher • Authorized Offline/Download
- * TV Season/Episode Selector • Hero Banner Slider • Fuzzy Search
+ * Licensed Watch Destinations • Country Switcher • Authorized Offline Options
+ * TV Season/Episode Selector • Hero Banner Carousel • Search & Filters
  */
 
 let activeSelectedCountry = "IN";
@@ -50,7 +50,7 @@ function switchHeroSlide(idx) {
     dots.forEach((d, i) => d.classList.toggle("active", i === idx));
 }
 
-// 2. Mount Where to Watch with Real-Time Country Switcher
+// 2. Where to Watch with Country Switcher
 function mountWhereToWatchSection(movie) {
     const box = document.getElementById("legalWatchSection");
     if (!box) return;
@@ -82,7 +82,7 @@ function mountWhereToWatchSection(movie) {
                     </div>
                     <span class="provider-arrow">↗</span>
                 </a>
-            `).join('') : '<p class="no-providers-text">Official streaming availability information unavailable for selected region.</p>'}
+            `).join('') : '<p class="no-providers-text">Official streaming availability unavailable for selected region.</p>'}
         </div>
     `;
 }
@@ -93,7 +93,7 @@ function changeCountryWatch(movieId, countryCode) {
     if (movie) mountWhereToWatchSection(movie);
 }
 
-// 3. Authorized Download & Offline Modal Controller
+// 3. Authorized In-App Offline / Download Modal
 function openAuthorizedDownloadModal() {
     const movie = window.activeMovie;
     if (!movie) return;
@@ -120,12 +120,11 @@ function openAuthorizedDownloadModal() {
     const bodyEl = document.getElementById("dlModalBody");
     titleEl.innerText = `${movie.title} - Offline Options`;
 
-    // Rule 6 & 30 Enforcement: Strictly legitimate offline destinations
     bodyEl.innerHTML = `
         <div class="dl-status-card available">
             <div class="dl-card-badge">STATUS: OFFLINE IN OFFICIAL APP</div>
             <h4>Official In-App Download Available</h4>
-            <p>You can download <strong>${movie.title}</strong> directly inside licensed apps (Netflix, Amazon Prime Video, or JioCinema) on Android & iOS for legitimate offline viewing.</p>
+            <p>You can download <strong>${movie.title}</strong> directly inside licensed streaming apps (Netflix, Amazon Prime Video, or JioCinema) on Android & iOS devices for legitimate offline viewing.</p>
         </div>
         <div class="dl-actions-list">
             <a href="https://play.google.com/store/apps" target="_blank" class="dl-action-btn google-play">
@@ -143,7 +142,7 @@ function openAuthorizedDownloadModal() {
     modal.style.display = "flex";
 }
 
-// 4. TV Season & Episode Selector Component
+// 4. TV Season & Episode Selector
 function mountTVSeasonEpisodeViewer(movie) {
     const box = document.getElementById("seasonEpisodeSection");
     if (!box) return;
@@ -199,7 +198,7 @@ function streamEpisodeDirect(movieId, sNum, epNum, epTitle) {
     }
 }
 
-// 5. Admin Interactive Catalog Ingestion GUI
+// 5. Admin Ingestion Dialog
 function openAdminImportGUI() {
     let modal = document.getElementById("adminImportModal");
     if (!modal) {
@@ -288,7 +287,7 @@ function triggerClientSideImport() {
         });
 }
 
-// Hook into existing openMovie safely
+// Preserve existing openMovie while adding new hooks
 const baseOpenMovie = window.openMovie;
 window.openMovie = function(id) {
     if (typeof baseOpenMovie === 'function') {
