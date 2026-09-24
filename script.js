@@ -579,3 +579,52 @@ if ("serviceWorker" in navigator) {
 updateFavCount();
 renderMovies(movies);
 checkUrlForDirectMovie();
+
+// --- PRE-ROLL VIDEO AD SYSTEM ---
+let prerollInterval = null;
+
+function showPrerollAd(callback) {
+    const overlay = document.getElementById("prerollOverlay");
+    const timerText = document.getElementById("prerollTimer");
+    const skipBtn = document.getElementById("prerollSkipBtn");
+    
+    if (!overlay) {
+        callback();
+        return;
+    }
+
+    overlay.style.display = "flex";
+    skipBtn.classList.remove("active");
+    skipBtn.innerText = "SKIP AD IN 5s";
+    skipBtn.disabled = true;
+
+    let timeLeft = 5;
+    timerText.innerText = "Ad: Video starts in " + timeLeft + "s";
+
+    clearInterval(prerollInterval);
+    prerollInterval = setInterval(() => {
+        timeLeft--;
+        if (timeLeft > 0) {
+            timerText.innerText = "Ad: Video starts in " + timeLeft + "s";
+            skipBtn.innerText = "SKIP AD IN " + timeLeft + "s";
+        } else {
+            clearInterval(prerollInterval);
+            timerText.innerText = "Sponsor Ad";
+            skipBtn.classList.add("active");
+            skipBtn.innerText = "SKIP AD ⏩";
+            skipBtn.disabled = false;
+        }
+    }, 1000);
+
+    skipBtn.onclick = (e) => {
+        e.stopPropagation();
+        clearInterval(prerollInterval);
+        overlay.style.display = "none";
+        callback();
+    };
+}
+
+function handlePrerollClick() {
+    window.open(MASTER_AD_LINK, "_blank");
+    trackEvent("download");
+}

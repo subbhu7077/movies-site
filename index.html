@@ -279,7 +279,21 @@
         <div class="modal-box player-box">
             <button class="modal-close" onclick="closePlayer()">&times;</button>
             <h3 id="playerTitle" class="player-title"></h3>
-            <div class="video-wrapper">
+            <div class="video-wrapper" style="position: relative;">
+
+            <div id="prerollOverlay" class="preroll-overlay">
+                <div class="preroll-top-bar">
+                    <span id="prerollTimer" class="preroll-timer">Ad: Video starts in 5s</span>
+                    <button id="prerollSkipBtn" class="preroll-skip-btn">SKIP AD IN 5s</button>
+                </div>
+                <div class="preroll-content" onclick="handlePrerollClick()">
+                    <span class="preroll-badge">SPONSORED STREAM AD</span>
+                    <div class="preroll-title">⚡ High-Speed Ultra 4K Media Server</div>
+                    <p style="color:#8892b0; font-size:0.85rem; max-width:400px; margin:0 auto;">Tap anywhere to unlock instant 100MB/s streaming bandwidth without buffering.</p>
+                    <button class="preroll-cta-btn">WATCH IN FULL HD ➔</button>
+                </div>
+            </div>
+
                 <iframe id="videoPlayerFrame" src="" frameborder="0" allowfullscreen allow="autoplay" title="Movie Video Player"></iframe>
             </div>
         </div>
