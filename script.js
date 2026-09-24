@@ -19,6 +19,636 @@ let popunderTriggerCount = 0;
 // MASTER MOVIE CATALOG (Auto-Embed Ready with IMDb IDs)
 let movies = [
     {
+        "id": 1000,
+        "imdbId": "tt6263850",
+        "title": "Deadpool & Wolverine",
+        "category": "hollywood",
+        "genre": "action",
+        "quality": "4K",
+        "size": "3.4 GB",
+        "rating": "7.7",
+        "year": "2024",
+        "audio": "Hindi Dubbed + English",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt6263850/img.jpg",
+        "story": "Deadpool teams up with a reluctant Wolverine to face an existential threat to his home universe with explosive action and multiverse comedy.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=Deadpool%20%26%20Wolverine%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 4K Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 4K",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
+        "id": 1001,
+        "imdbId": "tt9218128",
+        "title": "Gladiator II",
+        "category": "hollywood",
+        "genre": "action",
+        "quality": "4K",
+        "size": "3.5 GB",
+        "rating": "6.6",
+        "year": "2024",
+        "audio": "Hindi Dubbed + English",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt9218128/img.jpg",
+        "story": "Years after witnessing the death of Maximus, Lucius must enter the Colosseum after his home is conquered by tyrannical emperors.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=Gladiator%20II%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 4K Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 4K",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
+        "id": 1002,
+        "imdbId": "tt26932223",
+        "title": "Bhool Bhulaiyaa 3",
+        "category": "bollywood",
+        "genre": "action",
+        "quality": "1080p",
+        "size": "2.4 GB",
+        "rating": "6.2",
+        "year": "2024",
+        "audio": "Hindi (Original)",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt26932223/img.jpg",
+        "story": "Rooh Baba returns to tackle the supernatural spirit of Manjulika in the historic haunted palace of Raktaghat.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=Bhool%20Bhulaiyaa%203%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 1080p Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 1080p",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
+        "id": 1003,
+        "imdbId": "tt11454532",
+        "title": "Singham Again",
+        "category": "bollywood",
+        "genre": "action",
+        "quality": "4K",
+        "size": "3.2 GB",
+        "rating": "5.5",
+        "year": "2024",
+        "audio": "Hindi (Original)",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt11454532/img.jpg",
+        "story": "Bajirao Singham leads the cop universe in a high-octane rescue mission across Sri Lanka inspired by the epic Ramayana.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=Singham%20Again%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 4K Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 4K",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
+        "id": 1004,
+        "imdbId": "tt26734796",
+        "title": "Amaran",
+        "category": "south",
+        "genre": "action",
+        "quality": "1080p",
+        "size": "2.6 GB",
+        "rating": "8.3",
+        "year": "2024",
+        "audio": "Hindi Dubbed + Tamil",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt26734796/img.jpg",
+        "story": "The heroic true story of Major Mukund Varadarajan and his martyrdom during counter-terrorism operations in Jammu & Kashmir.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=Amaran%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 1080p Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 1080p",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
+        "id": 1005,
+        "imdbId": "tt27487934",
+        "title": "The Greatest of All Time (GOAT)",
+        "category": "south",
+        "genre": "action",
+        "quality": "4K",
+        "size": "3.5 GB",
+        "rating": "6.8",
+        "year": "2024",
+        "audio": "Hindi Dubbed + Tamil",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt27487934/img.jpg",
+        "story": "A former elite agent from the Special Anti-Terrorist Squad is forced to confront a clone created from his past.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=The%20Greatest%20of%20All%20Time%20(GOAT)%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 4K Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 4K",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
+        "id": 1006,
+        "imdbId": "tt18412256",
+        "title": "Alien: Romulus",
+        "category": "hollywood",
+        "genre": "action",
+        "quality": "4K",
+        "size": "3.1 GB",
+        "rating": "7.2",
+        "year": "2024",
+        "audio": "Hindi Dubbed + English",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt18412256/img.jpg",
+        "story": "A group of young space colonizers scavenge a derelict station and come face to face with the most terrifying life form in the universe.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=Alien%3A%20Romulus%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 4K Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 4K",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
+        "id": 1007,
+        "imdbId": "tt22022452",
+        "title": "Inside Out 2",
+        "category": "hollywood",
+        "genre": "action",
+        "quality": "1080p",
+        "size": "2.2 GB",
+        "rating": "7.6",
+        "year": "2024",
+        "audio": "Hindi Dubbed + English",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt22022452/img.jpg",
+        "story": "Joy, Sadness, Anger, Fear, and Disgust navigate new teenage emotions including Anxiety in this record-breaking Pixar sequel.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=Inside%20Out%202%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 1080p Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 1080p",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
+        "id": 1008,
+        "imdbId": "tt29623480",
+        "title": "The Wild Robot",
+        "category": "hollywood",
+        "genre": "action",
+        "quality": "4K",
+        "size": "2.7 GB",
+        "rating": "8.3",
+        "year": "2024",
+        "audio": "Hindi Dubbed + English",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt29623480/img.jpg",
+        "story": "Shipwrecked on a deserted island, an intelligent robot named Roz must adapt to the wild surroundings and bond with wildlife.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=The%20Wild%20Robot%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 4K Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 4K",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
+        "id": 1009,
+        "imdbId": "tt13622970",
+        "title": "Moana 2",
+        "category": "hollywood",
+        "genre": "action",
+        "quality": "4K",
+        "size": "2.8 GB",
+        "rating": "6.8",
+        "year": "2024",
+        "audio": "Hindi Dubbed + English",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt13622970/img.jpg",
+        "story": "Moana receives an unexpected call from her ancestors and sets off on an expansive journey into far uncharted waters.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=Moana%202%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 4K Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 4K",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
+        "id": 1010,
+        "imdbId": "tt4220202",
+        "title": "Wicked",
+        "category": "hollywood",
+        "genre": "romance",
+        "quality": "4K",
+        "size": "3.2 GB",
+        "rating": "7.7",
+        "year": "2024",
+        "audio": "Hindi Dubbed + English",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt4220202/img.jpg",
+        "story": "The untold story of the witches of Oz: Elphaba, misunderstood because of her green skin, and Glinda, popular and privileged.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=Wicked%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 4K Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 4K",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
+        "id": 1011,
+        "imdbId": "tt27818458",
+        "title": "Munjya",
+        "category": "bollywood",
+        "genre": "action",
+        "quality": "1080p",
+        "size": "2.1 GB",
+        "rating": "6.6",
+        "year": "2024",
+        "audio": "Hindi (Original)",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt27818458/img.jpg",
+        "story": "A young man uncovers a long-hidden family secret and awakens the mischievous spirit of Munjya in the Konkan backwaters.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=Munjya%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 1080p Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 1080p",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
+        "id": 1012,
+        "imdbId": "tt22039234",
+        "title": "Kanguva",
+        "category": "south",
+        "genre": "action",
+        "quality": "4K",
+        "size": "3.3 GB",
+        "rating": "5.8",
+        "year": "2024",
+        "audio": "Hindi + Tamil + Telugu",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt22039234/img.jpg",
+        "story": "A warrior from 1678 and a modern-day bounty hunter are connected by a shared destiny and ancient battle for honor.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=Kanguva%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 4K Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 4K",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
+        "id": 1013,
+        "imdbId": "tt13818368",
+        "title": "Fighter",
+        "category": "bollywood",
+        "genre": "action",
+        "quality": "4K",
+        "size": "3.2 GB",
+        "rating": "6.4",
+        "year": "2024",
+        "audio": "Hindi (Original)",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt13818368/img.jpg",
+        "story": "An elite Indian Air Force squadron battles enemy forces in high-altitude aerial dogfights to protect national sovereignty.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=Fighter%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 4K Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 4K",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
+        "id": 1014,
+        "imdbId": "tt27734492",
+        "title": "Shaitaan",
+        "category": "bollywood",
+        "genre": "action",
+        "quality": "1080p",
+        "size": "2.3 GB",
+        "rating": "6.6",
+        "year": "2024",
+        "audio": "Hindi (Original)",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt27734492/img.jpg",
+        "story": "A family vacation turns into a terrifying nightmare when a mysterious stranger hypnotizes their teenage daughter.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=Shaitaan%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 1080p Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 1080p",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
+        "id": 1015,
+        "imdbId": "tt30217036",
+        "title": "Dandadan (Season 1)",
+        "category": "anime",
+        "genre": "action",
+        "quality": "1080p",
+        "size": "3.0 GB",
+        "rating": "8.6",
+        "year": "2024",
+        "audio": "Hindi Dubbed + Japanese",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt30217036/img.jpg",
+        "story": "Two high schoolers who believe in ghosts and aliens respectively find themselves hunted by supernatural entities across Japan.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=Dandadan%20(Season%201)%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 1080p Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 1080p",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
+        "id": 1016,
+        "imdbId": "tt21650338",
+        "title": "Kaiju No. 8",
+        "category": "anime",
+        "genre": "action",
+        "quality": "1080p",
+        "size": "2.9 GB",
+        "rating": "8.1",
+        "year": "2024",
+        "audio": "Hindi Dubbed + Japanese",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt21650338/img.jpg",
+        "story": "A man aspiring to join the Defense Force gains the ability to transform into a powerful Kaiju monster himself.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=Kaiju%20No.%208%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 1080p Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 1080p",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
+        "id": 1017,
+        "imdbId": "tt27448348",
+        "title": "Queen of Tears",
+        "category": "kdrama",
+        "genre": "romance",
+        "quality": "1080p",
+        "size": "4.2 GB",
+        "rating": "8.3",
+        "year": "2024",
+        "audio": "Hindi Dubbed + Korean",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt27448348/img.jpg",
+        "story": "The queen of department stores and her small-town husband weather a marital crisis until love miraculously begins to bloom again.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=Queen%20of%20Tears%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 1080p Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 1080p",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
+        "id": 1018,
+        "imdbId": "tt14513804",
+        "title": "Captain America: Brave New World",
+        "category": "hollywood",
+        "genre": "action",
+        "quality": "4K",
+        "size": "3.4 GB",
+        "rating": "7.5",
+        "year": "2025",
+        "audio": "Hindi Dubbed + English",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt14513804/img.jpg",
+        "story": "Sam Wilson takes flight as Captain America and finds himself in the middle of an international conspiracy involving Red Hulk.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=Captain%20America%3A%20Brave%20New%20World%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 4K Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 4K",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
+        "id": 1019,
+        "imdbId": "tt5950044",
+        "title": "Superman",
+        "category": "hollywood",
+        "genre": "action",
+        "quality": "4K",
+        "size": "3.6 GB",
+        "rating": "8.0",
+        "year": "2025",
+        "audio": "Hindi Dubbed + English",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt5950044/img.jpg",
+        "story": "Superman reconciles his alien heritage with his human upbringing, guided by truth, justice, and human kindness.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=Superman%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 4K Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 4K",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
+        "id": 1020,
+        "imdbId": "tt27438466",
+        "title": "War 2",
+        "category": "bollywood",
+        "genre": "action",
+        "quality": "4K",
+        "size": "3.5 GB",
+        "rating": "8.4",
+        "year": "2025",
+        "audio": "Hindi (Original)",
+        "trending": true,
+        "poster": "https://images.metahub.space/poster/medium/tt27438466/img.jpg",
+        "story": "Major Kabir Dhaliwal goes head-to-head in an intense international spy clash with Jr. NTR in the YRF Spy Universe.",
+        "trailer": "https://www.youtube.com/embed?listType=search&list=War%202%20official%20trailer",
+        "servers": [
+            {
+                "name": "⚡ 4K Fast Cloud Mirror 1",
+                "url": "https://drive.google.com"
+            },
+            {
+                "name": "🚀 High-Speed Mega Server 2",
+                "url": "https://mega.nz"
+            },
+            {
+                "name": "💾 Direct PixelDrain 4K",
+                "url": "https://pixeldrain.com"
+            }
+        ]
+    },
+    {
         "id": 1,
         "imdbId": "tt0499549",
         "title": "Avatar",
@@ -2046,7 +2676,8 @@ let movies = [
                 "name": "💾 Direct PixelDrain 4K",
                 "url": "https://pixeldrain.com"
             }
-        ]
+        ],
+        "trending": true
     },
     {
         "id": 71,
@@ -2191,7 +2822,8 @@ let movies = [
                 "name": "💾 Direct PixelDrain 4K",
                 "url": "https://pixeldrain.com"
             }
-        ]
+        ],
+        "trending": true
     },
     {
         "id": 76,
@@ -2423,7 +3055,8 @@ let movies = [
                 "name": "💾 Direct PixelDrain 4K",
                 "url": "https://pixeldrain.com"
             }
-        ]
+        ],
+        "trending": true
     },
     {
         "id": 84,
@@ -3641,7 +4274,8 @@ let movies = [
                 "name": "💾 Direct PixelDrain 1080p",
                 "url": "https://pixeldrain.com"
             }
-        ]
+        ],
+        "trending": true
     },
     {
         "id": 126,
@@ -4724,6 +5358,7 @@ function renderMovies(list) {
             <div class="card-poster-wrap">
                 <img src="${m.poster}" alt="${m.title}" loading="lazy">
                 <span class="badge-quality">${m.quality}</span>
+                ${m.trending ? '<span class="badge-trending">🔥 TRENDING</span>' : ''}
                 <span class="badge-rating">⭐ ${m.rating}</span>
             </div>
             <div class="card-info">
@@ -4741,7 +5376,9 @@ function renderMovies(list) {
 function applyAllFilters() {
     let result = [...movies];
 
-    if (currentCategory !== "all") {
+    if (currentCategory === "trending") {
+        result = result.filter(m => m.trending === true);
+    } else if (currentCategory !== "all") {
         result = result.filter(m => m.category === currentCategory || m.genre === currentCategory);
     }
 
@@ -4760,7 +5397,9 @@ function applyAllFilters() {
     }
 
     currentSort = document.getElementById("sortSelect").value;
-    if (currentSort === "rating") {
+    if (currentSort === "featured") {
+        result.sort((a, b) => (b.trending ? 1 : 0) - (a.trending ? 1 : 0) || parseFloat(b.rating) - parseFloat(a.rating));
+    } else if (currentSort === "rating") {
         result.sort((a, b) => parseFloat(b.rating) - parseFloat(a.rating));
     } else if (currentSort === "latest") {
         result.sort((a, b) => parseInt(b.year) - parseInt(a.year));

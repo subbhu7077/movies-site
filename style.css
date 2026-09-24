@@ -821,3 +821,30 @@ footer {
     cursor: pointer;
 }
 .pin-error-text { color: var(--pink); font-size: 0.8rem; margin-top: 10px; display: none; }
+
+/* --- Neon Pulsing Trending Badge --- */
+.badge-trending {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    background: linear-gradient(135deg, #ff0055, #ffb703);
+    color: #fff;
+    font-size: 0.65rem;
+    font-weight: 900;
+    padding: 3px 6px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(255, 0, 85, 0.7);
+    animation: trendPulse 2s infinite ease-in-out;
+    letter-spacing: 0.5px;
+}
+
+@keyframes trendPulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 8px rgba(255, 0, 85, 0.6);
+    }
+    50% {
+        transform: scale(1.06);
+        box-shadow: 0 0 16px rgba(255, 183, 3, 0.9);
+    }
+}
